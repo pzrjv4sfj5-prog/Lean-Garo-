@@ -1155,7 +1155,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `cotton seed`: candidates — `kil·gon` (weak/OCR) — shipped: `kil·gon`
 - `cough up`: candidates — `hak·a` (weak/OCR) — shipped: `hak·a`
 - `counting`: candidates — `Chanani` (weak/OCR) — shipped: `Chanani`
-- `country`: candidates — `A·song` (weak/OCR), `a·song` (weak/OCR), `A.song` (weak/OCR) — shipped: `A.song`
+- `country`: candidates — `A·song` (weak/OCR), `a·song` (weak/OCR) — shipped: `A·song`
 - `couple`: candidates — `jik·se` (weak/OCR) — shipped: `jik·se`
 - `courage`: candidates — `Ka·rakani` (weak/OCR) — shipped: `Ka·rakani`
 - `courageous`: candidates — `sang·chak·a` (weak/OCR), `Ka·donggipa` (weak/OCR) — shipped: `Ka·donggipa`
@@ -1336,8 +1336,8 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `divorce`: candidates — `gal·a` (weak/OCR), `gal·grik·a` (weak/OCR), `ha·wal` (weak/OCR), `jik gal·a` (weak/OCR) — shipped: `jik gal·a`
 - `do`: candidates — `daka` (weak/OCR), `ka·a` (weak/OCR) — shipped: `ka·a`
 - `do it!`: candidates — `Dak·bo!` (weak/OCR) — shipped: `Dak·bo!`
-- `do you have a boyfriend`: candidates — `Nangni mikchagipa dong.ama?` (weak/OCR) — shipped: `Nangni mikchagipa dong.ama?`
-- `do you have a boyfriend?`: candidates — `Nangni mikchagipa dong.ama?` (weak/OCR) — shipped: `Nangni mikchagipa dong.ama?`
+- `do you have a boyfriend`: candidates — `Nangni mikchagipa dong·ama?` (weak/OCR) — shipped: `Nangni mikchagipa dong·ama?`
+- `do you have a boyfriend?`: candidates — `Nangni mikchagipa dong·ama?` (weak/OCR) — shipped: `Nangni mikchagipa dong·ama?`
 - `do you have your boyfriend`: candidates — `Nang·ni mikchagipa dongama?` (weak/OCR) — shipped: `Nang·ni mikchagipa dongama?`
 - `do you have...?`: candidates — `Nang·o ... dongama?` (weak/OCR) — shipped: `Nang·o ... dongama?`
 - `do you know me`: candidates — `Na·a angko ma·siama?` (weak/OCR) — shipped: `Na·a angko ma·siama?`
@@ -2255,7 +2255,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `i need food`: candidates — `ang dang chak` (weak/OCR) — shipped: `ang dang chak`
 - `i need house`: candidates — `ang dang rang` (weak/OCR) — shipped: `ang dang rang`
 - `i need money`: candidates — `ang dang pisa` (weak/OCR) — shipped: `ang dang pisa`
-- `i need to sleep early tonight`: candidates — `Anga da.al atamo seng.gnang tusina nang.a` (weak/OCR) — shipped: `Anga da.al atamo seng.gnang tusina nang.a`
+- `i need to sleep early tonight`: candidates — `Anga da·al atamo seng·gnang tusina nang·a` (weak/OCR) — shipped: `Anga da·al atamo seng·gnang tusina nang·a`
 - `i need your help`: candidates — `anga nang·ni dakchakaniko nanga` (weak/OCR) — shipped: `anga nang·ni dakchakaniko nanga`
 - `i play (future)`: candidates — `ang playgen` (weak/OCR) — shipped: `ang playgen`
 - `i play (past)`: candidates — `ang playaha` (weak/OCR) — shipped: `ang playaha`
@@ -3018,7 +3018,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `orion's belt`: candidates — `donggip·eng donggru` (weak/OCR) — shipped: `donggip·eng donggru`
 - `other`: candidates — `gip·in` (weak/OCR), `a·gre` (weak/OCR) — shipped: `a·gre`
 - `otter`: candidates — `mat·ram` (weak/OCR) — shipped: `mat·ram`
-- `our`: candidates — `An.chingni` (weak/OCR), `An·ching·ni` (weak/OCR), `Chingni` (weak/OCR), `Na·ching·ni` (weak/OCR) — shipped: `Na·ching·ni`
+- `our`: candidates — `An·chingni` (weak/OCR), `An·ching·ni` (weak/OCR), `Chingni` (weak/OCR), `Na·ching·ni` (weak/OCR) — shipped: `Na·ching·ni`
 - `our / ours`: candidates — `Chingni / An·chingni` (weak/OCR) — shipped: `Chingni / An·chingni`
 - `our apple`: candidates — `ini se` (weak/OCR) — shipped: `ini se`
 - `our banana`: candidates — `ini sobo` (weak/OCR) — shipped: `ini sobo`
@@ -3026,7 +3026,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `our book`: candidates — `ini book` (weak/OCR), `ini ki·tap` (weak/OCR) — shipped: `ini ki·tap`
 - `our car`: candidates — `ini car` (weak/OCR), `ini mot` (weak/OCR) — shipped: `ini mot`
 - `our cat`: candidates — `ini mang` (weak/OCR), `ini Menggo` (weak/OCR) — shipped: `ini Menggo`
-- `our country is big`: candidates — `An.chingni a.song dala` (weak/OCR) — shipped: `An.chingni a.song dala`
+- `our country is big`: candidates — `An·chingni a·song dala` (weak/OCR) — shipped: `An·chingni a·song dala`
 - `our dog`: candidates — `ini mang` (weak/OCR), `ini Achak` (weak/OCR) — shipped: `ini Achak`
 - `our fish`: candidates — `ini mang` (weak/OCR), `ini na·tok` (weak/OCR) — shipped: `ini na·tok`
 - `our food`: candidates — `ini food` (weak/OCR), `ini chak` (weak/OCR), `ini al·a` (weak/OCR) — shipped: `ini al·a`
@@ -4511,8 +4511,8 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `this and that`: candidates — `nang·a·nang·ja` (weak/OCR) — shipped: `nang·a·nang·ja`
 - `this and that (alt)`: candidates — `Iaba uaba` (weak/OCR) — shipped: `Iaba uaba`
 - `this and that, also`: candidates — `Iaba uaba` (weak/OCR) — shipped: `Iaba uaba`
-- `this goat kid is ours`: candidates — `Ia dobok bi·sa chingni ong.a` (weak/OCR) — shipped: `Ia dobok bi·sa chingni ong.a`
-- `this house color is brown`: candidates — `Ia nok ni rong gitchakmrang ong.a` (weak/OCR) — shipped: `Ia nok ni rong gitchakmrang ong.a`
+- `this goat kid is ours`: candidates — `Ia dobok bi·sa chingni ong·a` (weak/OCR) — shipped: `Ia dobok bi·sa chingni ong·a`
+- `this house color is brown`: candidates — `Ia nok ni rong gitchakmrang ong·a` (weak/OCR) — shipped: `Ia nok ni rong gitchakmrang ong·a`
 - `this is an awkward thing to see`: candidates — `Ia nina nitoja` (weak/OCR) — shipped: `Ia nina nitoja`
 - `this much`: candidates — `Iantok` (weak/OCR) — shipped: `Iantok`
 - `this room is big`: candidates — `Ia kuturi dala` (weak/OCR) — shipped: `Ia kuturi dala`
@@ -5625,7 +5625,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `usual`: candidates — `ram·ram` (weak/OCR) — shipped: `ram·ram`
 - `usually`: candidates — `Bewal gita` (weak/OCR) — shipped: `Bewal gita`
 - `vacant`: candidates — `Bang-basang` (weak/OCR) — shipped: `Bang-basang`
-- `vagina`: candidates — `Sepak` (weak/OCR), `Si·i` (weak/OCR), `Si.i akol` (weak/OCR) — shipped: `Si.i akol`
+- `vagina`: candidates — `Sepak` (weak/OCR), `Si·i` (weak/OCR), `Si·i akol` (weak/OCR) — shipped: `Si·i akol`
 - `valley`: candidates — `ha·kong` (weak/OCR) — shipped: `ha·kong`
 - `variety`: candidates — `jat` (weak/OCR), `ro·kom` (weak/OCR) — shipped: `ro·kom`
 - `vaxatious`: candidates — `Ka·chipa` (weak/OCR) — shipped: `Ka·chipa`
@@ -5744,7 +5744,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `we want house`: candidates — `i nama rang` (weak/OCR) — shipped: `i nama rang`
 - `we want money`: candidates — `i nama pisa` (weak/OCR) — shipped: `i nama pisa`
 - `we want water`: candidates — `i nama chik` (weak/OCR) — shipped: `i nama chik`
-- `we will work today`: candidates — `Chinga da.alo kam kagen` (weak/OCR) — shipped: `Chinga da.alo kam kagen`
+- `we will work today`: candidates — `Chinga da·alo kam kagen` (weak/OCR) — shipped: `Chinga da·alo kam kagen`
 - `we work (future)`: candidates — `i workgen` (weak/OCR) — shipped: `i workgen`
 - `we work (past)`: candidates — `i workaha` (weak/OCR) — shipped: `i workaha`
 - `we work (present)`: candidates — `i worka` (weak/OCR) — shipped: `i worka`

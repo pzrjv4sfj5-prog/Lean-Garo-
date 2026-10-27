@@ -1905,7 +1905,7 @@
   },
   {
     "english": "pot",
-    "garo": "Me.dik",
+    "garo": "Me·dik",
     "category": "general",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'pot' has VERIFIED/HIGH form(s) ['Dik·ke', 'dik·te', 'gim·bi']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
     "confidence": "superseded"
@@ -2011,13 +2011,6 @@
     "garo": "Attam",
     "category": "greetings",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'evening' has VERIFIED/HIGH form(s) ['an·tam']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "today",
-    "garo": "Da·alo",
-    "category": "time",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'today' has VERIFIED/HIGH form(s) ['Da.alo', 'Da·al']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
     "confidence": "superseded"
   },
   {
@@ -14894,13 +14887,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "be",
-    "garo": "ong·bo",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'be' has VERIFIED/HIGH form(s) ['Ong.bo']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
     "english": "beautiful",
     "garo": "nitoa",
     "category": "general",
@@ -15635,7 +15621,7 @@
   },
   {
     "english": "this house color is brown",
-    "garo": "Ia nok ni rong gitchakmrang ong.a",
+    "garo": "Ia nok ni rong gitchakmrang ong·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -15671,7 +15657,7 @@
   },
   {
     "english": "our country is big",
-    "garo": "An.chingni a.song dala",
+    "garo": "An·chingni a·song dala",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -15680,7 +15666,7 @@
   },
   {
     "english": "do you have a boyfriend",
-    "garo": "Nangni mikchagipa dong.ama?",
+    "garo": "Nangni mikchagipa dong·ama?",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -15734,7 +15720,7 @@
   },
   {
     "english": "i need to sleep early tonight",
-    "garo": "Anga da.al atamo seng.gnang tusina nang.a",
+    "garo": "Anga da·al atamo seng·gnang tusina nang·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -15887,7 +15873,7 @@
   },
   {
     "english": "we will work today",
-    "garo": "Chinga da.alo kam kagen",
+    "garo": "Chinga da·alo kam kagen",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -16013,7 +15999,7 @@
   },
   {
     "english": "this goat kid is ours",
-    "garo": "Ia dobok bi·sa chingni ong.a",
+    "garo": "Ia dobok bi·sa chingni ong·a",
     "pos": null,
     "category": "animals",
     "classifier": null,
@@ -16075,24 +16061,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "basically",
-    "garo": "Chong.motan",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
-  },
-  {
-    "english": "be happy",
-    "garo": "Kusi ong.bo",
-    "pos": null,
-    "category": "phrases",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-085 (2026-08-20): stale period-typo variant; native-confirmed form is 'Kusi ong·bo' (Thangseng, letter B). Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
     "english": "beautiful",
     "garo": "Sila",
     "pos": null,
@@ -16142,15 +16110,6 @@
     "garo": "Re·baengjok",
     "pos": null,
     "category": "verbs",
-    "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
-  },
-  {
-    "english": "country",
-    "garo": "A.song",
-    "pos": null,
-    "category": "travel",
     "classifier": null,
     "notes": null,
     "confidence": "unverified"
@@ -16238,7 +16197,7 @@
   },
   {
     "english": "must",
-    "garo": "Nang.a",
+    "garo": "Nang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16256,7 +16215,7 @@
   },
   {
     "english": "our",
-    "garo": "An.chingni",
+    "garo": "An·chingni",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -16805,7 +16764,7 @@
   },
   {
     "english": "Be",
-    "garo": "Ong.bo",
+    "garo": "Ong·bo",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17813,7 +17772,7 @@
   },
   {
     "english": "Do you have a boyfriend?",
-    "garo": "Nangni mikchagipa dong.ama?",
+    "garo": "Nangni mikchagipa dong·ama?",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -21816,7 +21775,7 @@
   },
   {
     "english": "Today",
-    "garo": "Da.alo",
+    "garo": "Da·alo",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21967,7 +21926,7 @@
   },
   {
     "english": "Vagina",
-    "garo": "Si.i akol",
+    "garo": "Si·i akol",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -72386,7 +72345,7 @@
   },
   {
     "english": "mother",
-    "garo": "a.ai",
+    "garo": "a·ai",
     "pos": null,
     "category": "family",
     "classifier": null,

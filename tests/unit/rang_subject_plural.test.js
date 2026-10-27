@@ -32,8 +32,8 @@ for (const [en, garo] of GENERATED) {
 const UNCHANGED = [
   ['children eat rice', 'Bi·sarang miko Cha·a'],   // lexicalized plural
   ['friends came', 'cham·e re·ba·aha'],           // lexicalized plural
-  ['news today', 'Gital da.alo'],                 // "news" is not plural "new"
-  ['mother eats rice', 'A.ai miko Cha·a'],          // verb "eats" is not a plural noun
+  ['news today', 'Gital da·alo'],                 // "news" is not plural "new"
+  ['mother eats rice', 'A·ai miko Cha·a'],          // verb "eats" is not a plural noun
   ['his dog eats', 'Uni achak cha·a'],            // singular subject
   ['he eats rice', 'Ua miko Cha·a'],
   ['two dogs eat rice', 'Achak manggni miko Cha·a'], // counted: Formula B (see counted_subject_formula_b.test.js), never -rang

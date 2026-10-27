@@ -697,7 +697,7 @@
   },
   {
     "english": "Basically",
-    "garo": "Chong.motan",
+    "garo": "Chong·motan",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -721,7 +721,7 @@
   },
   {
     "english": "Be",
-    "garo": "Ong.bo",
+    "garo": "Ong·bo",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -745,7 +745,7 @@
   },
   {
     "english": "Be happy",
-    "garo": "Kusi ong.bo",
+    "garo": "Kusi ong·bo",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -1313,7 +1313,7 @@
   },
   {
     "english": "Bright",
-    "garo": "Ching'a",
+    "garo": "Ching·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -2297,19 +2297,11 @@
   },
   {
     "english": "Country",
-    "garo": "A.song",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:A·song"
-  },
-  {
-    "english": "Country",
     "garo": "A·song",
     "pos": null,
     "category": "travel",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
+    "notes": "VERIFIED/HIGH v:A·song"
   },
   {
     "english": "Courage",
@@ -2817,7 +2809,7 @@
   },
   {
     "english": "Do you have a boyfriend?",
-    "garo": "Nangni mikchagipa dong.a ma?",
+    "garo": "Nangni mikchagipa dong·a ma?",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -5505,7 +5497,7 @@
   },
   {
     "english": "I need to sleep early tonight",
-    "garo": "Ang.a da.al atamo seng.gnang tusina nang.a",
+    "garo": "Ang·a da·al atamo seng·gnang tusina nang·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -7073,7 +7065,7 @@
   },
   {
     "english": "Must",
-    "garo": "Nang.a",
+    "garo": "Nang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -7729,7 +7721,7 @@
   },
   {
     "english": "Our",
-    "garo": "An.chingni",
+    "garo": "An·chingni",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -7761,7 +7753,7 @@
   },
   {
     "english": "Our country is big",
-    "garo": "An.chingni a.song dala",
+    "garo": "An·chingni a·song dala",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -8393,7 +8385,7 @@
   },
   {
     "english": "Pot",
-    "garo": "Me.dik",
+    "garo": "Me·dik",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -9345,7 +9337,7 @@
   },
   {
     "english": "Sad",
-    "garo": "Duk ong'a",
+    "garo": "Duk ong·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -11569,7 +11561,7 @@
   },
   {
     "english": "This goat kid is ours",
-    "garo": "Ia dobok bisa chingni ong.a",
+    "garo": "Ia dobok bisa chingni ong·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -11577,7 +11569,7 @@
   },
   {
     "english": "This house color is brown",
-    "garo": "Ia nok ni rong gitchakmrang ong.a",
+    "garo": "Ia nok ni rong gitchakmrang ong·a",
     "pos": null,
     "category": "phrases",
     "classifier": null,
@@ -12289,7 +12281,7 @@
   },
   {
     "english": "Today",
-    "garo": "Da.alo",
+    "garo": "Da·alo",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -12298,14 +12290,6 @@
   {
     "english": "Today",
     "garo": "Da·al",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Today",
-    "garo": "Da·alo",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -12657,7 +12641,7 @@
   },
   {
     "english": "Vagina",
-    "garo": "Si'i",
+    "garo": "Si·i",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -12665,7 +12649,7 @@
   },
   {
     "english": "Vagina",
-    "garo": "Si.i akol",
+    "garo": "Si·i akol",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -12825,7 +12809,7 @@
   },
   {
     "english": "We will work today",
-    "garo": "Chinga da.alo kam kagen",
+    "garo": "Chinga da·alo kam kagen",
     "pos": null,
     "category": "phrases",
     "classifier": null,

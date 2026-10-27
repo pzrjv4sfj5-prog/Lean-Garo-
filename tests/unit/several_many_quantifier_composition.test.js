@@ -18,7 +18,7 @@
 //    garo_classifier.js's singularize(), so these sentences succeed in
 //    grammar-assembly and never reach sov-assembly at all.
 // 4. Native-speaker correction from Thangseng in chat superseded step 1:
-//    "i have several books" -> "Ango adita ki.taprang donga" (several =
+//    "i have several books" -> "Ango adita ki·taprang donga" (several =
 //    adita, not bang·a) and "we have many students" -> "Chingo bang·a
 //    chattrorang donga" (confirming many = bang·a is correct). Then
 //    superseded again, same message: "we will use Bang.e instead of
@@ -47,7 +47,7 @@
 //    bang·e -> bang·a -> adita).
 // 9. 2026-09-27, separately in this (Claude B) session, Project Owner
 //    reconfirms the same adita conclusion via a direct example: "we
-//    will use i have several books = Ango adita ki.taprang donga not
+//    will use i have several books = Ango adita ki·taprang donga not
 //    Ango bang·e ki·tap donga" -- converges with step 8 on the same
 //    final answer via a different message. garo_dictionary.json/
 //    corrections.json's "several" entry updated; "i have several
@@ -85,7 +85,7 @@ import { translate } from '../../src/translationEngine.js';
 
 test('"i have several books" uses the Owner-confirmed exact form (adita, with -rang)', async () => {
   const r = await translate('i have several books');
-  assert.equal(r.garo, 'Ango adita ki.taprang donga');
+  assert.equal(r.garo, 'Ango adita ki·taprang donga');
 });
 
 test('"i have many books" keeps the quantifier (bang·a), not silently dropped', async () => {
