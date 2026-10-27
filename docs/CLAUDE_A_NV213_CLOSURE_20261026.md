@@ -38,3 +38,6 @@ Project Owner directive (chat): "Re.rama but its a second option". Period read a
 
 ## Standing rule (Thangseng via relay, 2026-10-27)
 Whenever full sentences are sent to Thangseng for checking, state the intended tense for each sentence (e.g. past / present / future / habitual / continuous).
+
+## NV-220 (A), 2026-10-27: mang raka fully resolved
+Synced with D (no new upstream beyond 96f2358 at start). NV-217 had de-dotted master rows and RAKA_CLASSIFIERS but left residue: CONFIRMED_COMPOUND_CLASSIFIERS.mang was still dot:true (20-99 compounds shipped `mang·kolgrik`, `mang·sotbrisa`), bare `animals`=`mang·`, 2 stale tests, stale comments, RULE-038/RULE-G-classifier examples. All now dot-free: engine one-token edit (mang dot:false, B please review with NV-217), `animals`=`mang` (master + final_entries), tests re-expected, comments/rules updated. Untouched on purpose: lexical words containing "mang" (mang·kal·a, mi·mang·sa, Me·mang, mang·wa·a), different morphemes. Live: one dog=achak mangsa, twenty one dogs=achak mangkolgriksa, forty one dogs=achak mangsotbrisa, animals=mang. Gate: dictionary PASSED, repo-intelligence PASSED, unit 952/952, conformance 78/112 with 0 unbaselined.

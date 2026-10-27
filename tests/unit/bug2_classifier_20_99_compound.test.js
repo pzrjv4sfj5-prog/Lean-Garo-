@@ -17,7 +17,7 @@ import { translate } from '../../src/translationEngine.js';
 // CONFIRMED_COMPOUND_CLASSIFIERS comment for the full flip history on
 // mang/gong -- both have reversed multiple times on direct citations):
 //   sak (person): fused, no raka dot  -- "saksotbrisa"
-//   mang (animal): fused, WITH raka dot -- "mang·sotbrisa" (reversed a
+//   mang (animal): fused, NO raka dot (NV-219) -- "mangsotbrisa" (reversed a
 //     FOURTH time 2026-09-28/29 on a direct Project Owner statement in
 //     chat, shown and overriding the 2026-09-18 Thangseng "No" citation
 //     -- see git history / garo_classifier.js comment for the full
@@ -43,10 +43,10 @@ test('translate: sak 20-99 compound is fused with no raka dot, no space', async 
   assert.equal(r.garo, 'chattro saksotbrisa');
 });
 
-test('translate: mang 20-99 compound is fused WITH a raka dot (reversed a fourth time 2026-09-28/29 on direct Project Owner statement)', async () => {
+test('translate: mang 20-99 compound is fused with NO raka dot (NV-219 2026-10-27, Owner directive; supersedes 2026-09-28/29)', async () => {
   const r = await translate('41 dogs');
   assert.equal(r.method, 'classifier');
-  assert.equal(r.garo, 'achak mang·sotbrisa');
+  assert.equal(r.garo, 'achak mangsotbrisa');
 });
 
 test('translate: rong 20-99 compound is fused with no raka dot', async () => {

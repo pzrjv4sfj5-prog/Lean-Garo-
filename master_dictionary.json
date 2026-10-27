@@ -22972,11 +22972,11 @@
   },
   {
     "english": "animals",
-    "garo": "mang·",
+    "garo": "mang",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
+    "notes": "variant/UNVERIFIED/HIGH | NV-219 (2026-10-27): classifier mang takes no raka (Owner directive); boundary-only de-dot.",
     "confidence": "unverified"
   },
   {

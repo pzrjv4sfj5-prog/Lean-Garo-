@@ -529,7 +529,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `and`: candidates — `Aro` (weak/OCR), `aro` (weak/OCR) — shipped: `Aro`
 - `angel`: candidates — `Sa·gre` (weak/OCR) — shipped: `Sa·gre`
 - `anger`: candidates — `Ka·o nanga` (weak/OCR) — shipped: `Ka·o nanga`
-- `animals`: candidates — `do·omat` (weak/OCR), `mang·` (weak/OCR) — shipped: `mang·`
+- `animals`: candidates — `do·omat` (weak/OCR), `mang` (weak/OCR) — shipped: `mang`
 - `animals wild`: candidates — `mat·bring` (weak/OCR), `mat·cha mak·bil` (weak/OCR) — shipped: `mat·cha mak·bil`
 - `ankle`: candidates — `Ja·gitok` (weak/OCR), `ja·git·ok` (weak/OCR) — shipped: `ja·git·ok`
 - `ankle bells`: candidates — `ja·srang` (weak/OCR) — shipped: `ja·srang`

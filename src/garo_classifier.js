@@ -4,7 +4,7 @@
  * Word order corrected 2026-06-21 per native speaker — see below.
  *
  * CORRECT GARO CLASSIFIER ORDER: [noun] + [classifier-number]
- * Example: achak mang·sa = one dog (NOT mang·sa achak)
+ * Example: achak mangsa = one dog (NOT mangsa achak); mang takes no raka (NV-217/NV-219)
  */
 
 import { toGaroNumber as toGaroNumberImported } from './number_engine.js';
@@ -252,8 +252,8 @@ function composeLargeBareNumber(n) {
 // "Chattro saksotbri sa"): tens word fuses straight onto the classifier,
 // lowercased, keeping the original space before the trailing units word
 // -- NOT the general n>19 rule (native-confirmed 2026-06-28 for
-// mang/animals: tens+units join to the classifier with a raka dot, e.g.
-// "mang·Kolgrik·sa"). Used by both buildClassifierPhrase (n<100) and
+// mang/animals: tens+units join to the classifier with NO raka dot (NV-219), e.g.
+// "mangKolgriksa"). Used by both buildClassifierPhrase (n<100) and
 // buildLargeClassifierPhrase's remHundred branch (n>=100 with a 1-99
 // remainder, e.g. "999 students" = ritcha sku + this tail for n=99) --
 // previously only the former called the sak branch, so "999/141 students"
@@ -262,11 +262,9 @@ function composeLargeBareNumber(n) {
 // live Thangseng citations relayed by Project Owner in chat). This is
 // NOT a general rule that mechanically generalizes from one classifier
 // to the rest -- the shape differs by classifier: sak and rong fuse the
-// compound with no raka dot; mang fuses WITH a raka dot before the
-// compound, which is a DIFFERENT fact from mang's own n<20 no-dot rule
-// above (that rule covers a bare digit fused to the classifier; this is
-// a compound tens+units word fused to the classifier -- a different
-// construction, not a contradiction of the earlier citation). Only
+// compound with no raka dot; mang fuses with NO raka dot (NV-219, 2026-10-27:
+// Owner directive, mang takes no dot at any n; the earlier dotted compound
+// citation is superseded). Only
 // these classifiers were confirmed for n>19 as of 2026-09-16; see
 // 2026-09-18 addendum below for bol/king/ge/te (added) and gong
 // (reverted pending conflict resolution). jol's own n<20 classifier
@@ -280,7 +278,7 @@ function composeLargeBareNumber(n) {
 // -- this was Bug 2, and it is only partially closed by this fix.
 // Confirmed citations, live:
 //   41 students -> "Chattro saksotbrisa"      (sak: no gap, no dot)
-//   41 dogs     -> "Achak mang·sotbrisa"      (mang: no gap, WITH dot)
+//   41 dogs     -> "Achak mangsotbrisa"       (mang: no gap, NO dot as of NV-219 2026-10-27)
 //   25 mangoes  -> "te·gatchu rongkolgrikbonga" (rong: no gap, no dot)
 //   41 coins    -> "gong·sotbrisa" (2026-09-17, direct Thangseng citation
 //                  relayed by Project Owner via chat screenshot): fused,
@@ -332,7 +330,7 @@ function composeLargeBareNumber(n) {
 // its compound shape.)
 const CONFIRMED_COMPOUND_CLASSIFIERS = {
   sak: { dot: false },
-  mang: { dot: true }, // FOURTH reversal, 2026-09-28/29, see comments above
+  mang: { dot: false }, // NV-219 (2026-10-27): Owner directive, mang takes NO dot at any n (see NV-217 note above)
   rong: { dot: false },
   bol: { dot: false },
   king: { dot: true }, // reversed 2026-09-28/29, see comments above
