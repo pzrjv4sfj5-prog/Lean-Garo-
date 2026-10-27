@@ -34,3 +34,14 @@ for (const [en, garo] of [
   ['those knives', 'ua kettalrang'], ['I like those knives.', 'anga ua kettalrangko namnika'],
   ['I took that dog.', 'anga ua achakko ra·aha'], ['I took those dogs.', 'anga ua achakrangko ra·aha'],
 ]) test(`NV-219 probe: ${en}`, async () => assert.equal(await lc(en), garo));
+// Second probe pass (2026-10-27): adjectives, numbers, case suffixes, bare pronoun objects, copular, questions. ALL DERIVED (not native).
+for (const [en, garo] of [
+  ['I see that big dog.', 'anga ua dal·gipa achakko nika'], ['I see those big dogs.', 'anga ua dal·gipa achakrangko nika'],
+  ['I see that big red dog.', 'anga ua dal·gipa gitchak achakko nika'], ['I see these small houses.', 'anga ia chon·gipa nokrangko nika'],
+  ['I see big dogs.', 'anga dal·gipa achakrangko nika'], ['that big dog', 'ua dal·gipa achak'], ['those big dogs', 'ua dal·gipa achakrang'],
+  ['these small houses', 'ia chon·gipa nokrang'], ['those two dogs', 'ua achak manggni'], ['I saw those two dogs.', 'anga ua achak manggniko nikaha'],
+  ['I go to that house.', 'anga ua nok·chi re·a'], ['I am in that house.', 'anga ua nok·o'],
+  ['I see those.', 'anga uarangko nika'], ['I see these.', 'anga iarangko nika'], ['I see this.', 'anga iko nika'], ['I like that.', 'anga uko namnika'],
+  ['those are dogs', 'ua achakrang'], ['these are books', 'ia ki·taprang'], ['these are my books', 'ia angni ki·taprang'], ['that is my house', 'ua angni nok'],
+  ['what is that', 'ua maia?'], ['what are these', 'ia maia?'], ['who are those', 'ua sawa?'],
+]) test(`NV-219 probe2 (derived): ${en}`, async () => assert.equal((await translate(en)).garo.toLowerCase().replace(/[.!]$/, ''), garo));

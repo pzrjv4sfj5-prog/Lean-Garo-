@@ -57,3 +57,20 @@ First run: 94.9% (5,464/5,760). Defects found and fixed:
 Final: 5,760/5,760 pass on that structural check.
 **What this proves:** no dropped demonstrative/noun/subject, no `[UNKNOWN]`, consistent placement. **It does not prove the Garo is native-correct:** only the four Thangseng sentences are native; all other tense/verb/noun combinations are rule output. Irregular lexicalized plurals (children, men, women) were checked only for presence of ua/ia + plural, not for correctness of the plural word.
 Gate after the probe fixes: `npm run build` exit 0, unit 981/981, rule conformance 78/112 with 0 new mismatches, runtime-error-sweep 16089 calls / 0 errors. `irregular_verbs.json` count pin 56 -> 57 in translationEngine.test.js.
+
+## Second probe pass + web cross-check (2026-10-27)
+**Web cross-check (secondary sources, NOT native):** WALS 43A (Burling/Bhat) lists `ia` = this, `ua` = that: matches. Wiktionary's Garo determiner tables (`iano`/`uano`) list pronoun plurals `iarang` / `uarang` and accusatives `iarangko` / `uarangko`; the same table gives singular accusative `iako`/`uako`, but Thangseng's native `Anga uko nika` takes precedence, so `uko` is used and `iko` (this) is derived by analogy.
+**New defects found and fixed (all outputs derived, none native):**
+1. Demonstrative dropped with adjectives (`that big dog`, `I see that big red dog`) and numbers (`those two dogs`): insertion now skips leading adjectives/numbers to find the noun and goes before the adjectives (`ua dal·gipa achakko`).
+2. Demonstrative dropped before case-suffixed nouns (`nok·chi`, `nok·o`): `I go to that house` = `Anga ua nok·chi re·a`.
+3. Adjective dropped before a plural object even without a demonstrative (`I see big dogs` was `Anga achakrangko Nika`): RULE-006 path now handles plural nouns (`Anga dal·gipa achakrangko nika`).
+4. Bare pronoun objects dropped (`I see those/these/this`): `uarangko` / `iarangko` / `iko` (that stays native `uko`); `I like that/those/this` included.
+5. Copular and question shapes: `those are dogs` = `Ua achakrang`, `these are my books` = `Ia angni ki·taprang`, `that is my house` = `Ua angni nok`, `what is that` = `Ua maia?` (mirrors attested `Ua sawa?`).
+Invariance probe (strip `ua`/`ia` from the output = the same sentence without a demonstrative): 1,980/2,000 (99.0%); the 20 misses are all `red house`, see below. Earlier strict probe still 5,760/5,760. Gate: build exit 0, unit 1004/1004, conformance 78/112 with 0 new mismatches, sweep 16,089 calls / 0 errors. Two old tests updated (R5 copula-stripping now checked on `this is for you`; `her` possessive match made case-insensitive) because `this is my book` / `this is her dog` now keep `Ia`.
+
+## Known remaining defects (NOT fixed)
+1. **For Claude A (data):** master row `red house = bilak rang` (unverified) drops `house` and blocks demonstrative insertion in any sentence with `red house`. Retire or fix it. `those = Uamang` / `these = Iamang` (unverified) look like the pronoun `them`, not the demonstratives; Wiktionary suggests `uarang` / `iarang`.
+2. Plural noun in a directional/locative phrase (`I go to those houses`) falls to sov-assembly: drops `to`, the demonstrative, and mangles the verb (`re·ang`). Needs the plural + case-suffix form from Thangseng (`nokrangchi`? unverified).
+3. Prepositions `with` / `from` are dropped (`with those dogs`, `from this house`, `I eat with these dogs`).
+4. `this is for you` drops `this` and `for` (reported via droppedWords, confidence 0.5). `Are those your dogs?` drops `those` and the plural. `who are they` = `Sawa uamang`.
+5. `like` now maps to `namnika` in every sense; non-verb `like` (`like a dog`) is unverified.

@@ -291,10 +291,15 @@ export async function translate(input) {
   // NV-219 (Thangseng native, 2026-10-27): `Anga uko nika.` = I see that. A bare sentence-final `that` object takes the same
   // `uko` as `it`, so route it through the `it` sentence and keep the result only if it really produced `uko`.
   {
-    const mt = String(input).trim().match(/^(i|we|you|he|she|they)\s+((?:(?:will|do\s+not|did\s+not|don'?t|didn'?t)\s+)?)([a-z]+)\s+that\s*[.!]?$/i);
-    if (mt && !/^(know|knew|think|thought|say|said|believe|believed|hope|hoped|feel|felt|tell|told|mean|meant|is|was|are|were|am|be|do|did|like)$/i.test(mt[3])) {
-      const viaIt = await translate(String(input).trim().replace(/\bthat(\s*[.!]?)$/i, 'it$1'));
-      if (viaIt && typeof viaIt.garo === 'string' && /\buko\b/i.test(viaIt.garo) && !/\[UNKNOWN\]/.test(viaIt.garo)) return { ...viaIt, method: 'that-object-as-it' };
+    const mt = String(input).trim().match(/^(i|we|you|he|she|they)\s+((?:(?:will|do\s+not|did\s+not|don'?t|didn'?t)\s+)?)([a-z]+)\s+(that|this|those|these)\s*[.!]?$/i);
+    if (mt && !/^(know|knew|think|thought|say|said|believe|believed|hope|hoped|feel|felt|tell|told|mean|meant|is|was|are|were|am|be|do|did)$/i.test(mt[3])) {
+      const viaIt = await translate(String(input).trim().replace(/\b(?:that|this|those|these)(\s*[.!]?)$/i, 'it$1'));
+      if (viaIt && typeof viaIt.garo === 'string' && /\buko\b/i.test(viaIt.garo) && !/\[UNKNOWN\]/.test(viaIt.garo)) {
+        // that = uko (Thangseng native); this = iko, those = uarangko, these = iarangko (DERIVED: ia/ua pair + -rang; Wiktionary lists iarangko/uarangko)
+        const OBJ = { that: 'uko', this: 'iko', those: 'uarangko', these: 'iarangko' };
+        const tgt = OBJ[mt[4].toLowerCase()];
+        return { ...viaIt, garo: viaIt.garo.replace(/\buko\b/i, tgt), method: mt[4].toLowerCase() === 'that' ? 'that-object-as-it' : 'demonstrative-pronoun-object' };
+      }
     }
   }
   let result = await translateCore(input);
@@ -321,15 +326,20 @@ export async function translate(input) {
   // NV-215 (native-verified PO relay, 2026-10-25): demonstrative + noun keeps the demonstrative: that = Ua, this = Ia,
   // placed immediately BEFORE the noun; the case marker stays on the noun (`Anga ua achakko nika`, never `uako achak`).
   // The grammar paths used to drop `that` / `this` here, so re-insert it before the noun's translated token.
-  if (result && typeof result.garo === 'string' && !/^(demonstrative-that-construction|look-at-that|exact-phrase|correction)$/.test(String(result.method)) && !/^haiwa\b/i.test(result.garo)) {
-    const md = String(input).match(/(?:^|\s)(that|this|those|these)\s+([a-z]+)\b/i);
+  if (result && typeof result.garo === 'string' && !/^(demonstrative-that-construction|demonstrative-plural-construction|demonstrative-copular-construction|demonstrative-question|demonstrative-pronoun-object|look-at-that|exact-phrase|correction)$/.test(String(result.method)) && !/^haiwa\b/i.test(result.garo)) {
+    const md0 = String(input).match(/(?:^|\s)(that|this|those|these)\s+([a-z]+(?:\s+[a-z]+){0,2})\b/i);
+    // NV-219 probe: skip leading adjectives / number words so `that big dog` and `those two dogs` still find the noun
+    let nounIdxW = 0, hasNumW = false;
+    const candW = md0 ? md0[2].split(/\s+/) : [];
+    while (nounIdxW < candW.length - 1 && (isKnownAdjectiveEnglish(candW[nounIdxW].toLowerCase()) || NUMBER_WORDS[candW[nounIdxW].toLowerCase()] !== undefined || /^\d+$/.test(candW[nounIdxW]))) { if (NUMBER_WORDS[candW[nounIdxW].toLowerCase()] !== undefined || /^\d+$/.test(candW[nounIdxW])) hasNumW = true; nounIdxW++; }
+    const md = md0 ? [md0[0], md0[1], candW[nounIdxW]] : null;
     const NOT_NOUN = /^(is|was|are|were|will|would|can|could|should|may|might|must|do|does|did|has|have|had|be|been|i|you|he|she|we|they|it|one|way|much|many|time|far|not|and|or|but|to|of|in|on|at|for|with|as|if|so)$/i;
     const COMP = /(?:^|\s)(know|knew|think|thought|say|said|believe|believed|hope|hoped|feel|felt|tell|told|mean|means|sure|ensure|so|such)\s+(that)\s/i;
     if (md && !NOT_NOUN.test(md[2]) && !(md[1].toLowerCase() === 'that' && COMP.test(String(input)))) {
       const wN = md[2].toLowerCase();
       // NV-219: those/these + plural noun -> ua/ia + noun-rang (Thangseng `Ua achakrang`); case -ko stays on the noun
       const plD = /^(those|these)$/i.test(md[1]);
-      const nG = (isKnownAdjectiveEnglish(wN) || /^(good|bad|far|all|time|way|much|many)$/.test(wN)) ? null : (plD ? garoPluralNoun(wN) : lookupGaro(wN, 'n.'));
+      const nG = (isKnownAdjectiveEnglish(wN) || /^(good|bad|far|all|time|way|much|many)$/.test(wN)) ? null : (plD ? (hasNumW ? lookupGaro(singularize(wN), 'n.') : garoPluralNoun(wN)) : lookupGaro(wN, 'n.'));
       if (nG && !/\[UNKNOWN\]|[,;()/]/.test(nG)) {
         const base = nG.toLowerCase();
         const bw = base.split(' ');
@@ -338,14 +348,19 @@ export async function translate(input) {
         const idx = words.findIndex((w, i) => bw.every((b, k) => {
           const t = String(words[i + k] || '').toLowerCase().replace(/[.!?]$/, '');
           const last = k === bw.length - 1;
-          return t === b || (last && t.startsWith(b) && ['ko', 'o', 'ni', 'na'].includes(t.slice(b.length)));
+          return t === b || (last && t.startsWith(b) && ['ko', 'o', 'ni', 'na', 'chi', 'ona', 'oni'].includes(t.slice(b.length).replace(/^·/, '')));
         }));
         // `Ua` right before the noun may be the subject `he/she` (`he sees this house` -> `Ua ia nokko nika`), not an existing demonstrative
         const prevIsSubject = idx === 1 && /^(he|she|it)\b/i.test(String(input).trim());
+        let insAt = idx;
+        const nAdjW = candW.slice(0, nounIdxW).filter(w => isKnownAdjectiveEnglish(w.toLowerCase())).length;
+        const subjStart = /^(i|we|you|he|she|they)\b/i.test(String(input).trim()) ? 1 : 0;
+        for (let k = 0; k < nAdjW && insAt > subjStart; k++) insAt--; // demonstrative goes before the adjective(s) (`ua dal·gipa achak`)
+        while (insAt > subjStart && /gipa$/i.test(words[insAt - 1] || '')) insAt--;
         if (idx >= 0 && (prevIsSubject || !/^(ua|ia)$/i.test(words[idx - 1] || ''))) {
-          const first = idx === 0;
-          words[idx] = first ? words[idx].charAt(0).toLowerCase() + words[idx].slice(1) : words[idx];
-          words.splice(idx, 0, first ? dem.charAt(0).toUpperCase() + dem.slice(1) : dem);
+          const first = insAt === 0;
+          words[insAt] = first ? words[insAt].charAt(0).toLowerCase() + words[insAt].slice(1) : words[insAt];
+          words.splice(insAt, 0, first ? dem.charAt(0).toUpperCase() + dem.slice(1) : dem);
           result = { ...result, garo: words.join(' ') };
         }
       }
@@ -696,6 +711,42 @@ async function translateCore(input) {
   // NV-201 Haiwa (distance stated outright) is checked first so far-cues never fall through to Ua.
   const haiwa = tryHaiwaDistalConstruction(String(input));
   if (haiwa) return { garo: haiwa, method: 'demonstrative-haiwa-construction', confidence: 0.85 };
+  // NV-219 probe (derived; mirrors attested `Ua sawa?`): `what/who is/are that|this|those|these` -> `Ua|Ia maia?|sawa?`
+  {
+    const mq = String(input).trim().match(/^(what|who)\s+(?:is|are)\s+(that|this|those|these)\s*\??$/i);
+    if (mq) return { garo: `${/^(that|those)$/i.test(mq[2]) ? 'Ua' : 'Ia'} ${mq[1].toLowerCase() === 'what' ? 'maia' : 'sawa'}?`, method: 'demonstrative-question', confidence: 0.7 };
+  }
+  // NV-219 probe (derived): plural / possessive copular `those are dogs`, `these are my books`, `that is my house` -> Dem [poss] noun(-rang);
+  // Garo has no copula (same shape as attested `Ua sawa?`). Singular without possessive stays with tryThatNounConstruction.
+  {
+    const mc = String(input).trim().match(/^(that|this|those|these)\s+(?:is|are)\s+(?:(?:a|an)\s+)?(?:(my|your|his|her|our|their)\s+)?([a-z]+)\s*[.?!]?$/i);
+    if (mc && (mc[2] || /^(those|these)$/i.test(mc[1])) && !isKnownAdjectiveEnglish(mc[3].toLowerCase())) {
+      const plD = /^(those|these)$/i.test(mc[1]);
+      const w = mc[3].toLowerCase(), sing = plD ? singularize(w) : w;
+      let nG = plD ? garoPluralNoun(w) : lookupGaro(w, 'n.');
+      if (nG && !/\[UNKNOWN\]|[,;()/]/.test(nG)) {
+        let np = null;
+        if (mc[2]) {
+          // reuse the verified object-NP machinery: `I see my books` -> `Anga angni ki·taprangko Nika`, keep only the NP
+          const vp = await translate(`I see ${mc[2]} ${w}`);
+          const m2 = String((vp && vp.garo) || '').match(/^Anga (.+?)ko Nika$/i);
+          if (m2 && !/\[UNKNOWN\]/i.test(m2[1])) np = `${m2[1].charAt(0).toLowerCase()}${m2[1].slice(1)}`; else nG = null;
+        }
+        if (nG) return { garo: `${/^(that|those)$/i.test(mc[1]) ? 'Ua' : 'Ia'} ${np || `${nG.charAt(0).toLowerCase()}${nG.slice(1)}`}`, method: 'demonstrative-copular-construction', confidence: 0.75 };
+      }
+    }
+  }
+  // NV-219 probe (derived): `those|these ADJ NOUNs` -> Dem + translated `ADJ NOUN` + rang (`those big dogs` -> ua dal·gipa achakrang)
+  {
+    const mpa = String(input).trim().match(/^(those|these)\s+((?:[a-z]+\s+)+?)([a-z]+)\s*[.?!]?$/i);
+    if (mpa && mpa[2].trim().split(/\s+/).every(a => isKnownAdjectiveEnglish(a.toLowerCase()))) {
+      if (garoPluralNoun(mpa[3].toLowerCase())) {
+        const via = await translate(`I see ${mpa[2].trim()} ${mpa[3]}`);
+        const m3 = String((via && via.garo) || '').match(/^Anga (.+?)ko Nika$/i);
+        if (m3 && !/\[UNKNOWN\]/i.test(m3[1]) && /rang$/i.test(m3[1])) return { garo: `${/^those$/i.test(mpa[1]) ? 'Ua' : 'Ia'} ${m3[1].charAt(0).toLowerCase()}${m3[1].slice(1)}`, method: 'demonstrative-plural-construction', confidence: 0.75 };
+      }
+    }
+  }
   const thosePl = tryThosePluralConstruction(String(input));
   if (thosePl) return { garo: thosePl, method: 'demonstrative-plural-construction', confidence: 0.9 };
   const thatNoun = tryThatNounConstruction(String(input));

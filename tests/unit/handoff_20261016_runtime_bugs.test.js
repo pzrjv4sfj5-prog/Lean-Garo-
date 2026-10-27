@@ -31,7 +31,9 @@ test('R4: bare passthrough carries no [UNKNOWN], flagged unresolved at confidenc
 });
 
 test('R5: stripping a copula/demonstrative lowers confidence and reports what was dropped', async () => {
-  const r = await translate('this is my book');
+  // NV-219 (2026-10-27): `this is my book` now keeps `Ia` (demonstrative-copular-construction); the stripping/reporting contract is checked on a sentence that is still stripped.
+  assert.match((await translate('this is my book')).garo, /^Ia /);
+  const r = await translate('this is for you');
   assert.ok(r.confidence <= 0.5, `confidence ${r.confidence}`);
   assert.ok(r.droppedWords.includes('this') && r.droppedWords.includes('is'));
 });

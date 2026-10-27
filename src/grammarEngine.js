@@ -867,6 +867,8 @@ export function analyzeGrammar(input) {
         if (np && np.rest.length === 1) {
           const nounG = lookupPhrase(np.rest[0]) || lookupGaro(np.rest[0]);
           if (nounG && !/\s/.test(String(nounG))) objGaro = `${np.adj} ${String(nounG).toLowerCase()}`;
+          // NV-219 probe: plural noun after the adjective (`I see big dogs`) used to drop the adjective entirely
+          else if (!nounG) { const plG = garoPluralNoun(np.rest[0]); if (plG) objGaro = `${np.adj} ${plG}`; }
         }
       }
       if (!objGaro && !existingFullPhrase) {

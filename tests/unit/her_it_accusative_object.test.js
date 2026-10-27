@@ -92,7 +92,7 @@ test('regression guard: "her" as a possessive determiner is NOT swept into the a
   assert.doesNotMatch(book.garo, /\buko\b/, 'possessive "her book" must not resolve to accusative uko');
 
   const dog = await translate('this is her dog');
-  assert.match(dog.garo, /\bUni\b/, `expected possessive "Uni", got "${dog.garo}"`);
+  assert.match(dog.garo, /\buni\b/i, `expected possessive "Uni", got "${dog.garo}"`);
 });
 
 test('regression guard: "it" as a demonstrative/stop-word is NOT swept into the accusative-object fix', async () => {
