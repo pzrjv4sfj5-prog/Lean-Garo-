@@ -32,3 +32,9 @@ Authority: Project Owner directive in chat ("go with the audit of D, it's owner 
 
 ## NV-218 (A), 2026-10-26: OCR batch Me..Mau promoted
 Owner: add the new words, no duplicates. Re-checked all 61 staged entries against current master (normalized Garo form, English key, gloss-level overlap, in-batch): 0 Garo dups, 0 English dups; only overlap is Matri "a fit" (seizure, kept, flagged). Melaprua appears as noun+verb rows (same Garo, different POS), both kept. Added 61 rows to master_dictionary.json as UNVERIFIED (pos joined as "n. & adv."), category general, notes carry D's review flags (Me·apa·chagitcham, Matgilsninga, Matri, Melaa, Matdua, Matnanga, Matkalsi likely "stag", Me·mana·song likely Me·mang·song). The 8 held rows (damaged OCR) NOT added; they need page images. Source: data/claude_d/ready_for_a/ocr_batch_me-mau_deduplicated.json (left in place). Gate 948/948, 0 new violations.
+
+## NV-219 (A), 2026-10-26: Re·rama second option for walk
+Project Owner directive (chat): "Re.rama but its a second option". Period read as raka typo per standing rule, so Re·rama. Added as verified_high variant rows for `walk` and `to walk` (master only); Re·mama stays primary, Re·a stays valid synonym. No engine/phrase_maps change. Closes the Re.rama vs Re·mama spelling item. Re·mama/Re·rama paradigm forms still undefined. Provenance: Owner directive, not a Thangseng quote. Test: tests/unit/nv219_rerama.test.js. Gate: dictionary PASSED, repo-intelligence PASSED, unit 952/952.
+
+## Standing rule (Thangseng via relay, 2026-10-27)
+Whenever full sentences are sent to Thangseng for checking, state the intended tense for each sentence (e.g. past / present / future / habitual / continuous).

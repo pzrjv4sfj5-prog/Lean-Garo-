@@ -80448,5 +80448,23 @@
     "classifier": null,
     "notes": "UNVERIFIED — OCR (Gemini) batch Me..Mau, staged by Claude D 2026-10-26, promoted by Claude A NV-218 (Owner: add new words, no duplicates); source page unknown; not native-validated.",
     "confidence": "unverified"
+  },
+  {
+    "english": "walk",
+    "garo": "Re·rama",
+    "pos": "v.",
+    "category": "travel",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-219 (2026-10-26): Project Owner directive (chat): Re.rama (Re·rama; period = raka typo per standing rule) is a SECOND OPTION (valid synonym) for walk; Re·mama stays the shipped primary (NV-214). Provenance: Owner directive, NOT a Thangseng quote.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to walk",
+    "garo": "Re·rama",
+    "pos": "v.",
+    "category": "verbs",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-219 (2026-10-26): Project Owner directive (chat): Re.rama (Re·rama; period = raka typo per standing rule) is a SECOND OPTION (valid synonym) for walk; Re·mama stays the shipped primary (NV-214). Provenance: Owner directive, NOT a Thangseng quote.",
+    "confidence": "verified_high"
   }
 ]
