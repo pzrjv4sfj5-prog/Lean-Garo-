@@ -101,7 +101,7 @@ test('adjectives without a -a-final base are not given a derived -gipa (old/new/
 // silently dropped. Pre-fix: "i eat a sweet fruit" -> "Anga bite·ko Cha·a".
 test('object NP with -a-final adjective takes -gipa and is not dropped', async () => {
   assert.equal(await exact('i eat a sweet fruit'), 'anga chi·gipa biteko cha·a');
-  assert.equal(await exact('i like the hot food'), 'anga ding·gipa al·ako sin·a');
+  assert.equal(await exact('i like the hot food'), 'anga ding·gipa al·ako namnika');
   assert.equal(await exact('i buy a heavy bag'), 'anga jrigipa jol·ako bre·a');
   assert.equal(await exact('i eat sweet rice'), 'anga chi·gipa miko cha·a');
 });

@@ -1348,6 +1348,27 @@ export function tryThatNounConstruction(input) {
   return `${dem(m[1])} ${noun}`;
 }
 
+// NV-219 (Thangseng native, 2026-10-27): plural demonstratives. `Ua achakrang` = those dogs, `Ia achakrang` = these dogs
+// (ua = that/those, ia = this/these; the demonstrative does NOT change, only the noun takes -rang).
+// Plural noun = the SAME regular -rang rule the object slot uses: the English plural must singularize to a different
+// word, no lexicalized plural row may exist, and multi-word Garo rows are left alone.
+export function garoPluralNoun(englishPlural) {
+  const lw = String(englishPlural).toLowerCase();
+  const sing = singularize(lw);
+  if (sing === lw) return null;
+  const singGaro = lookupGaro(sing, 'n.');
+  if (!singGaro || /\[UNKNOWN\]|[\s,;()]/.test(singGaro)) return null;
+  const pluralGaro = lookupGaro(lw, 'n.') || singGaro;
+  if (String(pluralGaro).toLowerCase() !== String(singGaro).toLowerCase()) return null;
+  return `${singGaro.charAt(0).toLowerCase()}${singGaro.slice(1)}rang`;
+}
+export function tryThosePluralConstruction(input) {
+  const m = String(input).trim().match(/^(those|these)\s+([a-z]+)\s*[?.!]?$/i);
+  if (!m || isKnownAdjectiveEnglish(m[2].toLowerCase())) return null;
+  const noun = garoPluralNoun(m[2]);
+  return noun ? `${m[1].toLowerCase() === 'these' ? 'Ia' : 'Ua'} ${noun}` : null;
+}
+
 // NV-201 (2026-10-25, PO ruling "Haiwa = when the object is very far or far
 // away", a ruling NOT a native quote): distal demonstrative. Design: emit
 // Haiwa ONLY when the English states the distance outright (far / very far /

@@ -57,7 +57,7 @@ import { STOP_WORDS, fuzzyMatch, normalizeInput } from './normalizationEngine.js
 // analyzeGrammar, tryWithoutGijaConstruction extracted to
 // src/grammarEngine.js (2026-07-29, BACKLOG-003 Phase 5). Verified zero
 // logic change via byte-identical 237-sentence stress benchmark diff.
-import { analyzeGrammar, tryWithoutGijaConstruction, tryOnlyIdentityConstruction, tryModalCanConstruction, tryMayICanIRequestConstruction, tryThatNounConstruction, tryHaiwaDistalConstruction, tryExistentialThereConstruction, tryPolarQuestionLunchConstruction, tryVeryHotConstruction } from './grammarEngine.js';
+import { analyzeGrammar, tryWithoutGijaConstruction, tryOnlyIdentityConstruction, tryModalCanConstruction, tryMayICanIRequestConstruction, tryThatNounConstruction, tryThosePluralConstruction, garoPluralNoun, tryHaiwaDistalConstruction, tryExistentialThereConstruction, tryPolarQuestionLunchConstruction, tryVeryHotConstruction } from './grammarEngine.js';
 export { analyzeGrammar };
 // assembleSentenceSOV, assembleGrammar, translateIfClause,
 // translateMultiClause extracted to src/sentenceBuilder.js
@@ -288,6 +288,15 @@ export async function translate(input) {
   // for event sentences only. Handled here, not as a data pin, because a pin
   // would leak into sentence composition.
   if (/^\s*today\s*[.!]?\s*$/i.test(String(input))) return { garo: TIME_ADVERB_FORMS.today.base, method: 'time-adverb-base', confidence: 0.98 };
+  // NV-219 (Thangseng native, 2026-10-27): `Anga uko nika.` = I see that. A bare sentence-final `that` object takes the same
+  // `uko` as `it`, so route it through the `it` sentence and keep the result only if it really produced `uko`.
+  {
+    const mt = String(input).trim().match(/^(i|we|you|he|she|they)\s+((?:(?:will|do\s+not|did\s+not|don'?t|didn'?t)\s+)?)([a-z]+)\s+that\s*[.!]?$/i);
+    if (mt && !/^(know|knew|think|thought|say|said|believe|believed|hope|hoped|feel|felt|tell|told|mean|meant|is|was|are|were|am|be|do|did|like)$/i.test(mt[3])) {
+      const viaIt = await translate(String(input).trim().replace(/\bthat(\s*[.!]?)$/i, 'it$1'));
+      if (viaIt && typeof viaIt.garo === 'string' && /\buko\b/i.test(viaIt.garo) && !/\[UNKNOWN\]/.test(viaIt.garo)) return { ...viaIt, method: 'that-object-as-it' };
+    }
+  }
   let result = await translateCore(input);
   // NV-206: with watch, the loanword object `TV` is written `TV` and takes no -ko (attested `Anga TV nienga`).
   if (result && typeof result.garo === 'string' && /\bwatch(?:es|ed|ing)?\b/i.test(String(input)) && /\b(?:tv|television)\b/i.test(String(input))) {
@@ -313,15 +322,17 @@ export async function translate(input) {
   // placed immediately BEFORE the noun; the case marker stays on the noun (`Anga ua achakko nika`, never `uako achak`).
   // The grammar paths used to drop `that` / `this` here, so re-insert it before the noun's translated token.
   if (result && typeof result.garo === 'string' && !/^(demonstrative-that-construction|look-at-that|exact-phrase|correction)$/.test(String(result.method)) && !/^haiwa\b/i.test(result.garo)) {
-    const md = String(input).match(/(?:^|\s)(that|this)\s+([a-z]+)\b/i);
+    const md = String(input).match(/(?:^|\s)(that|this|those|these)\s+([a-z]+)\b/i);
     const NOT_NOUN = /^(is|was|are|were|will|would|can|could|should|may|might|must|do|does|did|has|have|had|be|been|i|you|he|she|we|they|it|one|way|much|many|time|far|not|and|or|but|to|of|in|on|at|for|with|as|if|so)$/i;
     const COMP = /(?:^|\s)(know|knew|think|thought|say|said|believe|believed|hope|hoped|feel|felt|tell|told|mean|means|sure|ensure|so|such)\s+(that)\s/i;
     if (md && !NOT_NOUN.test(md[2]) && !(md[1].toLowerCase() === 'that' && COMP.test(String(input)))) {
       const wN = md[2].toLowerCase();
-      const nG = (isKnownAdjectiveEnglish(wN) || /^(good|bad|far|all|time|way|much|many)$/.test(wN)) ? null : lookupGaro(wN, 'n.');
+      // NV-219: those/these + plural noun -> ua/ia + noun-rang (Thangseng `Ua achakrang`); case -ko stays on the noun
+      const plD = /^(those|these)$/i.test(md[1]);
+      const nG = (isKnownAdjectiveEnglish(wN) || /^(good|bad|far|all|time|way|much|many)$/.test(wN)) ? null : (plD ? garoPluralNoun(wN) : lookupGaro(wN, 'n.'));
       if (nG && !/\[UNKNOWN\]|[\s,;()]/.test(nG)) {
         const base = nG.toLowerCase();
-        const dem = md[1].toLowerCase() === 'that' ? 'ua' : 'ia';
+        const dem = /^(that|those)$/i.test(md[1]) ? 'ua' : 'ia';
         const words = result.garo.split(' ');
         const idx = words.findIndex(w => { const t = w.toLowerCase().replace(/[.!?]$/, ''); return t === base || (t.startsWith(base) && ['ko', 'o', 'ni', 'na'].includes(t.slice(base.length))); });
         // `Ua` right before the noun may be the subject `he/she` (`he sees this house` -> `Ua ia nokko nika`), not an existing demonstrative
@@ -338,12 +349,14 @@ export async function translate(input) {
   // NV-212 (Thangseng 2026-10-25): `Look at that dog.` = `Ua achakko nibo` (that = Ua, noun takes -ko, verb last).
   // Bare `look at that` -> `Uko nibo` (same uko as attested `I see it` = Anga uko nika; confirmed correct by the PO 2026-10-25).
   {
-    const ml = String(input).trim().match(/^look\s+at\s+(that|this)(?:\s+([a-z]+))?\s*[!.]?$/i);
+    const ml = String(input).trim().match(/^look\s+at\s+(that|this|those|these)(?:\s+([a-z]+))?\s*[!.]?$/i);
     if (ml) {
-      const isThat = ml[1].toLowerCase() === 'that';
+      const isThat = /^(that|those)$/i.test(ml[1]);
+      const isPl = /^(those|these)$/i.test(ml[1]);
+      if (isPl && !ml[2]) return result; // bare `those/these` has no evidence yet
       if (!ml[2] && isThat) return { garo: 'Uko nibo', method: 'look-at-that', confidence: 0.8 };
       const wN = (ml[2] || '').toLowerCase();
-      const n = wN && !isKnownAdjectiveEnglish(wN) ? lookupGaro(wN, 'n.') : null;
+      const n = wN && !isKnownAdjectiveEnglish(wN) ? (isPl ? garoPluralNoun(wN) : lookupGaro(wN, 'n.')) : null;
       // NV-215: `this` mirrors `that` (Ia / Ua before the noun, -ko on the noun)
       if (n && !/\[UNKNOWN\]|[\s,;()]/.test(n)) return { garo: `${isThat ? 'Ua' : 'Ia'} ${n.charAt(0).toLowerCase()}${n.slice(1)}ko nibo`, method: 'look-at-that', confidence: 0.85 };
     }
@@ -678,6 +691,8 @@ async function translateCore(input) {
   // NV-201 Haiwa (distance stated outright) is checked first so far-cues never fall through to Ua.
   const haiwa = tryHaiwaDistalConstruction(String(input));
   if (haiwa) return { garo: haiwa, method: 'demonstrative-haiwa-construction', confidence: 0.85 };
+  const thosePl = tryThosePluralConstruction(String(input));
+  if (thosePl) return { garo: thosePl, method: 'demonstrative-plural-construction', confidence: 0.9 };
   const thatNoun = tryThatNounConstruction(String(input));
   if (thatNoun) return { garo: thatNoun, method: 'demonstrative-that-construction', confidence: 0.85 };
 
