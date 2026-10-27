@@ -330,11 +330,16 @@ export async function translate(input) {
       // NV-219: those/these + plural noun -> ua/ia + noun-rang (Thangseng `Ua achakrang`); case -ko stays on the noun
       const plD = /^(those|these)$/i.test(md[1]);
       const nG = (isKnownAdjectiveEnglish(wN) || /^(good|bad|far|all|time|way|much|many)$/.test(wN)) ? null : (plD ? garoPluralNoun(wN) : lookupGaro(wN, 'n.'));
-      if (nG && !/\[UNKNOWN\]|[\s,;()]/.test(nG)) {
+      if (nG && !/\[UNKNOWN\]|[,;()/]/.test(nG)) {
         const base = nG.toLowerCase();
+        const bw = base.split(' ');
         const dem = /^(that|those)$/i.test(md[1]) ? 'ua' : 'ia';
         const words = result.garo.split(' ');
-        const idx = words.findIndex(w => { const t = w.toLowerCase().replace(/[.!?]$/, ''); return t === base || (t.startsWith(base) && ['ko', 'o', 'ni', 'na'].includes(t.slice(base.length))); });
+        const idx = words.findIndex((w, i) => bw.every((b, k) => {
+          const t = String(words[i + k] || '').toLowerCase().replace(/[.!?]$/, '');
+          const last = k === bw.length - 1;
+          return t === b || (last && t.startsWith(b) && ['ko', 'o', 'ni', 'na'].includes(t.slice(b.length)));
+        }));
         // `Ua` right before the noun may be the subject `he/she` (`he sees this house` -> `Ua ia nokko nika`), not an existing demonstrative
         const prevIsSubject = idx === 1 && /^(he|she|it)\b/i.test(String(input).trim());
         if (idx >= 0 && (prevIsSubject || !/^(ua|ia)$/i.test(words[idx - 1] || ''))) {
@@ -358,7 +363,7 @@ export async function translate(input) {
       const wN = (ml[2] || '').toLowerCase();
       const n = wN && !isKnownAdjectiveEnglish(wN) ? (isPl ? garoPluralNoun(wN) : lookupGaro(wN, 'n.')) : null;
       // NV-215: `this` mirrors `that` (Ia / Ua before the noun, -ko on the noun)
-      if (n && !/\[UNKNOWN\]|[\s,;()]/.test(n)) return { garo: `${isThat ? 'Ua' : 'Ia'} ${n.charAt(0).toLowerCase()}${n.slice(1)}ko nibo`, method: 'look-at-that', confidence: 0.85 };
+      if (n && !/\[UNKNOWN\]|[,;()/]/.test(n)) return { garo: `${isThat ? 'Ua' : 'Ia'} ${n.charAt(0).toLowerCase()}${n.slice(1)}ko nibo`, method: 'look-at-that', confidence: 0.85 };
     }
   }
   // NV-204 (2026-10-25, grammar logic, not a native quote): command with the object `it`.

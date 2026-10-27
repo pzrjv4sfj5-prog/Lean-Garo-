@@ -1357,10 +1357,12 @@ export function garoPluralNoun(englishPlural) {
   const sing = singularize(lw);
   if (sing === lw) return null;
   const singGaro = lookupGaro(sing, 'n.');
-  if (!singGaro || /\[UNKNOWN\]|[\s,;()]/.test(singGaro)) return null;
-  const pluralGaro = lookupGaro(lw, 'n.') || singGaro;
-  if (String(pluralGaro).toLowerCase() !== String(singGaro).toLowerCase()) return null;
-  return `${singGaro.charAt(0).toLowerCase()}${singGaro.slice(1)}rang`;
+  if (!singGaro || /\[UNKNOWN\]|[,;()/]/.test(singGaro)) return null;
+  const pluralGaro = String(lookupGaro(lw, 'n.') || singGaro).toLowerCase();
+  const sg = String(singGaro).toLowerCase();
+  // plural row may be absent, equal the singular, or already be singular + rang (fruits -> biterang); anything else is lexicalized
+  if (pluralGaro !== sg && pluralGaro !== `${sg}rang`) return null;
+  return `${singGaro.charAt(0).toLowerCase()}${singGaro.slice(1)}rang`; // multi-word nouns take -rang on the last word (me·a bi·sarang)
 }
 export function tryThosePluralConstruction(input) {
   const m = String(input).trim().match(/^(those|these)\s+([a-z]+)\s*[?.!]?$/i);

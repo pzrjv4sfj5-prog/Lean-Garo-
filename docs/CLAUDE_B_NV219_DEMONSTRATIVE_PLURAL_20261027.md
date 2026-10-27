@@ -46,3 +46,14 @@ This extended two existing output rewrites (NV-215 insertion, NV-212 look-at) an
 7. I will like that house. (future) = Anga ua nokko namnikgen.
 8. I do not like that house. (present, negative) = Anga ua nokko namnikja.
 9. I saw that. (past) = Anga uko nikaha. / I will see that. (future) = Anga uko nikgen.
+
+## Probe pass (2026-10-27, same day): no-drop sweep
+Method: 18 nouns x 4 demonstratives (that/this/those/these) x 4 subjects (I/we/you/they) x 20 verb frames = 5,760 sentences, plus a 330-sentence hand-readable set. Check = no `[UNKNOWN]`, demonstrative present and immediately before the noun, `-rang` on plural nouns, `-ko` on the noun and never on `ua`/`ia`.
+First run: 94.9% (5,464/5,760). Defects found and fixed:
+1. Multi-word Garo nouns (boy = `me·a bi·sa`, girl = `me·chik bi·sa`) lost the demonstrative: insertion/helper now handle multi-word NPs; `-rang` goes on the last word.
+2. Plural nouns with an existing `X-rang` row (fruits = `biterang`) lost the demonstrative: the plural helper now accepts a row equal to singular + `rang`.
+3. `knives` mis-singularized to `knive` and fell into sov-assembly (verb `see` became `nia`): added -ves irregular plurals (knives, wives, wolves, shelves, loaves, thieves).
+4. `took` was `[UNKNOWN]` (288 sentences): added `took` = `ra·aha` (derived from the regular -aha past, same as `will take` = `ra·gen`; NOT native).
+Final: 5,760/5,760 pass on that structural check.
+**What this proves:** no dropped demonstrative/noun/subject, no `[UNKNOWN]`, consistent placement. **It does not prove the Garo is native-correct:** only the four Thangseng sentences are native; all other tense/verb/noun combinations are rule output. Irregular lexicalized plurals (children, men, women) were checked only for presence of ua/ia + plural, not for correctness of the plural word.
+Gate after the probe fixes: `npm run build` exit 0, unit 981/981, rule conformance 78/112 with 0 new mismatches, runtime-error-sweep 16089 calls / 0 errors. `irregular_verbs.json` count pin 56 -> 57 in translationEngine.test.js.

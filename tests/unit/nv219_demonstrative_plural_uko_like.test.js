@@ -26,3 +26,11 @@ test('NV-219: singular + complementizer `that` are untouched', async () => {
 test('NV-219: demonstrative stays ua/ia in the plural, -rang on the noun, -ko never on the demonstrative', async () => {
   for (const en of ['I see those dogs', 'I see these dogs', 'Look at those dogs']) assert.ok(!/\b(ua|ia)ko\b/i.test((await translate(en)).garo), en);
 });
+// Probe-driven regressions (2026-10-27): multi-word Garo nouns, lexicalized `-rang` plural rows, -ves plurals, irregular past `took`.
+for (const [en, garo] of [
+  ['that boy', 'ua me·a bi·sa'], ['those boys', 'ua me·a bi·sarang'], ['I see those boys.', 'anga ua me·a bi·sarangko nika'],
+  ['I see that boy.', 'anga ua me·a bi·sako nika'], ['I see this girl.', 'anga ia me·chik bi·sako nika'], ['Look at that boy.', 'ua me·a bi·sako nibo'],
+  ['those fruits', 'ua biterang'], ['I see these fruits.', 'anga ia biterangko nika'],
+  ['those knives', 'ua kettalrang'], ['I like those knives.', 'anga ua kettalrangko namnika'],
+  ['I took that dog.', 'anga ua achakko ra·aha'], ['I took those dogs.', 'anga ua achakrangko ra·aha'],
+]) test(`NV-219 probe: ${en}`, async () => assert.equal(await lc(en), garo));

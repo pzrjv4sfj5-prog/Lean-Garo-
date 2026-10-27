@@ -488,6 +488,8 @@ const IRREGULAR_PLURALS = {
   'women': 'woman', 'mice': 'mouse', 'feet': 'foot',
   'teeth': 'tooth', 'geese': 'goose', 'oxen': 'ox',
   'sheep': 'sheep', 'fish': 'fish', 'deer': 'deer',
+  // NV-219 probe (2026-10-27): regular English -f/-fe -> -ves plurals the generic rules mis-singularize ('knives' -> 'knive')
+  'knives': 'knife', 'wives': 'wife', 'wolves': 'wolf', 'shelves': 'shelf', 'loaves': 'loaf', 'thieves': 'thief',
   // Houses bug fix (2026-09-18, Claude B): the regular /(?:[sxz]|ch|sh)es$/
   // rule below exists for words like "bus"/"box"/"church" whose singular
   // itself ends in a sibilant, so the plural adds a full "-es" syllable.

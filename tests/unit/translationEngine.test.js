@@ -250,7 +250,7 @@ for (const c of REGRESSION_CASES) {
 // Protects against accidental corruption of the JSON file specifically. ---
 test('irregular_verbs.json data integrity (BACKLOG-002)', async () => {
   const { default: irregularVerbs } = await import('../../src/data/irregular_verbs.json', { with: { type: 'json' } });
-  assert.equal(Object.keys(irregularVerbs).length, 56, 'entry count (NV-205 2026-10-25: + found/watched/watching): 49 from the original extraction + "has" added 2026-07-13 (suppletive form of "have", same confirmed value "donga") + "smiled" added 2026-08-06 (Ka·dingsmitaha, confirmed same date as the Ka·dingsmita "smile" root)');
+  assert.equal(Object.keys(irregularVerbs).length, 57, 'entry count (NV-219 2026-10-27: + took = ra·aha, derived; NV-205 2026-10-25: + found/watched/watching): 49 from the original extraction + "has" added 2026-07-13 (suppletive form of "have", same confirmed value "donga") + "smiled" added 2026-08-06 (Ka·dingsmitaha, confirmed same date as the Ka·dingsmita "smile" root)');
   assert.equal(irregularVerbs['went'], 're·anga');
   assert.equal(irregularVerbs['ate'], 'cha·aha');
   assert.equal(irregularVerbs['eaten'], 'cha·jok', 'corrected 2026-08-23 (NV-095, Thangseng final reconciliation relay) from cha·manaha');
