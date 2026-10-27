@@ -42,7 +42,7 @@ claims:
     confidence: low
     status_note: "Thangseng was asked for the full list 2026-07-21; 2026-08-01 relay answered rong (roundish objects, incl. alcohol) but did not confirm the list is now complete - still awaiting full confirmation"
 examples:
-  - "achak mangsa=\"one dog\", achak manggni=\"two dogs\" (mang takes NO raka, NV-217/NV-219 Owner directive 2026-10-26/27)"
+  - "achak mangsa=\"one dog\", achak manggni=\"two dogs\" (mang takes NO raka, NV-217/NV-220 Owner directive 2026-10-26/27)"
   - "do·o manggni=\"two chicken\" (do·o=\"chicken\", NOT a number or generic animal word — see RC-CANDIDATE-022/NV-025 for the corruption this caused when the noun was dropped)"
   - "na·tok manggittam=\"three fish\""
   - "manderang saksa=\"one person\", skigipa sakgni=\"two teachers\" (sak takes NO raka dot before the number suffix — corrected 2026-09-03, see NV-124; RE-CONFIRMED 2026-09-28/29 direct Project Owner statement in chat, no change to data or code needed, engine already shipped this correctly. Note: sak and rong are the no-dot outliers here -- mang/king/gong/ge/te ALL take the dot)"
@@ -172,4 +172,4 @@ last_updated: "2026-09-29"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-038"
 
-# NV-219 (2026-10-27): mang is DOT-FREE at every n (classifier tokens, n<20 and 20-99 compounds, bare "animals" row). Supersedes the 2026-09-28/29 re-dot above. Lexical words that merely contain "mang" (mang·kal·a, mi·mang·sa, Me·mang...) are different morphemes and are untouched.
+# NV-220 (2026-10-27): mang is DOT-FREE at every n (classifier tokens, n<20 and 20-99 compounds, bare "animals" row). Supersedes the 2026-09-28/29 re-dot above. Lexical words that merely contain "mang" (mang·kal·a, mi·mang·sa, Me·mang...) are different morphemes and are untouched.
