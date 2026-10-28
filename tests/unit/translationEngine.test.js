@@ -131,7 +131,7 @@ const REGRESSION_CASES = [
   // --- RC-CANDIDATE-002/003/006 fixes (2026-07-10, Claude A approved directives) ---
   // RC-002: stative-locative "in/on/at" now maps to ·o instead of the
   // default object marker ·ko in the SOV grammar-assembly fallback.
-  { in: 'I am lying in bed', expectGaro: 'Anga palang·o', expectMethod: ['grammar-assembly'] },
+  { in: 'I am lying in bed', expectGaro: 'Anga palango tue dongenga', expectMethod: ['exact-phrase'] }, // NV-221 native form now in master (was grammar-assembly placeholder)
   { in: 'I put the book on the table', expectGaro: 'Anga te·bil·o ron·a', expectMethod: ['grammar-assembly'] },
   // RC-003: "down" excluded from the verb-search loop so it no longer
   // collides with "lying down" (was producing invalid "Anga Ka·ma" as if
@@ -139,7 +139,7 @@ const REGRESSION_CASES = [
   // "lying" yet (that needs native validation, tracked NV-007) - this
   // only guards against the confirmed-invalid output, per Claude A's
   // explicit "graceful gap over invalid Garo" directive.
-  { in: 'I am lying down', expectGaro: 'Anga ka·mako', expectMethod: ['grammar-assembly'] },
+  { in: 'I am lying down', expectGaro: 'Anga tue dongenga', expectMethod: ['exact-phrase'] }, // NV-221 native form closes NV-007 placeholder
   // RC-006: purpose_map.json 'search' fixed from the retired
   // am·e·nik·na contamination to Sandi·na (regular -na on the confirmed
   // Sandia/RULE-032 stem).

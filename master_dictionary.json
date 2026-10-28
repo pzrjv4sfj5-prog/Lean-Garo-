@@ -7309,7 +7309,8 @@
     "english": "i don't want",
     "garo": "Anga nang·ja",
     "category": "general",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — NV-221 (2026-10-27, Claude A): nang·ja means 'don't need' (nanga=need); Thangseng's response document (item 8/9/26) gives sikja for 'don't want'. Retained per citation discipline, not deleted."
   },
   {
     "english": "i don't have",
@@ -80424,6 +80425,357 @@
     "category": "verbs",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH — NV-219 (2026-10-26): Project Owner directive (chat): Re.rama (Re·rama; period = raka typo per standing rule) is a SECOND OPTION (valid synonym) for walk; Re·mama stays the shipped primary (NV-214). Provenance: Owner directive, NOT a Thangseng quote.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the book is below the table",
+    "garo": "Ki·tap tableni ka·mao ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 5.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the book is inside the box",
+    "garo": "Ki·tap bakosni ning·ao ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 5.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the book is outside the house",
+    "garo": "Ki·tap nokni a·palo ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 5.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the book is above the shelf",
+    "garo": "Ki·tap shelfni kosako ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 5.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the book is behind the door",
+    "garo": "Ki·tap cholgugani janggilo ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 5. Native offers paksao (lit. 'other side') as an alternative that better captures 'behind the door'; spelling janggilo kept exactly as written (no apostrophe in source).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the book is behind the door",
+    "garo": "Ki·tap cholgugani paksao ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 5. Native-offered alternative to janggilo, said to capture 'behind the door' better.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the book is beside the window",
+    "garo": "Ki·tap kelkini sambao ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 5.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the book is up on the roof",
+    "garo": "Ki·tap nokkingni kosako ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 5.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the book is up on the roof",
+    "garo": "Ki·tap nokking kosako ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 5. Native: 'or simply nokking'.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "let us go over the bridge",
+    "garo": "Hai dollongni nalsachi re·na",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 5.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the boat is going across the river",
+    "garo": "Ring chibimani nalsachi re·angenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 5.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the book is under the blanket",
+    "garo": "Ki·tap kombolni ning·ao ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 6. Native: ning·ao ('inside') is the better word for being covered under something; nokkimao is the word for under a table.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the book is under the blanket",
+    "garo": "Ki·tap kombolni mitapo ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 6. Native-offered alternative mitapo.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the rock is under the water",
+    "garo": "Ro·ong chini ning·ao ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 7. Native: ning·ao (lit. inside) chosen over nokkimao because nokkimao better fits under-something-solid.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i don't want to watch tv",
+    "garo": "Anga TV nina sikja",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 8. Native wrote Anga(de): -de optional topic marker.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i don't need to watch tv",
+    "garo": "Angade TV nina nangja",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 9. ska = want (neg. sikja); nanga = need (neg. nangja). Distinct verbs.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "want to speak",
+    "garo": "Aganna ska",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 10. No raka: the verbs in their original form have none.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "does not want",
+    "garo": "sikja",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 26. ska is irregular and conjugates like sika: sikja / sikbo / siknabe / sikgen / sikjawa.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "will want",
+    "garo": "sikgen",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 26. Irregular ska paradigm (follows sika).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "will not want",
+    "garo": "sikjawa",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 26. Irregular ska paradigm (follows sika).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "nangja (don't need)",
+    "garo": "nangja",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 25. Same word as nanga (need) with negative suffix.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i am lying down",
+    "garo": "Anga tue dongenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 14.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i am lying in bed",
+    "garo": "Anga palango tue dongenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 15.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i was lying down",
+    "garo": "Anga tue dongengachim",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 16.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i am not lying down",
+    "garo": "Anga tue dongjaenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 17.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "tv (archaic native word, not in use today)",
+    "garo": "bairong",
+    "category": "vocabulary",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 22. Use is forgotten today; loanword TV remains the working form.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "phone (archaic native word, not in use)",
+    "garo": "ku·bilbat",
+    "category": "vocabulary",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 24. Not in use. No Garo word exists for internet or status (items 23-24).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "cannot bear / cannot tolerate",
+    "garo": "ka·a chakna amja",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 27.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the picture is hung on the wall",
+    "garo": "Noksako pakmao sitea",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 32.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the key is hidden",
+    "garo": "Chabiko donnuaha",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 33. Native also gave Chabi donnugimin ong·a literally but said not to go with it.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the cup is broken",
+    "garo": "Cup be·aha",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 34.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "is not (absent, not present)",
+    "garo": "dongja",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 35. dongja speaks about presence; ong·ja speaks about being.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "did you eat (yesterday)?",
+    "garo": "Na·a cha·ama?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 36. Simple past interrogative: -ma suffix; -hama also possible, context decides.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "did you eat (the cake i kept for myself)?",
+    "garo": "Na·a cha·ahama?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 36. Present-perfect sense favours -hama.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "do you want the book?",
+    "garo": "Na·a ki·tapko nangnikama?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 38.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "want (alternate verb)",
+    "garo": "nangnika",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 38. Another word for want.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the mouth is burning (from chilli)",
+    "garo": "Ku·sik jroenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 40. jroa has no raka; it names the sensation, not the heat itself.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to wait expectantly",
+    "garo": "nisona",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 13. Also means to look with expectation; cannot substitute for nina (to watch).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i don't want",
+    "garo": "Anga sikja",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 8, 26. Composed: Anga + native sikja (does not want); not a verbatim native quote.",
     "confidence": "verified_high"
   }
 ]
