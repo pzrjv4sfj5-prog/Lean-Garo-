@@ -51793,7 +51793,7 @@
     "pos": null,
     "category": "health",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/200sentences",
+    "notes": "variant/VERIFIED/HIGH/200sentences NV-223 (2026-10-28, Claude A): stays valid; primary is sakamenga (native root Sakama, NV-080, plus self-inflecting stative -enga).",
     "confidence": "verified_high"
   },
   {
@@ -80790,11 +80790,11 @@
   },
   {
     "english": "i am not going to the market",
-    "garo": "Anga antichi re·angjaenga",
+    "garo": "Anga bajalchi re·angjaenga",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-222 (2026-10-28, Claude A): Thangseng written response document (Reponse_to_Questions.pdf, items 1-3), original native answer; Project Owner T ruling 2026-10-28: native text stands (apostrophes read as raka). Destination does not change the verb form (mood and tense do).",
+    "notes": "VERIFIED/HIGH — NV-222 (2026-10-28, Claude A): Thangseng written response document (Reponse_to_Questions.pdf, items 1-3), original native answer; Project Owner T ruling 2026-10-28: native text stands (apostrophes read as raka). Destination does not change the verb form (mood and tense do). NV-223 (2026-10-28, Claude A): native wrote 'antichi' here, but Project Owner decision CLOSED 2026-09-21 keeps Anti = week and Bajal = market as fully separate senses, so the dictionary form uses bajalchi; verb form (-jaenga / -jaha) is exactly as native-written.",
     "confidence": "verified_high"
   },
   {
@@ -80808,11 +80808,20 @@
   },
   {
     "english": "he did not go to the market",
-    "garo": "Ua antichi re·angjaha",
+    "garo": "Ua bajalchi re·angjaha",
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-222 (2026-10-28, Claude A): Thangseng written response document (Reponse_to_Questions.pdf, items 1-3), original native answer; Project Owner T ruling 2026-10-28: native text stands (apostrophes read as raka). Destination does not change the verb form.",
+    "notes": "VERIFIED/HIGH — NV-222 (2026-10-28, Claude A): Thangseng written response document (Reponse_to_Questions.pdf, items 1-3), original native answer; Project Owner T ruling 2026-10-28: native text stands (apostrophes read as raka). Destination does not change the verb form. NV-223 (2026-10-28, Claude A): native wrote 'antichi' here, but Project Owner decision CLOSED 2026-09-21 keeps Anti = week and Bajal = market as fully separate senses, so the dictionary form uses bajalchi; verb form (-jaenga / -jaha) is exactly as native-written.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i am sick",
+    "garo": "Anga sakamenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH (by composition) — NV-223 (2026-10-28, Claude A): native-verified root Sakama (NV-080) + progressive -enga, the self-inflecting stative strategy (b) in the predicative-strategies rule; already shipped via corrections.json. Aligns master with the shipped form.",
     "confidence": "verified_high"
   }
 ]

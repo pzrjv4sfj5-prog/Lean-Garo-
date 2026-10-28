@@ -162,8 +162,10 @@ corrections:
     note: >-
       NV-222: claim 2 closed in favour of the native text. "I am not
       going" = Anga re'angjaenga (continuous -enga after -ja) replaces
-      the correction "Anga re'ang'ja"; "I am not going to the market" =
-      Anga antichi re'angjaenga; "He did not go" = Ua re'angjaha.
+      the correction "Anga re'ang'ja"; "He did not go" = Ua re'angjaha.
+      The two market sentences are stored with bajalchi (not the
+      native-written antichi) per the closed Anti = week / Bajal =
+      market decision (NV-223); the verb forms are unchanged.
 last_updated: "2026-10-28"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-030"
