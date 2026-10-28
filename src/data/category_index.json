@@ -2597,7 +2597,7 @@
   "dead": "general",
   "dead body": "health",
   "devil": "church",
-  "die": "health",
+  "die": "verbs",
   "die down": "health",
   "dinner": "food",
   "dirty with earth": "phrases",
@@ -4255,5 +4255,7 @@
   "i am not going": "phrases",
   "i am not going to the market": "phrases",
   "he did not go": "phrases",
-  "he did not go to the market": "phrases"
+  "he did not go to the market": "phrases",
+  "to die": "verbs",
+  "do you want to die?": "phrases"
 }

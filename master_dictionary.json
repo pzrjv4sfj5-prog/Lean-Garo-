@@ -28823,8 +28823,8 @@
     "pos": null,
     "category": "health",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-224 (2026-10-28, Claude A): raka typo; the verb is 'sia' with no raka (Project Owner statement). Retained per citation discipline, not deleted. Other 'si·a' headwords (dark of moon, settle legal case) are different senses and untouched.",
+    "confidence": "superseded"
   },
   {
     "english": "die down",
@@ -80822,6 +80822,33 @@
     "pos": null,
     "classifier": null,
     "notes": "VERIFIED/HIGH (by composition) — NV-223 (2026-10-28, Claude A): native-verified root Sakama (NV-080) + progressive -enga, the self-inflecting stative strategy (b) in the predicative-strategies rule; already shipped via corrections.json. Aligns master with the shipped form.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "die",
+    "garo": "sia",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-224 (2026-10-28, Claude A): Project Owner T direct statement (chat, 2026-10-28), given as native-language knowledge. Verb root; no raka.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to die",
+    "garo": "sina",
+    "category": "verbs",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-224 (2026-10-28, Claude A): Project Owner T direct statement (chat, 2026-10-28), given as native-language knowledge. sia + infinitive -na (same -na as cha·na, re·angna); 'sina' is the infinitive, equivalent to English 'to die'.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "do you want to die?",
+    "garo": "Sina skengama?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-224 (2026-10-28, Claude A): Project Owner T direct statement (chat, 2026-10-28), given as native-language knowledge. Infinitive + skenga (confirmed present of 'want', NV-021/NV-155) + question -ma; example given with the derivation.",
     "confidence": "verified_high"
   }
 ]
