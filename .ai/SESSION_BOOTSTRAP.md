@@ -13,7 +13,7 @@ Before starting work, agents should read the role-specific live audit handoff:
 
 These are task inputs derived from the live-main re-audit. They do not override Project Owner directives or the role governance documents; they identify current findings and execution dependencies.
 
-_Read this first, before `.ai/WORKSTATE.yaml`. Latest Claude A close: 2026-10-27, docs/CLAUDE_A_SESSION_MIGRATION_20261027.md (NV-219 Re·rama, NV-220 mang raka) — READ IT FIRST. Previous Claude A close: 2026-10-26, docs/CLAUDE_A_SESSION_MIGRATION_20261026.md (NV-209/210/211 closure) — READ IT FIRST. Previous update line: 2026-09-29 by
+_Read this first, before `.ai/WORKSTATE.yaml`. Latest Claude A close: 2026-10-28, docs/CLAUDE_A_SESSION_MIGRATION_20261028.md (NV-221 to NV-224, RULE-055 ska paradigm, raka sweep) — READ IT FIRST. Previous Claude A close: 2026-10-27, docs/CLAUDE_A_SESSION_MIGRATION_20261027.md (NV-219 Re·rama, NV-220 mang raka). Earlier Claude A close: 2026-10-26, docs/CLAUDE_A_SESSION_MIGRATION_20261026.md (NV-209/210/211 closure) — READ IT FIRST. Previous update line: 2026-09-29 by
 _Latest Claude B close: 2026-10-26, docs/CLAUDE_B_SESSION_MIGRATION_20261026.md (NV-202..215: watch/see/find/go/come/Re·ata paradigms, Uachi/Iachi, uamangna/uamangchi, demonstrative+noun; AI-004 logged) — read it after Claude A's._
 Claude B (donga/ong·a convergent merge + AI-003 fix + fuzzyMatch perf fix).
 Full migration doc: docs/CLAUDE_B_SESSION_MIGRATION_20260929.md — READ IT

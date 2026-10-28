@@ -1,0 +1,57 @@
+id: RULE-055
+title: "Irregular want (ska): negative, imperative and future forms follow sika; progressive is regular skenga"
+description: >-
+  ska (want, wish) is irregular. Its negative, imperative and future forms
+  are built on the stem sik- exactly like sika (push, insert): sikja (does
+  not want), sikbo (want!), siknabe (do not want!), sikgen (will want),
+  sikjawa (will not want). The present progressive that expresses "I want
+  X" is regular skenga (not sikenga), and a question adds -ma (skengama).
+  ska (want) is a different verb from nanga (need, negative nangja).
+dependencies: []
+claims:
+  - scope: "ska conjugates like sika in the negative/imperative/future: sikja, sikbo, siknabe, sikgen, sikjawa"
+    status: verified
+    confidence: high
+    status_note: >-
+      NV-221 (2026-10-27): Thangseng's written response document, item 26
+      (uploaded by Project Owner). sika (push, insert) gives the same
+      surface forms (sikja, sikbo, siknabe, sikjawa, sikgen), so the two
+      verbs are homographs in these tenses and context disambiguates.
+  - scope: "present 'want' = skenga, question = skengama; sikenga is the stale form"
+    status: verified
+    confidence: high
+    status_note: >-
+      NV-021 and NV-155 (Thangseng, direct WhatsApp) give Anga bi·na
+      skenga etc.; the stale sikenga rows were superseded 2026-08-26.
+      Project Owner example (NV-224, 2026-10-28): Sina skengama? = Do you
+      want to die?
+  - scope: "ska (want) vs nanga (need): don't want = sikja, don't need = nangja"
+    status: verified
+    confidence: high
+    status_note: "NV-221, items 8, 9, 25, 26. Corrected the old pin i don't want = Anga nang·ja (that string means don't need)."
+  - scope: "past tense of ska, and ska forms in other moods not listed above"
+    status: unknown
+    confidence: n/a
+    status_note: "Not stated by the native; not generated."
+paradigm:
+  - "ska = want; sikja = does not want; sikbo = want! (imperative); siknabe = do not want! (imperative); sikgen = will want; sikjawa = will not want"
+  - "sika = push, insert; sikja = does not push; sikbo = push!; siknabe = do not push!; sikjawa = will not push; sikgen = will push"
+  - "Anga TV nina sikja = I don't want to watch TV (NV-221 item 8)"
+  - "Sina skengama? = Do you want to die? (NV-224)"
+counterexamples:
+  note: "none identified."
+  items: []
+launch_priority:
+  - scope: "engine builds ska forms by composition"
+    tier: P2
+    note: >-
+      Runtime still composes 'skja' for don't want outside the i-don't-want
+      pin, and builds Do you want to eat/go? as '... skama?' where the
+      confirmed progressive gives '... skengama?'. A ska paradigm in
+      verb_paradigms.json / grammarEngine.js is the fix. Claude A did not
+      touch engine code. See docs/CLAUDE_A_NV221_THANGSENG_RESPONSE_20261027.md
+      and docs/CLAUDE_A_NV224_SIA_SINA_20261028.md.
+native_notes: "NV-221 (Thangseng written response, item 26) plus NV-021/NV-155 and Project Owner NV-224."
+last_updated: "2026-10-28"
+updated_by: "Claude A"
+source_ref: "docs/CLAUDE_A_NV221_THANGSENG_RESPONSE_20261027.md"
