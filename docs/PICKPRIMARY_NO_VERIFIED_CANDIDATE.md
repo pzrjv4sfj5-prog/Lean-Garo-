@@ -3350,7 +3350,6 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `red car`: candidates — `bilak mot` (weak/OCR) — shipped: `bilak mot`
 - `red flower`: candidates — `bilak se` (weak/OCR) — shipped: `bilak se`
 - `red hot.`: candidates — `Anggia` (weak/OCR) — shipped: `Anggia`
-- `red house`: candidates — `bilak rang` (weak/OCR) — shipped: `bilak rang`
 - `red pants`: candidates — `bilak ja` (weak/OCR) — shipped: `bilak ja`
 - `red shirt`: candidates — `bilak gamcha` (weak/OCR) — shipped: `bilak gamcha`
 - `red sky`: candidates — `bilak seng` (weak/OCR) — shipped: `bilak seng`

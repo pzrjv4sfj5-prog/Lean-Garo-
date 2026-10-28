@@ -74,3 +74,25 @@ Invariance probe (strip `ua`/`ia` from the output = the same sentence without a 
 3. Prepositions `with` / `from` are dropped (`with those dogs`, `from this house`, `I eat with these dogs`).
 4. `this is for you` drops `this` and `for` (reported via droppedWords, confidence 0.5). `Are those your dogs?` drops `those` and the plural. `who are they` = `Sawa uamang`.
 5. `like` now maps to `namnika` in every sense; non-verb `like` (`like a dog`) is unverified.
+
+## Third pass (2026-10-27, "fix all") — status of the earlier "Known remaining defects"
+1. `red house = bilak rang`: row retired in master_dictionary.json (confidence superseded, note kept per citation discipline). `red house` now composes (`gitchak nok`); `I see that red house.` = `Anga ua gitchak nokko nika`. (Claude A: please review; row was Claude A's lane.)
+2. Plural noun after to/in/at (`I go to those houses.` = `Anga ua nokrangchi re·a`) and adjective + noun after to/in/at (`to a big house` used to be `dal·a·chi nokko re·a`; now `Anga dal·gipa nok·chi re·a`): fixed via `prep-phrase-rewrite` (verified singular locative token + `-rang`; adjective phrase from the object path).
+3. `from` / `with`: `I come from that house.` = `Anga ua nokoni Re·ba·a` (-oni: master `from = ·oni`, verified `banoniko`); `I eat with that dog.` = `Anga ua achakming Cha·a` (-ming: verified pronoun forms `Ang·ming`, `Nang·ming`). **DERIVED, raka dots omitted, results carry `derived: true`, confidence <= 0.6.** Pronoun objects (`with him/me/you`) untouched.
+4. `this is for you/me/them` = `Ia nang·na` / `Ia ang·na` / `Ia uamangna` (`ang·na` verified `Ang·na chi on·bo`; `nang·na` master unverified row); `Is that your dog?` / `Are those your dogs?` keep the demonstrative and `?` (no copular question particle is evidenced, so none is invented); adjective predicates `that is big` = `Ua dal·a`, `this is very good` = `Ia namen nama`; `this is mine/yours/his` = `Ia angni` / `Ua nang·ni` / `Ua uni`.
+Updated stale tests: R5 (copula-stripping contract now checked on `that is all`), NV-214 `this is for them` (`ia uamangna`), irregular_verbs pin 57, `sin·a` -> `namnika` in adjective_position_rule006.
+Gate: `npm run build` exit 0, unit 1033/1033, conformance 78/112 with 0 new mismatches, sweep 16,087 calls / 0 errors, strict probe 5,760/5,760, invariance probe 2,000/2,000.
+
+## Still open (needs Thangseng or Claude A; deliberately NOT invented)
+- Raka dots and exact forms of derived `-oni`, `-ming`, plural + locative (`nokrangchi`), `Ia angni` possessive-pronoun copulars.
+- Copular question particle (`Is that your dog?` has no marker beyond `?`).
+- Superlatives (`this is the best` -> `[UNKNOWN]`), `who are they` = `Sawa uamang`, `those = Uamang` / `these = Iamang` master rows (unverified; Wiktionary suggests `uarang` / `iarang`).
+- Non-verb `like` (`like a dog`) now goes through `namnika`.
+- Not run: 324-probe snapshot, browser/UI check.
+
+## Add to the Thangseng list (state the tense!)
+10. I come from that house. (present) = Anga ua nokoni re·ba·a.
+11. I eat with that dog. (present) = Anga ua achakming cha·a.
+12. I go to those houses. (present) = Anga ua nokrangchi re·a.
+13. This is for you. (present, copular, no verb) = Ia nang·na.
+14. Is that your dog? (present, question) = Ua nang·ni achak?

@@ -12690,7 +12690,8 @@
     "english": "red house",
     "garo": "bilak rang",
     "category": "home",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — 2026-10-27 (Claude B, NV-219 probe): legacy unannotated import; `bilak rang` drops the noun `house` (rang = colour) and blocked demonstrative insertion in every sentence containing `red house`. Adjective + noun is composed by the engine (RULE-006). Not authoritative for compile; retained per citation discipline.",
+    "confidence": "superseded"
   },
   {
     "english": "red car",

@@ -302,6 +302,56 @@ export async function translate(input) {
       }
     }
   }
+  // NV-219 probe (DERIVED, unverified suffixes; confidence capped 0.6): prepositional phrases the grammar path silently mangles.
+  // Plural noun after to/in/at (`I go to those houses`), adjective + noun after to/in/at (`to a big house` used to give `dal·a·chi nokko`),
+  // and from / with (`I come from that house`, `I eat with that dog`) are rebuilt from verified pieces by swapping only the noun's case suffix:
+  // to = -chi, in/at = -o (existing singular forms; + -rang for plurals), from = -oni (master `from = ·oni`; verified `banoniko`),
+  // with = -ming (verified pronoun forms `Ang·ming`, `Nang·ming`). Raka dots are omitted on the derived suffixes.
+  {
+    const mp = String(input).trim().match(/^(.*?\b)(to|into|in|at|from|with)\s+((?:(?:that|this|those|these|the|a|an)\s+)?(?:[a-z]+\s+){0,2}?)([a-z]+)\s*([.!?]?)$/i);
+    if (mp && mp[1].trim() && !/^(him|her|them|me|us|you|it|here|there|home|school)$/i.test(mp[4]) && !isKnownAdjectiveEnglish(mp[4].toLowerCase())) {
+      const prep = mp[2].toLowerCase(), noun = mp[4].toLowerCase();
+      const sing = singularize(noun), isPl = sing !== noun && !!garoPluralNoun(noun);
+      const detMatch = mp[3].match(/^(that|this|those|these|the|a|an)\b/i);
+      const adjMid = mp[3].replace(/^(that|this|those|these|the|a|an)\s*/i, '').trim();
+      const locP = /^(to|into|in|at)$/.test(prep);
+      const needs = !locP || isPl || !!adjMid;
+      const sg = String(lookupGaro(isPl ? sing : noun, 'n.') || '');
+      if (needs && sg && !/\[UNKNOWN\]|[,;()/]/.test(sg) && (adjMid ? adjMid.split(/\s+/).every(a => isKnownAdjectiveEnglish(a.toLowerCase())) : true)) {
+        const det = detMatch ? ({ those: 'that', these: 'this' }[detMatch[1].toLowerCase()] || detMatch[1].toLowerCase()) : (isPl ? 'the' : '');
+        const nounEn = isPl ? sing : noun, pre = mp[1].trim(), endP = mp[5] || '';
+        const lastRaw = sg.toLowerCase().split(' ').pop();
+        const lastRe = lastRaw.replace(/[.·]/g, m => '\\' + m);
+        const SUF = { to: 'chi', into: 'chi', in: 'o', at: 'o', from: 'oni', with: 'ming' };
+        const findTok = (garo, re) => { const w = String(garo || '').split(' '); return { w, i: w.findIndex(t => re.test(t.replace(/[.!?]$/, ''))) }; };
+        let out = null, base = null;
+        if (!locP) {
+          // from / with: bare-object probe (the noun carries -ko), -ko swapped for the derived suffix
+          const probe = `${pre} ${det ? det + ' ' : ''}${adjMid ? adjMid + ' ' : ''}${nounEn}${endP}`.replace(/\s+/g, ' ');
+          base = await translate(probe);
+          const f = findTok(base.garo, new RegExp(`^${lastRe}ko$`, 'i'));
+          if (f.i >= 0 && !/\[UNKNOWN\]/.test(f.w.join(' '))) { f.w[f.i] = `${lastRaw}${isPl ? 'rang' : ''}${SUF[prep]}`; out = f.w.join(' '); }
+        } else {
+          // to/in/at: verified singular locative sentence (keeps the verb, incl. `am`), then -rang and/or the adjective phrase taken from the object path
+          base = await translate(`${pre} ${prep} ${det || 'the'} ${nounEn}${endP}`);
+          const f = findTok(base.garo, new RegExp(`^${lastRe}(·?(?:chi|o))$`, 'i'));
+          if (f.i >= 0 && !/\[UNKNOWN\]/.test(f.w.join(' '))) {
+            const t0 = f.w[f.i].replace(/[.!?]$/, '');
+            let tok = isPl ? `${lastRaw}rang${t0.slice(lastRaw.length).replace(/^·/, '')}` : t0;
+            if (adjMid) {
+              const ap = await translate(`I see ${det ? det + ' ' : ''}${adjMid} ${nounEn}.`);
+              const aw = String((ap && ap.garo) || '').split(' ');
+              const ni = aw.findIndex(t => new RegExp(`^${lastRe}ko$`, 'i').test(t));
+              const adjToks = ni > 1 ? aw.slice(1, ni).filter(t => !/^(ua|ia)$/i.test(t)) : [];
+              if (!adjToks.length || /\[UNKNOWN\]/.test(aw.join(' '))) tok = null; else tok = `${adjToks.join(' ').toLowerCase()} ${tok}`;
+            }
+            if (tok) { f.w[f.i] = tok; out = f.w.join(' '); }
+          }
+        }
+        if (out) return { ...base, garo: out, method: 'prep-phrase-rewrite', confidence: Math.min(base.confidence || 0.6, 0.6), derived: true };
+      }
+    }
+  }
   let result = await translateCore(input);
   // NV-206: with watch, the loanword object `TV` is written `TV` and takes no -ko (attested `Anga TV nienga`).
   if (result && typeof result.garo === 'string' && /\bwatch(?:es|ed|ing)?\b/i.test(String(input)) && /\b(?:tv|television)\b/i.test(String(input))) {
@@ -715,6 +765,40 @@ async function translateCore(input) {
   {
     const mq = String(input).trim().match(/^(what|who)\s+(?:is|are)\s+(that|this|those|these)\s*\??$/i);
     if (mq) return { garo: `${/^(that|those)$/i.test(mq[2]) ? 'Ua' : 'Ia'} ${mq[1].toLowerCase() === 'what' ? 'maia' : 'sawa'}?`, method: 'demonstrative-question', confidence: 0.7 };
+  }
+  // NV-219 probe (derived): adjective predicate `that is big` / `those are good` -> Dem + adjective (verified shape `Ia nama` = this is good);
+  // the old path stripped both the demonstrative and the copula.
+  {
+    const ma = String(input).trim().match(/^(that|this|those|these)\s+(?:is|are)\s+((?:(?:very|so)\s+)?[a-z]+)\s*[.!]?$/i);
+    if (ma && isKnownAdjectiveEnglish(ma[2].toLowerCase().replace(/^(very|so)\s+/, ''))) {
+      const av = await translate(ma[2]);
+      const ag = String((av && av.garo) || '').trim();
+      if (ag && !/\[UNKNOWN\]/.test(ag) && ag.split(' ').length <= 2) return { garo: `${/^(that|those)$/i.test(ma[1]) ? 'Ua' : 'Ia'} ${ag.charAt(0).toLowerCase()}${ag.slice(1)}`, method: 'demonstrative-copular-construction', confidence: 0.75 };
+    }
+  }
+  // NV-219 probe (derived): `this is mine/yours/...` -> Dem + possessive (`Ia daka [UNKNOWN]` / bare `Nang·ni` used to drop the demonstrative).
+  {
+    const mpo = String(input).trim().match(/^(that|this|those|these)\s+(?:is|are)\s+(mine|yours|his|hers|ours|theirs)\s*[.!]?$/i);
+    if (mpo) {
+      const pv = await translate(({ mine: 'my', yours: 'your', his: 'his', hers: 'her', ours: 'our', theirs: 'their' })[mpo[2].toLowerCase()]);
+      const pg = String((pv && pv.garo) || '').trim();
+      if (pg && !/\[UNKNOWN\]|\s/.test(pg) && /ni$/i.test(pg)) return { garo: `${/^(that|those)$/i.test(mpo[1]) ? 'Ua' : 'Ia'} ${pg.charAt(0).toLowerCase()}${pg.slice(1)}`, method: 'demonstrative-copular-construction', confidence: 0.7 };
+    }
+  }
+  // NV-219 probe (derived): `this/that/these/those is|are for me|you|them` -> Dem + case form. `Ang·na` (verified `Ang·na chi on·bo`),
+  // `nang·na` (master `to you / for you`), `uamangna` (NV-214 native: `for them` only).
+  {
+    const mf = String(input).trim().match(/^(that|this|those|these)\s+(?:is|are)\s+for\s+(me|you|them)\s*[.?!]?$/i);
+    if (mf) return { garo: `${/^(that|those)$/i.test(mf[1]) ? 'Ua' : 'Ia'} ${({ me: 'ang·na', you: 'nang·na', them: 'uamangna' })[mf[2].toLowerCase()]}`, method: 'demonstrative-benefactive', confidence: 0.7 };
+  }
+  // NV-219 probe (derived): `Is that your dog?` / `Are those your dogs?` keep the demonstrative and the question mark (no question particle is
+  // evidenced for copular questions; the declarative NP is returned with `?`). Built from the verified declarative `that is your dog`.
+  {
+    const mq2 = String(input).trim().match(/^(?:is|are)\s+(that|this|those|these)\s+((?:(?:a|an)\s+)?(?:(?:my|your|his|her|our|their)\s+)?[a-z]+)\s*\?$/i);
+    if (mq2) {
+      const decl = await translate(`${mq2[1]} ${/^(those|these)$/i.test(mq2[1]) ? 'are' : 'is'} ${mq2[2]}`);
+      if (decl && !/\[UNKNOWN\]/.test(decl.garo) && /^(ua|ia)\b/i.test(decl.garo)) return { ...decl, garo: `${decl.garo}?`, method: 'demonstrative-copular-question', confidence: 0.6 };
+    }
   }
   // NV-219 probe (derived): plural / possessive copular `those are dogs`, `these are my books`, `that is my house` -> Dem [poss] noun(-rang);
   // Garo has no copula (same shape as attested `Ua sawa?`). Singular without possessive stays with tryThatNounConstruction.
