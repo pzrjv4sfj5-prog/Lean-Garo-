@@ -26,19 +26,21 @@ claims:
       examples that appeared to correlate with destination presence
       were coincidental, not causal.
   - scope: "the -jaha/-ja gloss confusion (whether \"Ua re'angjaha\" means \"he did not go\" or \"he stopped going\")"
-    status: needs_native_validation
+    status: verified
     confidence: high
     status_note: >-
-      RECONCILED 2026-07-26 via existing verified rules, not new
-      native data: RULE-025 (cessative -jaha, Verified/High) already
-      documents exactly this error pattern - -jaha means "was doing,
-      has now stopped," not "did not." So "Ua re'angjaha" almost
-      certainly means "he stopped going," and "Ua re'angja" (RULE-027,
-      no -ha, engine-verified) is the real "did not go." Confident in
-      the reasoning, but a direct native check on "Ua re'angjaha"
-      specifically would make this fully certain rather than strongly
-      inferred - added to next relay as a quick confirmation, not
-      treated as fully closed.
+      CLOSED 2026-10-28 (NV-222, Project Owner ruling): the original
+      native answer stands as written - "He did not go. = Ua
+      re'angjaha." and "He did not go to the market. = Ua antichi
+      re'angjaha." The 2026-07-26 reading (re'angjaha only means "he
+      stopped going", re'angja = "did not go") was inference from
+      RULE-025, never a native statement, and is withdrawn for this
+      verb. RULE-025 itself (cha·jaha = "has stopped eating") is
+      unchanged. Because the same string now serves "did not go" and
+      the corrections row "i stopped going", context disambiguates, in
+      line with RULE-027. Scope note: only the phrases above are set
+      as exact forms; generalising "did not <verb>" to -jaha is not
+      done here.
 examples:
   - >-
     Re·jawa = "I will not go" (bare, no destination) — derivation
@@ -156,6 +158,12 @@ corrections:
       re·a row is variant-tagged). NV-100 is now CLOSED in full — no
       remaining open sub-questions from this relay. See
       docs/THANGSENG_NATIVE_VALIDATION.md NV-100.
-last_updated: "2026-08-30"
+  - date: "2026-10-28"
+    note: >-
+      NV-222: claim 2 closed in favour of the native text. "I am not
+      going" = Anga re'angjaenga (continuous -enga after -ja) replaces
+      the correction "Anga re'ang'ja"; "I am not going to the market" =
+      Anga antichi re'angjaenga; "He did not go" = Ua re'angjaha.
+last_updated: "2026-10-28"
 updated_by: "Claude A"
 source_ref: "docs/GRAMMAR_RULE_CATALOGUE.md, ### RULE-030"

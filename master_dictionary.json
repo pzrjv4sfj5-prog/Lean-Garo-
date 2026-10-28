@@ -80778,5 +80778,41 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-221 (2026-10-27, Claude A): Thangseng written response document (Reponse_to_Questions.pdf), uploaded by Project Owner T 2026-10-27; apostrophes in the source read as raka (·) per standing rule; item 8, 26. Composed: Anga + native sikja (does not want); not a verbatim native quote.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "i am not going",
+    "garo": "Anga re·angjaenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-222 (2026-10-28, Claude A): Thangseng written response document (Reponse_to_Questions.pdf, items 1-3), original native answer; Project Owner T ruling 2026-10-28: native text stands (apostrophes read as raka). Continuous -enga comes after the negative -ja. Replaces the correction 'Anga re·ang·ja'.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i am not going to the market",
+    "garo": "Anga antichi re·angjaenga",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-222 (2026-10-28, Claude A): Thangseng written response document (Reponse_to_Questions.pdf, items 1-3), original native answer; Project Owner T ruling 2026-10-28: native text stands (apostrophes read as raka). Destination does not change the verb form (mood and tense do).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "he did not go",
+    "garo": "Ua re·angjaha",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-222 (2026-10-28, Claude A): Thangseng written response document (Reponse_to_Questions.pdf, items 1-3), original native answer; Project Owner T ruling 2026-10-28: native text stands (apostrophes read as raka). Direct native check that closes RULE-030 claim 2; supersedes the 2026-07-26 inference that re·angjaha was only cessative.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "he did not go to the market",
+    "garo": "Ua antichi re·angjaha",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-222 (2026-10-28, Claude A): Thangseng written response document (Reponse_to_Questions.pdf, items 1-3), original native answer; Project Owner T ruling 2026-10-28: native text stands (apostrophes read as raka). Destination does not change the verb form.",
+    "confidence": "verified_high"
   }
 ]

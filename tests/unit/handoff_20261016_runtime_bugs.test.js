@@ -72,8 +72,9 @@ test('NV-177 (PO 2026-10-20, reverses NV-168): mitim is fat, mitam is some', asy
   }
 });
 
+// 'I am not going to the market' is now the NV-222 native exact form (nv222_negative_go_native.test.js).
 test('R-d: negative "going to the market" keeps its verb (determiner-led lemma is not a particle verb)', async () => {
-  for (const input of ['I am not going to the market', 'he is not going to the river', 'I was not going to the market']) {
+  for (const input of ['he is not going to the river', 'I was not going to the market']) {
     const r = await translate(input);
     assert.ok(/Re·angjawa$/.test(r.garo), `${input} -> ${r.garo}`);
   }

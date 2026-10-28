@@ -94,7 +94,7 @@ const REGRESSION_CASES = [
   { in: '0 dogs', expectGaro: '[UNKNOWN] Achak', expectMethod: ['morphology'] },
 
   // --- Rules 27/28/29 (2026-07-05): no true simple past, aha/manaha overlap, -bo hortative ---
-  { in: 'he did not go', expectGaro: 'Ua Re·angja', expectMethod: ['grammar-assembly'] },
+  { in: 'she did not go', expectGaro: 'Ua Re·angja', expectMethod: ['grammar-assembly'] },
   { in: 'i did not go', expectGaro: 'Anga Re·angja', expectMethod: ['grammar-assembly'] },
   // 2026-08-31 (Claude B, go/re·ang- stem-decoupling fix): was 'Re·anga'
   // (stale — that's actually "went"/"gone", per NV-100 VERIFIED/HIGH).
@@ -861,7 +861,7 @@ test('negation guard: bare "not"/"never" are never captured as the object', asyn
   const r1 = await translate('i did not eat');
   assert.equal(r1.method, 'grammar-assembly');
   assert.ok(!r1.garo.includes('[UNKNOWN]') && !r1.garo.includes('[unknown]'), `got: ${r1.garo}`);
-  const r2 = await translate('he did not go');
+  const r2 = await translate('she did not go');
   assert.equal(r2.method, 'grammar-assembly');
   assert.ok(!r2.garo.includes('[UNKNOWN]') && !r2.garo.includes('[unknown]'), `got: ${r2.garo}`);
 });
@@ -1921,7 +1921,7 @@ test('go/re·ang- decoupling: "went" (past, IRREGULAR_VERBS entry via correction
 
 test('go/re·ang- decoupling: "did not go" (negative past, grammar-assembly) still uses the re·ang- stem for negation, not the resynced bare "re·a" root', async () => {
   const { translate } = await import('../../src/translationEngine.js');
-  const r1 = await translate('he did not go');
+  const r1 = await translate('she did not go');
   assert.equal(r1.garo, 'Ua Re·angja');
   const r2 = await translate('i did not go');
   assert.equal(r2.garo, 'Anga Re·angja');
@@ -2164,7 +2164,7 @@ test('Finding 1 regression guard: getConjugationRoot is a no-op for verbs with n
 });
 
 test('Finding 1 regression guard: subject-bearing "he did not go" is unaffected — was already correct via grammar-assembly (grammarEngine.js:422), which has its own, separate getConjugationRoot call untouched by this fix', async () => {
-  const r = await translate('he did not go');
+  const r = await translate('she did not go');
   assert.equal(r.method, 'grammar-assembly');
   assert.equal(r.garo, 'Ua Re·angja');
 });
