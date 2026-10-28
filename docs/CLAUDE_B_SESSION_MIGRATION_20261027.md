@@ -4,8 +4,8 @@
 Lean-Garo- (English -> Garo/A·chik translator). Claude B = engine lane (src/*.js, tests, governance). Claude A = data lane (master_dictionary.json promotion). Read docs/CLAUDE_B_SESSION_MIGRATION_20261026.md and docs/CLAUDE_B_NV219_DEMONSTRATIVE_PLURAL_20261027.md for the full account. Cite NV-219 from this lane as NV-219(B) (Claude A also used NV-219 for Re·rama).
 
 ## State
-origin/main = local at push time; rebased onto Claude A's 83dbbb0 (NV-221). Working tree clean after this commit.
-Gate on the merged tree: `npm run build` exit 0, unit 1037/1037, 0 new violations/mismatches/placeholders, rule conformance 78/112 (0 not in baseline), runtime-error-sweep 16,147 calls / 0 errors, strict no-drop probe 5,760/5,760, invariance probe 2,000/2,000, stress_237 benchmark: 0 output changes vs 83dbbb0 (no regression).
+origin/main = local at push time; rebased onto Claude A's 012ff0a (NV-222). Working tree clean after this commit.
+Gate on the merged tree: `npm run build` exit 0, unit 1041/1041, 0 new violations/mismatches/placeholders, rule conformance 78/112 (0 not in baseline), runtime-error-sweep 16,155 calls / 0 errors, strict no-drop probe 5,760/5,760, invariance probe 2,000/2,000, stress_237 benchmark: 0 output changes vs 83dbbb0 (no regression).
 
 ## Done
 Plural demonstratives (`Ua/Ia achakrang`), bare `that` object = `uko`, `like` = `namnika` (Thangseng native); then derived coverage: adjectives/numbers/case suffixes, plural-adjective drop, bare this/those/these objects, copular + question + adjective/possessive predicates, benefactive, prepositional phrases (plural/adjective + to/in/at; from/with derived), multi-word nouns, `X-rang` plural rows, -ves plurals, `took` = `ra·aha`, bad `red house` row retired.
