@@ -538,6 +538,9 @@ export function analyzeGrammar(input) {
           // composes with this — 'did not X' uses present+ja regardless.
           garoWithTense = applyTense(garoVerb, 'past');
         }
+        // NV-225 (Thangseng native, 2026-10-29): present of `come` is `re·baa` (`Anga ua nokoni re·baa`), not the headword `re·ba·a`.
+        // Reaching here still equal to the bare headword means present tense (past/future/command were suffixed above); negatives untouched.
+        if (!isNegative && /^re·ba·a$/i.test(garoWithTense)) garoWithTense = garoWithTense.replace(/·a$/, 'a');
         if (isNegative) {
           // Same decoupling as the future-tense branch above: at this point
           // garoWithTense is still the untouched bare-form value for any

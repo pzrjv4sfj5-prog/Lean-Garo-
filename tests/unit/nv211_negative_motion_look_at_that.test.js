@@ -7,7 +7,7 @@ const lc = async (en) => (await translate(en)).garo.toLowerCase().replace(/[.!?]
 for (const [en, garo] of [
   ['I do not go there', 'anga uachi re·angja'], ['they did not go there', 'uamang uachi re·angja'],
   ['I will not go there', 'anga uachi re·jawa'], ['he did not come here', 'ua iachi re·ba·ja'],
-  ['I go there', 'anga uachi re·a'], ['he comes here', 'ua iachi re·ba·a'],
+  ['I go there', 'anga uachi re·a'], ['he comes here', 'ua iachi re·baa'],
   ['I did not eat there', 'anga uano cha·ja'],            // static verb: bare locative, unchanged
   ['Look at that dog.', 'ua achakko nibo'], ['look at that house', 'ua nokko nibo'], ['look at that', 'uko nibo'],
   ['I see that dog', 'anga ua achakko nika'],  // NV-215

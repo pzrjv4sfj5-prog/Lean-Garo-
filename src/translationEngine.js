@@ -797,7 +797,17 @@ async function translateCore(input) {
     const mq2 = String(input).trim().match(/^(?:is|are)\s+(that|this|those|these)\s+((?:(?:a|an)\s+)?(?:(?:my|your|his|her|our|their)\s+)?[a-z]+)\s*\?$/i);
     if (mq2) {
       const decl = await translate(`${mq2[1]} ${/^(those|these)$/i.test(mq2[1]) ? 'are' : 'is'} ${mq2[2]}`);
-      if (decl && !/\[UNKNOWN\]/.test(decl.garo) && /^(ua|ia)\b/i.test(decl.garo)) return { ...decl, garo: `${decl.garo}?`, method: 'demonstrative-copular-question', confidence: 0.6 };
+      if (decl && !/\[UNKNOWN\]/.test(decl.garo) && /^(ua|ia)\b/i.test(decl.garo)) {
+        // NV-225 (Thangseng native, 2026-10-29): `Is that your dog?` = `Ua nang·ni achakma?` -- the yes/no particle -ma is suffixed to the
+        // predicate noun (same particle as attested `Na·ara ang·ming rebagenma?`). Native: singular + possessive. DERIVED by analogy: plural
+        // (`achakrangma`), `a`-article, this/these. Adjective predicates (`Is that big?`) are NOT evidenced and keep the bare `?` form.
+        const predEn = mq2[2].toLowerCase().split(/\s+/).pop();
+        if (!isKnownAdjectiveEnglish(predEn)) {
+          const bare = decl.garo.replace(/[.!?]+$/, '').trim();
+          return { ...decl, garo: `${bare}ma?`, method: 'demonstrative-copular-question', confidence: 0.7, derived: !(/^that$/i.test(mq2[1]) && /^(?:(?:my|your|his|her|our|their)\s+)?[a-z]+$/i.test(mq2[2]) && !garoPluralNoun(predEn)) };
+        }
+        return { ...decl, garo: `${decl.garo}?`, method: 'demonstrative-copular-question', confidence: 0.6 };
+      }
     }
   }
   // NV-219 probe (derived): plural / possessive copular `those are dogs`, `these are my books`, `that is my house` -> Dem [poss] noun(-rang);

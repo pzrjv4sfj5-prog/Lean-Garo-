@@ -50,10 +50,10 @@ for (const [en, garo] of [
 for (const [en, garo] of [
   ['I go to those houses.', 'anga ua nokrangchi re·a'], ['I go to houses.', 'anga nokrangchi re·a'], ['I am in those houses.', 'anga ua nokrango'],
   ['I go to that big house.', 'anga ua dal·gipa nok·chi re·a'], ['I am in a big house.', 'anga dal·gipa nok·o'], ['I go to these big houses.', 'anga ia dal·gipa nokrangchi re·a'],
-  ['I come from that house.', 'anga ua nokoni re·ba·a'], ['I come from the big house.', 'anga dal·gipa nokoni re·ba·a'], ['I eat with that dog.', 'anga ua achakming cha·a'],
+  ['I come from that house.', 'anga ua nokoni re·baa'], ['I come from the big house.', 'anga dal·gipa nokoni re·baa'], ['I eat with that dog.', 'anga ua achakming cha·a'],
   ['I go to that house.', 'anga ua nok·chi re·a'], ['I am in that house.', 'anga ua nok·o'], ['I go to the market.', 'anga bajalchi re·a'],
   ['this is for you', 'ia nang·na'], ['that is for me', 'ua ang·na'], ['those are for them', 'ua uamangna'],
-  ['Is that your dog?', 'ua nang·ni achak?'], ['Are those your dogs?', 'ua nang·ni achakrang?'], ['Is this my house?', 'ia angni nok?'], ['Is that a dog?', 'ua achak?'],
+  ['Is that your dog?', 'ua nang·ni achakma?'], ['Are those your dogs?', 'ua nang·ni achakrangma?'], ['Is this my house?', 'ia angni nokma?'], ['Is that a dog?', 'ua achakma?'],
   ['that is big', 'ua dal·a'], ['those are good', 'ua nama'], ['Is that big?', 'ua dal·a?'], ['I see that red house.', 'anga ua gitchak nokko nika'],
 ]) test(`NV-219 probe3 (derived): ${en}`, async () => assert.equal((await translate(en)).garo.toLowerCase().replace(/[.!]$/, ''), garo));
 test('NV-219 probe3: derived prepositional rewrites are flagged low-confidence', async () => {
