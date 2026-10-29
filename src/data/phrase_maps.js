@@ -323,7 +323,7 @@ export const PHRASE_MAPS = {
   'laugh': 'Ka·dinga',
   'cry': 'Grap·a',
   'sell': 'Pala',
-  'come': 'Re·ba·a',
+  'come': 'Re·baa',
   'go': 're·a',
   'open': 'Oa',
   'close': 'Chip·a',

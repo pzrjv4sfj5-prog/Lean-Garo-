@@ -804,7 +804,7 @@
   },
   {
     "english": "come",
-    "garo": "Re·ba·a",
+    "garo": "Re·baa",
     "category": "travel",
     "confidence": "verified_high",
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch)"
@@ -7173,7 +7173,7 @@
   },
   {
     "english": "i came",
-    "garo": "Anga re·ba·a",
+    "garo": "Anga re·baaha",
     "category": "general",
     "confidence": "unverified"
   },
@@ -7510,19 +7510,19 @@
   },
   {
     "english": "you came",
-    "garo": "Na·a re·ba·a",
+    "garo": "Na·a re·baa",
     "category": "general",
     "confidence": "unverified"
   },
   {
     "english": "they are coming",
-    "garo": "Uamang re·ba·enga",
+    "garo": "Uamang re·baenga",
     "category": "general",
     "confidence": "unverified"
   },
   {
     "english": "come!",
-    "garo": "Re·ba·bo!",
+    "garo": "Re·babo!",
     "category": "travel",
     "confidence": "unverified"
   },
@@ -13935,7 +13935,7 @@
   },
   {
     "english": "the come",
-    "garo": "Re·ba·a",
+    "garo": "Re·baa",
     "category": "travel",
     "confidence": "unverified"
   },
@@ -52300,7 +52300,7 @@
   },
   {
     "english": "i want to come",
-    "garo": "Anga re·ba·na sikenga",
+    "garo": "Anga re·bana sikenga",
     "category": "phrases",
     "pos": null,
     "classifier": null,
@@ -73496,7 +73496,7 @@
   },
   {
     "english": "i want to come",
-    "garo": "Anga re·ba·na ska",
+    "garo": "Anga re·bana ska",
     "category": "phrases",
     "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
     "confidence": "verified_high"

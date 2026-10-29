@@ -16,7 +16,7 @@ const GENERATED = [
   ['pigs sleep', 'Wakrang tusia'],
   ['students run', 'Chattrorang kata'],
   ['cows are here', 'Matchurang iano'],
-  ['the dogs came', 'Achakrang re·ba·aha'],
+  ['the dogs came', 'Achakrang re·baaha'],
   ['my cats are heavy', 'Angni menggorang jria'],
   ['many dogs eat rice', 'Bang·a achakrang mi cha·a'],
 ];
@@ -31,7 +31,7 @@ for (const [en, garo] of GENERATED) {
 // -s words, singular nouns, verbs ending in -s, bare plurals, counted nouns.
 const UNCHANGED = [
   ['children eat rice', 'Bi·sarang miko Cha·a'],   // lexicalized plural
-  ['friends came', 'cham·e re·ba·aha'],           // lexicalized plural
+  ['friends came', 'cham·e re·baaha'],           // lexicalized plural
   ['news today', 'Gital da·alo'],                 // "news" is not plural "new"
   ['mother eats rice', 'A·ai miko Cha·a'],          // verb "eats" is not a plural noun
   ['his dog eats', 'Uni achak cha·a'],            // singular subject

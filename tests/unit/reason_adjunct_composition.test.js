@@ -7,7 +7,7 @@
 // STOP_WORD (silently skipped) and "some"/"reason"/"other" have no
 // individual dictionary entries, so the phrase fell into the object slot
 // unresolved. Confirmed live before this fix: "he came for some reason or
-// other" -> "Ua [UNKNOWN]·ko re·ba·aha".
+// other" -> "Ua [UNKNOWN]·ko re·baaha".
 //
 // Fix, per Project Owner directive (Thangseng in chat gave the native
 // construction directly): grammarEngine.js now matches the literal
@@ -24,7 +24,7 @@ import { translate } from '../../src/translationEngine.js';
 
 test('"he came for some reason or other" composes the native reason-adjunct form', async () => {
   const r = await translate('he came for some reason or other');
-  assert.equal(r.garo, 'Ua maiaba a·selni gimin re·ba·aha');
+  assert.equal(r.garo, 'Ua maiaba a·selni gimin re·baaha');
   assert.equal(r.method, 'grammar-assembly');
 });
 

@@ -580,7 +580,7 @@ export function assembleGrammar(grammar, allowUnknown = false) {
   // Reason adjunct ("for some reason or other" — see grammarEngine.js's
   // detection comment for citation/rationale). Placed right before the
   // main verb, after any object/purpose clause, matching the confirmed
-  // native word order: "Ua maiaba a·selni gimin re·ba·aha".
+  // native word order: "Ua maiaba a·selni gimin re·baaha".
   if (grammar.reasonAdjunct) {
     parts.push(grammar.reasonAdjunct.garo);
   }

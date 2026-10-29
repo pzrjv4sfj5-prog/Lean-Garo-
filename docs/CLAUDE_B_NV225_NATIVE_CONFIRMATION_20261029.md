@@ -24,10 +24,18 @@ This confirms the case suffixes `-oni` (from), `-ming` (with), plural + locative
 ## Gate
 build exit 0; unit 1051/1051; rule conformance 79/112, 0 not in baseline; runtime-error-sweep 16,158 calls / 0 errors.
 
-## Open (not touched)
-- `re·ba·gen` (future), `re·ba·ja` (negative) and `re·ba·aha` (past, grammar-assembly) still carry the extra raka dot; paradigm says `re·bagen`,
-  `re·baja`, `re·baaha`. Past `re·ba·aha` also has a native relay (NV-214 `Ua maiaba a·selni gimin re·ba·aha`), so dot placement is inconsistent
-  in native sources: needs one native ruling before changing.
-- `corrections.json` `i came` = `Anga re·ba·a` looks stale (present form pinned as past).
-- Claude A: promote the confirmed forms; `like = namnika`, `those`/`these` rows and the retired `red house` row are still pending from NV-219(B).
+## Addendum: extra raka dot removed (Project Owner ruling, 2026-10-29)
+The extra dot in `re·ba·` forms is wrong for every tense. All `come` forms are now written without it: present `re·baa`, past `re·baaha`,
+future `re·bagen`, negative `re·baja` / `re·bajawa`, continuous `re·baenga`, command `re·babo`, purpose `re·bana` (the last follows the same
+rule, not separately quoted). The headword `Re·ba·a` was the root cause, so the earlier grammarEngine present-tense special case was removed.
+Fixed in: master_dictionary.json (8 rows), garo_dictionary.json (14), irregular_verbs.json (`came`), purpose_map.json, phrase_maps.js,
+corrections.json (`i want to come`), conversation_patterns.json, Phrases.jsx, comments, and the tests that quoted the old forms.
+`I came` rows (master, garo_dictionary, conversation_patterns) now read `Anga re·baaha`: they held the present-looking `re·ba·a`, which
+disagreed with `came` = `-aha`. The NV-214 quote `Ua maiaba a·selni gimin re·ba·aha` is now `re·baaha` per the ruling.
+Not changed (historical, not read by the engine): docs/migration_logs, docs/double_raka_fix_log.json, resync sweep data, final_entries.json, backups.
+Gate: build exit 0; unit 1061/1061; rule conformance 79/112, 0 not in baseline; runtime-error-sweep 16,158 / 0 errors.
+
+## Open
+- Claude A (note): master_dictionary.json rows were edited mechanically by Claude B at the Project Owner's request (dot removal only, no other fields).
+- Claude A: promote `like = namnika`; review `those`/`these` rows and the retired `red house` row (NV-219(B) handoffs).
 - `prep-phrase-rewrite` outputs are still flagged `derived: true` at confidence <= 0.6 although `-oni`/`-ming`/`-rangchi` are now native-confirmed.

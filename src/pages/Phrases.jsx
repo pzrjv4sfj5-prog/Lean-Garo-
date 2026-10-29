@@ -98,7 +98,7 @@ export default function Phrases() {
       title: 'Cultural & Festive',
       phrases: [
         { en: 'Happy Wangala!', garo: 'Wangala sakadok!', hi: 'वांगला की खुशियाँ!', breakdown: 'Festival greeting' },
-        { en: 'The festival is coming', garo: 'Sokra knal re·ba·gen', hi: 'त्योहार आने वाला है', breakdown: 'Festival anticipation' },
+        { en: 'The festival is coming', garo: 'Sokra knal re·bagen', hi: 'त्योहार आने वाला है', breakdown: 'Festival anticipation' },
         { en: 'Let us celebrate together', garo: 'An·ching baksa sakdok-bo', hi: 'आइए साथ मनाएं', breakdown: 'Celebration invitation' },
         { en: 'This is our tradition', garo: 'Ia an·chi dakbewal', hi: 'यह हमारी परंपरा है', breakdown: 'Cultural reference' },
         { en: 'Dance with us!', garo: 'An·ching baksa kal·mang-bo!', hi: 'हमारे साथ नाचें!', breakdown: 'Activity invitation' },

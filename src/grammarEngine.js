@@ -538,9 +538,6 @@ export function analyzeGrammar(input) {
           // composes with this — 'did not X' uses present+ja regardless.
           garoWithTense = applyTense(garoVerb, 'past');
         }
-        // NV-225 (Thangseng native, 2026-10-29): present of `come` is `re·baa` (`Anga ua nokoni re·baa`), not the headword `re·ba·a`.
-        // Reaching here still equal to the bare headword means present tense (past/future/command were suffixed above); negatives untouched.
-        if (!isNegative && /^re·ba·a$/i.test(garoWithTense)) garoWithTense = garoWithTense.replace(/·a$/, 'a');
         if (isNegative) {
           // Same decoupling as the future-tense branch above: at this point
           // garoWithTense is still the untouched bare-form value for any
@@ -630,7 +627,7 @@ export function analyzeGrammar(input) {
     let thirdPersonAccusativeGaro = 'uko';
     // Reason-adjunct fix (2026-09-26, Claude B, Project Owner directive:
     // Thangseng in chat gave the native construction directly -- "he came
-    // for some reason or other" -> "Ua maiaba a·selni gimin re·ba·aha").
+    // for some reason or other" -> "Ua maiaba a·selni gimin re·baaha").
     // Closes the open composition-gap item from
     // docs/CLAUDE_B_SESSION_MIGRATION_20260925.md: "for some reason or
     // other" already resolves correctly standalone (corrections.json ->
@@ -638,7 +635,7 @@ export function analyzeGrammar(input) {
     // skipped) and "some"/"reason"/"other" have no individual dictionary
     // entries, so the whole phrase fell into objectWords unresolved and
     // surfaced [UNKNOWN] — confirmed live: "he came for some reason or
-    // other" -> "Ua [UNKNOWN]·ko re·ba·aha". The embedded-sentence
+    // other" -> "Ua [UNKNOWN]·ko re·baaha". The embedded-sentence
     // translation is a genuinely different Garo realization from the
     // standalone one (a periphrastic "maiba a·sel-ni gimin" = "because of
     // its (some) cause", not "Mainaba"), given directly by a native
