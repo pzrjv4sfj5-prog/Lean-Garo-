@@ -20401,8 +20401,8 @@
     "pos": null,
     "category": "education",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
+    "notes": "SUPERSEDED — 2026-10-29 (Claude A, NV-226): Project Owner ruled native `poraia` = read (same word as study). `po·ri·a` retained as history only.",
+    "confidence": "superseded"
   },
   {
     "english": "Really?",
@@ -80894,6 +80894,15 @@
     "pos": "v.",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-226 (2026-10-29): Project Owner ruling in chat that the native validation already on file gives `poraia` = study (stem of poraienga / poraina / poraibo). Provenance: Project Owner directive relaying Thangseng; raw message not on file.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "read",
+    "garo": "poraia",
+    "category": "education",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-226 (2026-10-29): Project Owner ruling in chat: `poraia` = read as well as study (same verb; stem of poraienga / poraina / poraibo). Provenance: Project Owner directive relaying Thangseng; raw message not on file.",
     "confidence": "verified_high"
   }
 ]

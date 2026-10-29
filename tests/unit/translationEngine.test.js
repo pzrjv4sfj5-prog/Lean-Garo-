@@ -2043,7 +2043,7 @@ test('NV-112 only-identity: exact-match override for "the only fruit i eat is ma
 test('NV-103 only-identity: generalizes across subject pronouns, not just "i"', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const rYou = await translate('the only book you read is bible');
-  assert.equal(rYou.garo, 'Na·ade Sastro Ki·tapkosan po·ri·aia');
+  assert.equal(rYou.garo, 'Na·ade Sastro Ki·tapkosan poraiaia');
   const rThey = await translate('the only game they play is football');
   assert.equal(rThey.garo, 'Uamangde Football Kal·anikosan Kal·aia');
 });

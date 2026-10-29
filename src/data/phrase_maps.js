@@ -347,7 +347,7 @@ export const PHRASE_MAPS = {
   'remember': 'gi·sik ra·a',
   'ask': 'Sing·a',
   'answer': 'Aganchaka',
-  'read': 'po·ri·a',
+  'read': 'poraia',
   'write': 'Sea',
   'learn': 'ski·a',
   'teach': 'Skie on·a',

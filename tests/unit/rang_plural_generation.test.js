@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import { translate } from '../../src/translationEngine.js';
 
 test('English plural object takes -rang (plain concatenation, dot kept)', async () => {
-  assert.equal((await translate('I read books')).garo, 'Anga ki·taprangko po·ri·a');
+  assert.equal((await translate('I read books')).garo, 'Anga ki·taprangko poraia');
   assert.equal((await translate('I see dogs')).garo, 'Anga achakrangko Nika');
 });
 

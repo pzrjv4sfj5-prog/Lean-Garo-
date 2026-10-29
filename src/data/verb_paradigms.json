@@ -4231,17 +4231,17 @@
    }
   },
   "read": {
-   "root": "po·ri·a",
+   "root": "poraia",
    "forms": {
-    "present": "po·ri·a",
+    "present": "poraia",
     "continuous": "poraienga",
-    "past": "po·ri·aha",
-    "future": "po·ri·gen",
-    "negative": "po·ri·ja",
-    "negative_future": "po·ri·jawa",
-    "command": "po·ri·bo",
-    "negative_command": "po·ri·nabe",
-    "infinitive": "po·ri·na"
+    "past": "poraiaha",
+    "future": "poraigen",
+    "negative": "poraija",
+    "negative_future": "poraijawa",
+    "command": "poraibo",
+    "negative_command": "porainabe",
+    "infinitive": "poraina"
    },
    "status": {
     "present": "derived",
