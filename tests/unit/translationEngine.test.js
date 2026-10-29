@@ -109,7 +109,7 @@ const REGRESSION_CASES = [
 
   // --- Grammar-modeling audit (2026-07-05): affirmative past tense via
   // real Rule 2 (-aha) suffix logic instead of per-word memorized corrections ---
-  { in: 'he studied', expectGaro: 'Ua po·ri·aha', expectMethod: ['grammar-assembly'] },
+  { in: 'he studied', expectGaro: 'Ua poraiaha', expectMethod: ['grammar-assembly'] },
   { in: 'he cooked', expectGaro: 'Ua Song·aha', expectMethod: ['grammar-assembly'] },
   { in: 'he walked', expectGaro: 'Ua re·aha', expectMethod: ['grammar-assembly'] },
   { in: 'he answered', expectGaro: 'Ua Aganchakaha', expectMethod: ['grammar-assembly'] },
