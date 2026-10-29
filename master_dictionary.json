@@ -51341,7 +51341,7 @@
     "pos": null,
     "category": "verbs",
     "classifier": null,
-    "notes": "VERIFIED/HIGH/doc7",
+    "notes": "variant/VERIFIED/HIGH/doc7 — NV-227 (2026-10-29, Claude A): retained as a valid alternate; PRIMARY for `to support` is `Chaka` (NV-063, direct Thangseng validation via Tridip, 2026-08-05), which outranks this uncited doc7 tag. Project Owner closure, no change to either value.",
     "confidence": "verified_high"
   },
   {
@@ -80903,6 +80903,15 @@
     "pos": "v.",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-226 (2026-10-29): Project Owner ruling in chat: `poraia` = read as well as study (same verb; stem of poraienga / poraina / poraibo). Provenance: Project Owner directive relaying Thangseng; raw message not on file.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "shall i sit",
+    "garo": "Anga asongnama?",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH (compositional, by composition, NV-227, 2026-10-29, Claude A, Project Owner closure): asong (sit, NV-187/NV-188) + hortative -na (RULE-007, `Hai`+`-na` / -na hortative-immediacy) + question particle -ma. Offer/suggestion sense, distinct from permission `may i sit` = `Anga asongna man·genma?`. Not a Thangseng quote.",
     "confidence": "verified_high"
   }
 ]
