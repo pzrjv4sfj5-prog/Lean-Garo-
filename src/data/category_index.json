@@ -4257,5 +4257,9 @@
   "he did not go": "phrases",
   "he did not go to the market": "phrases",
   "to die": "verbs",
-  "do you want to die?": "phrases"
+  "do you want to die?": "phrases",
+  "to study": "education",
+  "i am studying": "phrases",
+  "study (imperative)": "education",
+  "you study (imperative)": "phrases"
 }
