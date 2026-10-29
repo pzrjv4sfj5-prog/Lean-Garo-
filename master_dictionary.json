@@ -73512,7 +73512,7 @@
     "english": "i want to study",
     "garo": "Anga poraina ska",
     "category": "phrases",
-    "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry. | NV-225 (2026-10-29, Project Owner ruling in chat): correct spelling is `poraina` (derived from `poraia`), not `pora·na`; stem is poraia-/porai-. Spelling fix only.",
+    "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry. | NV-226 (2026-10-29, Project Owner ruling in chat): correct spelling is `poraina` (derived from `poraia`), not `pora·na`; stem is poraia-/porai-. Spelling fix only.",
     "confidence": "verified_high"
   },
   {
@@ -80857,7 +80857,7 @@
     "category": "education",
     "pos": "v.",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-225 (2026-10-29): Project Owner-relayed examples attributed to Thangseng (raw message not on file); Project Owner ruled the correct spelling is `poraina`, derived from `poraia`; supersedes `pora·na`.",
+    "notes": "VERIFIED/HIGH — NV-226 (2026-10-29): Project Owner-relayed examples attributed to Thangseng (raw message not on file); Project Owner ruled the correct spelling is `poraina`, derived from `poraia`; supersedes `pora·na`.",
     "confidence": "verified_high"
   },
   {
@@ -80866,7 +80866,7 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-225 (2026-10-29): Project Owner-relayed examples attributed to Thangseng (raw message not on file); Project Owner ruled the correct spelling is `poraina`, derived from `poraia`; supersedes `pora·na`.",
+    "notes": "VERIFIED/HIGH — NV-226 (2026-10-29): Project Owner-relayed examples attributed to Thangseng (raw message not on file); Project Owner ruled the correct spelling is `poraina`, derived from `poraia`; supersedes `pora·na`.",
     "confidence": "verified_high"
   },
   {
@@ -80875,7 +80875,7 @@
     "category": "education",
     "pos": "v.",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-225 (2026-10-29): Project Owner-relayed examples attributed to Thangseng (raw message not on file); Project Owner ruled the correct spelling is `poraina`, derived from `poraia`; supersedes `pora·na`.",
+    "notes": "VERIFIED/HIGH — NV-226 (2026-10-29): Project Owner-relayed examples attributed to Thangseng (raw message not on file); Project Owner ruled the correct spelling is `poraina`, derived from `poraia`; supersedes `pora·na`.",
     "confidence": "verified_high"
   },
   {
@@ -80884,7 +80884,7 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-225 (2026-10-29): Project Owner-relayed examples attributed to Thangseng (raw message not on file); Project Owner ruled the correct spelling is `poraina`, derived from `poraia`; supersedes `pora·na`.",
+    "notes": "VERIFIED/HIGH — NV-226 (2026-10-29): Project Owner-relayed examples attributed to Thangseng (raw message not on file); Project Owner ruled the correct spelling is `poraina`, derived from `poraia`; supersedes `pora·na`.",
     "confidence": "verified_high"
   }
 ]
