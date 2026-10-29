@@ -35,6 +35,9 @@ disagreed with `came` = `-aha`. The NV-214 quote `Ua maiaba a·selni gimin re·b
 Not changed (historical, not read by the engine): docs/migration_logs, docs/double_raka_fix_log.json, resync sweep data, final_entries.json, backups.
 Gate: build exit 0; unit 1061/1061; rule conformance 79/112, 0 not in baseline; runtime-error-sweep 16,158 / 0 errors.
 
+Native confirmation (Thangseng, relayed 2026-10-29, past): `came` = `re·baaha`; `he came for some reason or other` = `Ua maiaba a·selni gimin re·baaha.`
+The engine output matches exactly (tests: reason_adjunct_composition, nv225).
+
 ## Open
 - Claude A (note): master_dictionary.json rows were edited mechanically by Claude B at the Project Owner's request (dot removal only, no other fields).
 - Claude A: promote `like = namnika`; review `those`/`these` rows and the retired `red house` row (NV-219(B) handoffs).
