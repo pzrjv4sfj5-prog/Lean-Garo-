@@ -80949,5 +80949,14 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-228 (Thangseng direct native sentences relayed by Project Owner in chat, 2026-10-29 (raw message not on file; apostrophe/period normalised to raka ·). Thangseng: not literal translations, a literal rendering would sound awkward in Garo.) Lit. food is tasty (NV-158 `Cha·ani` = food).",
     "confidence": "verified_high"
+  },
+  {
+    "english": "to read",
+    "garo": "poraia",
+    "category": "education",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-226/NV-229 (2026-10-30): Project Owner ruling `poraia` = read (same verb as study). Infinitive-key row so the bare command `read!` reaches the RULE-029 -a -> -bo step (`poraibo`).",
+    "confidence": "verified_high"
   }
 ]

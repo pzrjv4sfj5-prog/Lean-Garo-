@@ -14,5 +14,6 @@ Project Owner directive in chat: "close all open, you have enough evidence". Eac
 | Matri / Matkalsi / Me·mana·song (Claude D OCR) | Stay `unverified` OCR rows; not promoted | OCR only |
 | per-class raka | CLOSED, no outstanding contradiction: sak no dot, pang no dot, mang/king/gong dot (engine and rows aligned 2026-09-29B) | NV-190s, 2026-09-28/29 notes |
 
-## Runtime Handoff (Claude B)
-`i stopped going` still composes to `Anga Re·angjaha` in the engine (grammar-assembly) after the pin removal: the engine treats "stopped" as a `-jaha` past. Needs an engine decision on "stop + V-ing"; not a dictionary issue.
+## Runtime follow-up (closed, NV-229, 2026-10-30)
+- `i stopped going` -> `Anga Re·angjaha` is NOT an engine bug: grammarEngine Rule 17 (`stopped`/`quit`/`no longer` -> `-jaha`, discontinuation) is consistent with the attested `cha·jaha` pin for `i stopped eating`. For `go` only, the discontinuation form and the native `did not go` (NV-222) are homographs; Rule 17 stays, no engine change.
+- Subjectless imperative with a noun object (`read the book`, `eat rice`) was emitted verb-first, unmarked, citation form. Fixed in translationEngine.js as method `imperative-object-ko`: `Ki·tapko poraibo`, `Miko cha·bo`, `please` -> `Ka·sapae. ...`. Tests: tests/unit/imperative_object_ko.test.js. Grammar logic, not a native quote.

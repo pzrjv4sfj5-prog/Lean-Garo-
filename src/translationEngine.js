@@ -273,6 +273,9 @@ async function translateCountedSubjectClause(cleaned) {
   return { garo, method: 'counted-subject-clause', confidence: 0.8 };
 }
 
+// NV-229: common transitive verbs not in VERB_LEMMAS; the bare command must still resolve cleanly.
+const IMPERATIVE_OBJECT_VERBS = new Set(['read','eat','drink','write','bring','buy','sell','cook','wash','open','close','hold','carry','cut','wear','sing','plant','catch','clean','tell','ask','pour','throw','teach','learn','hear','find','put','bake','boil','fry','sweep','touch','follow']);
+
 export async function translate(input) {
   // NV-181 (PO, 2026-10-21): 'him/her' routes to the established human object pronouns (same as 'him'); the slash otherwise leaves [UNKNOWN].
   input = String(input).replace(/\b(?:him\s*\/\s*her|her\s*\/\s*him)\b/gi, 'him');
@@ -446,6 +449,39 @@ export async function translate(input) {
           && /(bo|nabe|na·be)!?$/i.test(bare.garo) && bare.method !== 'passthrough') {
         const g = bare.garo.replace(/!$/, '');
         return { garo: `${tvObj ? 'TV' : 'Uko'} ${g.charAt(0).toLowerCase()}${g.slice(1)}`, method: 'imperative-object-it', confidence: 0.8 };
+      }
+    }
+  }
+  // NV-229 (2026-10-30, Claude A, grammar logic, not a native quote): subjectless command with an
+  // overt noun object, `VERB [the|a|an] NOUN(s)[!]` (`read the book`, `eat rice`). sov-assembly
+  // emitted verb-first, object unmarked, verb in citation -a form (`poraia ki·tap`). Correct shape
+  // is object-before-verb with `-ko` and the attested -bo command (RULE-029; object `-ko` as in
+  // attested `Ua ki·tapko poraia`; plural `-rang`+`ko` as `ki·taprangko`). Only fires when the
+  // result fell to sov-assembly / noun-subject-clause (exact rows, corrections and every other
+  // construction stay untouched), the bare command resolves to a clean one-word -bo form, and the
+  // noun resolves to a clean noun-only headword (so adjectives, pronouns and adverbs never match).
+  {
+    const mo = String(input).trim().match(/^(please\s+)?([a-z]+)\s+(?:(?:the|a|an)\s+)?([a-z]+)\s*[!.]?$/i);
+    if (mo && result && (result.method === 'sov-assembly' || result.method === 'noun-subject-clause')
+        && (!mo[1] === (result.method === 'sov-assembly'))
+        && (VERB_LEMMAS.has(mo[2].toLowerCase()) || IMPERATIVE_OBJECT_VERBS.has(mo[2].toLowerCase()) || !!lookupGaro('to ' + mo[2].toLowerCase()))
+        && !/^(it|me|you|him|her|them|us|this|that|these|those|here|there|now|then|up|down|out|off|on|in|away|back|home)$/i.test(mo[3])
+        && !isKnownAdjectiveEnglish(mo[3].toLowerCase())) {
+      const wV = mo[2].toLowerCase(), wN = mo[3].toLowerCase();
+      const sing = singularize(wN);
+      const isPl = sing !== wN && !!garoPluralNoun(wN);
+      const nG = isPl ? garoPluralNoun(wN) : lookupGaro(wN, 'n.');
+      const bare = await translate(`${wV}!`);
+      if (nG && typeof nG === 'string' && !/\[UNKNOWN\]|[,;()/\s]/.test(nG)
+          && bare && typeof bare.garo === 'string' && !bare.garo.includes('[UNKNOWN]') && !bare.garo.includes(' ')
+          && bare.method !== 'passthrough'
+          && (/bo!?$/i.test(bare.garo) || (/a$/i.test(bare.garo) && !/(enga|aha|jok|gen|jawa|ja|na)$/i.test(bare.garo)))) {
+        // same RULE-029 / R-b step as the bare command: citation -a becomes -bo
+        const v = bare.garo.replace(/!$/, '').toLowerCase().replace(/a$/i, 'bo').replace(/bobo$/, 'bo');
+        const n = nG.charAt(0).toLowerCase() + nG.slice(1);
+        return mo[1]
+          ? { garo: `Ka·sapae. ${n}ko ${v}`, method: 'imperative-object-ko', confidence: 0.8 }
+          : { garo: `${nG.charAt(0).toUpperCase() + nG.slice(1)}ko ${v}`, method: 'imperative-object-ko', confidence: 0.8 };
       }
     }
   }
