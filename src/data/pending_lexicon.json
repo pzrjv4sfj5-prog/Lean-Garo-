@@ -5351,14 +5351,14 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-19. OCR-flagged for structural reason only (dual-POS split, typo preserved verbatim, or similar) - no actual doubt about correctness.",
+    "review_notes": "Reviewed by Claude A, 2026-07-19. OCR-flagged for structural reason only (dual-POS split, typo preserved verbatim, or similar) - no actual doubt about correctness. | NV-231 (2026-10-30): promoted master row `To cut`=`Baka` DELETED per Project Owner keep-list (cut = Den·a; Thangseng word); record kept as duplicate-skip.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-19",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-19T16:45:47.730Z"
   },
   {

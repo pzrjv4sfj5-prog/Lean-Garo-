@@ -2502,10 +2502,10 @@
   },
   {
     "english": "doctor",
-    "garo": "Sam·on·gipa",
+    "garo": "Sam on·gipa",
     "category": "health",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch) Data-hygiene fix (NV-095 session): stray literal English word \"Doctor / \" prefix removed from garo field (import artifact); value unchanged in meaning, matches Thangseng's final 'Sam on·gipa'."
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch) Data-hygiene fix (NV-095 session): stray literal English word \"Doctor / \" prefix removed from garo field (import artifact); value unchanged in meaning, matches Thangseng's final 'Sam on·gipa'. | NV-231 (2026-10-30, Project Owner keep-list, Thangseng words): spelling `Sam on·gipa`."
   },
   {
     "english": "nurse",
@@ -3196,13 +3196,6 @@
     "category": "general",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'light' has VERIFIED/HIGH form(s) ['ja·seng·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
     "confidence": "superseded"
-  },
-  {
-    "english": "darkness",
-    "garo": "Andala",
-    "category": "general",
-    "confidence": "superseded",
-    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile."
   },
   {
     "english": "ghost",
@@ -15135,7 +15128,7 @@
     "garo": "namen kenbegnigipa",
     "category": "general",
     "confidence": "verified_high",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch)"
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch) | NV-231 (2026-10-30, Project Owner keep-list, Thangseng words): spelling `namen kenbegnigipa`."
   },
   {
     "english": "decent",
@@ -15154,13 +15147,6 @@
     "garo": "pangchaka",
     "category": "general",
     "confidence": "unverified"
-  },
-  {
-    "english": "eaten",
-    "garo": "cha·man·aha",
-    "category": "general",
-    "confidence": "superseded",
-    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile."
   },
   {
     "english": "educated",
@@ -17813,14 +17799,6 @@
     "notes": "variant/AMBIGUOUS/MEDIUM"
   },
   {
-    "english": "Dangerous",
-    "garo": "Namen kena nanggnigipa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/MEDIUM"
-  },
-  {
     "english": "Daughter",
     "garo": "De·me·chik",
     "pos": null,
@@ -18585,15 +18563,6 @@
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH",
     "confidence": "verified_high"
-  },
-  {
-    "english": "Goat",
-    "garo": "do·omok",
-    "pos": null,
-    "category": "animals",
-    "classifier": null,
-    "notes": "SUPERSEDED — direct native correction, 2026-08-07: native gave final confirmation 'goat'='Do·bok'/'dobok', overriding this entry's prior variant/VERIFIED/HIGH tag. Not authoritative for compile; retained per citation discipline, not deleted. May still be a valid register/dialect variant rather than an outright error — flagging for Claude A review, not asserting this form is definitively wrong.",
-    "confidence": "superseded"
   },
   {
     "english": "God",
@@ -28315,15 +28284,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "curry",
-    "garo": "ja·ba",
-    "pos": null,
-    "category": "food",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "curve",
     "garo": "gong·ge·bak·a",
     "pos": null,
@@ -28370,30 +28330,12 @@
   },
   {
     "english": "cut",
-    "garo": "den·a",
+    "garo": "Den·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed. | NV-231 (2026-10-30, Project Owner keep-list, Thangseng words): spelling `Den·a`.",
     "confidence": "verified_high"
-  },
-  {
-    "english": "cut",
-    "garo": "mat·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "cut",
-    "garo": "rat·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
   },
   {
     "english": "cut by slicing",
@@ -28452,15 +28394,6 @@
   {
     "english": "dahl",
     "garo": "dail",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "daily",
-    "garo": "jring·jring",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -28621,15 +28554,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "dead",
-    "garo": "bi·ba bon·chot·a",
-    "pos": null,
-    "category": "health",
-    "classifier": null,
-    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): unrelated form; native gives a person/body sense split instead ('sigimin' for a person, 'Manggisi' for a body). Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md.",
-    "confidence": "superseded"
-  },
-  {
     "english": "dead body",
     "garo": "Manggisi",
     "pos": null,
@@ -28641,15 +28565,6 @@
   {
     "english": "decant",
     "garo": "ru·srip·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "deceive",
-    "garo": "bo·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -29717,15 +29632,6 @@
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
     "confidence": "unverified"
-  },
-  {
-    "english": "dried",
-    "garo": "gran",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "SUPERSEDED — NV-089 (2026-08-21 Thangseng relay via Tridip): unrelated form; native gives a water/things sense split instead ('tipjok' for water, 'ran·aha' for things). Retained per citation discipline, not deleted. See docs/THANGSENG_RELAY_TABLE_20260821B.md.",
-    "confidence": "superseded"
   },
   {
     "english": "dried eel",
@@ -31080,15 +30986,6 @@
   {
     "english": "festival",
     "garo": "Wan·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "few",
-    "garo": "kom",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -53911,14 +53808,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "To cut",
-    "garo": "Baka",
-    "category": null,
-    "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High] POS tag 'n.' conflicts with the verbal definitions.",
-    "confidence": "ocr_flagged"
-  },
-  {
     "english": "to hoe",
     "garo": "Baka",
     "category": null,
@@ -72861,9 +72750,9 @@
   },
   {
     "english": "curry",
-    "garo": "bi·jak",
+    "garo": "bijak",
     "category": "food",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — existing ja·ba (UNVERIFIED/HIGH) left untouched, may be a distinct curry-type word.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — existing ja·ba (UNVERIFIED/HIGH) left untouched, may be a distinct curry-type word. | NV-231 (2026-10-30, Project Owner keep-list, Thangseng words): spelling `bijak`.",
     "confidence": "verified_high"
   },
   {
@@ -73321,14 +73210,14 @@
     "english": "dead",
     "garo": "sigimin",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\") | NV-231 (2026-10-30, Project Owner keep-list, Thangseng words): spelling `sigimin` (refers to a dead person).",
     "confidence": "verified_high"
   },
   {
     "english": "dried",
     "garo": "tipjok",
     "category": "food",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\") | NV-231 (2026-10-30, Project Owner keep-list, Thangseng words): spelling `tipjok` (drying of water).",
     "confidence": "verified_high"
   },
   {
@@ -73671,20 +73560,6 @@
     "garo": "mesaa",
     "category": "general",
     "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"dance (alt) = mesaa; * 'chroka' is more commonly used\" — confirms existing VERIFIED/HIGH 'Chroka' (NV-093) remains the preferred/primary form; 'mesaa' logged as a native-confirmed secondary alt, not a replacement.",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "eaten",
-    "garo": "cha·manaha",
-    "category": "general",
-    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"eaten = cha'manaha, cha'manjok (alt, perfective)\". This is the fuller/uncontracted form corroborating the previously-SUPERSEDED (NV-095) 'cha·man·aha' row — same word, now independently re-attested. Primary VERIFIED/HIGH for 'eaten' remains 'cha·jok' (NV-095); not superseding it, logging as corroborating variant only.",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "eaten",
-    "garo": "cha·manjok",
-    "category": "general",
-    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch, explicitly marked '(alt, perfective)'. Fuller form of the already-VERIFIED/HIGH 'cha·jok' (NV-095) — same root, perfective-aspect-marked variant. Not superseding cha·jok.",
     "confidence": "verified_high"
   },
   {
@@ -74740,13 +74615,6 @@
   {
     "english": "only",
     "garo": "banggija",
-    "category": "grammar",
-    "confidence": "unverified",
-    "notes": "UNVERIFIED/HIGH — NV-139 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening), reply to Tridip's relay question \"how will you say 'it takes only few hours'\": template \"__oni __ona banggija somaisan (lit. konta) nangaia.\" Logged as a fill-in-the-blank grammatical template (not a standalone sentence) -- see docs/THANGSENG_NATIVE_VALIDATION.md NV-139 for the full template writeup. 'nangaia' = 'it takes' (contrasts with NV-138's 'nangaha' = 'it took', past tense -- different tense/aspect, not yet cross-confirmed as a regular present/past pair)."
-  },
-  {
-    "english": "few",
-    "garo": "somaisan",
     "category": "grammar",
     "confidence": "unverified",
     "notes": "UNVERIFIED/HIGH — NV-139 (Thangseng, direct relay via Project Owner/WhatsApp, 2026-09-05 evening), reply to Tridip's relay question \"how will you say 'it takes only few hours'\": template \"__oni __ona banggija somaisan (lit. konta) nangaia.\" Logged as a fill-in-the-blank grammatical template (not a standalone sentence) -- see docs/THANGSENG_NATIVE_VALIDATION.md NV-139 for the full template writeup. 'nangaia' = 'it takes' (contrasts with NV-138's 'nangaha' = 'it took', past tense -- different tense/aspect, not yet cross-confirmed as a regular present/past pair)."
@@ -81093,6 +80961,51 @@
     "pos": "v.",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-230 (2026-10-30, Thangseng native grammar forms relayed by Project Owner in chat, raw message not on file; raka-normalised). Grammar form: continuous form of `donga`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dead body",
+    "garo": "Manggisi",
+    "category": "words",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-231 (2026-10-30, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). Refers to a dead body (contrast `sigimin` = dead person).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dead (body)",
+    "garo": "Manggisi",
+    "category": "words",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-231 (2026-10-30, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). Refers to a dead body.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dead (person)",
+    "garo": "sigimin",
+    "category": "words",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-231 (2026-10-30, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). Refers to a dead person.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dried (of things)",
+    "garo": "ran·aha",
+    "category": "words",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-231 (2026-10-30, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). Drying of things (contrast `tipjok` = drying of water).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "dried (of water)",
+    "garo": "tipjok",
+    "category": "words",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-231 (2026-10-30, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). Drying of water.",
     "confidence": "verified_high"
   }
 ]

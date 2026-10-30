@@ -1812,10 +1812,6 @@
     "garo": "Seng·a"
   },
   {
-    "english": "darkness",
-    "garo": "Andala"
-  },
-  {
     "english": "ghost",
     "garo": "Me·mang"
   },
@@ -6282,10 +6278,6 @@
   {
     "english": "Light",
     "garo": "Seng·a"
-  },
-  {
-    "english": "Darkness",
-    "garo": "Andala"
   },
   {
     "english": "Ghost",
@@ -16960,11 +16952,6 @@
     "english": "earthquake",
     "garo": "banggria",
     "pos": "noun"
-  },
-  {
-    "english": "eaten",
-    "garo": "cha·man·aha",
-    "pos": "verb"
   },
   {
     "english": "educated",

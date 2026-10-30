@@ -365,7 +365,7 @@ export const PHRASE_MAPS = {
   'girl': 'me·chik bi·sa',
   'child': 'Bi·sa',
   'teacher': 'Skigipa',
-  'doctor': 'Sam·on·gipa',
+  'doctor': 'Sam on·gipa',
   'farmer': 'Game·cha·gipa',
   'medicine': 'Sam',
   'pain': 'Sa·dika',

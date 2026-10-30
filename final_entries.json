@@ -2544,14 +2544,6 @@
     "notes": "variant/AMBIGUOUS/MEDIUM"
   },
   {
-    "english": "Darkness",
-    "garo": "Andala",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH"
-  },
-  {
     "english": "Daughter",
     "garo": "De·me·chik",
     "pos": null,
@@ -3294,14 +3286,6 @@
     "category": "food",
     "classifier": null,
     "notes": "VERIFIED/HIGH"
-  },
-  {
-    "english": "Eaten",
-    "garo": "Cha·man·aha",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/MEDIUM"
   },
   {
     "english": "Echo",
@@ -18824,14 +18808,6 @@
     "notes": "variant/UNVERIFIED/HIGH"
   },
   {
-    "english": "curry",
-    "garo": "ja·ba",
-    "pos": null,
-    "category": "food",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
     "english": "curve",
     "garo": "gong·ge·bak·a",
     "pos": null,
@@ -18878,22 +18854,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH v:mat-a / rat-a"
-  },
-  {
-    "english": "cut",
-    "garo": "mat·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "cut",
-    "garo": "rat·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
   },
   {
     "english": "cut by slicing",
@@ -18946,14 +18906,6 @@
   {
     "english": "dahl",
     "garo": "dail",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "daily",
-    "garo": "jring·jring",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -20098,14 +20050,6 @@
   {
     "english": "dressed",
     "garo": "chin·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "dried",
-    "garo": "gran",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21314,14 +21258,6 @@
   {
     "english": "festival",
     "garo": "Wan·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "few",
-    "garo": "kom",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
