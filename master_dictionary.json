@@ -80913,5 +80913,41 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH (compositional, by composition, NV-227, 2026-10-29, Claude A, Project Owner closure): asong (sit, NV-187/NV-188) + hortative -na (RULE-007, `Hai`+`-na` / -na hortative-immediacy) + question particle -ma. Offer/suggestion sense, distinct from permission `may i sit` = `Anga asongna man·genma?`. Not a Thangseng quote.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "the bed is nicely done",
+    "garo": "Palang name tarigimin ong·a",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-228 (Thangseng direct native sentences relayed by Project Owner in chat, 2026-10-29 (raw message not on file; apostrophe/period normalised to raka ·). Thangseng: not literal translations, a literal rendering would sound awkward in Garo.) Bed made/prepared nicely; `name` + `tarigimin` + `ong·a`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the food is cooked nicely",
+    "garo": "Bijak name minaha",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-228 (Thangseng direct native sentences relayed by Project Owner in chat, 2026-10-29 (raw message not on file; apostrophe/period normalised to raka ·). Thangseng: not literal translations, a literal rendering would sound awkward in Garo.) Intent: food cooked properly (done right). `Bijak` glosses the dish here; separate NV-080 row has Bijak = leaf. `minaha` = ripe/done (NV-050).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the food is cooked nicely (taste)",
+    "garo": "Bijak toaha song·a toaha",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-228 (Thangseng direct native sentences relayed by Project Owner in chat, 2026-10-29 (raw message not on file; apostrophe/period normalised to raka ·). Thangseng: not literal translations, a literal rendering would sound awkward in Garo.) Variant for when the taste is the concern.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "food is nice",
+    "garo": "Cha·ani toa",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-228 (Thangseng direct native sentences relayed by Project Owner in chat, 2026-10-29 (raw message not on file; apostrophe/period normalised to raka ·). Thangseng: not literal translations, a literal rendering would sound awkward in Garo.) Lit. food is tasty (NV-158 `Cha·ani` = food).",
+    "confidence": "verified_high"
   }
 ]
