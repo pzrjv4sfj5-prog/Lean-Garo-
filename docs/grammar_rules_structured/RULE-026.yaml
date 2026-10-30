@@ -19,6 +19,7 @@ claims:
     confidence_note: "same source rating as above, not separately specified per claim"
 examples:
   - 'cha·manaha = "has eaten" / "ate" (completive framing)'
+  - 'NV-232 (2026-10-30, Project Owner ruling): cha·jok and cha·manaha are both simple past for eat; both retained'
 counterexamples:
   note: "none confirmed; the aha/manaha overlap itself is confirmed, not a counterexample"
   items: []

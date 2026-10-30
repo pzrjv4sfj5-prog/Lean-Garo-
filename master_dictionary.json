@@ -73109,7 +73109,7 @@
     "pos": "",
     "classifier": "",
     "category": "",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch). Uses the confirmed cha- eat-root with a -jok completive suffix (cf. 'coming'=re·baengjok above). Coexists with unverified 'cha·man·aha' — not superseded.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch). Uses the confirmed cha- eat-root with a -jok completive suffix (cf. 'coming'=re·baengjok above). Coexists with unverified 'cha·man·aha' — not superseded. | NV-232 (2026-10-30, Project Owner ruling in chat relaying Thangseng; raw message not on file): `cha·jok` and `cha·manaha` are BOTH simple past for `eat`; both retained for `has eaten` / `eaten`.",
     "confidence": "verified_high"
   },
   {
@@ -73224,7 +73224,7 @@
     "english": "eaten",
     "garo": "cha·jok",
     "category": "food",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\") | NV-232 (2026-10-30, Project Owner ruling in chat relaying Thangseng; raw message not on file): `cha·jok` and `cha·manaha` are BOTH simple past for `eat`; both retained for `has eaten` / `eaten`.",
     "confidence": "verified_high"
   },
   {
@@ -81006,6 +81006,33 @@
     "pos": null,
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-231 (2026-10-30, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). Drying of water.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eaten",
+    "garo": "cha·manaha",
+    "category": "verbs",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-232 (2026-10-30, Project Owner ruling in chat relaying Thangseng; raw message not on file): `cha·jok` and `cha·manaha` are BOTH simple past for `eat`; both retained for `has eaten` / `eaten`. Restored after the NV-231 duplicate sweep deleted it in error; `cha·jok` stays primary. (`cha·manjok` not restored: not part of this ruling.)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "has eaten",
+    "garo": "cha·jok",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-232 (2026-10-30, Project Owner ruling in chat relaying Thangseng; raw message not on file): `cha·jok` and `cha·manaha` are BOTH simple past for `eat`; both retained for `has eaten` / `eaten`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "has eaten",
+    "garo": "cha·manaha",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-232 (2026-10-30, Project Owner ruling in chat relaying Thangseng; raw message not on file): `cha·jok` and `cha·manaha` are BOTH simple past for `eat`; both retained for `has eaten` / `eaten`.",
     "confidence": "verified_high"
   }
 ]

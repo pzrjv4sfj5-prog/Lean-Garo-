@@ -3742,7 +3742,7 @@
   "darkness": "general",
   "dead": "general",
   "dried": "food",
-  "eaten": "food",
+  "eaten": "verbs",
   "help": "general",
   "live": "general",
   "living": "general",
@@ -4275,5 +4275,6 @@
   "live (reside)": "verbs",
   "living (reside)": "verbs",
   "dried (of things)": "words",
-  "dried (of water)": "words"
+  "dried (of water)": "words",
+  "has eaten": "phrases"
 }
