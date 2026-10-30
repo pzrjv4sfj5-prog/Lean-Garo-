@@ -4267,5 +4267,11 @@
   "the food is cooked nicely": "phrases",
   "the food is cooked nicely (taste)": "phrases",
   "food is nice": "phrases",
-  "to read": "education"
+  "to read": "education",
+  "alive": "verbs",
+  "to be alive": "verbs",
+  "live (be alive)": "verbs",
+  "living (be alive)": "verbs",
+  "live (reside)": "verbs",
+  "living (reside)": "verbs"
 }

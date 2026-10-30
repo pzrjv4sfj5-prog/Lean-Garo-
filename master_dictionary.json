@@ -22934,8 +22934,8 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
+    "notes": "SUPERSEDED — NV-230 (2026-10-30, Thangseng): `alive` = `tanga` (no raka dot); `tang·a` was an unverified dictionary form. Retained as history.",
+    "confidence": "superseded"
   },
   {
     "english": "all day",
@@ -73793,14 +73793,14 @@
     "english": "live (alt)",
     "garo": "tanga",
     "category": "general",
-    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"live (alt) = tanga\". FLAGGED, not reconciled: reopens the tang-root question — 'live'/tang·a was marked SUPERSEDED at NV-095 in favor of 'donga' (now VERIFIED/HIGH for 'live (alt)'). This relay re-attests a tang-root form under the SAME 'live (alt)' key as donga, without disambiguating register/sense. Not un-superseding tang·a and not demoting donga; logged for explicit Thangseng reconciliation of the tang-/dong- family. SENSE CONFIRMED 2026-08-28 (Project Owner direct chat relay, session 2): explicitly the vital sense — \"being alive\" — distinguished from donga (\"living at a place\"). This resolves the tension: no longer an unreconciled re-attestation, it is a confirmed distinct sense sharing the English gloss 'live'. Resolves docs/CLAUDE_A_SESSION_MIGRATION_20260828.md 'Exact next actions' #3.",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"live (alt) = tanga\". FLAGGED, not reconciled: reopens the tang-root question — 'live'/tang·a was marked SUPERSEDED at NV-095 in favor of 'donga' (now VERIFIED/HIGH for 'live (alt)'). This relay re-attests a tang-root form under the SAME 'live (alt)' key as donga, without disambiguating register/sense. Not un-superseding tang·a and not demoting donga; logged for explicit Thangseng reconciliation of the tang-/dong- family. SENSE CONFIRMED 2026-08-28 (Project Owner direct chat relay, session 2): explicitly the vital sense — \"being alive\" — distinguished from donga (\"living at a place\"). This resolves the tension: no longer an unreconciled re-attestation, it is a confirmed distinct sense sharing the English gloss 'live'. Resolves docs/CLAUDE_A_SESSION_MIGRATION_20260828.md 'Exact next actions' #3. | RECONCILED NV-230 (2026-10-30): `tanga` = live in the sense of BEING ALIVE; residence is `donga`. The NV-097 flag is closed; both stay verified, split by sense.",
     "confidence": "verified_high"
   },
   {
     "english": "living",
     "garo": "tangenggipa",
     "category": "general",
-    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch, explicitly marked '(alt, progressive)'. Same tang-root family tension as 'live (alt)'=tanga above (this session) — 'living' currently VERIFIED/HIGH as 'dongenga' (NV-095), 'git·tang·a' SUPERSEDED. This progressive nominalized tang-form is logged as-is, not reconciled against dongenga; part of the same flagged tang-/dong- family needing a future explicit relay question. SENSE CONFIRMED 2026-08-28 (Project Owner direct chat relay, session 2): explicitly the continuous form of tanga (\"being alive\" sense), distinguished from dongenga (continuous of donga, locative/existential sense). No longer 'not reconciled' — resolves docs/CLAUDE_A_SESSION_MIGRATION_20260828.md 'Exact next actions' #3.",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch, explicitly marked '(alt, progressive)'. Same tang-root family tension as 'live (alt)'=tanga above (this session) — 'living' currently VERIFIED/HIGH as 'dongenga' (NV-095), 'git·tang·a' SUPERSEDED. This progressive nominalized tang-form is logged as-is, not reconciled against dongenga; part of the same flagged tang-/dong- family needing a future explicit relay question. SENSE CONFIRMED 2026-08-28 (Project Owner direct chat relay, session 2): explicitly the continuous form of tanga (\"being alive\" sense), distinguished from dongenga (continuous of donga, locative/existential sense). No longer 'not reconciled' — resolves docs/CLAUDE_A_SESSION_MIGRATION_20260828.md 'Exact next actions' #3. | RECONCILED NV-230 (2026-10-30): `tangenggipa` = living (being alive; continuous form of `tanga`); residence is `dongenga`. NV-097 flag closed.",
     "confidence": "verified_high"
   },
   {
@@ -81134,6 +81134,60 @@
     "pos": "v.",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-226/NV-229 (2026-10-30): Project Owner ruling `poraia` = read (same verb as study). Infinitive-key row so the bare command `read!` reaches the RULE-029 -a -> -bo step (`poraibo`).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "alive",
+    "garo": "tanga",
+    "category": "verbs",
+    "pos": "adj.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-230 (2026-10-30, Thangseng native grammar forms relayed by Project Owner in chat, raw message not on file; raka-normalised). Sense: being alive.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to be alive",
+    "garo": "tanga",
+    "category": "verbs",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-230 (2026-10-30, Thangseng native grammar forms relayed by Project Owner in chat, raw message not on file; raka-normalised). Sense: being alive; contrast `donga` = reside.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "live (be alive)",
+    "garo": "tanga",
+    "category": "verbs",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-230 (2026-10-30, Thangseng native grammar forms relayed by Project Owner in chat, raw message not on file; raka-normalised). Grammar form: live in the sense of being alive.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "living (be alive)",
+    "garo": "tangenggipa",
+    "category": "verbs",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-230 (2026-10-30, Thangseng native grammar forms relayed by Project Owner in chat, raw message not on file; raka-normalised). Grammar form: continuous form of `tanga`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "live (reside)",
+    "garo": "donga",
+    "category": "verbs",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-230 (2026-10-30, Thangseng native grammar forms relayed by Project Owner in chat, raw message not on file; raka-normalised). Grammar form: live in the sense of living at a place.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "living (reside)",
+    "garo": "dongenga",
+    "category": "verbs",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-230 (2026-10-30, Thangseng native grammar forms relayed by Project Owner in chat, raw message not on file; raka-normalised). Grammar form: continuous form of `donga`.",
     "confidence": "verified_high"
   }
 ]
