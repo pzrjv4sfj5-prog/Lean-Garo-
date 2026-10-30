@@ -4,6 +4,7 @@
 
 | English | present | continuous | past | future | negative | negative_future | command | negative_command | infinitive |
 |---|---|---|---|---|---|---|---|---|---|
+| accompany | re·rika | re·rikenga | re·rikaha | re·rikgen | re·rikja | re·rikjawa | re·rikbo | re·riknabe | re·rikna |
 | advise | bu·jai·a | bu·jai·enga | bu·jai·aha | bu·jai·gen | bu·jai·ja | bu·jai·jawa | bu·jai·bo | bu·jai·nabe | bu·jai·na |
 | allote | chama | chamenga | chamaha | chamgen | chamja | chamjawa | chambo | chamnabe | chamna |
 | animate | ka·dongata | ka·dongatenga | ka·dongataha | ka·dongatgen | ka·dongatja | ka·dongatjawa | ka·dongatbo | ka·dongatnabe | ka·dongatna |
@@ -65,7 +66,7 @@
 | defeat | am·al·na | am·al·nenga | am·al·naha | am·al·ngen | am·al·nja | am·al·njawa | am·al·nbo | am·al·nnabe | am·al·nna |
 | demand | dabia | dabienga | dabiaha | dabigen | dabija | dabijawa | dabibo | dabinabe | dabina |
 | deride | kal·steka | kal·stekenga | kal·stekaha | kal·stekgen | kal·stekja | kal·stekjawa | kal·stekbo | kal·steknabe | kal·stekna |
-| die | si·a | si·enga | si·aha | si·gen | si·ja | si·jawa | si·bo | si·nabe | si·na |
+| die | sia | sienga | siaha | sigen | sija | sijawa | sibo | sinabe | sina |
 | dig | kong·a | kong·enga | kong·aha | kong·gen | kong·ja | kong·jawa | kong·bo | kong·nabe | kong·na |
 | discharge | gotila | gotilenga | gotilaha | gotilgen | gotilja | gotiljawa | gotilbo | gotilnabe | gotilna |
 | disclose | aganparaka | aganparakenga | aganparakaha | aganparakgen | aganparakja | aganparakjawa | aganparakbo | aganparaknabe | aganparakna |
@@ -97,6 +98,7 @@
 | feed | kan·a | kan·enga | kan·aha | kan·gen | kan·ja | kan·jawa | kan·bo | kan·nabe | kan·na |
 | flame | ba·a | ba·enga | ba·aha | ba·gen | ba·ja | ba·jawa | ba·bo | ba·nabe | ba·na |
 | float | bal·ju·ri·a | bal·ju·ri·enga | bal·ju·ri·aha | bal·ju·ri·gen | bal·ju·ri·ja | bal·ju·ri·jawa | bal·ju·ri·bo | bal·ju·ri·nabe | bal·ju·ri·na |
+| follow | re·rika | re·rikenga | re·rikaha | re·rikgen | re·rikja | re·rikjawa | re·rikbo | re·riknabe | re·rikna |
 | forbid | nim·a | nim·enga | nim·aha | nim·gen | nim·ja | nim·jawa | nim·bo | nim·nabe | nim·na |
 | forebear | chakchika | chakchikenga | chakchikaha | chakchikgen | chakchikja | chakchikjawa | chakchikbo | chakchiknabe | chakchikna |
 | foretell | agansoa | agansoenga | agansoaha | agansogen | agansoja | agansojawa | agansobo | agansonabe | agansona |
@@ -136,7 +138,7 @@
 | lie | tol·a | tol·enga | tol·aha | tol·gen | tol·ja | tol·jawa | tol·bo | tol·nabe | tol·na |
 | lift | de·tom·brot·a | de·tom·brot·enga | de·tom·brot·aha | de·tom·brot·gen | de·tom·brot·ja | de·tom·brot·jawa | de·tom·brot·bo | de·tom·brot·nabe | de·tom·brot·na |
 | light | ja·seng·a | ja·seng·enga | ja·seng·aha | ja·seng·gen | ja·seng·ja | ja·seng·jawa | ja·seng·bo | ja·seng·nabe | ja·seng·na |
-| like | sin·a | sin·enga | sin·aha | sin·gen | sin·ja | sin·jawa | sin·bo | sin·nabe | sin·na |
+| like | namnika 📌 | namnikenga | namnikaha | namnikgen | namnikja | namnikjawa | namnikbo | namniknabe | namnikna |
 | live | donga 📌 | dongenga 📌 | dongaha | donggen 📌 | dongja | dongjawa | dongbo | dongnabe | dongna |
 | lodge | donga 📌 | dongenga 📌 | dongaha | donggen 📌 | dongja | dongjawa | dongbo | dongnabe | dongna |
 | love | ka·saa 📌 | ka·saenga 📌 | ka·saaha 📌 | ka·sagen | ka·saja | ka·sajawa | ka·sabo | ka·sanabe | ka·sana |
@@ -173,7 +175,7 @@
 | pull | sala | salenga | salaha | salgen | salja | saljawa | salbo | salnabe | salna |
 | quell | bamata | bamatenga | bamataha | bamatgen | bamatja | bamatjawa | bamatbo | bamatnabe | bamatna |
 | quiver | an·chi·mit·chok·cha·katna | an·chi·mit·chok·cha·katnenga | an·chi·mit·chok·cha·katnaha | an·chi·mit·chok·cha·katngen | an·chi·mit·chok·cha·katnja | an·chi·mit·chok·cha·katnjawa | an·chi·mit·chok·cha·katnbo | an·chi·mit·chok·cha·katnnabe | an·chi·mit·chok·cha·katnna |
-| read | po·ri·a | poraienga 📌 | po·ri·aha | po·ri·gen | po·ri·ja | po·ri·jawa | po·ri·bo | po·ri·nabe | po·ri·na |
+| read | poraia | poraienga 📌 | poraiaha | poraigen | poraija | poraijawa | poraibo | porainabe | poraina |
 | reckon | chana | chanenga | chanaha | changen | chanja | chanjawa | chanbo | channabe | channa |
 | refrain | chakchika | chakchikenga | chakchikaha | chakchikgen | chakchikja | chakchikjawa | chakchikbo | chakchiknabe | chakchikna |
 | replace | bodolea | bodoleenga | bodoleaha | bodolegen | bodoleja | bodolejawa | bodolebo | bodolenabe | bodolena |
@@ -184,6 +186,7 @@
 | resume | a·ba·cheng·tai·na | a·ba·cheng·tai·nenga | a·ba·cheng·tai·naha | a·ba·cheng·tai·ngen | a·ba·cheng·tai·nja | a·ba·cheng·tai·njawa | a·ba·cheng·tai·nbo | a·ba·cheng·tai·nnabe | a·ba·cheng·tai·nna |
 | reveal | a·gan·pa·rak·na | a·gan·pa·rak·nenga | a·gan·pa·rak·naha | a·gan·pa·rak·ngen | a·gan·pa·rak·nja | a·gan·pa·rak·njawa | a·gan·pa·rak·nbo | a·gan·pa·rak·nnabe | a·gan·pa·rak·nna |
 | rise | na·a | na·enga | na·aha | na·gen | na·ja | na·jawa | na·bo | na·nabe | na·na |
+| roam | rorama 📌 | roramenga | roramaha | roramgen | roramja | roramjawa | rorambo | roramnabe | roramna |
 | roll | romroma | romromenga | romromaha | romromgen | romromja | romromjawa | romrombo | romromnabe | romromna |
 | roost | bama | bamenga | bamaha | bamgen | bamja | bamjawa | bambo | bamnabe | bamna |
 | run | kata 📌 | katenga 📌 | kataha 📌 | katgen | katja | katjawa 📌 | katbo | katnabe 📌 | katna |
@@ -217,6 +220,7 @@
 | stop | dontonga 📌 | dontongenga | dontongaha | dontonggen | dontongja | dontongjawa | dontongbo | dontongnabe | dontongna |
 | stretch | han·sal·a | han·sal·enga | han·sal·aha | han·sal·gen | han·sal·ja | han·sal·jawa | han·sal·bo | han·sal·nabe | han·sal·na |
 | strip | grua | gruenga | gruaha | grugen | gruja | grujawa | grubo | grunabe | gruna |
+| study | poraia | poraienga 📌 | poraiaha | poraigen | poraija | poraijawa | poraibo | porainabe | poraina |
 | suffer | joma | jomenga | jomaha | jomgen | jomja | jomjawa | jombo | jomnabe | jomna |
 | support | sin·chak·a | sin·chak·enga | sin·chak·aha | sin·chak·gen | sin·chak·ja | sin·chak·jawa | sin·chak·bo | sin·chak·nabe | sin·chak·na |
 | surrender | bama | bamenga | bamaha | bamgen | bamja | bamjawa | bambo | bamnabe | bamna |
@@ -224,7 +228,7 @@
 | suspend | kadingde·a | kadingde·enga | kadingde·aha | kadingde·gen | kadingde·ja | kadingde·jawa | kadingde·bo | kadingde·nabe | kadingde·na |
 | sweep | ot·rok·a | ot·rok·enga | ot·rok·aha | ot·rok·gen | ot·rok·ja | ot·rok·jawa | ot·rok·bo | ot·rok·nabe | ot·rok·na |
 | swim | jroa | jroenga | jroaha | jrogen | jroja | jrojawa | jrobo | jronabe | jrona |
-| take | ra·a | ra·enga | ra·aha | ra·gen | ra·ja | ra·jawa | ra·bo | ra·nabe | ra·na |
+| take | ra·a | ra·enga | ra·aha 📌 | ra·gen | ra·ja | ra·jawa | ra·bo | ra·nabe | ra·na |
 | talk | bol·a | bol·enga | bol·aha | bol·gen | bol·ja | bol·jawa | bol·bo | bol·nabe | bol·na |
 | tax | kajina | kajinenga | kajinaha | kajingen | kajinja | kajinjawa | kajinbo | kajinnabe | kajinna |
 | tease | rong·kal·a | rong·kal·enga | rong·kal·aha | rong·kal·gen | rong·kal·ja | rong·kal·jawa | rong·kal·bo | rong·kal·nabe | rong·kal·na |
@@ -250,7 +254,8 @@
 | use | jak·kal·a | jak·kal·enga | jak·kal·aha | jak·kal·gen | jak·kal·ja | jak·kal·jawa | jak·kal·bo | jak·kal·nabe | jak·kal·na |
 | visit | roa | roenga | roaha | rogen | roja | rojawa | robo | ronabe | rona |
 | wail | grap·a | grap·enga | grap·aha 📌 | grap·gen | grap·ja | grap·jawa | grap·bo | grap·nabe | grap·na |
-| walk | re·a | re·enga 📌 | re·aha 📌 | re·gen | re·ja | re·jawa 📌 | re·bo | re·nabe | re·na |
+| walk | re·mama | re·enga 📌 | re·mamaha | re·mamgen | re·mamja | re·mamjawa | re·mambo | re·mamnabe | re·mamna |
+| wander | rorama 📌 | roramenga | roramaha | roramgen | roramja | roramjawa | rorambo | roramnabe | roramna |
 | warn | ku·ron·a | ku·ron·enga | ku·ron·aha | ku·ron·gen | ku·ron·ja | ku·ron·jawa | ku·ron·bo | ku·ron·nabe | ku·ron·na |
 | wash | su·sranga | su·galenga 📌 | su·srangaha | su·sranggen | su·srangja | su·srangjawa | su·srangbo | su·srangnabe | su·srangna |
 | wear | krok·a | krok·enga | krok·aha | krok·gen | krok·ja | krok·jawa | krok·bo | krok·nabe | krok·na |

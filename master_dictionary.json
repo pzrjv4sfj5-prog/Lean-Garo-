@@ -11350,13 +11350,15 @@
     "english": "i need food",
     "garo": "ang dang chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i like food",
     "garo": "ang on·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i have food",
@@ -11369,13 +11371,15 @@
     "english": "i give food",
     "garo": "ang on·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i take food",
     "garo": "ang na·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i want water",
@@ -11395,7 +11399,8 @@
     "english": "i like water",
     "garo": "ang on·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i have water",
@@ -11408,31 +11413,36 @@
     "english": "i give water",
     "garo": "ang on·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i take water",
     "garo": "ang na·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i want book",
     "garo": "ang nama ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang nama kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row (`ang` is not a Garo pronoun; wrong verb word); sentence is composed by the engine. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang nama kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "i need book",
     "garo": "ang dang ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang dang kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row (`ang` is not a Garo pronoun; wrong verb word); sentence is composed by the engine. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang dang kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "i like book",
     "garo": "ang on·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang on·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row (`ang` is not a Garo pronoun; wrong verb word); sentence is composed by the engine. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang on·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "i have book",
@@ -11445,31 +11455,36 @@
     "english": "i give book",
     "garo": "ang on·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang on·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row (`ang` is not a Garo pronoun; wrong verb word); sentence is composed by the engine. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang on·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "i take book",
     "garo": "ang na·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang na·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row (`ang` is not a Garo pronoun; wrong verb word); sentence is composed by the engine. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'ang na·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "i want house",
     "garo": "ang nama rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i need house",
     "garo": "ang dang rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i like house",
     "garo": "ang on·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i have house",
@@ -11482,31 +11497,36 @@
     "english": "i give house",
     "garo": "ang on·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i take house",
     "garo": "ang na·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i want car",
     "garo": "ang nama mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i need car",
     "garo": "ang dang mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i like car",
     "garo": "ang on·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i have car",
@@ -11519,31 +11539,36 @@
     "english": "i give car",
     "garo": "ang on·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i take car",
     "garo": "ang na·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i want money",
     "garo": "ang nama pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i need money",
     "garo": "ang dang pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i like money",
     "garo": "ang on·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i have money",
@@ -11556,31 +11581,36 @@
     "english": "i give money",
     "garo": "ang on·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "i take money",
     "garo": "ang na·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. `ang` is not a Garo pronoun form (Anga), and the verb word is wrong (`like` = `on·a` is `give`). The verb + noun sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you want food",
     "garo": "na· nama chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you need food",
     "garo": "na· dang chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you like food",
     "garo": "na· on·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you have food",
@@ -11593,31 +11623,36 @@
     "english": "you give food",
     "garo": "na· on·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you take food",
     "garo": "na· na·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you want water",
     "garo": "na· nama chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you need water",
     "garo": "na· dang chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you like water",
     "garo": "na· on·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you have water",
@@ -11630,31 +11665,36 @@
     "english": "you give water",
     "garo": "na· on·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you take water",
     "garo": "na· na·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you want book",
     "garo": "na· nama ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· nama kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· nama kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "you need book",
     "garo": "na· dang ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· dang kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· dang kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "you like book",
     "garo": "na· on·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· on·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· on·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "you have book",
@@ -11667,31 +11707,36 @@
     "english": "you give book",
     "garo": "na· on·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· on·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· on·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "you take book",
     "garo": "na· na·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· na·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'na· na·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "you want house",
     "garo": "na· nama rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you need house",
     "garo": "na· dang rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you like house",
     "garo": "na· on·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you have house",
@@ -11704,31 +11749,36 @@
     "english": "you give house",
     "garo": "na· on·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you take house",
     "garo": "na· na·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you want car",
     "garo": "na· nama mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you need car",
     "garo": "na· dang mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you like car",
     "garo": "na· on·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you have car",
@@ -11741,31 +11791,36 @@
     "english": "you give car",
     "garo": "na· on·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you take car",
     "garo": "na· na·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you want money",
     "garo": "na· nama pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you need money",
     "garo": "na· dang pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you like money",
     "garo": "na· on·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you have money",
@@ -11778,31 +11833,36 @@
     "english": "you give money",
     "garo": "na· on·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "you take money",
     "garo": "na· na·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he want food",
     "garo": "u nama chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he need food",
     "garo": "u dang chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he like food",
     "garo": "u on·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he have food",
@@ -11815,31 +11875,36 @@
     "english": "he give food",
     "garo": "u on·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he take food",
     "garo": "u na·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he want water",
     "garo": "u nama chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he need water",
     "garo": "u dang chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he like water",
     "garo": "u on·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he have water",
@@ -11852,31 +11917,36 @@
     "english": "he give water",
     "garo": "u on·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he take water",
     "garo": "u na·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he want book",
     "garo": "u nama ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u nama kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u nama kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "he need book",
     "garo": "u dang ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u dang kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u dang kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "he like book",
     "garo": "u on·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u on·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u on·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "he have book",
@@ -11889,31 +11959,36 @@
     "english": "he give book",
     "garo": "u on·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u on·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u on·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "he take book",
     "garo": "u na·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u na·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u na·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "he want house",
     "garo": "u nama rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he need house",
     "garo": "u dang rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he like house",
     "garo": "u on·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he have house",
@@ -11926,31 +12001,36 @@
     "english": "he give house",
     "garo": "u on·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he take house",
     "garo": "u na·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he want car",
     "garo": "u nama mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he need car",
     "garo": "u dang mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he like car",
     "garo": "u on·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he have car",
@@ -11963,31 +12043,36 @@
     "english": "he give car",
     "garo": "u on·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he take car",
     "garo": "u na·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he want money",
     "garo": "u nama pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he need money",
     "garo": "u dang pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he like money",
     "garo": "u on·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he have money",
@@ -12000,31 +12085,36 @@
     "english": "he give money",
     "garo": "u on·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "he take money",
     "garo": "u na·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she want food",
     "garo": "u nama chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she need food",
     "garo": "u dang chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she like food",
     "garo": "u on·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she have food",
@@ -12037,31 +12127,36 @@
     "english": "she give food",
     "garo": "u on·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she take food",
     "garo": "u na·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she want water",
     "garo": "u nama chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she need water",
     "garo": "u dang chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she like water",
     "garo": "u on·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she have water",
@@ -12074,31 +12169,36 @@
     "english": "she give water",
     "garo": "u on·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she take water",
     "garo": "u na·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she want book",
     "garo": "u nama ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u nama kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u nama kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "she need book",
     "garo": "u dang ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u dang kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u dang kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "she like book",
     "garo": "u on·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u on·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u on·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "she have book",
@@ -12111,31 +12211,36 @@
     "english": "she give book",
     "garo": "u on·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u on·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u on·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "she take book",
     "garo": "u na·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u na·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'u na·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "she want house",
     "garo": "u nama rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she need house",
     "garo": "u dang rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she like house",
     "garo": "u on·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she have house",
@@ -12148,31 +12253,36 @@
     "english": "she give house",
     "garo": "u on·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she take house",
     "garo": "u na·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she want car",
     "garo": "u nama mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she need car",
     "garo": "u dang mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she like car",
     "garo": "u on·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she have car",
@@ -12185,31 +12295,36 @@
     "english": "she give car",
     "garo": "u on·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she take car",
     "garo": "u na·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she want money",
     "garo": "u nama pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she need money",
     "garo": "u dang pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she like money",
     "garo": "u on·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she have money",
@@ -12222,31 +12337,36 @@
     "english": "she give money",
     "garo": "u on·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "she take money",
     "garo": "u na·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we want food",
     "garo": "i nama chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we need food",
     "garo": "i dang chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we like food",
     "garo": "i on·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we have food",
@@ -12259,31 +12379,36 @@
     "english": "we give food",
     "garo": "i on·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we take food",
     "garo": "i na·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we want water",
     "garo": "i nama chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we need water",
     "garo": "i dang chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we like water",
     "garo": "i on·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we have water",
@@ -12296,31 +12421,36 @@
     "english": "we give water",
     "garo": "i on·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we take water",
     "garo": "i na·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we want book",
     "garo": "i nama ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i nama kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i nama kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "we need book",
     "garo": "i dang ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i dang kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i dang kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "we like book",
     "garo": "i on·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i on·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i on·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "we have book",
@@ -12333,31 +12463,36 @@
     "english": "we give book",
     "garo": "i on·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i on·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i on·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "we take book",
     "garo": "i na·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i na·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'i na·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "we want house",
     "garo": "i nama rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we need house",
     "garo": "i dang rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we like house",
     "garo": "i on·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we have house",
@@ -12370,31 +12505,36 @@
     "english": "we give house",
     "garo": "i on·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we take house",
     "garo": "i na·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we want car",
     "garo": "i nama mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we need car",
     "garo": "i dang mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we like car",
     "garo": "i on·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we have car",
@@ -12407,31 +12547,36 @@
     "english": "we give car",
     "garo": "i on·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we take car",
     "garo": "i na·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we want money",
     "garo": "i nama pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we need money",
     "garo": "i dang pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we like money",
     "garo": "i on·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we have money",
@@ -12444,31 +12589,36 @@
     "english": "we give money",
     "garo": "i on·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "we take money",
     "garo": "i na·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they want food",
     "garo": "bi nama chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they need food",
     "garo": "bi dang chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they like food",
     "garo": "bi on·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they have food",
@@ -12481,31 +12631,36 @@
     "english": "they give food",
     "garo": "bi on·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they take food",
     "garo": "bi na·a chak",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they want water",
     "garo": "bi nama chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they need water",
     "garo": "bi dang chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they like water",
     "garo": "bi on·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they have water",
@@ -12518,31 +12673,36 @@
     "english": "they give water",
     "garo": "bi on·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they take water",
     "garo": "bi na·a chik",
     "category": "food",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they want book",
     "garo": "bi nama ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi nama kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi nama kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "they need book",
     "garo": "bi dang ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi dang kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi dang kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "they like book",
     "garo": "bi on·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi on·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi on·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "they have book",
@@ -12555,31 +12715,36 @@
     "english": "they give book",
     "garo": "bi on·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi on·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi on·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "they take book",
     "garo": "bi na·a ki·tap",
     "category": "education",
-    "notes": "Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi na·a kitab'."
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy template row. Root corrected 2026-08-11 (Claude A): 'kitab' -> 'ki·tap' per book-root closure (RECONFIRMED native 2026-08-08). Was: 'bi na·a kitab'.",
+    "confidence": "superseded"
   },
   {
     "english": "they want house",
     "garo": "bi nama rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they need house",
     "garo": "bi dang rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they like house",
     "garo": "bi on·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they have house",
@@ -12592,31 +12757,36 @@
     "english": "they give house",
     "garo": "bi on·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they take house",
     "garo": "bi na·a rang",
     "category": "home",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they want car",
     "garo": "bi nama mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they need car",
     "garo": "bi dang mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they like car",
     "garo": "bi on·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they have car",
@@ -12629,31 +12799,36 @@
     "english": "they give car",
     "garo": "bi on·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they take car",
     "garo": "bi na·a mot",
     "category": "travel",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they want money",
     "garo": "bi nama pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they need money",
     "garo": "bi dang pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they like money",
     "garo": "bi on·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they have money",
@@ -12666,13 +12841,15 @@
     "english": "they give money",
     "garo": "bi on·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "they take money",
     "garo": "bi na·a pisa",
     "category": "work",
-    "confidence": "unverified"
+    "confidence": "superseded",
+    "notes": "SUPERSEDED — 2026-10-29 (Claude B, mechanical audit): legacy pronoun+verb+noun template row (truncated pronoun such as `na·`/`u`, wrong verb word: `like` = `on·a` is `give`). The sentence is composed by the engine (RULE-006). Not authoritative; retained per citation discipline."
   },
   {
     "english": "red shirt",

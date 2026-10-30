@@ -23,6 +23,10 @@ import { lookupPhrase } from './data/phrase_maps.js';
 import { applyNegation, applyTense, findVerbForm, getConjugationRoot, applyTopicSuffix, composeBoundOnlyObject, applyDeclarativeEndingAia } from './morphologyEngine.js';
 import { STOP_WORDS, AUXILIARY_SKIP, INTENSIFIER_WORDS } from './normalizationEngine.js';
 
+// NV-227 (Claude B, 2026-10-29, mechanical audit): words that END in -ed but are not regular pasts. `I feed.` / `I exceed.` were read as
+// past and came out `kan·aha` / `bat·aha` (present verbs wearing -aha).
+const NON_PAST_ED_WORDS = new Set(['feed','need','speed','bleed','breed','exceed','proceed','succeed','seed','heed','weed','reed','deed','steed','greed','creed','bed','red','shed','sled','wed']);
+
 export function analyzeGrammar(input) {
   if (!input || typeof input !== 'string') return null;
   const words = input.trim().split(/\s+/);
@@ -526,7 +530,7 @@ export function analyzeGrammar(input) {
           // getConjugationRoot's own doc comment in morphologyEngine.js.
           // No-op for every verb not in conjugation_roots.json.
           garoWithTense = applyTense(getConjugationRoot(w, garoVerb), detectedTense);
-        } else if (!isNegative && !isIrregular && (detectedTense === 'past' || /ed$/.test(w))
+        } else if (!isNegative && !isIrregular && (detectedTense === 'past' || (/ed$/.test(w) && !NON_PAST_ED_WORDS.has(w)))
                    && !/(enga|aha|gen|bo|chim|jaha|jawa|nabe|manaha)$/.test(garoVerb)) {
           // Rule 2 (confirmed): -aha = simple past AND perfect. Applied here
           // for affirmative statements regardless of whether tense evidence

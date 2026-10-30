@@ -1,0 +1,16 @@
+{
+  "_note": "NV-227 (Claude B, 2026-10-29): English irregular simple pasts -> lemma. Used ONLY as a fallback when the first pass leaves [UNKNOWN]: the sentence is retried as `did <lemma>` (tense detection = past), result flagged derived. Forms identical to the lemma (put/cut/hit/let/set/shut/read) and noun-ambiguous forms (left/ground/wound/saw) are excluded on purpose.",
+  "knew": "know", "brought": "bring", "taught": "teach", "fed": "feed", "made": "make", "wrote": "write", "met": "meet",
+  "got": "get", "kept": "keep", "paid": "pay", "won": "win", "began": "begin", "sang": "sing", "swam": "swim", "fell": "fall",
+  "built": "build", "sent": "send", "caught": "catch", "fought": "fight", "hid": "hide", "held": "hold", "threw": "throw",
+  "wore": "wear", "broke": "break", "chose": "choose", "drove": "drive", "rode": "ride", "shook": "shake", "stole": "steal",
+  "led": "lead", "lent": "lend", "blew": "blow", "grew": "grow", "flew": "fly", "dug": "dig", "hung": "hang", "shot": "shoot",
+  "swept": "sweep", "wept": "weep", "bore": "bear", "tore": "tear", "spoke": "speak", "lost": "lose", "drew": "draw",
+  "rose": "rise", "woke": "wake", "bit": "bite", "felt": "feel", "became": "become", "understood": "understand",
+  "froze": "freeze", "swung": "swing", "slid": "slide", "stuck": "stick", "struck": "strike", "swore": "swear",
+  "sought": "seek", "fled": "flee", "forgave": "forgive", "laid": "lay", "rang": "ring", "sank": "sink", "sprang": "spring",
+  "dealt": "deal", "meant": "mean", "leapt": "leap", "learnt": "learn", "burnt": "burn", "dreamt": "dream", "spilt": "spill",
+  "ate": "eat", "drank": "drink", "gave": "give", "took": "take", "came": "come", "went": "go", "ran": "run", "sat": "sit",
+  "stood": "stand", "slept": "sleep", "told": "tell", "said": "say", "thought": "think", "heard": "hear", "sold": "sell",
+  "bought": "buy", "found": "find", "forgot": "forget", "spent": "spend"
+}

@@ -4,6 +4,31 @@
   "note": "derived = rule-based, unverified; pinned = also present as a row in corrections/irregular_verbs"
  },
  "verbs": {
+  "accompany": {
+   "root": "re·rika",
+   "forms": {
+    "present": "re·rika",
+    "continuous": "re·rikenga",
+    "past": "re·rikaha",
+    "future": "re·rikgen",
+    "negative": "re·rikja",
+    "negative_future": "re·rikjawa",
+    "command": "re·rikbo",
+    "negative_command": "re·riknabe",
+    "infinitive": "re·rikna"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
   "advise": {
    "root": "bu·jai·a",
    "forms": {
@@ -1531,17 +1556,17 @@
    }
   },
   "die": {
-   "root": "si·a",
+   "root": "sia",
    "forms": {
-    "present": "si·a",
-    "continuous": "si·enga",
-    "past": "si·aha",
-    "future": "si·gen",
-    "negative": "si·ja",
-    "negative_future": "si·jawa",
-    "command": "si·bo",
-    "negative_command": "si·nabe",
-    "infinitive": "si·na"
+    "present": "sia",
+    "continuous": "sienga",
+    "past": "siaha",
+    "future": "sigen",
+    "negative": "sija",
+    "negative_future": "sijawa",
+    "command": "sibo",
+    "negative_command": "sinabe",
+    "infinitive": "sina"
    },
    "status": {
     "present": "derived",
@@ -2317,6 +2342,31 @@
     "command": "bal·ju·ri·bo",
     "negative_command": "bal·ju·ri·nabe",
     "infinitive": "bal·ju·ri·na"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "follow": {
+   "root": "re·rika",
+   "forms": {
+    "present": "re·rika",
+    "continuous": "re·rikenga",
+    "past": "re·rikaha",
+    "future": "re·rikgen",
+    "negative": "re·rikja",
+    "negative_future": "re·rikjawa",
+    "command": "re·rikbo",
+    "negative_command": "re·riknabe",
+    "infinitive": "re·rikna"
    },
    "status": {
     "present": "derived",
@@ -3306,20 +3356,20 @@
    }
   },
   "like": {
-   "root": "sin·a",
+   "root": "namnika",
    "forms": {
-    "present": "sin·a",
-    "continuous": "sin·enga",
-    "past": "sin·aha",
-    "future": "sin·gen",
-    "negative": "sin·ja",
-    "negative_future": "sin·jawa",
-    "command": "sin·bo",
-    "negative_command": "sin·nabe",
-    "infinitive": "sin·na"
+    "present": "namnika",
+    "continuous": "namnikenga",
+    "past": "namnikaha",
+    "future": "namnikgen",
+    "negative": "namnikja",
+    "negative_future": "namnikjawa",
+    "command": "namnikbo",
+    "negative_command": "namniknabe",
+    "infinitive": "namnikna"
    },
    "status": {
-    "present": "derived",
+    "present": "pinned",
     "continuous": "derived",
     "past": "derived",
     "future": "derived",
@@ -4505,6 +4555,31 @@
     "infinitive": "derived"
    }
   },
+  "roam": {
+   "root": "rorama",
+   "forms": {
+    "present": "rorama",
+    "continuous": "roramenga",
+    "past": "roramaha",
+    "future": "roramgen",
+    "negative": "roramja",
+    "negative_future": "roramjawa",
+    "command": "rorambo",
+    "negative_command": "roramnabe",
+    "infinitive": "roramna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
   "roll": {
    "root": "romroma",
    "forms": {
@@ -5331,6 +5406,31 @@
     "infinitive": "derived"
    }
   },
+  "study": {
+   "root": "poraia",
+   "forms": {
+    "present": "poraia",
+    "continuous": "poraienga",
+    "past": "poraiaha",
+    "future": "poraigen",
+    "negative": "poraija",
+    "negative_future": "poraijawa",
+    "command": "poraibo",
+    "negative_command": "porainabe",
+    "infinitive": "poraina"
+   },
+   "status": {
+    "present": "derived",
+    "continuous": "pinned",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
   "suffer": {
    "root": "joma",
    "forms": {
@@ -5522,7 +5622,7 @@
    "status": {
     "present": "derived",
     "continuous": "derived",
-    "past": "derived",
+    "past": "pinned",
     "future": "derived",
     "negative": "derived",
     "negative_future": "derived",
@@ -6157,25 +6257,50 @@
    }
   },
   "walk": {
-   "root": "re·a",
+   "root": "re·mama",
    "forms": {
-    "present": "re·a",
+    "present": "re·mama",
     "continuous": "re·enga",
-    "past": "re·aha",
-    "future": "re·gen",
-    "negative": "re·ja",
-    "negative_future": "re·jawa",
-    "command": "re·bo",
-    "negative_command": "re·nabe",
-    "infinitive": "re·na"
+    "past": "re·mamaha",
+    "future": "re·mamgen",
+    "negative": "re·mamja",
+    "negative_future": "re·mamjawa",
+    "command": "re·mambo",
+    "negative_command": "re·mamnabe",
+    "infinitive": "re·mamna"
    },
    "status": {
     "present": "derived",
     "continuous": "pinned",
-    "past": "pinned",
+    "past": "derived",
     "future": "derived",
     "negative": "derived",
-    "negative_future": "pinned",
+    "negative_future": "derived",
+    "command": "derived",
+    "negative_command": "derived",
+    "infinitive": "derived"
+   }
+  },
+  "wander": {
+   "root": "rorama",
+   "forms": {
+    "present": "rorama",
+    "continuous": "roramenga",
+    "past": "roramaha",
+    "future": "roramgen",
+    "negative": "roramja",
+    "negative_future": "roramjawa",
+    "command": "rorambo",
+    "negative_command": "roramnabe",
+    "infinitive": "roramna"
+   },
+   "status": {
+    "present": "pinned",
+    "continuous": "derived",
+    "past": "derived",
+    "future": "derived",
+    "negative": "derived",
+    "negative_future": "derived",
     "command": "derived",
     "negative_command": "derived",
     "infinitive": "derived"

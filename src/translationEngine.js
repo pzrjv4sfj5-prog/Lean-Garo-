@@ -48,7 +48,9 @@ const CONFIRMED_LOANWORDS = new Set(CONFIRMED_LOANWORDS_RAW.words.map(w => w.toL
 import CATEGORY_INDEX from './data/category_index.json' with { type: 'json' };
 import PRONOUN_MAP from './data/pronoun_map.json' with { type: 'json' };
 import IRREGULAR_VERBS_COUNTED from './data/irregular_verbs.json' with { type: 'json' };
+import ENGLISH_IRREGULAR_PASTS from './data/english_irregular_pasts.json' with { type: 'json' };
 import { lookupPhrase } from './data/phrase_maps.js';
+import { getVerbParadigm } from './verbParadigm.js';
 import { countNoun, countNounWithClassifier, parseCountingPhrase, getClassifier, isUnverifiedCompoundGuess, NUMBER_WORDS, singularize } from './garo_classifier.js';
 import { toGaroNumber as toGaroNumberBare } from './number_engine.js';
 import { corrections, normalizeEntry, EN_INDEX, lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
@@ -356,6 +358,25 @@ export async function translate(input) {
     }
   }
   let result = await translateCore(input);
+  // NV-227 (Claude B, 2026-10-29, mechanical audit): English irregular simple pasts that no dictionary row or IRREGULAR_VERBS entry covers
+  // ("I knew it" -> `Anga [UNKNOWN]ko`: the past verb was read as an object noun). Fallback ONLY when the first pass left [UNKNOWN]:
+  // retry as `did <lemma>` (same past-tense detection as the regular verbs) and flag the result derived.
+  if (result && typeof result.garo === 'string' && /\[UNKNOWN\]/.test(result.garo) && typeof input === 'string') {
+    const toks = input.split(/(\s+)/); let changed = false;
+    const prevAux = /^(did|do|does|will|would|can|could|to|has|have|had|was|were|is|are|am|not|never)$/i;
+    for (let i = 0; i < toks.length; i++) {
+      const bare = toks[i].toLowerCase().replace(/[.,!?;:]+$/, '');
+      const lemma = ENGLISH_IRREGULAR_PASTS[bare];
+      if (!lemma || i === 0 || IRREGULAR_VERBS_COUNTED[bare]) continue;
+      let j = i - 2; while (j >= 0 && /^\s*$/.test(toks[j])) j--;
+      if (j >= 0 && prevAux.test(toks[j].replace(/[.,!?;:]+$/, ''))) continue;
+      toks[i] = 'did ' + lemma + (toks[i].match(/[.,!?;:]+$/) || [''])[0]; changed = true; break;
+    }
+    if (changed) {
+      const r2 = await translateCore(toks.join(''));
+      if (r2 && typeof r2.garo === 'string' && !/\[UNKNOWN\]/.test(r2.garo)) result = { ...r2, method: r2.method + '+irregular-past', confidence: Math.min(r2.confidence ?? 0.6, 0.6), derived: true };
+    }
+  }
   // NV-206: with watch, the loanword object `TV` is written `TV` and takes no -ko (attested `Anga TV nienga`).
   if (result && typeof result.garo === 'string' && /\bwatch(?:es|ed|ing)?\b/i.test(String(input)) && /\b(?:tv|television)\b/i.test(String(input))) {
     result = { ...result, garo: result.garo.replace(/\btv(?:ko)?\b/gi, 'TV') };
@@ -491,11 +512,33 @@ export async function translate(input) {
   // sov-assembly with a plain -a form; exact rows and inflected forms are untouched.
   {
     const m = String(input).trim().match(/^([A-Za-z]+)!$/);
-    if (m && result && result.method === 'sov-assembly' && typeof result.garo === 'string'
-        && (VERB_LEMMAS.has(m[1].toLowerCase()) || !!lookupGaro('to ' + m[1].toLowerCase())) && !result.garo.includes(' ')
-        && /a$/i.test(result.garo) && !/(enga|aha|jok|gen|jawa|ja|na)$/i.test(result.garo)) {
-      result = { ...result, garo: result.garo.replace(/a$/i, 'bo'), method: 'imperative-bo' };
+    // NV-227 (Claude B, 2026-10-29, mechanical audit): VERB_LEMMAS lacks common verbs (drink/ask/close/sing/dance/eat/hear/bring), so
+    // `Drink!` stayed `Ringa`. A verb also counts when it has a paradigm row; a citation form that ends in `na` (am·na, a·ba·cheng·na) is
+    // accepted only when its -bo rewrite equals the paradigm command form. Flagged derived unless the paradigm marks the command native/pinned.
+    const lwm = m ? m[1].toLowerCase() : '';
+    const pv = m ? getVerbParadigm(lwm) : null;
+    const candBo = (result && typeof result.garo === 'string') ? result.garo.replace(/a$/i, 'bo') : '';
+    const knownVerbBo = m && (VERB_LEMMAS.has(lwm) || !!lookupGaro('to ' + lwm) || !!pv || PREDICATE_EXTRA_VERBS.has(lwm));
+    const inflectedEnd = result && typeof result.garo === 'string' && /(enga|aha|jok|gen|jawa|ja|na)$/i.test(result.garo);
+    if (m && result && result.method === 'sov-assembly' && typeof result.garo === 'string' && knownVerbBo && !result.garo.includes(' ')
+        && /a$/i.test(result.garo) && (!inflectedEnd || (pv && pv.forms.command && candBo.toLowerCase() === String(pv.forms.command).toLowerCase()))) {
+      const st = pv && pv.status && pv.status.command;
+      result = { ...result, garo: candBo, method: 'imperative-bo', ...((st === 'native' || st === 'pinned') ? {} : { derived: true }) };
     }
+  }
+  // NV-227 (Claude B, 2026-10-29, mechanical audit): `Please come.` -> `Ka·sapae. re·baa`. The stand-alone phrase-map row `please` =
+  // `Ka·sapae.` leaks its period into the middle of the sentence, and the polite request keeps the present verb. Attested shapes
+  // (`ka·sapae maikoba aganbo`, `... on·bo ka·sapae`) use the -bo command, so the final verb takes -bo (flagged derived). Negatives
+  // (`please do not ...`) only get the period fix: the negative command (-nabe) is not composed here.
+  if (result && typeof result.garo === 'string' && /^please\b/i.test(String(input).trim()) && /^Ka·sapae\.\s+\S/.test(result.garo)) {
+    let g = result.garo.replace(/^Ka·sapae\.\s+/, 'Ka·sapae ');
+    const w = g.split(' '); const last = w[w.length - 1];
+    const neg = /\b(not|never|don'?t|dont)\b/i.test(String(input));
+    if (!neg && w.length > 1 && /a$/i.test(last) && !/(enga|aha|jok|gen|jawa|ja|na|bo)$/i.test(last)) {
+      // `go` is irregular for the command (paradigm, native: re·a -> re·angbo, not *re·bo).
+      w[w.length - 1] = /^re·a$/i.test(last) ? 're·angbo' : last.replace(/a$/i, 'bo'); g = w.join(' ');
+      result = { ...result, garo: g, derived: true };
+    } else result = { ...result, garo: g };
   }
   if (!result || typeof result.garo !== 'string' || !result.garo.includes('[UNKNOWN]')) return result;
   if (result.method === 'passthrough') {
