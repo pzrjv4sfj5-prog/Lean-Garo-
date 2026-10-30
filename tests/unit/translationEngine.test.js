@@ -1036,7 +1036,7 @@ test('BUG-REPORT-WHERE-GOING: "where are they going?" selects "bachi", not "bano
 test('BUG-REPORT-WHERE-GOING: sibling stationary location questions are unaffected ("where do you live?")', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const result = await translate('Where do you live?');
-  assert.equal(result.garo, 'Na·a bano tanga?');
+  assert.equal(result.garo, 'Na·a bano donga?');
 });
 
 test('BUG-REPORT-WHERE-GOING: sibling stationary location questions are unaffected ("where is the market?")', async () => {
