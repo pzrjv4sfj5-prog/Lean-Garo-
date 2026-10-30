@@ -8,12 +8,6 @@
   },
   {
     "english": "two teachers",
-    "garo": "skigipa·gni",
-    "category": "numbers",
-    "confidence": "unverified"
-  },
-  {
-    "english": "two teachers",
     "garo": "Skigipa sakgni",
     "pos": null,
     "category": "education",
@@ -1615,12 +1609,6 @@
     "category": "general",
     "notes": "SUPERSEDED (duplicate row) — native relay NV-080 (2026-08-17): same word as the now-VERIFIED 'rim·a' row for 'catch', differs only in capitalization/spelling. Retained per citation discipline, not deleted, but not a second independent candidate.",
     "confidence": "superseded"
-  },
-  {
-    "english": "wash",
-    "garo": "Su·srong·a",
-    "category": "general",
-    "confidence": "unverified"
   },
   {
     "english": "clean",
@@ -3719,12 +3707,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "why",
-    "garo": "Maini·gimin",
-    "category": "general",
-    "confidence": "unverified"
-  },
-  {
     "english": "how",
     "garo": "Maikai",
     "category": "general",
@@ -4201,12 +4183,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "to build",
-    "garo": "Rika",
-    "category": "general",
-    "confidence": "unverified"
-  },
-  {
     "english": "to dig",
     "garo": "Cho·a",
     "category": "general",
@@ -4616,12 +4592,6 @@
   {
     "english": "himself / herself",
     "garo": "Ua an·tang",
-    "category": "general",
-    "confidence": "unverified"
-  },
-  {
-    "english": "someone",
-    "garo": "Saksa",
     "category": "general",
     "confidence": "unverified"
   },
@@ -6851,12 +6821,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "newspaper",
-    "garo": "Songbat",
-    "category": "general",
-    "confidence": "unverified"
-  },
-  {
     "english": "best (superlative)",
     "garo": "Bilongen nambata",
     "category": "general",
@@ -6988,18 +6952,6 @@
   {
     "english": "quickly (adverb)",
     "garo": "tarake",
-    "category": "general",
-    "confidence": "unverified"
-  },
-  {
-    "english": "how many",
-    "garo": "baitarong",
-    "category": "general",
-    "confidence": "unverified"
-  },
-  {
-    "english": "how much",
-    "garo": "baita",
     "category": "general",
     "confidence": "unverified"
   },
@@ -7969,18 +7921,6 @@
     "category": "animals",
     "confidence": "unverified",
     "notes": " RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched."
-  },
-  {
-    "english": "two teacher",
-    "garo": "skigipa·gni",
-    "category": "education",
-    "confidence": "unverified"
-  },
-  {
-    "english": "two banana",
-    "garo": "sobo·gni",
-    "category": "numbers",
-    "confidence": "unverified"
   },
   {
     "english": "three dog",
@@ -14928,12 +14868,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "the water",
-    "garo": "Chi",
-    "category": "food",
-    "confidence": "unverified"
-  },
-  {
     "english": "the earth / soil",
     "garo": "A·a",
     "category": "nature",
@@ -15056,12 +14990,6 @@
     "english": "bath",
     "garo": "aua",
     "category": "home",
-    "confidence": "unverified"
-  },
-  {
-    "english": "beautiful",
-    "garo": "nitoa",
-    "category": "general",
     "confidence": "unverified"
   },
   {
@@ -15321,12 +15249,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "stop",
-    "garo": "dondip",
-    "category": "general",
-    "confidence": "unverified"
-  },
-  {
     "english": "thumb",
     "garo": "jaksi dalgipa",
     "category": "general",
@@ -15353,12 +15275,6 @@
   {
     "english": "name",
     "garo": "bimung",
-    "category": "general",
-    "confidence": "unverified"
-  },
-  {
-    "english": "earn",
-    "garo": "man·a",
     "category": "general",
     "confidence": "unverified"
   },
@@ -16271,15 +16187,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "coming",
-    "garo": "Re·baengjok",
-    "pos": null,
-    "category": "verbs",
-    "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
-  },
-  {
     "english": "decide",
     "garo": "Tik ka·ani",
     "pos": null,
@@ -16323,15 +16230,6 @@
     "classifier": null,
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'eyelash' has VERIFIED/HIGH form(s) ['mik·sram']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
     "confidence": "superseded"
-  },
-  {
-    "english": "going",
-    "garo": "Re·angengjok",
-    "pos": null,
-    "category": "verbs",
-    "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
   },
   {
     "english": "late",
@@ -16424,15 +16322,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "stand",
-    "garo": "Chakata",
-    "pos": null,
-    "category": "verbs",
-    "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
-  },
-  {
     "english": "studying",
     "garo": "Poraienga",
     "pos": null,
@@ -16444,15 +16333,6 @@
   {
     "english": "reading",
     "garo": "Poraienga",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
-  },
-  {
-    "english": "teach",
-    "garo": "Skia",
     "pos": null,
     "category": "education",
     "classifier": null,
@@ -16478,26 +16358,8 @@
     "confidence": "verified_high"
   },
   {
-    "english": "thief",
-    "garo": "Cha·ugipa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
-  },
-  {
     "english": "wake up",
     "garo": "Chakatboha",
-    "pos": null,
-    "category": "verbs",
-    "classifier": null,
-    "notes": null,
-    "confidence": "unverified"
-  },
-  {
-    "english": "wash",
-    "garo": "Su·gala",
     "pos": null,
     "category": "verbs",
     "classifier": null,
@@ -17263,22 +17125,6 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — direct answer to relay batch item 9 ('bye: De — correct?'), confirmed 2026-08-23 via NV-093 (found+cross-checked 2026-08-26). Native explicitly called it 'just an expression' without rejecting Bai/Ra. POS/sense default per CLAUDE_A_OPERATING_GOVERNANCE.md §10: Key 'bye'/'Bye' — De is the default for the bare key (this row); Bai and Ra remain variant/AMBIGUOUS/HIGH, neither confirmed nor rejected as alternates, not the default.",
     "confidence": "verified_high"
-  },
-  {
-    "english": "Bye",
-    "garo": "Bai",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/HIGH"
-  },
-  {
-    "english": "Bye",
-    "garo": "Ra",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/HIGH"
   },
   {
     "english": "Bye, I'm going",
@@ -18583,14 +18429,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Going",
-    "garo": "I·angonga",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "AMBIGUOUS/MEDIUM v:Re·angengjok"
-  },
-  {
     "english": "Gold",
     "garo": "su·na",
     "pos": null,
@@ -19604,22 +19442,6 @@
     "classifier": null,
     "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'mountain' is 'ha·bri'. Retained per citation discipline, not deleted.",
     "confidence": "superseded"
-  },
-  {
-    "english": "Must",
-    "garo": "Nangchongmota",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/MEDIUM"
-  },
-  {
-    "english": "Must",
-    "garo": "Nangchongmotgen",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/MEDIUM"
   },
   {
     "english": "My child",
@@ -21856,22 +21678,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Time",
-    "garo": "Baji",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/HIGH"
-  },
-  {
-    "english": "Time",
-    "garo": "Somai",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/HIGH"
-  },
-  {
     "english": "Tired",
     "garo": "bil·neng·a",
     "pos": null,
@@ -22544,15 +22350,6 @@
   {
     "english": "accept",
     "garo": "ra·chak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "accompany",
-    "garo": "i·ang·pa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23847,15 +23644,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "bark",
-    "garo": "bi·kil·ap",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "barking deer",
     "garo": "ma·rak·ha",
     "pos": null,
@@ -24083,15 +23871,6 @@
   {
     "english": "beggars",
     "garo": "gil·i·geng·i cha·gip·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "begin",
-    "garo": "a·ba·cheng·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -25198,30 +24977,12 @@
   },
   {
     "english": "bring",
-    "garo": "ra·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ra·-ba-a / rim-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "bring",
     "garo": "ra·ba·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
     "confidence": "verified_high"
-  },
-  {
-    "english": "bring",
-    "garo": "rim·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
   },
   {
     "english": "bring up",
@@ -25410,33 +25171,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "build",
-    "garo": "ba·nai·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:dim·-a / gat-a / rik-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "build",
-    "garo": "dim·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "build",
-    "garo": "gat·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
     "confidence": "unverified"
   },
   {
@@ -26421,15 +26155,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "chase",
-    "garo": "ha·rik·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "chase away",
     "garo": "rik·a",
     "pos": null,
@@ -26562,15 +26287,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "choose",
-    "garo": "ba·nai·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ba-si-a",
     "confidence": "unverified"
   },
   {
@@ -27033,42 +26749,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "coins",
-    "garo": "poi·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:pil-",
-    "confidence": "unverified"
-  },
-  {
-    "english": "coins",
-    "garo": "pil·",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "cold",
-    "garo": "chik·a",
-    "pos": null,
-    "category": "health",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:chik-jim-a / sin·-a / sol-di",
-    "confidence": "unverified"
-  },
-  {
-    "english": "cold",
-    "garo": "chik·jim·a",
-    "pos": null,
-    "category": "health",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "cold",
     "garo": "sin·a",
     "pos": null,
@@ -27076,15 +26756,6 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
     "confidence": "verified_high"
-  },
-  {
-    "english": "cold",
-    "garo": "sol·di",
-    "pos": null,
-    "category": "health",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
   },
   {
     "english": "cold season",
@@ -29958,33 +29629,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "earth",
-    "garo": "ha·",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ha·-gil-sak / ha·-mang",
-    "confidence": "unverified"
-  },
-  {
-    "english": "earth",
-    "garo": "ha·gil·sak",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "earth",
-    "garo": "ha·mang",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "earthen",
     "garo": "ha·ni",
     "pos": null,
@@ -30552,33 +30196,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "explain",
-    "garo": "a·gan·prak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:pe·-e a-gan-a / pe·-prak-e a-gan-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "explain",
-    "garo": "pe·e a·gan·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "explain",
-    "garo": "pe·prak·e a·gan·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "extinguish",
     "garo": "kim·it·a",
     "pos": null,
@@ -30822,42 +30439,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "fat",
-    "garo": "bel·dom·dom",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:gop-ma-a / mil-a / mil-dam-bu-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "fat",
-    "garo": "gop·ma·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "fat",
-    "garo": "mil·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "fat",
-    "garo": "mil·dam·bu·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "fate",
     "garo": "a·si",
     "pos": null,
@@ -31092,15 +30673,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "find",
-    "garo": "man·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "find out",
     "garo": "bik·kot·a",
     "pos": null,
@@ -31143,69 +30715,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "finish",
-    "garo": "bon·dil·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:chon·-a / man·-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "finish",
-    "garo": "chon·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "finish",
-    "garo": "man·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "finished",
-    "garo": "bon·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:bon·-chot-a / mat-chot-a / ses",
-    "confidence": "unverified"
-  },
-  {
-    "english": "finished",
-    "garo": "bon·chot·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "finished",
-    "garo": "mat·chot·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "finished",
-    "garo": "ses",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
     "confidence": "unverified"
   },
   {
@@ -31677,42 +31186,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "follow",
-    "garo": "i·rik·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ja·-rik-a / ki·-sang-chak-a / rik-pa-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "follow",
-    "garo": "ja·rik·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "follow",
-    "garo": "ki·sang·chak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "follow",
-    "garo": "rik·pa·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "follow orders",
     "garo": "ra·chak·a",
     "pos": null,
@@ -31778,15 +31251,6 @@
   {
     "english": "foolishly",
     "garo": "na·wang·ku·wang",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "foot",
-    "garo": "ja·",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -32253,24 +31717,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "get",
-    "garo": "ra·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "get",
-    "garo": "sik·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "get along well",
     "garo": "me·li·a",
     "pos": null,
@@ -32484,15 +31930,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "gossip",
-    "garo": "ku·rit·chu·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
     "confidence": "unverified"
   },
   {
@@ -33168,24 +32605,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "heavy",
-    "garo": "chrim·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:je·-et-je·-et",
-    "confidence": "unverified"
-  },
-  {
-    "english": "heavy",
-    "garo": "je·et·je·et",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
     "confidence": "unverified"
   },
   {
@@ -34908,24 +34327,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "land",
-    "garo": "ha·",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ha·-ga",
-    "confidence": "unverified"
-  },
-  {
-    "english": "land",
-    "garo": "ha·ga",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "land leech",
     "garo": "ru·at",
     "pos": null,
@@ -35086,15 +34487,6 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
     "confidence": "verified_high"
-  },
-  {
-    "english": "lead",
-    "garo": "si·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
   },
   {
     "english": "leak",
@@ -35836,15 +35228,6 @@
   },
   {
     "english": "log",
-    "garo": "bol·gan·tong",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:bol-tong",
-    "confidence": "unverified"
-  },
-  {
-    "english": "log",
     "garo": "bol·tong",
     "pos": null,
     "category": "uncategorized",
@@ -36285,15 +35668,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "luck",
-    "garo": "a·si",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "lukewarm",
     "garo": "bom·bom",
     "pos": null,
@@ -36420,24 +35794,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "make",
-    "garo": "daka",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:dok-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "make",
-    "garo": "dok·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "make friends",
     "garo": "bi·sa ka·a",
     "pos": null,
@@ -36454,15 +35810,6 @@
     "classifier": null,
     "notes": "VERIFIED/HIGH — direct Thangseng relay via Tridip, WhatsApp 4/9/2026 1:53-1:55pm (NV-130, renumbered 2026-09-05 — see numbering-collision fix): \"Me'chik can mean both female and woman. Me.chikma is a married or an elderly woman... me.chik bi.sa = girl, me.a bi.sa = boy, me.asa = male/man, me.apa = married or an elderly man.\" Raka dot normalized from the transcript's casual '.'/apostrophe typing to the dictionary's standard '·' convention (same substitution pattern seen elsewhere in casual WhatsApp transcripts, e.g. NV-124's gong·sa rendered as \"gong•sa\"); no meaning change intended. (bound root, as used in me·a bi·sa=boy)",
     "confidence": "verified_high"
-  },
-  {
-    "english": "man (male)",
-    "garo": "me·a·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
   },
   {
     "english": "manage",
@@ -37501,15 +36848,6 @@
   },
   {
     "english": "need",
-    "garo": "la·gi·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:nang-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "need",
     "garo": "nanga",
     "pos": null,
     "category": "uncategorized",
@@ -38004,42 +37342,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "only",
-    "garo": "ak·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:-pit-chi / -sa / ma-mang",
-    "confidence": "unverified"
-  },
-  {
-    "english": "only",
-    "garo": "·pit·chi",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "only",
-    "garo": "·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "only",
-    "garo": "ma·mang",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "ooze",
     "garo": "gip·u·a",
     "pos": null,
@@ -38368,42 +37670,6 @@
     "garo": "·kim·bak·",
     "pos": null,
     "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "pass",
-    "garo": "bat·a",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:i·-ang-chek-a / re·-ping-grik-a / re·-sek-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "pass",
-    "garo": "i·ang·chek·a",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "pass",
-    "garo": "re·ping·grik·a",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "pass",
-    "garo": "re·sek·a",
-    "pos": null,
-    "category": "education",
     "classifier": null,
     "notes": "variant/UNVERIFIED/HIGH",
     "confidence": "unverified"
@@ -39507,24 +38773,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "post",
-    "garo": "pak·ri·ni krong",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "post",
-    "garo": "song·chi",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "pot for rice beer",
     "garo": "dik·tom",
     "pos": null,
@@ -39675,24 +38923,6 @@
     "category": "church",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "pray",
-    "garo": "bi·am·a",
-    "pos": null,
-    "category": "church",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:bi·-ap-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "pray",
-    "garo": "bi·ap·a",
-    "pos": null,
-    "category": "church",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
     "confidence": "unverified"
   },
   {
@@ -40238,24 +39468,6 @@
   {
     "english": "quarter moon",
     "garo": "ja·kam·bi",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "quick",
-    "garo": "jak·rak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ta·-rak-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "quick",
-    "garo": "ta·rak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -41227,30 +40439,12 @@
   },
   {
     "english": "ripe",
-    "garo": "bri·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:min-a / nang-chek-chek-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "ripe",
     "garo": "min·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
     "notes": "VERIFIED/HIGH - NV-050 (Thangseng direct relay, 2026-08-02, see RULE-045): min-a root = ripe/cooked, four inflected forms confirmed (minaha/minengaha/minkuja/minenga). Promoted from prior variant/UNVERIFIED/HIGH.",
     "confidence": "verified_high"
-  },
-  {
-    "english": "ripe",
-    "garo": "nang·chek·chek·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
   },
   {
     "english": "rise",
@@ -41659,15 +40853,6 @@
   },
   {
     "english": "sandal",
-    "garo": "ja·kop",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:sen-dil",
-    "confidence": "unverified"
-  },
-  {
-    "english": "sandal",
     "garo": "sendil",
     "pos": null,
     "category": "uncategorized",
@@ -42006,15 +41191,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "search",
-    "garo": "nem·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:san-di-a",
     "confidence": "unverified"
   },
   {
@@ -43414,39 +42590,12 @@
   },
   {
     "english": "smoke",
-    "garo": "ring·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:tip-a / wal·-ku / wal·-ku-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "smoke",
-    "garo": "tip·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "smoke",
     "garo": "wal·ku",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
     "notes": "VERIFIED/HIGH — native-confirmed 2026-08-21 (NV-089, Thangseng relay via Tridip, WhatsApp transcript 2026-08-21 afternoon; see docs/THANGSENG_RELAY_TABLE_20260821B.md) — promoted from prior UNVERIFIED/HIGH candidate, exact match confirmed.",
     "confidence": "verified_high"
-  },
-  {
-    "english": "smoke",
-    "garo": "wal·ku·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
   },
   {
     "english": "smoky",
@@ -43813,15 +42962,6 @@
     "garo": "ba·si·a",
     "pos": null,
     "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "soul",
-    "garo": "jang·gi",
-    "pos": null,
-    "category": "church",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
     "confidence": "unverified"
@@ -44403,24 +43543,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "stay",
-    "garo": "dongchak·a",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:dong-dang-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "stay",
-    "garo": "dongdang·a",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "stay behind",
     "garo": "dongrik·a",
     "pos": null,
@@ -44765,42 +43887,6 @@
   {
     "english": "stork",
     "garo": "hai·gil·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "straight",
-    "garo": "dim·breng·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:-tong·-tang- / tong·-tang / wa-rek-rek",
-    "confidence": "unverified"
-  },
-  {
-    "english": "straight",
-    "garo": "·tong·tang·",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "straight",
-    "garo": "tong·tang",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "straight",
-    "garo": "wa·rek·rek",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -47877,42 +46963,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "waist",
-    "garo": "ko·mor",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "wait",
-    "garo": "dongtim·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ni-chak-a / seng-so-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "wait",
-    "garo": "ni·chak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "wait",
-    "garo": "seng·so·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "wait for",
     "garo": "ni·chak·su·a",
     "pos": null,
@@ -47964,24 +47014,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "wander",
-    "garo": "re·am·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ro-am-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "wander",
-    "garo": "ro·am·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
     "confidence": "unverified"
   },
   {
@@ -48334,15 +47366,6 @@
     "classifier": null,
     "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
     "confidence": "superseded"
-  },
-  {
-    "english": "well",
-    "garo": "ku·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
   },
   {
     "english": "wet land",
@@ -48993,42 +48016,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "boil",
-    "garo": "bi·rot",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:bi-rot-ma·-mong / bok-bak-a / git-u-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "close",
-    "garo": "grip·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:grim / ket-a / mit-chu-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "empty",
-    "garo": "bal·ang·ga",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:bang-bang / chi-chang-chang / jak-ra-ra",
-    "confidence": "unverified"
-  },
-  {
-    "english": "enough",
-    "garo": "chip·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:chu·-ong-a / gip-a / hem-hem",
-    "confidence": "unverified"
-  },
-  {
     "english": "leg",
     "garo": "ja·",
     "pos": null,
@@ -49108,24 +48095,6 @@
     "classifier": null,
     "notes": "SUPERSEDED (duplicate row) — native relay NV-080 (2026-08-17): same word as the now-VERIFIED 'Chon·a' row for 'small', differs only in capitalization/spelling. Retained per citation discipline, not deleted, but not a second independent candidate. NOTE: native response also listed 'Chon·a' as an alternate for 'wet' (duplicate-encoding across two different English meanings, small vs wet) — flagged as-is per the relay batch's own note, not resolved.",
     "confidence": "superseded"
-  },
-  {
-    "english": "sound",
-    "garo": "ba·jin·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:gam·-a / gam·-pret-a / jang-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "stir",
-    "garo": "cho·bil·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:chok-chok-a / go-rai-a / gon·-gon-a",
-    "confidence": "unverified"
   },
   {
     "english": "strong",
@@ -53537,21 +52506,6 @@
     "confidence": "ocr_flagged"
   },
   {
-    "english": "to last",
-    "garo": "Baia",
-    "category": null,
-    "pos": "vi.",
-    "confidence": "unverified"
-  },
-  {
-    "english": "To last",
-    "garo": "Baea",
-    "category": null,
-    "pos": "v.",
-    "notes": "[OCR-flagged for review: ocr_confidence=Medium] Entry ends abruptly with 'to' at the bottom of the page.",
-    "confidence": "ocr_flagged"
-  },
-  {
     "english": "to hold out to stand.",
     "garo": "Baia",
     "category": null,
@@ -54165,14 +53119,6 @@
     "confidence": "ocr_flagged"
   },
   {
-    "english": "Thin",
-    "garo": "Ba·a",
-    "category": null,
-    "pos": "-adj.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]",
-    "confidence": "ocr_flagged"
-  },
-  {
     "english": "shallow.",
     "garo": "Ba·a",
     "category": null,
@@ -54314,13 +53260,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Where",
-    "garo": "Bachina",
-    "category": null,
-    "pos": "adv.",
-    "confidence": "unverified"
-  },
-  {
     "english": "whither.",
     "garo": "Bachi",
     "category": null,
@@ -54408,20 +53347,6 @@
   {
     "english": "to challenge.",
     "garo": "Badaa",
-    "category": null,
-    "pos": "v.",
-    "confidence": "unverified"
-  },
-  {
-    "english": "To spread",
-    "garo": "Badala",
-    "category": null,
-    "pos": "v.",
-    "confidence": "unverified"
-  },
-  {
-    "english": "To spread",
-    "garo": "Badalata",
     "category": null,
     "pos": "v.",
     "confidence": "unverified"
@@ -56101,14 +55026,6 @@
     "garo": "Aganchipila",
     "category": null,
     "pos": "v.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]",
-    "confidence": "ocr_flagged"
-  },
-  {
-    "english": "Riddle",
-    "garo": "Aganchipila",
-    "category": null,
-    "pos": "n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]",
     "confidence": "ocr_flagged"
   },
@@ -57864,13 +56781,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "To drive",
-    "garo": "Chalaia",
-    "category": null,
-    "pos": "v.",
-    "confidence": "unverified"
-  },
-  {
     "english": "to manage.",
     "garo": "Chalaia",
     "category": null,
@@ -58672,20 +57582,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "no",
-    "garo": "Gong·ja",
-    "category": null,
-    "pos": "adj.",
-    "confidence": "unverified"
-  },
-  {
-    "english": "no",
-    "garo": "Gri",
-    "category": null,
-    "pos": "adj.",
-    "confidence": "unverified"
-  },
-  {
     "english": "having no inclination.",
     "garo": "Gong·ja",
     "category": null,
@@ -58728,23 +57624,7 @@
     "confidence": "unverified"
   },
   {
-    "english": "Swift",
-    "garo": "Gong·raka",
-    "category": null,
-    "pos": "adj.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]",
-    "confidence": "ocr_flagged"
-  },
-  {
     "english": "fast",
-    "garo": "Gong·raka",
-    "category": null,
-    "pos": "adj.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]",
-    "confidence": "ocr_flagged"
-  },
-  {
-    "english": "strong",
     "garo": "Gong·raka",
     "category": null,
     "pos": "adj.",
@@ -59970,13 +58850,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "To crumble down",
-    "garo": "Gropa",
-    "category": null,
-    "pos": "v.",
-    "confidence": "unverified"
-  },
-  {
     "english": "to fall down on account of decay.",
     "garo": "Gropa",
     "category": null,
@@ -60090,14 +58963,6 @@
     "garo": "Guala",
     "category": null,
     "pos": "v.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]",
-    "confidence": "ocr_flagged"
-  },
-  {
-    "english": "Mistake",
-    "garo": "Guala",
-    "category": null,
-    "pos": "-n.",
     "notes": "[OCR-flagged for review: ocr_confidence=High]",
     "confidence": "ocr_flagged"
   },
@@ -60557,13 +59422,6 @@
     "garo": "Kachottenga (ba·ra ku·teni killing·dingko)",
     "category": null,
     "pos": "v.",
-    "confidence": "unverified"
-  },
-  {
-    "english": "Beautiful",
-    "garo": "Ka·danga",
-    "category": null,
-    "pos": "adj.",
     "confidence": "unverified"
   },
   {
@@ -62226,14 +61084,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "Work",
-    "garo": "Kam",
-    "category": null,
-    "pos": "n.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High]",
-    "confidence": "ocr_flagged"
-  },
-  {
     "english": "business",
     "garo": "Kam",
     "category": null,
@@ -63698,14 +62548,6 @@
     "category": null,
     "pos": "n.",
     "notes": "Typo 'notice' (likely meant novice) preserved exactly."
-  },
-  {
-    "english": "to shout",
-    "garo": "A·baoka",
-    "category": null,
-    "pos": "v.",
-    "notes": "[OCR-flagged for review: ocr_confidence=High] Original has 'v.' followed by '-n.' for secondary POS.",
-    "confidence": "ocr_flagged"
   },
   {
     "english": "to call loudly.",
@@ -77092,13 +75934,6 @@
     "category": null,
     "pos": "adj.",
     "notes": "Sickly; languid; appearing as if sick; sallow."
-  },
-  {
-    "english": "slowly",
-    "garo": "Jom-pe jom-pe",
-    "category": null,
-    "pos": "adv.",
-    "notes": "Slowly."
   },
   {
     "english": "younger brother",

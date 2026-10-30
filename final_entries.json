@@ -808,14 +808,6 @@
     "notes": "AMBIGUOUS/HIGH v:Nitoa"
   },
   {
-    "english": "Beautiful",
-    "garo": "Nitoa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/HIGH"
-  },
-  {
     "english": "Bed",
     "garo": "Palang",
     "pos": null,
@@ -1430,22 +1422,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "AMBIGUOUS/HIGH v:Bai / Ra"
-  },
-  {
-    "english": "Bye",
-    "garo": "Bai",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/HIGH"
-  },
-  {
-    "english": "Bye",
-    "garo": "Ra",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/HIGH"
   },
   {
     "english": "Bye, I'm going",
@@ -2182,14 +2158,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "VERIFIED/HIGH"
-  },
-  {
-    "english": "Coming",
-    "garo": "Re·baengjok",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/MEDIUM"
   },
   {
     "english": "Confident",
@@ -3190,14 +3158,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Earn",
-    "garo": "Man·a",
-    "pos": null,
-    "category": "business",
-    "classifier": null,
-    "notes": "UNVERIFIED/MEDIUM"
   },
   {
     "english": "Earring",
@@ -4422,22 +4382,6 @@
     "category": "church",
     "classifier": null,
     "notes": "VERIFIED/HIGH"
-  },
-  {
-    "english": "Going",
-    "garo": "I·angonga",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "AMBIGUOUS/MEDIUM v:Re·angengjok"
-  },
-  {
-    "english": "Going",
-    "garo": "Re·angengjok",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/MEDIUM"
   },
   {
     "english": "Gold",
@@ -7056,22 +7000,6 @@
     "notes": "AMBIGUOUS/MEDIUM v:Nangchongmota / Nangchongmotgen"
   },
   {
-    "english": "Must",
-    "garo": "Nangchongmota",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/MEDIUM"
-  },
-  {
-    "english": "Must",
-    "garo": "Nangchongmotgen",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/MEDIUM"
-  },
-  {
     "english": "Must be inside",
     "garo": "Ning·on ong·na nanga",
     "pos": null,
@@ -7238,14 +7166,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Newspaper",
-    "garo": "Songbat",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH"
   },
   {
     "english": "Night",
@@ -10577,14 +10497,6 @@
   },
   {
     "english": "Stand",
-    "garo": "Chakata",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/MEDIUM v:Chadenga"
-  },
-  {
-    "english": "Stand",
     "garo": "Chadenga",
     "pos": null,
     "category": "uncategorized",
@@ -10726,14 +10638,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Stop",
-    "garo": "Dondip",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH"
   },
   {
     "english": "Stop it",
@@ -11241,14 +11145,6 @@
   },
   {
     "english": "Teach",
-    "garo": "Skia",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "UNVERIFIED/MEDIUM v:Sikie on·a"
-  },
-  {
-    "english": "Teach",
     "garo": "Sikie on·a",
     "pos": null,
     "category": "education",
@@ -11438,14 +11334,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Thief",
-    "garo": "Cha·ugipa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/MEDIUM v:Cha·u"
   },
   {
     "english": "Thief",
@@ -11712,22 +11600,6 @@
     "notes": "AMBIGUOUS/HIGH v:Baji / Somai"
   },
   {
-    "english": "Time",
-    "garo": "Baji",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/HIGH"
-  },
-  {
-    "english": "Time",
-    "garo": "Somai",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/AMBIGUOUS/HIGH"
-  },
-  {
     "english": "Tired",
     "garo": "Neng·a",
     "pos": null,
@@ -11810,14 +11682,6 @@
   {
     "english": "To Break",
     "garo": "Be·ata",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH"
-  },
-  {
-    "english": "To Build",
-    "garo": "Rika",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -12734,22 +12598,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "VERIFIED/HIGH"
-  },
-  {
-    "english": "Wash",
-    "garo": "Su·gala",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:Su·srong-a"
-  },
-  {
-    "english": "Wash",
-    "garo": "Su·srong·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
   },
   {
     "english": "Water",
@@ -14848,14 +14696,6 @@
     "notes": "UNVERIFIED/HIGH"
   },
   {
-    "english": "bark",
-    "garo": "bi·kil·ap",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
     "english": "barking deer",
     "garo": "ma·rak·ha",
     "pos": null,
@@ -16056,14 +15896,6 @@
     "notes": "variant/UNVERIFIED/HIGH"
   },
   {
-    "english": "bring",
-    "garo": "rim·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
     "english": "bring up",
     "garo": "mit·tang·a",
     "pos": null,
@@ -16233,23 +16065,7 @@
   },
   {
     "english": "build",
-    "garo": "ba·nai·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:dim˙-a / gat-a / rik-a"
-  },
-  {
-    "english": "build",
     "garo": "dim˙·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "build",
-    "garo": "gat·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -17281,14 +17097,6 @@
   },
   {
     "english": "choose",
-    "garo": "ba·nai·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ba-si-a"
-  },
-  {
-    "english": "choose",
     "garo": "ba·si·a",
     "pos": null,
     "category": "uncategorized",
@@ -17696,48 +17504,8 @@
     "notes": "UNVERIFIED/HIGH"
   },
   {
-    "english": "coins",
-    "garo": "poi·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:pil-"
-  },
-  {
-    "english": "coins",
-    "garo": "pil·",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "cold",
-    "garo": "chik·a",
-    "pos": null,
-    "category": "health",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:chik-jim-a / sin˙-a / sol-di"
-  },
-  {
-    "english": "cold",
-    "garo": "chik·jim·a",
-    "pos": null,
-    "category": "health",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
     "english": "cold",
     "garo": "sin˙·a",
-    "pos": null,
-    "category": "health",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "cold",
-    "garo": "sol·di",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -20873,14 +20641,6 @@
   },
   {
     "english": "explain",
-    "garo": "a·gan·prak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:pe˙-e a-gan-a / pe˙-prak-e a-gan-a"
-  },
-  {
-    "english": "explain",
     "garo": "pe˙·e a·gan·a",
     "pos": null,
     "category": "uncategorized",
@@ -21110,38 +20870,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "fat",
-    "garo": "bel·dom·dom",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:gop-ma-a / mil-a / mil-dam-bu-a"
-  },
-  {
-    "english": "fat",
-    "garo": "gop·ma·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "fat",
-    "garo": "mil·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "fat",
-    "garo": "mil·dam·bu·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
   },
   {
     "english": "fate",
@@ -21434,22 +21162,6 @@
   {
     "english": "finished",
     "garo": "bon˙·chot·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "finished",
-    "garo": "mat·chot·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "finished",
-    "garo": "ses",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -21890,14 +21602,6 @@
   {
     "english": "follow",
     "garo": "ki˙·sang·chak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "follow",
-    "garo": "rik·pa·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -22394,14 +22098,6 @@
   {
     "english": "get",
     "garo": "ra˙·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "get",
-    "garo": "sik·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -23206,14 +22902,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "heavy",
-    "garo": "chrim·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:je˙-et-je˙-et"
   },
   {
     "english": "heavy",
@@ -24912,14 +24600,6 @@
     "notes": "UNVERIFIED/HIGH v:si-sa"
   },
   {
-    "english": "lead",
-    "garo": "si·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
     "english": "leak",
     "garo": "ga˙·ak·ro·rot·a",
     "pos": null,
@@ -25593,14 +25273,6 @@
   },
   {
     "english": "log",
-    "garo": "bol·gan·tong",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:bol-tong"
-  },
-  {
-    "english": "log",
     "garo": "bol·tong",
     "pos": null,
     "category": "uncategorized",
@@ -25992,14 +25664,6 @@
     "notes": "UNVERIFIED/HIGH"
   },
   {
-    "english": "luck",
-    "garo": "a·si",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
     "english": "lukewarm",
     "garo": "bom·bom",
     "pos": null,
@@ -26110,22 +25774,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "make",
-    "garo": "daka",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:dok-a"
-  },
-  {
-    "english": "make",
-    "garo": "dok·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
   },
   {
     "english": "make friends",
@@ -27081,14 +26729,6 @@
   },
   {
     "english": "need",
-    "garo": "la·gi·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:nang-a"
-  },
-  {
-    "english": "need",
     "garo": "nang·a",
     "pos": null,
     "category": "uncategorized",
@@ -27528,38 +27168,6 @@
     "notes": "UNVERIFIED/HIGH"
   },
   {
-    "english": "only",
-    "garo": "ak·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:-pit-chi / -sa / ma-mang"
-  },
-  {
-    "english": "only",
-    "garo": "·pit·chi",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "only",
-    "garo": "·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "only",
-    "garo": "ma·mang",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
     "english": "ooze",
     "garo": "gip·u·a",
     "pos": null,
@@ -27854,14 +27462,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "pass",
-    "garo": "bat·a",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:i˙-ang-chek-a / re˙-ping-grik-a / re˙-sek-a"
   },
   {
     "english": "pass",
@@ -28864,22 +28464,6 @@
     "notes": "UNVERIFIED/HIGH v:pak-ri-ni krong / song-chi"
   },
   {
-    "english": "post",
-    "garo": "pak·ri·ni krong",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "post",
-    "garo": "song·chi",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
     "english": "pot for rice beer",
     "garo": "dik·tom",
     "pos": null,
@@ -29518,14 +29102,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "quick",
-    "garo": "jak·rak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ta˙-rak-a"
   },
   {
     "english": "quick",
@@ -30393,23 +29969,7 @@
   },
   {
     "english": "ripe",
-    "garo": "bri·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:min-a / nang-chek-chek-a"
-  },
-  {
-    "english": "ripe",
     "garo": "min·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "ripe",
-    "garo": "nang·chek·chek·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -31086,14 +30646,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "search",
-    "garo": "nem·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:san-di-a"
   },
   {
     "english": "search",
@@ -32329,22 +31881,6 @@
   },
   {
     "english": "smoke",
-    "garo": "ring·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:tip-a / wal˙-ku / wal˙-ku-a"
-  },
-  {
-    "english": "smoke",
-    "garo": "tip·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "smoke",
     "garo": "wal˙·ku",
     "pos": null,
     "category": "uncategorized",
@@ -32684,14 +32220,6 @@
     "garo": "ba·si·a",
     "pos": null,
     "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "soul",
-    "garo": "jang·gi",
-    "pos": null,
-    "category": "church",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH"
   },
@@ -33208,22 +32736,6 @@
     "notes": "UNVERIFIED/HIGH"
   },
   {
-    "english": "stay",
-    "garo": "dongchak·a",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:dong-dang-a"
-  },
-  {
-    "english": "stay",
-    "garo": "dongdang·a",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
     "english": "stay behind",
     "garo": "dongrik·a",
     "pos": null,
@@ -33537,14 +33049,6 @@
   },
   {
     "english": "straight",
-    "garo": "dim·breng·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:-tong˙-tang- / tong˙-tang / wa-rek-rek"
-  },
-  {
-    "english": "straight",
     "garo": "·tong˙·tang·",
     "pos": null,
     "category": "uncategorized",
@@ -33554,14 +33058,6 @@
   {
     "english": "straight",
     "garo": "tong˙·tang",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "straight",
-    "garo": "wa·rek·rek",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36288,38 +35784,6 @@
     "notes": "UNVERIFIED/HIGH"
   },
   {
-    "english": "waist",
-    "garo": "ko·mor",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "wait",
-    "garo": "dongtim·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ni-chak-a / seng-so-a"
-  },
-  {
-    "english": "wait",
-    "garo": "ni·chak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "wait",
-    "garo": "seng·so·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
     "english": "wait for",
     "garo": "ni·chak·su·a",
     "pos": null,
@@ -36374,14 +35838,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH v:ro-am-a"
-  },
-  {
-    "english": "wander",
-    "garo": "ro·am·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
   },
   {
     "english": "want",
@@ -36694,14 +36150,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH v:ku-a"
-  },
-  {
-    "english": "well",
-    "garo": "ku·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
   },
   {
     "english": "wet land",
@@ -37288,38 +36736,6 @@
     "notes": "UNVERIFIED/HIGH v:in-chak-a / ku˙-chak-a"
   },
   {
-    "english": "boil",
-    "garo": "bi·rot",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:bi-rot-ma˙-mong / bok-bak-a / git-u-a"
-  },
-  {
-    "english": "close",
-    "garo": "grip·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:grim / ket-a / mit-chu-a"
-  },
-  {
-    "english": "empty",
-    "garo": "bal·ang·ga",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:bang-bang / chi-chang-chang / jak-ra-ra"
-  },
-  {
-    "english": "enough",
-    "garo": "chip·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:chu˙-ong-a / gip-a / hem-hem"
-  },
-  {
     "english": "leg",
     "garo": "ja˙·",
     "pos": null,
@@ -37390,14 +36806,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH v:chong˙-top-a / mik-chil / rong-chon-a"
-  },
-  {
-    "english": "sound",
-    "garo": "ba·jin·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:gam˙-a / gam˙-pret-a / jang-a"
   },
   {
     "english": "stir",

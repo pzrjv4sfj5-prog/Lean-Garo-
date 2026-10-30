@@ -2126,10 +2126,6 @@
     "garo": "Bano"
   },
   {
-    "english": "why",
-    "garo": "Maini·gimin"
-  },
-  {
     "english": "how",
     "garo": "Maikai"
   },
@@ -2428,10 +2424,6 @@
   {
     "english": "to mend / fix",
     "garo": "Namatpila"
-  },
-  {
-    "english": "to build",
-    "garo": "Rika"
   },
   {
     "english": "to dig",
@@ -4088,10 +4080,6 @@
     "garo": "Adoko mande"
   },
   {
-    "english": "newspaper",
-    "garo": "Songbat"
-  },
-  {
     "english": "Best (superlative)",
     "garo": "Bilongen nambata"
   },
@@ -4178,14 +4166,6 @@
   {
     "english": "Quickly (adverb)",
     "garo": "tarake"
-  },
-  {
-    "english": "How many",
-    "garo": "baitarong"
-  },
-  {
-    "english": "How much",
-    "garo": "baita"
   },
   {
     "english": "Whole / Entire",
@@ -5716,10 +5696,6 @@
     "garo": "Bilsi"
   },
   {
-    "english": "Time",
-    "garo": "Somai"
-  },
-  {
     "english": "Day after tomorrow",
     "garo": "Me·nnalo"
   },
@@ -6626,10 +6602,6 @@
     "garo": "Bano"
   },
   {
-    "english": "Why",
-    "garo": "Maini·gimin"
-  },
-  {
     "english": "How",
     "garo": "Maikai"
   },
@@ -6936,10 +6908,6 @@
   {
     "english": "To Mend / Fix",
     "garo": "Namatpila"
-  },
-  {
-    "english": "To Build",
-    "garo": "Rika"
   },
   {
     "english": "To Dig",
@@ -8432,10 +8400,6 @@
     "garo": "Ru·ute"
   },
   {
-    "english": "Newspaper",
-    "garo": "Songbat"
-  },
-  {
     "english": "Journey",
     "garo": "Songre"
   },
@@ -9628,10 +9592,6 @@
     "garo": "Knal"
   },
   {
-    "english": "time",
-    "garo": "Somai"
-  },
-  {
     "english": "fast",
     "garo": "Ta·rak·a"
   },
@@ -10500,14 +10460,6 @@
     "garo": "do·o manggni"
   },
   {
-    "english": "two teacher",
-    "garo": "skigipa·gni"
-  },
-  {
-    "english": "two teachers",
-    "garo": "skigipa·gni"
-  },
-  {
     "english": "two student",
     "garo": "chik·gni"
   },
@@ -10530,10 +10482,6 @@
   {
     "english": "two apple",
     "garo": "se·gni"
-  },
-  {
-    "english": "two banana",
-    "garo": "sobo·gni"
   },
   {
     "english": "two rice",
@@ -16708,10 +16656,6 @@
     "garo": "Wa·al"
   },
   {
-    "english": "the water",
-    "garo": "Chi"
-  },
-  {
     "english": "the earth / soil",
     "garo": "A·a"
   },
@@ -16840,11 +16784,6 @@
     "pos": "verb",
     "example_en": "be happy",
     "example_garo": "kusi ong·bo"
-  },
-  {
-    "english": "beautiful",
-    "garo": "nitoa",
-    "pos": "adjective"
   },
   {
     "english": "beef",
@@ -17140,28 +17079,11 @@
     "pos": "conjunction"
   },
   {
-    "english": "stand",
-    "garo": "chakata",
-    "pos": "verb"
-  },
-  {
     "english": "speak",
     "garo": "agana",
     "pos": "verb",
     "example_en": "I speak to him",
     "example_garo": "anga una agana"
-  },
-  {
-    "english": "stop",
-    "garo": "dondip",
-    "pos": "verb",
-    "example_en": "Stop it",
-    "example_garo": "Iako dondipbo"
-  },
-  {
-    "english": "thief",
-    "garo": "cha·ugipa",
-    "pos": "noun"
   },
   {
     "english": "thumb",
@@ -17210,11 +17132,6 @@
     "english": "name",
     "garo": "bimung",
     "pos": "noun"
-  },
-  {
-    "english": "earn",
-    "garo": "man·a",
-    "pos": "verb"
   },
   {
     "english": "inheritance",

@@ -1,0 +1,114 @@
+# NV-233: conflict resolution report (Claude A, 2026-10-30)
+
+Project Owner directive: "resolve all conflicts, we need to produce". Resolved everything that needs no native ruling; the rest is listed here as verification work. None of the remainder blocks the build (all are baselined/allowlisted, gate green).
+
+## Resolved (deleted)
+- 138 unverified/OCR duplicate rows removed where the key already has exactly one verified_high word (verified word kept). 63 baseline keys cleared, 18 pending-lexicon records set to duplicate-skip, 93 legacy rows removed from final_entries.json / garo_dictionary.json.
+
+## Remaining, needs a ruling or verification
+- Multiple verified words for one key (genuine variants / sense splits): 71 keys
+- Verified word + suspended rows (superseded, retained until verified per Owner): 464 keys
+- No verified word, several unverified glosses: 720 keys
+- Human-noted unverified rows kept for ruling (native relay / contested): 26 rows
+- Cross-table: bought, heard, standing, sitting (corrections vs irregular_verbs spelling/form).
+
+### Multiple verified (key: words)
+- able: ama / man·a
+- alone: ak·sa / saksan
+- angry: Ka·onanga / bika ding·a
+- answer: Aganchaka / Aganchakani
+- ant: Smilchak / ket·chi·ra / sim·il·chak
+- apple: Apple / te·spu
+- axe: Rua / ru·a
+- back: jang·gil / kang·kare
+- bag: Jol·a / bek
+- big red house: dal·gipa git·chak / dal·gipa nok git·chak / nok git·chak dal·gipa
+- book: Ki·tap / lekka
+- brave: pa·a / sang·chak·a
+- bridge: Jal·ang / dolong / dol·ong / kul
+- clean: Rongtal·ata / chi·rong·a / po·ri·skar / tal·a
+- cup: Piala / kap
+- dance (alt): Chroka / mesaa
+- demand: Dabia / Dabiani
+- eaten: cha·jok / cha·manaha
+- fast: Ta·rak·a / bing·si·bing·si / jak·rak·a
+- fever: ding·du·a / han·ding·a / joma
+- fly: Tampi / bil·a / tam·pi / til·a
+- grandfather: Aitchu / at·chu
+- greedy: mat·u·a / mikboka / mik·ni·a
+- has eaten: cha·jok / cha·manaha
+- have you eaten your lunch?: Na·a mipring cha·ahama? / Na·a mipring cha·jokma?
+- he: Bia / Ua
+- help me: Angko dakchakbo / Ang·na dakchakbo
+- hoe: git·chi / ko·dal
+- hope: ka·donga / ka·dongani
+- horn: a·du·ri / sing·ga
+- how are you: Namengama? / Na·a mai rokom?
+- i am sick: Anga kene dongka / Anga sakamenga
+- i can eat: Anga cha·na ama / Anga cha·na man·a
+- i can go: Anga re·angna ama / Anga re·angna man·a
+- i can work: Anga kam ka·na ama / Anga kam ka·na man·a
+- i don't know: Anga ma·sija / Anga uija.
+- knowledge (alt, fuller compound): U·iani ba ma·siani / u·i·ma·siani
+- last: bai·a / bon·kamgipa / ja·mangipa / ses
+- leaf: bi·jak / bol·bi·jak
+- leg: Ja·a / ja·chok / ja·git·teng / ja·teng
+- listen: Knachika / kin·a·a / kin·a·tim·a
+- live (alt): donga / tanga
+- living: dongenga / tangenggipa
+- monkey: a·mak / ha·mak / mak·kre / rang·gol
+- noon: Saljatchi / sal·jat·chi
+- old woman: Buchuma / bu·ri
+- orange: Narang / ko·mil·a / na·rang
+- outside: A·pal / bai·re / ha·gat·e
+- pot: Dik·ke / dik·te / gim·bi
+- push: Jit·pak·a / sik·do·a / sik·pak·a
+- see: nia / nik·a
+- she can cook: Ua Song·na ama. / Ua Song·na man·a.
+- slow: Ka·sna / ka·sin·a
+- son: De·bi·pa / de·pan·te
+- stop!: Damo! / Sengbo!
+- the book is behind the door: Ki·tap cholgugani janggilo ong·a / Ki·tap cholgugani paksao ong·a
+- the book is under the blanket: Ki·tap kombolni mitapo ong·a / Ki·tap kombolni ning·ao ong·a
+- the book is up on the roof: Ki·tap nokking kosako ong·a / Ki·tap nokkingni kosako ong·a
+- the market is nearby: Bajal sambaon / Bajalara sambaon / Bajalde sambaon
+- they: Uamang / bisong
+- throw: Gal·a / Gal·a / Goata / Goata / go·a
+- to cook: Song·a / song·a
+- to support: Chaka / al·du·na
+- to walk: Re·a / Re·mama / Re·rama
+- today: Da·al / Da·alo
+- tree: Bol / bi·pang / bol·bi·pang / bol·pang
+- walk: Re·a / Re·mama / Re·rama / re·am·a
+- what is your name?: Nang·ni bimungara maia? / Na·a ni bimungara maia?
+- where (relative pronoun): jeo / jeon
+- why do you laugh?: Maina (na·a) ka·dinga? / Maina na·a ka·dinga? / Na·a maina ka·dinga?
+- yesterday: Mejal / Mijal / me·ja·o
+
+### Human-noted rows kept for ruling (key | garo)
+- bear | ba·a
+- bear | mak·bil
+- bear | nang·a
+- bear | ka·a chak
+- mirror | Janera
+- always | jring·jring
+- always | pang·na
+- market | Bajar
+- only | banggija
+- very | indakpile
+- wait | senga
+- where did you come from? | Banoni re·baa na·ara?
+- at school | Skulchi
+- at home | Nokchi
+- in the forest | Buringchi
+- at the market | bajaro
+- joking | Bal·ekonga
+- can | ama
+- hot | gek·gek
+- hot | jroa
+- you | Nang
+- to be angry | Ka·chaa
+- to hang | al·a·i·na
+- to crumble down | Be·rurua
+- i see him | Anga uko nika
+- i see her | Anga uko nika

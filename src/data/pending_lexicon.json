@@ -4354,7 +4354,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster).",
+    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster). | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-19",
     "conflict": {
@@ -4364,7 +4364,7 @@
         "Baea"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-19T16:45:47.730Z"
   },
   {
@@ -4383,7 +4383,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster).",
+    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster). | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-19",
     "conflict": {
@@ -4393,7 +4393,7 @@
         "Baea"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-19T16:45:47.730Z"
   },
   {
@@ -6649,7 +6649,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster).",
+    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster). | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-19",
     "conflict": {
@@ -6661,7 +6661,7 @@
         "ding·chon·a"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-19T16:45:47.730Z"
   },
   {
@@ -7186,7 +7186,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster).",
+    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster). | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-19",
     "conflict": {
@@ -7196,7 +7196,7 @@
         "Bachina"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-19T16:45:47.730Z"
   },
   {
@@ -7555,7 +7555,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster).",
+    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster). | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-19",
     "conflict": {
@@ -7565,7 +7565,7 @@
         "Badalata"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-19T16:45:47.730Z"
   },
   {
@@ -7584,7 +7584,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster).",
+    "review_notes": "Reviewed by Claude A, 2026-07-19. Existing-conflict reviewed: legitimate near-synonym / register variant, not an error - consistent with the confirmed pattern elsewhere in this dictionary (e.g. teacher/Skigipa cluster, Bakki/remainder cluster). | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-19",
     "conflict": {
@@ -7594,7 +7594,7 @@
         "Badalata"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-19T16:45:47.730Z"
   },
   {
@@ -13980,7 +13980,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-20. Existing-conflict checked programmatically against case/raka-only duplication (none found) - legitimate near-synonym cluster.",
+    "review_notes": "Reviewed by Claude A, 2026-07-20. Existing-conflict checked programmatically against case/raka-only duplication (none found) - legitimate near-synonym cluster. | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-20",
     "conflict": {
@@ -13989,7 +13989,7 @@
         "a·gan·mit·ap·a·ni"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-20T06:02:09.182Z"
   },
   {
@@ -20587,14 +20587,14 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-20 (batch: pages 3/4/35/37/38/39/87/88/89). High-confidence, unflagged, no conflict.",
+    "review_notes": "Reviewed by Claude A, 2026-07-20 (batch: pages 3/4/35/37/38/39/87/88/89). High-confidence, unflagged, no conflict. | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-20",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-20T06:02:09.182Z"
   },
   {
@@ -23525,7 +23525,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-20. Existing-conflict checked programmatically against case/raka-only duplication (none found) - legitimate near-synonym cluster.",
+    "review_notes": "Reviewed by Claude A, 2026-07-20. Existing-conflict checked programmatically against case/raka-only duplication (none found) - legitimate near-synonym cluster. | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-20",
     "conflict": {
@@ -23535,7 +23535,7 @@
         "Gri"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-20T06:02:09.182Z"
   },
   {
@@ -23554,7 +23554,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-20. Existing-conflict checked programmatically against case/raka-only duplication (none found) - legitimate near-synonym cluster.",
+    "review_notes": "Reviewed by Claude A, 2026-07-20. Existing-conflict checked programmatically against case/raka-only duplication (none found) - legitimate near-synonym cluster. | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-20",
     "conflict": {
@@ -23564,7 +23564,7 @@
         "Gri"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-20T06:02:09.182Z"
   },
   {
@@ -23739,7 +23739,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-20. Existing-conflict checked programmatically against case/raka-only duplication (none found) - legitimate near-synonym cluster.",
+    "review_notes": "Reviewed by Claude A, 2026-07-20. Existing-conflict checked programmatically against case/raka-only duplication (none found) - legitimate near-synonym cluster. | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-20",
     "conflict": {
@@ -23748,7 +23748,7 @@
         "a'ba·cha·a"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-20T06:02:09.182Z"
   },
   {
@@ -23798,7 +23798,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-20. Existing-conflict checked programmatically against case/raka-only duplication (none found) - legitimate near-synonym cluster.",
+    "review_notes": "Reviewed by Claude A, 2026-07-20. Existing-conflict checked programmatically against case/raka-only duplication (none found) - legitimate near-synonym cluster. | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-20",
     "conflict": {
@@ -23811,7 +23811,7 @@
         "bil·ak·a"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-20T06:02:09.182Z"
   },
   {
@@ -28363,14 +28363,14 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-20 (batch: pages 3/4/35/37/38/39/87/88/89). High-confidence, unflagged, no conflict.",
+    "review_notes": "Reviewed by Claude A, 2026-07-20 (batch: pages 3/4/35/37/38/39/87/88/89). High-confidence, unflagged, no conflict. | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-20",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-20T06:02:09.182Z"
   },
   {
@@ -28805,7 +28805,7 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-20. Existing-conflict checked programmatically against case/raka-only duplication (none found) - legitimate near-synonym cluster.",
+    "review_notes": "Reviewed by Claude A, 2026-07-20. Existing-conflict checked programmatically against case/raka-only duplication (none found) - legitimate near-synonym cluster. | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-20",
     "conflict": {
@@ -28815,7 +28815,7 @@
         "bik·bat·a"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-20T06:02:09.182Z"
   },
   {
@@ -30499,7 +30499,7 @@
       "ocr_version": "gemini-flat-legacy-v1"
     },
     "review_status": "approved",
-    "review_notes": null,
+    "review_notes": " | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-21T18:35:15.325221+00:00",
     "conflict": {
@@ -30509,7 +30509,7 @@
         "Sila"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-21T18:35:17.676Z"
   },
   {
@@ -36683,7 +36683,7 @@
       "ocr_version": "gemini-flat-legacy-v1"
     },
     "review_status": "approved",
-    "review_notes": null,
+    "review_notes": " | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-22T05:26:57.949337+00:00",
     "conflict": {
@@ -36694,7 +36694,7 @@
         "ka·a"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-22T05:27:04.859Z"
   },
   {
@@ -42211,7 +42211,7 @@
       "ocr_version": "gemini-2026-07-14"
     },
     "review_status": "approved",
-    "review_notes": "Verb general form (-a) vs existing infinitive (-na) of the same root aba·ok-/A·bao-, same pattern as PL-0001589. Complementary forms, not a conflict.",
+    "review_notes": "Verb general form (-a) vs existing infinitive (-na) of the same root aba·ok-/A·bao-, same pattern as PL-0001589. Complementary forms, not a conflict. | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-24",
     "conflict": {
@@ -42220,7 +42220,7 @@
         "aba·ok·na"
       ]
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-24T05:44:04.582Z"
   },
   {
@@ -58490,7 +58490,7 @@
       "ocr_version": "v5"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx pages 13/20/21/108 batch (standard print-dictionary vocabulary import, no headword collision, no native-validation dependency).",
+    "review_notes": "Reviewed by Claude A, 2026-09-19. Part of the OCT_Garo_PRODUCTION_MASTER_ALIGNED_WORD_BY_WORD_AUDIT_v5.xlsx pages 13/20/21/108 batch (standard print-dictionary vocabulary import, no headword collision, no native-validation dependency). | NV-233 (2026-10-30): master row deleted as unverified duplicate of the verified word for this key (Project Owner: resolve all conflicts).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-09-19",
     "conflict": {
@@ -58498,7 +58498,7 @@
       "details": null
     },
     "near_duplicate": null,
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-09-19T06:19:38.865Z"
   },
   {
