@@ -1103,7 +1103,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `comfort`: candidates — `mal·mok·a` (weak/OCR) — shipped: `mal·mok·a`
 - `comfortable`: candidates — `gan·to·a` (weak/OCR), `·kin·ap·` (weak/OCR), `krok·to·a` (weak/OCR) — shipped: `krok·to·a`
 - `comfortable for sleeping`: candidates — `chu·kin·ap·a` (weak/OCR) — shipped: `chu·kin·ap·a`
-- `command`: candidates — `on·bo` (weak/OCR), `re·ang·bo` (weak/OCR), `re·babo` (weak/OCR), `ni·bo` (weak/OCR), `dakbo` (weak/OCR), `asong·bo` (weak/OCR), `katbo` (weak/OCR), `bre·bo` (weak/OCR), `porai·bo` (weak/OCR), `den·bo` (weak/OCR), `cho·bo` (weak/OCR), `dakchak·bo` (weak/OCR), `dongdik·bo` (weak/OCR), `cha·bo` (weak/OCR) — shipped: `on·bo`
+- `command`: candidates — `on·bo` (weak/OCR), `re·angbo` (weak/OCR), `re·babo` (weak/OCR), `ni·bo` (weak/OCR), `dakbo` (weak/OCR), `asong·bo` (weak/OCR), `katbo` (weak/OCR), `bre·bo` (weak/OCR), `porai·bo` (weak/OCR), `den·bo` (weak/OCR), `cho·bo` (weak/OCR), `dakchak·bo` (weak/OCR), `dongdik·bo` (weak/OCR), `cha·bo` (weak/OCR) — shipped: `on·bo`
 - `commencement start`: candidates — `A·bachengani` (weak/OCR) — shipped: `A·bachengani`
 - `commerce`: candidates — `Badinga` (weak/OCR) — shipped: `Badinga`
 - `commit`: candidates — `gro` (weak/OCR) — shipped: `gro`
@@ -1128,7 +1128,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `contact (verb)`: candidates — `Contact khagen` (weak/OCR) — shipped: `Contact khagen`
 - `contemporaries`: candidates — `tro` (weak/OCR) — shipped: `tro`
 - `continually`: candidates — `Jol jol` (weak/OCR) — shipped: `Jol jol`
-- `continuous`: candidates — `on·enga` (weak/OCR), `re·ang·enga` (weak/OCR), `re·baenga` (weak/OCR), `agan·enga` (weak/OCR), `dakenga` (weak/OCR), `katenga` (weak/OCR), `bre·enga` (weak/OCR), `porai·enga` (weak/OCR), `den·enga` (weak/OCR), `cho·enga` (weak/OCR), `ka·sa·enga` (weak/OCR), `cha·enga` (weak/OCR) — shipped: `on·enga`
+- `continuous`: candidates — `on·enga` (weak/OCR), `re·angenga` (weak/OCR), `re·baenga` (weak/OCR), `agan·enga` (weak/OCR), `dakenga` (weak/OCR), `katenga` (weak/OCR), `bre·enga` (weak/OCR), `porai·enga` (weak/OCR), `den·enga` (weak/OCR), `cho·enga` (weak/OCR), `ka·sa·enga` (weak/OCR), `cha·enga` (weak/OCR) — shipped: `on·enga`
 - `continuously`: candidates — `prak·prak` (weak/OCR), `·jol·jol·` (weak/OCR) — shipped: `·jol·jol·`
 - `contribute`: candidates — `ron·chak·a` (weak/OCR) — shipped: `ron·chak·a`
 - `convention`: candidates — `be·wal` (weak/OCR) — shipped: `be·wal`
@@ -1515,7 +1515,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `exactly`: candidates — `Kakket makket` (weak/OCR) — shipped: `Kakket makket`
 - `exaggerate`: candidates — `ba·nai·e a·gan·ing·a` (weak/OCR), `bo·dap·a` (weak/OCR) — shipped: `bo·dap·a`
 - `examination`: candidates — `po·ri·ka` (weak/OCR) — shipped: `po·ri·ka`
-- `example`: candidates — `pil·tai (again)` (weak/OCR), `cha·a (ate), re·ang·a (went)` (weak/OCR), `reba·aha (came), cha·aha (ate)` (weak/OCR), `cha·enga (eating), re·angenga (going)` (weak/OCR), `cha·gen (will eat), reba·gen (will come)` (weak/OCR), `cha·manjok (has eaten)` (weak/OCR), `cha·man·aha (had eaten)` (weak/OCR), `cha·bo (eat!), on·bo (give!)` (weak/OCR), `cha·ahama? (did you eat?)` (weak/OCR), `cha·engma? (are you eating?)` (weak/OCR), `cha·genma? (will you eat?)` (weak/OCR), `cha·na mangenma? (can you eat?)` (weak/OCR), `Hoe mangenva (yes I can)` (weak/OCR), `asong·na mangengma? (may I sit?)` (weak/OCR), `cha·ong·ja (not eating)` (weak/OCR), `ui·ja (don't know)` (weak/OCR), `dakgipa (worker)` (weak/OCR), `a·gan·ani (speech)` (weak/OCR), `nok·ni (of the house)` (weak/OCR), `bajal·chi (at/to market)` (weak/OCR), `ang·na (to me)` (weak/OCR), `ang·ming (with me)` (weak/OCR), `bi·ko (him/it·object)` (weak/OCR), `nam·bata (best)` (weak/OCR), `nam·bea (better)` (weak/OCR) — shipped: `pil·tai (again)`
+- `example`: candidates — `pil·tai (again)` (weak/OCR), `cha·a (ate), re·anga (went)` (weak/OCR), `reba·aha (came), cha·aha (ate)` (weak/OCR), `cha·enga (eating), re·angenga (going)` (weak/OCR), `cha·gen (will eat), reba·gen (will come)` (weak/OCR), `cha·manjok (has eaten)` (weak/OCR), `cha·man·aha (had eaten)` (weak/OCR), `cha·bo (eat!), on·bo (give!)` (weak/OCR), `cha·ahama? (did you eat?)` (weak/OCR), `cha·engma? (are you eating?)` (weak/OCR), `cha·genma? (will you eat?)` (weak/OCR), `cha·na mangenma? (can you eat?)` (weak/OCR), `Hoe mangenva (yes I can)` (weak/OCR), `asong·na mangengma? (may I sit?)` (weak/OCR), `cha·ong·ja (not eating)` (weak/OCR), `ui·ja (don't know)` (weak/OCR), `dakgipa (worker)` (weak/OCR), `a·gan·ani (speech)` (weak/OCR), `nok·ni (of the house)` (weak/OCR), `bajal·chi (at/to market)` (weak/OCR), `ang·na (to me)` (weak/OCR), `ang·ming (with me)` (weak/OCR), `bi·ko (him/it·object)` (weak/OCR), `nam·bata (best)` (weak/OCR), `nam·bea (better)` (weak/OCR) — shipped: `pil·tai (again)`
 - `excavate`: candidates — `bik·kot·a` (weak/OCR) — shipped: `bik·kot·a`
 - `exceed`: candidates — `ba·di·a` (weak/OCR), `bat·a` (weak/OCR) — shipped: `bat·a`
 - `excellent`: candidates — `nam·e·man·chan` (weak/OCR) — shipped: `nam·e·man·chan`
@@ -1773,7 +1773,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `fuss`: candidates — `gi·jo·a` (weak/OCR) — shipped: `gi·jo·a`
 - `fuss with`: candidates — `mang·kal·a` (weak/OCR) — shipped: `mang·kal·a`
 - `fussy`: candidates — `mang·meng·a` (weak/OCR) — shipped: `mang·meng·a`
-- `future`: candidates — `on·gen` (weak/OCR), `verb + en / gen` (weak/OCR), `re·ang·gen` (weak/OCR), `re·bagen` (weak/OCR), `agan·gen` (weak/OCR), `ni·gen` (weak/OCR), `dakgen` (weak/OCR), `katgen` (weak/OCR), `bre·gen` (weak/OCR), `porai·gen` (weak/OCR), `den·gen` (weak/OCR), `cho·gen` (weak/OCR), `bil·gen` (weak/OCR), `dakchak·gen` (weak/OCR), `dongdik·gen` (weak/OCR), `ka·sa·gen` (weak/OCR), `cha·gen` (weak/OCR) — shipped: `on·gen`
+- `future`: candidates — `on·gen` (weak/OCR), `verb + en / gen` (weak/OCR), `re·anggen` (weak/OCR), `re·bagen` (weak/OCR), `agan·gen` (weak/OCR), `ni·gen` (weak/OCR), `dakgen` (weak/OCR), `katgen` (weak/OCR), `bre·gen` (weak/OCR), `porai·gen` (weak/OCR), `den·gen` (weak/OCR), `cho·gen` (weak/OCR), `bil·gen` (weak/OCR), `dakchak·gen` (weak/OCR), `dongdik·gen` (weak/OCR), `ka·sa·gen` (weak/OCR), `cha·gen` (weak/OCR) — shipped: `on·gen`
 - `gable`: candidates — `bel·ki` (weak/OCR) — shipped: `bel·ki`
 - `gallant`: candidates — `Ka·donggipa` (weak/OCR) — shipped: `Ka·donggipa`
 - `gallbladder`: candidates — `bi·kit` (weak/OCR) — shipped: `bi·kit`
@@ -1781,7 +1781,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `garden`: candidates — `ba·gan` (weak/OCR) — shipped: `ba·gan`
 - `gardenia`: candidates — `gon·do·ras` (weak/OCR) — shipped: `gon·do·ras`
 - `garments`: candidates — `po·sak` (weak/OCR) — shipped: `po·sak`
-- `garo`: candidates — `Anga` (weak/OCR), `Angko` (weak/OCR), `Na·a` (weak/OCR), `Nang·na / Nang·ko` (weak/OCR), `Ua` (weak/OCR), `Una` (weak/OCR), `Chinga` (weak/OCR), `Chingna` (weak/OCR), `Uamang` (weak/OCR), `Uamangna` (weak/OCR), `Ia` (weak/OCR), `Iamang` (weak/OCR), `Iano` (weak/OCR), `Uano` (weak/OCR), `Angni` (weak/OCR), `Nang·ni` (weak/OCR), `Uni` (weak/OCR), `Chingni / chingni` (weak/OCR), `Uamangni` (weak/OCR), `Sani?` (weak/OCR), `Saniba` (weak/OCR), `Pilakni` (weak/OCR), `Anga an·tang` (weak/OCR), `Na·a an·tang` (weak/OCR), `Ua an·tang` (weak/OCR), `chinga an·tangtang` (weak/OCR), `Sawa` (weak/OCR), `Maia` (weak/OCR), `Basako` (weak/OCR), `Bano` (weak/OCR), `Maini·gimin` (weak/OCR), `Maikai` (weak/OCR), `Baitarong` (weak/OCR), `Baita` (weak/OCR), `Kon` (weak/OCR), `Sani` (weak/OCR), `cha·na` (weak/OCR), `ring·na` (weak/OCR), `tus·na` (weak/OCR), `re·ang·na` (weak/OCR), `re·babo` (weak/OCR), `agan·na` (weak/OCR), `ni·na` (weak/OCR), `on·a` (weak/OCR), `ra·na` (weak/OCR), `dakna` (weak/OCR), `asong·na` (weak/OCR), `katna` (weak/OCR), `re·na` (weak/OCR), `bre·na` (weak/OCR), `pal·na` (weak/OCR), `se·na` (weak/OCR), `porai·na` (weak/OCR), `song·na` (weak/OCR), `su·srong·na` (weak/OCR), `de·na` (weak/OCR), `den·na` (weak/OCR), `cho·na` (weak/OCR), `bil·na` (weak/OCR), `jro·na` (weak/OCR), `ga·ak·na` (weak/OCR), `dakchak·na` (weak/OCR), `ong·a` (weak/OCR), `donga` (weak/OCR), `dongdik·na` (weak/OCR), `ka·sa·na` (weak/OCR), `bi·na` (weak/OCR), `so·na` (weak/OCR), `rik·na` (weak/OCR), `ge·na` (weak/OCR), `gal·na` (weak/OCR), `rim·na` (weak/OCR), `dangtap·na` (weak/OCR), `ka·ding·na` (weak/OCR), `grap·na` (weak/OCR), `o·na` (weak/OCR), `chip·na` (weak/OCR), `Atchu` (weak/OCR), `Toa` (weak/OCR), `Touja` (weak/OCR), `Damo / Gisep sengbo` (weak/OCR), `Inde·a?` (weak/OCR), `Hai cha·ha` (weak/OCR), `Hai re·naha` (weak/OCR), `Tarake re·babo!` (weak/OCR), `Sala` (weak/OCR), `Jroa` (weak/OCR), `Maldoa / Gadoa` (weak/OCR), `Rorama / Roama` (weak/OCR), `Teka` (weak/OCR), `Goa` (weak/OCR), `Nia` (weak/OCR), `Nitata` (weak/OCR), `Rua` (weak/OCR), `Nonga` (weak/OCR), `Aka` (weak/OCR), `Wangala` (weak/OCR), `Mahari` (weak/OCR), `A·chik daka` (weak/OCR), `Nokma` (weak/OCR), `A·ba daka` (weak/OCR), `Songsarek` (weak/OCR), `Mikrangni bimung gri` (weak/OCR), `Baksa nangchim·a, saksan sia` (weak/OCR), `Mi gual·ata·bo ong·ja` (weak/OCR), `Buring on·a, buring ra·a` (weak/OCR), `Aio!` (weak/OCR), `Himanga!` (weak/OCR), `Ei! / O!` (weak/OCR), `Maiko nanga?` (weak/OCR), `Jala·gipa` (weak/OCR), `Re·naha ba!` (weak/OCR), `Na·a nang pen ko on·a mangenma?` (weak/OCR), `Hoe mangenva.` (weak/OCR), `Na·a box ko dena mangenma?` (weak/OCR), `Na·a porikka sena mangenma?` (weak/OCR), `Na·ara ang·ming rebagenma?` (weak/OCR), `Ang·a nangming reangen.` (weak/OCR), `Anga asongna mangengma?` (weak/OCR), `Na·a angna kasa·a ma?` (weak/OCR), `Hoe, ang·a nangna kasa·a.` (weak/OCR), `Ang·a namengava.` (weak/OCR), `Haiwa` (weak/OCR), `Badia / Badiya` (weak/OCR), `Bagita` (weak/OCR), `Baitarong / Baita` (weak/OCR), `Sako` (weak/OCR), `Walgimik` (weak/OCR), `Mija antio` (weak/OCR), `Ming` (weak/OCR), `Ru·ute` (weak/OCR), `Namnikgipa` (weak/OCR), `Chibata` (weak/OCR), `Bangbata` (weak/OCR), `Namen` (weak/OCR), `Dena` (weak/OCR), `Gama` (weak/OCR), `Olakiram` (weak/OCR), `Chitthio` (weak/OCR), `Adoko mande` (weak/OCR), `Bilongen nambata` (weak/OCR), `Room` (weak/OCR), `Apple` (weak/OCR), `Rong` (weak/OCR) — shipped: `Rong`
+- `garo`: candidates — `Anga` (weak/OCR), `Angko` (weak/OCR), `Na·a` (weak/OCR), `Nang·na / Nang·ko` (weak/OCR), `Ua` (weak/OCR), `Una` (weak/OCR), `Chinga` (weak/OCR), `Chingna` (weak/OCR), `Uamang` (weak/OCR), `Uamangna` (weak/OCR), `Ia` (weak/OCR), `Iamang` (weak/OCR), `Iano` (weak/OCR), `Uano` (weak/OCR), `Angni` (weak/OCR), `Nang·ni` (weak/OCR), `Uni` (weak/OCR), `Chingni / chingni` (weak/OCR), `Uamangni` (weak/OCR), `Sani?` (weak/OCR), `Saniba` (weak/OCR), `Pilakni` (weak/OCR), `Anga an·tang` (weak/OCR), `Na·a an·tang` (weak/OCR), `Ua an·tang` (weak/OCR), `chinga an·tangtang` (weak/OCR), `Sawa` (weak/OCR), `Maia` (weak/OCR), `Basako` (weak/OCR), `Bano` (weak/OCR), `Maini·gimin` (weak/OCR), `Maikai` (weak/OCR), `Baitarong` (weak/OCR), `Baita` (weak/OCR), `Kon` (weak/OCR), `Sani` (weak/OCR), `cha·na` (weak/OCR), `ring·na` (weak/OCR), `tus·na` (weak/OCR), `re·angna` (weak/OCR), `re·babo` (weak/OCR), `agan·na` (weak/OCR), `ni·na` (weak/OCR), `on·a` (weak/OCR), `ra·na` (weak/OCR), `dakna` (weak/OCR), `asong·na` (weak/OCR), `katna` (weak/OCR), `re·na` (weak/OCR), `bre·na` (weak/OCR), `pal·na` (weak/OCR), `se·na` (weak/OCR), `porai·na` (weak/OCR), `song·na` (weak/OCR), `su·srong·na` (weak/OCR), `de·na` (weak/OCR), `den·na` (weak/OCR), `cho·na` (weak/OCR), `bil·na` (weak/OCR), `jro·na` (weak/OCR), `ga·ak·na` (weak/OCR), `dakchak·na` (weak/OCR), `ong·a` (weak/OCR), `donga` (weak/OCR), `dongdik·na` (weak/OCR), `ka·sa·na` (weak/OCR), `bi·na` (weak/OCR), `so·na` (weak/OCR), `rik·na` (weak/OCR), `ge·na` (weak/OCR), `gal·na` (weak/OCR), `rim·na` (weak/OCR), `dangtap·na` (weak/OCR), `ka·ding·na` (weak/OCR), `grap·na` (weak/OCR), `o·na` (weak/OCR), `chip·na` (weak/OCR), `Atchu` (weak/OCR), `Toa` (weak/OCR), `Touja` (weak/OCR), `Damo / Gisep sengbo` (weak/OCR), `Inde·a?` (weak/OCR), `Hai cha·ha` (weak/OCR), `Hai re·naha` (weak/OCR), `Tarake re·babo!` (weak/OCR), `Sala` (weak/OCR), `Jroa` (weak/OCR), `Maldoa / Gadoa` (weak/OCR), `Rorama / Roama` (weak/OCR), `Teka` (weak/OCR), `Goa` (weak/OCR), `Nia` (weak/OCR), `Nitata` (weak/OCR), `Rua` (weak/OCR), `Nonga` (weak/OCR), `Aka` (weak/OCR), `Wangala` (weak/OCR), `Mahari` (weak/OCR), `A·chik daka` (weak/OCR), `Nokma` (weak/OCR), `A·ba daka` (weak/OCR), `Songsarek` (weak/OCR), `Mikrangni bimung gri` (weak/OCR), `Baksa nangchim·a, saksan sia` (weak/OCR), `Mi gual·ata·bo ong·ja` (weak/OCR), `Buring on·a, buring ra·a` (weak/OCR), `Aio!` (weak/OCR), `Himanga!` (weak/OCR), `Ei! / O!` (weak/OCR), `Maiko nanga?` (weak/OCR), `Jala·gipa` (weak/OCR), `Re·naha ba!` (weak/OCR), `Na·a nang pen ko on·a mangenma?` (weak/OCR), `Hoe mangenva.` (weak/OCR), `Na·a box ko dena mangenma?` (weak/OCR), `Na·a porikka sena mangenma?` (weak/OCR), `Na·ara ang·ming rebagenma?` (weak/OCR), `Ang·a nangming reangen.` (weak/OCR), `Anga asongna mangengma?` (weak/OCR), `Na·a angna kasa·a ma?` (weak/OCR), `Hoe, ang·a nangna kasa·a.` (weak/OCR), `Ang·a namengava.` (weak/OCR), `Haiwa` (weak/OCR), `Badia / Badiya` (weak/OCR), `Bagita` (weak/OCR), `Baitarong / Baita` (weak/OCR), `Sako` (weak/OCR), `Walgimik` (weak/OCR), `Mija antio` (weak/OCR), `Ming` (weak/OCR), `Ru·ute` (weak/OCR), `Namnikgipa` (weak/OCR), `Chibata` (weak/OCR), `Bangbata` (weak/OCR), `Namen` (weak/OCR), `Dena` (weak/OCR), `Gama` (weak/OCR), `Olakiram` (weak/OCR), `Chitthio` (weak/OCR), `Adoko mande` (weak/OCR), `Bilongen nambata` (weak/OCR), `Room` (weak/OCR), `Apple` (weak/OCR), `Rong` (weak/OCR) — shipped: `Rong`
 - `garo hills inhabited predominantly by garos.`: candidates — `A·chik a·song, A·chik song` (weak/OCR) — shipped: `A·chik a·song, A·chik song`
 - `garoland`: candidates — `A·chik a·song, A·chik song` (weak/OCR) — shipped: `A·chik a·song, A·chik song`
 - `gasp`: candidates — `el·du·el·du daka` (weak/OCR) — shipped: `el·du·el·du daka`
@@ -1828,7 +1828,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `go up`: candidates — `chik cha` (weak/OCR) — shipped: `chik cha`
 - `go west`: candidates — `salanti cha` (weak/OCR) — shipped: `salanti cha`
 - `go-between`: candidates — `Baltigipa` (weak/OCR) — shipped: `Baltigipa`
-- `go!`: candidates — `Re·ang·bo` (weak/OCR) — shipped: `Re·ang·bo`
+- `go!`: candidates — `Re·angbo` (weak/OCR) — shipped: `Re·angbo`
 - `god bless you`: candidates — `Isol nang·na pattia·bo` (weak/OCR) — shipped: `Isol nang·na pattia·bo`
 - `god of dignity and power.`: candidates — `Gosai` (weak/OCR) — shipped: `Gosai`
 - `goddess of motherhood.`: candidates — `Ba·bra` (weak/OCR) — shipped: `Ba·bra`
@@ -1966,7 +1966,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `he is sleeping`: candidates — `Ua tusienga` (weak/OCR) — shipped: `Ua tusienga`
 - `he told me`: candidates — `bia angna aganaha` (weak/OCR), `Bia angna agana` (weak/OCR) — shipped: `Bia angna agana`
 - `he told me about you`: candidates — `Bia nang·ni gimin angna aganaha` (weak/OCR), `Bia nang·ni gimin angna agana` (weak/OCR) — shipped: `Bia nang·ni gimin angna agana`
-- `he went`: candidates — `Ua re·ang·a` (weak/OCR), `Ua re·anga` (weak/OCR) — shipped: `Ua re·anga`
+- `he went`: candidates — `Ua re·anga` (weak/OCR) — shipped: `Ua re·anga`
 - `he will come.`: candidates — `Bia rebagen.` (weak/OCR) — shipped: `Bia rebagen.`
 - `he will eat.`: candidates — `Bia chagen.` (weak/OCR) — shipped: `Bia chagen.`
 - `he will go.`: candidates — `Bia reangen.` (weak/OCR) — shipped: `Bia reangen.`
@@ -2237,7 +2237,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `i walk (present)`: candidates — `ang walka` (weak/OCR) — shipped: `ang walka`
 - `i want to buy this`: candidates — `Anga iako brena ska.` (weak/OCR) — shipped: `Anga iako brena ska.`
 - `i wash the dishes`: candidates — `Anga bostu su·gala` (weak/OCR) — shipped: `Anga bostu su·gala`
-- `i went`: candidates — `Anga re·ang·a` (weak/OCR), `Anga re·anga` (weak/OCR) — shipped: `Anga re·anga`
+- `i went`: candidates — `Anga re·anga` (weak/OCR) — shipped: `Anga re·anga`
 - `i will pray for you`: candidates — `Nang·na anga bi·engena` (weak/OCR) — shipped: `Nang·na anga bi·engena`
 - `i work (future)`: candidates — `ang workgen` (weak/OCR) — shipped: `ang workgen`
 - `i work (past)`: candidates — `ang workaha` (weak/OCR) — shipped: `ang workaha`
@@ -2760,7 +2760,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `neck or passage in hills or mountains.`: candidates — `A·gisep` (weak/OCR) — shipped: `A·gisep`
 - `neck or passages (in mountains).`: candidates — `A·gitok` (weak/OCR) — shipped: `A·gitok`
 - `needle`: candidates — `reng·si` (weak/OCR), `sil·eng·si` (weak/OCR) — shipped: `sil·eng·si`
-- `negation`: candidates — `dakja` (weak/OCR), `verb + ong·ja /·ja` (weak/OCR), `cha·ja` (weak/OCR), `re·ang·ja` (weak/OCR), `re·baja` (weak/OCR) — shipped: `dakja`
+- `negation`: candidates — `dakja` (weak/OCR), `verb + ong·ja /·ja` (weak/OCR), `cha·ja` (weak/OCR), `re·angja` (weak/OCR), `re·baja` (weak/OCR) — shipped: `dakja`
 - `negative`: candidates — `dongja` (weak/OCR), `ong·ja` (weak/OCR) — shipped: `dongja`
 - `neglect`: candidates — `si·dil·a` (weak/OCR) — shipped: `si·dil·a`
 - `neighbor`: candidates — `Noksul` (weak/OCR) — shipped: `Noksul`
@@ -3030,7 +3030,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `partly`: candidates — `gal·e·gal·e` (weak/OCR), `·kim·bak·` (weak/OCR) — shipped: `·kim·bak·`
 - `pass close to`: candidates — `Jokpaka (chi gita)` (weak/OCR) — shipped: `Jokpaka (chi gita)`
 - `pass, mountain`: candidates — `ha·sing·sep` (weak/OCR) — shipped: `ha·sing·sep`
-- `past`: candidates — `re·ang·a` (weak/OCR), `re·baa` (weak/OCR), `agan·a` (weak/OCR), `ni·a` (weak/OCR), `daka` (weak/OCR), `kata` (weak/OCR), `bre·a` (weak/OCR), `porai·a` (weak/OCR), `den·a` (weak/OCR), `cho·a` (weak/OCR), `bil·a` (weak/OCR), `dakchak·a` (weak/OCR), `dongdik·a` (weak/OCR), `ka·sa·aha` (weak/OCR), `cha·a` (weak/OCR), `a·ge` (weak/OCR) — shipped: `a·ge`
+- `past`: candidates — `re·anga` (weak/OCR), `re·baa` (weak/OCR), `agan·a` (weak/OCR), `ni·a` (weak/OCR), `daka` (weak/OCR), `kata` (weak/OCR), `bre·a` (weak/OCR), `porai·a` (weak/OCR), `den·a` (weak/OCR), `cho·a` (weak/OCR), `bil·a` (weak/OCR), `dakchak·a` (weak/OCR), `dongdik·a` (weak/OCR), `ka·sa·aha` (weak/OCR), `cha·a` (weak/OCR), `a·ge` (weak/OCR) — shipped: `a·ge`
 - `past perfect`: candidates — `verb + man + aha` (weak/OCR) — shipped: `verb + man + aha`
 - `past question`: candidates — `verb + ama?` (weak/OCR) — shipped: `verb + ama?`
 - `past simple`: candidates — `verb + a` (weak/OCR) — shipped: `verb + a`
@@ -3270,7 +3270,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `rash`: candidates — `na·rip·pu·a` (weak/OCR) — shipped: `na·rip·pu·a`
 - `raw`: candidates — `git·ting` (weak/OCR) — shipped: `git·ting`
 - `razor`: candidates — `mrit` (weak/OCR) — shipped: `mrit`
-- `re·ang (to go)`: candidates — `re·ang·a (past), re·angenga (continuous)` (weak/OCR), `re·anga (past), re·angenga (continuous)` (weak/OCR) — shipped: `re·anga (past), re·angenga (continuous)`
+- `re·ang (to go)`: candidates — `re·anga (past), re·angenga (continuous)` (weak/OCR) — shipped: `re·anga (past), re·angenga (continuous)`
 - `reach`: candidates — `gip·a` (weak/OCR), `sok·a` (weak/OCR) — shipped: `sok·a`
 - `reach the brink`: candidates — `A·rikring srita` (weak/OCR) — shipped: `A·rikring srita`
 - `reading`: candidates — `Poraienga` (weak/OCR) — shipped: `Poraienga`
@@ -3385,7 +3385,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `roll up`: candidates — `dol·a` (weak/OCR), `tol·a` (weak/OCR) — shipped: `tol·a`
 - `roof of mouth`: candidates — `chik·ak` (weak/OCR) — shipped: `chik·ak`
 - `rooster crow`: candidates — `Ko·ko·rika` (weak/OCR) — shipped: `Ko·ko·rika`
-- `root`: candidates — `cha·` (weak/OCR), `ring·` (weak/OCR), `tus·` (weak/OCR), `re·ang·` (weak/OCR), `re·ba` (weak/OCR), `agan·` (weak/OCR), `ni·` (weak/OCR), `on·` (weak/OCR), `ra·` (weak/OCR), `dak` (weak/OCR), `asong·` (weak/OCR), `kat` (weak/OCR), `re·` (weak/OCR), `bre·` (weak/OCR), `pal·` (weak/OCR), `se·` (weak/OCR), `porai·` (weak/OCR), `song·` (weak/OCR), `su·srong·` (weak/OCR), `de·` (weak/OCR), `den·` (weak/OCR), `cho·` (weak/OCR), `bil·` (weak/OCR), `jro·` (weak/OCR), `ga·ak·` (weak/OCR), `dakchak·` (weak/OCR), `ong·` (weak/OCR), `dongdik·` (weak/OCR), `ka·sa·` (weak/OCR), `bi·` (weak/OCR), `so·` (weak/OCR), `rik·` (weak/OCR), `ge·` (weak/OCR), `gal·` (weak/OCR), `rim·` (weak/OCR), `dangtap·` (weak/OCR), `ka·ding·` (weak/OCR), `grap·` (weak/OCR), `o·` (weak/OCR), `chip·` (weak/OCR), `ja·dil` (weak/OCR), `ring·gil·a` (weak/OCR) — shipped: `ring·gil·a`
+- `root`: candidates — `cha·` (weak/OCR), `ring·` (weak/OCR), `tus·` (weak/OCR), `re·ang` (weak/OCR), `re·ba` (weak/OCR), `agan·` (weak/OCR), `ni·` (weak/OCR), `on·` (weak/OCR), `ra·` (weak/OCR), `dak` (weak/OCR), `asong·` (weak/OCR), `kat` (weak/OCR), `re·` (weak/OCR), `bre·` (weak/OCR), `pal·` (weak/OCR), `se·` (weak/OCR), `porai·` (weak/OCR), `song·` (weak/OCR), `su·srong·` (weak/OCR), `de·` (weak/OCR), `den·` (weak/OCR), `cho·` (weak/OCR), `bil·` (weak/OCR), `jro·` (weak/OCR), `ga·ak·` (weak/OCR), `dakchak·` (weak/OCR), `ong·` (weak/OCR), `dongdik·` (weak/OCR), `ka·sa·` (weak/OCR), `bi·` (weak/OCR), `so·` (weak/OCR), `rik·` (weak/OCR), `ge·` (weak/OCR), `gal·` (weak/OCR), `rim·` (weak/OCR), `dangtap·` (weak/OCR), `ka·ding·` (weak/OCR), `grap·` (weak/OCR), `o·` (weak/OCR), `chip·` (weak/OCR), `ja·dil` (weak/OCR), `ring·gil·a` (weak/OCR) — shipped: `ring·gil·a`
 - `root; ray.`: candidates — `Ja·dii` (weak/OCR) — shipped: `Ja·dii`
 - `rose`: candidates — `gul·ap` (weak/OCR) — shipped: `gul·ap`
 - `rot`: candidates — `so·a` (weak/OCR) — shipped: `so·a`
@@ -4085,7 +4085,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `the garos believe that after death the spirit travels to the hill.`: candidates — `Balpakram` (weak/OCR) — shipped: `Balpakram`
 - `the ginger`: candidates — `Re·ching` (weak/OCR) — shipped: `Re·ching`
 - `the give`: candidates — `On·a` (weak/OCR) — shipped: `On·a`
-- `the go`: candidates — `Re·ang·a` (weak/OCR), `Re·anga` (weak/OCR) — shipped: `Re·anga`
+- `the go`: candidates — `Re·anga` (weak/OCR) — shipped: `Re·anga`
 - `the goat`: candidates — `Do·bok` (weak/OCR) — shipped: `Do·bok`
 - `the god of life`: candidates — `Kalkambe` (weak/OCR) — shipped: `Kalkambe`
 - `the good morning`: candidates — `Pringnam.` (weak/OCR) — shipped: `Pringnam.`
@@ -4191,7 +4191,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `the radish`: candidates — `Mula` (weak/OCR) — shipped: `Mula`
 - `the rain`: candidates — `Mikka` (weak/OCR) — shipped: `Mikka`
 - `the rat`: candidates — `Mese` (weak/OCR) — shipped: `Mese`
-- `the re·ang (to go)`: candidates — `re·ang·a (past), re·angenga (continuous)` (weak/OCR), `re·anga (past), re·angenga (continuous)` (weak/OCR) — shipped: `re·anga (past), re·angenga (continuous)`
+- `the re·ang (to go)`: candidates — `re·anga (past), re·angenga (continuous)` (weak/OCR) — shipped: `re·anga (past), re·angenga (continuous)`
 - `the red`: candidates — `Gitchak` (weak/OCR) — shipped: `Gitchak`
 - `the relation of a male and female who are marriageable.`: candidates — `Chame` (weak/OCR) — shipped: `Chame`
 - `the river`: candidates — `Chibima` (weak/OCR) — shipped: `Chibima`

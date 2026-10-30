@@ -16,9 +16,10 @@ input-variant invariance, irregular English pasts, output hygiene (`[UNKNOWN]`, 
 ## Open (needs a ruling or is another lane)
 - **Mid-sentence capitals** (339/1,329 probes): verbs from grammar-assembly keep their dictionary capital (`Anga Re·baa`, `Anga Cha·ja`), while sov-assembly
   already lowercases non-initial words (R6/R7) and native text is lowercase. 31 existing tests assert capitals. Awaiting Project Owner ruling.
-- **Extra dot in `re·ang·` (go)**: master/garo_dictionary/corrections carry `re·ang·bo`, `re·ang·enga`, `re·ang·ja`, `re·ang·na`; the native paradigm says
-  `re·angbo`, `re·angenga`, `re·angja`, `re·angna`. Same pattern as the `re·ba·` ruling; awaiting confirmation that it extends.
-- `bring` = `ra·ba·a` (same `ra·ba·` pattern as come), `know` negative `uija` vs paradigm `hai·ja`, `help!`/`stop!` exact rows vs derived paradigm.
+- **`re·ang·` (go): RESOLVED** (Thangseng native, relay 2026-08-29, re-confirmed by the Project Owner 2026-10-29): no extra dot. `re·a` = go / walk,
+  `re·anga` = went, `re·angenga` = going, `re·anggen` = will go, `re·jawa` = will not go, `re·angjawa` = will not be going. Removed from master (non-superseded rows),
+  garo_dictionary.json, corrections.json, conversation_patterns.json, purpose_map.json, Phrases.jsx and one test; `Go!` = `Re·angbo`. Also from the same relay: `kata` = run.
+- `bring` = `ra·ba·a` (same `ra·ba·` pattern as come; `ra·baa` by analogy, unconfirmed), `know` negative `uija` vs paradigm `hai·ja`, `help!`/`stop!` exact rows vs derived paradigm.
 - Claude A: 30 master rows like `you (singular) run (present)` = `na· runa`, `he/she run` = `u runa` (not Garo forms); lemmas with no Garo at all
   (`draw`, `wake`, `become`, `freeze`) are vocabulary gaps.
 - `like!` = `namnikbo` and `walk!` = `Re·mambo` are derived and unconfirmed.

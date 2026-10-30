@@ -7504,7 +7504,7 @@
   },
   {
     "english": "go!",
-    "garo": "Re·ang·bo",
+    "garo": "Re·angbo",
     "category": "travel",
     "confidence": "unverified"
   },
@@ -73077,7 +73077,7 @@
     "english": "walking (contracted)",
     "garo": "re·enga",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — coexists with existing uncited 'Re·ang·enga' (fuller form); likely same root, contracted, not a contradiction.",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-22 (Thangseng, direct Project Owner relay, continuing NV-089 batch) — coexists with existing uncited 'Re·angenga' (fuller form); likely same root, contracted, not a contradiction.",
     "confidence": "verified_high"
   },
   {
@@ -73659,7 +73659,7 @@
   },
   {
     "english": "i want to go",
-    "garo": "Anga re·ang·na ska",
+    "garo": "Anga re·angna ska",
     "category": "phrases",
     "notes": "VERIFIED/HIGH — 2026-08-26 (Claude A): 'want to X' with simple/bare want sense uses ska (Thangseng, relayed via Tridip, 2026-08-26, closing the ska-vs-skenga question left open in docs/PENDING_LINGUISTIC_PROPOSAL_20260718_sikenga_ska_sika.md). Replaces stale sikenga form — see SUPERSEDED sibling entry.",
     "confidence": "verified_high"
@@ -80962,7 +80962,7 @@
     "category": "phrases",
     "pos": null,
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-222 (2026-10-28, Claude A): Thangseng written response document (Reponse_to_Questions.pdf, items 1-3), original native answer; Project Owner T ruling 2026-10-28: native text stands (apostrophes read as raka). Continuous -enga comes after the negative -ja. Replaces the correction 'Anga re·ang·ja'.",
+    "notes": "VERIFIED/HIGH — NV-222 (2026-10-28, Claude A): Thangseng written response document (Reponse_to_Questions.pdf, items 1-3), original native answer; Project Owner T ruling 2026-10-28: native text stands (apostrophes read as raka). Continuous -enga comes after the negative -ja. Replaces the correction 'Anga re·angja'.",
     "confidence": "verified_high"
   },
   {

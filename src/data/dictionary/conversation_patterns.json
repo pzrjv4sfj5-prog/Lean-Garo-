@@ -31,7 +31,7 @@
         "hindi": "शुभ रात्रि"
       },
       {
-        "garo": "Re·ang·na / Nam·en·dongbo",
+        "garo": "Re·angna / Nam·en·dongbo",
         "english": "Goodbye",
         "hindi": "अलविदा"
       },
@@ -88,8 +88,8 @@
     "simple_past": [
       {
         "english": "I went",
-        "garo": "Anga re·ang·a",
-        "notes": "re·ang (root) + a (suffix) → re·ang·a"
+        "garo": "Anga re·anga",
+        "notes": "re·ang (root) + a (suffix) → re·anga"
       },
       {
         "english": "I ate",

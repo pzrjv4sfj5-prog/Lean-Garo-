@@ -276,7 +276,7 @@ test('purpose_map.json data integrity (BACKLOG-001)', async () => {
   const { default: purposeMap } = await import('../../src/data/purpose_map.json', { with: { type: 'json' } });
   assert.equal(Object.keys(purposeMap).length, 39); // NV-205: + watch (nina)
   assert.equal(purposeMap['eat'], 'cha·na');
-  assert.equal(purposeMap['go'], 're·ang·na');
+  assert.equal(purposeMap['go'], 're·angna');
   assert.equal(purposeMap['begin'], "a'ba·cheng·na");
   // Deliberately NOT asserting this is "correct" - it's a known-stale
   // pre-Rule-32 value, preserved as-is per behavior-preservation. See the

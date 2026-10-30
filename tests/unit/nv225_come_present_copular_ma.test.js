@@ -32,3 +32,14 @@ test('NV-225: no `re·ba·` (extra dot) anywhere in come output', async () => {
   for (const en of ['I come.', 'I came.', 'I will come.', 'I do not come.', 'I am coming.', 'Come!', 'who came?', 'why did you come', 'I want to come.'])
     assert.ok(!/re·ba·/i.test((await translate(en)).garo), en);
 });
+
+// Thangseng native (relay 2026-08-29, re-confirmed by the Project Owner 2026-10-29): `go` has NO extra raka dot.
+// re·a = go / walk; re·anga = went; re·angenga = going; re·anggen = will go; re·jawa = will not go; re·angjawa = will not be going.
+for (const [en, garo] of [
+  ['I go.', 'anga re·a'], ['I went.', 'anga re·anga'], ['I am going.', 'anga re·angenga'], ['I will go.', 'anga re·anggen'],
+  ['I will not go.', 'anga re·jawa'], ['I will not be going.', 'anga re·angjawa'], ['Go!', 're·angbo'],
+]) test(`NV-225 go (no extra dot): ${en}`, async () => assert.equal(await lc(en), garo));
+test('NV-225: no `re·ang·` (extra dot) anywhere in go output', async () => {
+  for (const en of ['I go.', 'I went.', 'I am going.', 'I will go.', 'I do not go.', 'Go!', 'Can I go by bus?', 'I want to go.'])
+    assert.ok(!/re·ang·/i.test((await translate(en)).garo), en);
+});

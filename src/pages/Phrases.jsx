@@ -39,8 +39,8 @@ export default function Phrases() {
         { en: 'Where is the station?', garo: 'Nengtakani biap bano?', hi: 'रेलवे स्टेशन कहां है?', breakdown: 'Location inquiry' },
         { en: 'Which way is the school?', garo: 'Skul bano-ni rama?', hi: 'स्कूल किस रास्ते है?', breakdown: 'Direction inquiry' },
         { en: 'How far is it?', garo: 'Ia chel·a?', hi: 'यह कितनी दूरी है?', breakdown: 'Distance inquiry' },
-        { en: 'Can I go by bus?', garo: 'Anga bus-o re·ang·ode ska?', hi: 'क्या मैं बस से जा सकता हूं?', breakdown: 'Transport inquiry' },
-        { en: 'Go straight ahead', garo: 'Mikkang re·ang·bo', hi: 'सीधे आगे बढ़ें', breakdown: 'Direction command' },
+        { en: 'Can I go by bus?', garo: 'Anga bus-o re·angode ska?', hi: 'क्या मैं बस से जा सकता हूं?', breakdown: 'Transport inquiry' },
+        { en: 'Go straight ahead', garo: 'Mikkang re·angbo', hi: 'सीधे आगे बढ़ें', breakdown: 'Direction command' },
         { en: 'Turn left', garo: 'Jak-asi tu·a-bo', hi: 'बाएं मुड़ें', breakdown: 'Direction command' },
       ]
     },
