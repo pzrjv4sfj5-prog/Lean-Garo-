@@ -21,3 +21,12 @@ test('exact rows, corrections and statements are untouched', async () => {
   assert.equal((await translate('I read the book')).garo, 'Anga ki·tapko poraia');
   assert.equal((await translate('tea cup')).garo, 'Cha piala');
 });
+
+test('NV-235: non-string input is empty, not stringified', async () => {
+  for (const bad of [null, undefined, {}, [], true]) {
+    const r = await translate(bad);
+    assert.equal(r.garo, '');
+    assert.equal(r.method, 'empty');
+  }
+  assert.equal((await translate(123)).method, 'number-engine');
+});

@@ -300,6 +300,10 @@ function neutraliseMidCapitals(result, input) {
   return out === result.garo ? result : { ...result, garo: out };
 }
 export async function translate(input) {
+  // NV-235 (Claude A, 2026-10-30): null/undefined/objects were stringified ("undefined" fuzzy-matched to `kas`). Only strings and numbers are translatable; anything else is empty input.
+  if (input === null || input === undefined || (typeof input !== 'string' && typeof input !== 'number')) {
+    return { garo: '', method: 'empty', confidence: 0 };
+  }
   return neutraliseMidCapitals(await translateRaw(input), input);
 }
 async function translateRaw(input) {
