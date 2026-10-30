@@ -312,7 +312,7 @@ export const PHRASE_MAPS = {
   'to walk': 'Re·mama',
   'run': 'Kata',
   'speak': 'Agana',
-  'listen': 'Knachika',
+  'listen': 'Knabo',
   'see': 'Nia',
   'give': 'On·a',
   'take': 'ra·a',

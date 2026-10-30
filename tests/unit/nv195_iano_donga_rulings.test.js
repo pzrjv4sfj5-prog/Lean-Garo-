@@ -1,5 +1,5 @@
 // NV-195 (Project Owner rulings, 2026-10-25, not native quotes):
-// 1. kina·chak·a is the canonical spelling. 2. `iano` stays bare with `donga`.
+// 1. Kinachaka is the canonical spelling. 2. `iano` stays bare with `donga`.
 // 3. donga = to have / to exist / to lodge.
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -12,8 +12,8 @@ const cases = [
   ['to have', 'donga'],
   ['to exist', 'donga'],
   ['to lodge', 'donga'],
-  ['heed advice', 'kina·chak·a'],
-  ['to heed advice', 'kina·chak·a'],
+  ['heed advice', 'Kinachaka'],
+  ['to heed advice', 'Kinachaka'],
 ];
 for (const [en, garo] of cases) {
   test(`NV-195: ${en}`, async () => {

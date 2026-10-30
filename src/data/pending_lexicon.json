@@ -13746,14 +13746,14 @@
       "ocr_version": "gemini-2026-07-16"
     },
     "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-20 (batch: pages 3/4/35/37/38/39/87/88/89). High-confidence, unflagged, no conflict.",
+    "review_notes": "Reviewed by Claude A, 2026-07-20 (batch: pages 3/4/35/37/38/39/87/88/89). High-confidence, unflagged, no conflict. | NV-234 (2026-10-30): master row `to respond`=`Aganchaka` deleted; Ku·chaka is the Thangseng word for respond.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-20",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "promoted",
+    "promotion_status": "duplicate-skip",
     "promoted_date": "2026-07-20T06:02:09.182Z"
   },
   {

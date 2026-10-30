@@ -118,7 +118,6 @@
   "walk": "travel",
   "run": "general",
   "speak": "general",
-  "listen": "general",
   "see / look / watch": "general",
   "give": "general",
   "take": "general",
@@ -2137,7 +2136,6 @@
   "the walk": "travel",
   "the run": "general",
   "the speak": "general",
-  "the listen": "general",
   "the see / look / watch": "general",
   "the give": "general",
   "the take": "general",
@@ -4271,5 +4269,9 @@
   "living (reside)": "verbs",
   "dried (of things)": "words",
   "dried (of water)": "words",
-  "has eaten": "phrases"
+  "has eaten": "phrases",
+  "to listen": "verbs",
+  "listen": "verbs",
+  "to respond": "verbs",
+  "to respond (to a call)": "verbs"
 }

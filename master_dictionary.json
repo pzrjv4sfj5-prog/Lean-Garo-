@@ -729,13 +729,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "listen",
-    "garo": "Knachik·bo",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'listen' has VERIFIED/HIGH form(s) ['Knachika', 'kin·a·a', 'kin·a·tim·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
     "english": "see / look / watch",
     "garo": "Nia",
     "category": "general",
@@ -13971,12 +13964,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "the listen",
-    "garo": "Knachik·bo",
-    "category": "general",
-    "confidence": "unverified"
-  },
-  {
     "english": "the see / look / watch",
     "garo": "Nia",
     "category": "general",
@@ -19168,33 +19155,6 @@
   {
     "english": "Lightning",
     "garo": "el·ep·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Listen",
-    "garo": "Knachika",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:kin-a-a / kin-a-tim-a",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Listen",
-    "garo": "kin·a·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Listen",
-    "garo": "kin·a·tim·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -40151,11 +40111,11 @@
   },
   {
     "english": "respond",
-    "garo": "ku·chak·a",
+    "garo": "Ku·chaka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): ku·chak·a = to respond (to a call), or to confess; ku· relates to mouth/voice. Same form is also the NV-080 native-confirmed \"promise\" (polysemy; both retained).",
+    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): ku·chak·a = to respond (to a call), or to confess; ku· relates to mouth/voice. Same form is also the NV-080 native-confirmed \"promise\" (polysemy; both retained). | NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): spelling `Ku·chaka`.",
     "confidence": "verified_high"
   },
   {
@@ -54955,13 +54915,6 @@
   },
   {
     "english": "to reply",
-    "garo": "Aganchaka",
-    "category": null,
-    "pos": "v.",
-    "confidence": "unverified"
-  },
-  {
-    "english": "to respond",
     "garo": "Aganchaka",
     "category": null,
     "pos": "v.",
@@ -77645,30 +77598,30 @@
   },
   {
     "english": "heed advice",
-    "garo": "kina·chak·a",
+    "garo": "Kinachaka",
     "category": "general",
-    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): kina·chak·a = to listen, to heed advice. Spelling as given (one raka); the earlier uncited agree row was kin·a·chak·a (three-part). Spelling CONFIRMED NV-195 (2026-10-25, Project Owner ruling, not a native quote): `kina·chak·a` is the canonical form; `kin·a·chak·a` is superseded.",
+    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): kina·chak·a = to listen, to heed advice. Spelling as given (one raka); the earlier uncited agree row was kin·a·chak·a (three-part). Spelling CONFIRMED NV-195 (2026-10-25, Project Owner ruling, not a native quote): `kina·chak·a` is the canonical form; `kin·a·chak·a` is superseded. | NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): spelling `Kinachaka`.",
     "confidence": "verified_high"
   },
   {
     "english": "to heed advice",
-    "garo": "kina·chak·a",
+    "garo": "Kinachaka",
     "category": "general",
-    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): see \"heed advice\".",
+    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): see \"heed advice\". | NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): spelling `Kinachaka`.",
     "confidence": "verified_high"
   },
   {
     "english": "confess",
-    "garo": "ku·chak·a",
+    "garo": "Ku·chaka",
     "category": "general",
-    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): ku·chak·a = to confess, or to respond to a call; ku· relates to mouth/voice.",
+    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): ku·chak·a = to confess, or to respond to a call; ku· relates to mouth/voice. | NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): spelling `Ku·chaka`.",
     "confidence": "verified_high"
   },
   {
     "english": "to confess",
-    "garo": "ku·chak·a",
+    "garo": "Ku·chaka",
     "category": "general",
-    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): see \"confess\".",
+    "notes": "VERIFIED/HIGH — NV-182 (2026-10-21, Project Owner-relayed, attributed to Thangseng; raw message not on file, not a native quote): see \"confess\". | NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): spelling `Ku·chaka`.",
     "confidence": "verified_high"
   },
   {
@@ -79868,6 +79821,51 @@
     "pos": null,
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH — NV-232 (2026-10-30, Project Owner ruling in chat relaying Thangseng; raw message not on file): `cha·jok` and `cha·manaha` are BOTH simple past for `eat`; both retained for `has eaten` / `eaten`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to listen",
+    "garo": "Kinachaka",
+    "category": "verbs",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): to listen, or to heed an advice; verb forms differ from the imperative `Knabo` / `Knatimbo`.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "listen",
+    "garo": "Knabo",
+    "category": "verbs",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): imperative; verb forms differ from `Kinachaka` (to listen).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "listen",
+    "garo": "Knatimbo",
+    "category": "verbs",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): imperative alt; verb forms differ from `Kinachaka` (to listen).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to respond",
+    "garo": "Ku·chaka",
+    "category": "verbs",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): to respond (to a call) / to confess.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to respond (to a call)",
+    "garo": "Ku·chaka",
+    "category": "verbs",
+    "pos": "v.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): to respond to a call.",
     "confidence": "verified_high"
   }
 ]

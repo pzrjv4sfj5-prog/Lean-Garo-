@@ -274,7 +274,7 @@ test('irregular_verbs.json data integrity (BACKLOG-002)', async () => {
 // same pattern as irregular_verbs.json above. ---
 test('purpose_map.json data integrity (BACKLOG-001)', async () => {
   const { default: purposeMap } = await import('../../src/data/purpose_map.json', { with: { type: 'json' } });
-  assert.equal(Object.keys(purposeMap).length, 38); // NV-205: + watch (nina); NV-231: - dance (ruru·na, not the confirmed word; dance = Chroka)
+  assert.equal(Object.keys(purposeMap).length, 37); // NV-205: + watch (nina); NV-234: - listen (knachik·na, replaced by Kinachaka); NV-231: - dance (ruru·na, not the confirmed word; dance = Chroka)
   assert.equal(purposeMap['eat'], 'cha·na');
   assert.equal(purposeMap['go'], 're·angna');
   assert.equal(purposeMap['begin'], "a'ba·cheng·na");
