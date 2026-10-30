@@ -18136,14 +18136,6 @@
     "notes": "UNVERIFIED/HIGH"
   },
   {
-    "english": "cooked",
-    "garo": "min·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
     "english": "cooking pot",
     "garo": "sam·dik",
     "pos": null,
@@ -27278,22 +27270,6 @@
     "category": "family",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "nipple",
-    "garo": "sok",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:sok-kit-e"
-  },
-  {
-    "english": "nipple",
-    "garo": "sok·kit·e",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
   },
   {
     "english": "nod",
