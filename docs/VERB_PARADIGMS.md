@@ -51,7 +51,7 @@
 | come | re·baa ✅ | re·baenga ✅ | re·baaha ✅ | re·bagen | re·baja | re·bajawa | re·babo ✅ | re·banabe 📌 | re·bana ✅ |
 | commence | a·bachenga | a·bachengenga | a·bachengaha | a·bachenggen | a·bachengja | a·bachengjawa | a·bachengbo | a·bachengnabe | a·bachengna |
 | compute | chana | chanenga | chanaha | changen | chanja | chanjawa | chanbo | channabe | channa |
-| confess | ku·chak·a | ku·chak·enga | ku·chak·aha | ku·chak·gen | ku·chak·ja | ku·chak·jawa | ku·chak·bo | ku·chak·nabe | ku·chak·na |
+| confess | ku·chaka 📌 | ku·chakenga | ku·chakaha | ku·chakgen | ku·chakja | ku·chakjawa | ku·chakbo | ku·chaknabe | ku·chakna |
 | conquer | am·na 📌 | am·nenga | am·naha | am·ngen | am·nja | am·njawa | am·nbo | am·nnabe | am·nna |
 | console | ka·dimea | ka·dimeenga | ka·dimeaha | ka·dimegen | ka·dimeja | ka·dimejawa | ka·dimebo | ka·dimenabe | ka·dimena |
 | converse | bol·grik·a | bol·grik·enga | bol·grik·aha | bol·grik·gen | bol·grik·ja | bol·grik·jawa | bol·grik·bo | bol·grik·nabe | bol·grik·na |
@@ -181,7 +181,7 @@
 | replace | bodolea | bodoleenga | bodoleaha | bodolegen | bodoleja | bodolejawa | bodolebo | bodolenabe | bodolena |
 | replenish | bodolea | bodoleenga | bodoleaha | bodolegen | bodoleja | bodolejawa | bodolebo | bodolenabe | bodolena |
 | reply | in·chak·a | in·chak·enga | in·chak·aha | in·chak·gen | in·chak·ja | in·chak·jawa | in·chak·bo | in·chak·nabe | in·chak·na |
-| respond | ku·chak·a | ku·chak·enga | ku·chak·aha | ku·chak·gen | ku·chak·ja | ku·chak·jawa | ku·chak·bo | ku·chak·nabe | ku·chak·na |
+| respond | ku·chaka 📌 | ku·chakenga | ku·chakaha | ku·chakgen | ku·chakja | ku·chakjawa | ku·chakbo | ku·chaknabe | ku·chakna |
 | restrain | chakchika | chakchikenga | chakchikaha | chakchikgen | chakchikja | chakchikjawa | chakchikbo | chakchiknabe | chakchikna |
 | resume | a·ba·cheng·tai·na | a·ba·cheng·tai·nenga | a·ba·cheng·tai·naha | a·ba·cheng·tai·ngen | a·ba·cheng·tai·nja | a·ba·cheng·tai·njawa | a·ba·cheng·tai·nbo | a·ba·cheng·tai·nnabe | a·ba·cheng·tai·nna |
 | reveal | a·gan·pa·rak·na | a·gan·pa·rak·nenga | a·gan·pa·rak·naha | a·gan·pa·rak·ngen | a·gan·pa·rak·nja | a·gan·pa·rak·njawa | a·gan·pa·rak·nbo | a·gan·pa·rak·nnabe | a·gan·pa·rak·nna |
@@ -277,6 +277,6 @@
 | want | skgen | ska | skjawa | skja |
 | work | dak·gen | dakgen | dak·jawa | dak·jawa |
 
-## Manual (59): irregular or unclean roots, need a native paradigm
+## Manual (60): irregular or unclean roots, need a native paradigm
 
-alight, bark, bask, bay, be, bear, blossom, buzz, cajole, cane, chew, circumcise, consider, court, croak, curse, drown, enforce, entice, evaporate, feast, feel, flower, fly, grumble, hoe, hunt, judge, leach, leave, lop, masticate, mingle, narrate, overcharge, owe, pray, relate, remain, resign, ridicule, ripen, ruffle, rumble, seek, skin, spring, sting, suppose, suppress, teach, testify, throb, throw, ventilate, wait, wake, woo, yield
+alight, bark, bask, bay, be, bear, blossom, buzz, cajole, cane, chew, circumcise, consider, court, croak, curse, drown, enforce, entice, evaporate, feast, feel, flower, fly, grumble, hoe, hunt, judge, leach, leave, listen, lop, masticate, mingle, narrate, overcharge, owe, pray, relate, remain, resign, ridicule, ripen, ruffle, rumble, seek, skin, spring, sting, suppose, suppress, teach, testify, throb, throw, ventilate, wait, wake, woo, yield

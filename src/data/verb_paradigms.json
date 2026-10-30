@@ -1181,20 +1181,20 @@
    }
   },
   "confess": {
-   "root": "ku·chak·a",
+   "root": "ku·chaka",
    "forms": {
-    "present": "ku·chak·a",
-    "continuous": "ku·chak·enga",
-    "past": "ku·chak·aha",
-    "future": "ku·chak·gen",
-    "negative": "ku·chak·ja",
-    "negative_future": "ku·chak·jawa",
-    "command": "ku·chak·bo",
-    "negative_command": "ku·chak·nabe",
-    "infinitive": "ku·chak·na"
+    "present": "ku·chaka",
+    "continuous": "ku·chakenga",
+    "past": "ku·chakaha",
+    "future": "ku·chakgen",
+    "negative": "ku·chakja",
+    "negative_future": "ku·chakjawa",
+    "command": "ku·chakbo",
+    "negative_command": "ku·chaknabe",
+    "infinitive": "ku·chakna"
    },
    "status": {
-    "present": "derived",
+    "present": "pinned",
     "continuous": "derived",
     "past": "derived",
     "future": "derived",
@@ -4431,20 +4431,20 @@
    }
   },
   "respond": {
-   "root": "ku·chak·a",
+   "root": "ku·chaka",
    "forms": {
-    "present": "ku·chak·a",
-    "continuous": "ku·chak·enga",
-    "past": "ku·chak·aha",
-    "future": "ku·chak·gen",
-    "negative": "ku·chak·ja",
-    "negative_future": "ku·chak·jawa",
-    "command": "ku·chak·bo",
-    "negative_command": "ku·chak·nabe",
-    "infinitive": "ku·chak·na"
+    "present": "ku·chaka",
+    "continuous": "ku·chakenga",
+    "past": "ku·chakaha",
+    "future": "ku·chakgen",
+    "negative": "ku·chakja",
+    "negative_future": "ku·chakjawa",
+    "command": "ku·chakbo",
+    "negative_command": "ku·chaknabe",
+    "infinitive": "ku·chakna"
    },
    "status": {
-    "present": "derived",
+    "present": "pinned",
     "continuous": "derived",
     "past": "derived",
     "future": "derived",
@@ -6620,6 +6620,7 @@
   "judge",
   "leach",
   "leave",
+  "listen",
   "lop",
   "masticate",
   "mingle",

@@ -23425,7 +23425,7 @@
   },
   {
     "english": "bring",
-    "garo": "ra·ba·a",
+    "garo": "ra·baa",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -70347,7 +70347,7 @@
     "pos": "",
     "classifier": "",
     "category": "",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch). Imperative -bo suffix, distinct sense from already-VERIFIED general 'bring'=ra·ba·a. Reconfirmed independently via NV-097 (2026-08-28, Thangseng relay: \"bring (imperative) = ra'babo; 'bo' suffix indicates imperative\") — second independent native relay landing on the identical value; closes the 2026-08-26 migration doc's item-4 cross-check (bare 'bring'=ra·ba·a vs this imperative-specific sense are confirmed distinct, not contradictory).",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (Project Owner direct chat relay, NV-093 batch). Imperative -bo suffix, distinct sense from already-VERIFIED general 'bring'=ra·baa. Reconfirmed independently via NV-097 (2026-08-28, Thangseng relay: \"bring (imperative) = ra'babo; 'bo' suffix indicates imperative\") — second independent native relay landing on the identical value; closes the 2026-08-26 migration doc's item-4 cross-check (bare 'bring'=ra·baa vs this imperative-specific sense are confirmed distinct, not contradictory).",
     "confidence": "verified_high"
   },
   {
