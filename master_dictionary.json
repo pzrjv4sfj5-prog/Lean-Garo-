@@ -20573,15 +20573,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Read",
-    "garo": "po·ri·a",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "SUPERSEDED — 2026-10-29 (Claude A, NV-226): Project Owner ruled native `poraia` = read (same word as study). `po·ri·a` retained as history only.",
-    "confidence": "superseded"
-  },
-  {
     "english": "Really?",
     "garo": "a·sol·e",
     "pos": null,
@@ -22927,15 +22918,6 @@
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
     "confidence": "unverified"
-  },
-  {
-    "english": "alive",
-    "garo": "tang·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "SUPERSEDED — NV-230 (2026-10-30, Thangseng): `alive` = `tanga` (no raka dot); `tang·a` was an unverified dictionary form. Retained as history.",
-    "confidence": "superseded"
   },
   {
     "english": "all day",
@@ -35835,15 +35817,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "live",
-    "garo": "tang·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
-    "confidence": "superseded"
-  },
-  {
     "english": "liver",
     "garo": "bi·ka",
     "pos": null,
@@ -35851,15 +35824,6 @@
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
     "confidence": "unverified"
-  },
-  {
-    "english": "living",
-    "garo": "git·tang·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
-    "confidence": "superseded"
   },
   {
     "english": "lizard",
@@ -45159,15 +45123,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "study",
-    "garo": "po·ri·a",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "SUPERSEDED — 2026-10-29 (Claude A, NV-226): Project Owner ruled native `poraia` = study; `po·ri·a` stays only as the verified `read` form. Not authoritative for `study`; retained per citation discipline.",
-    "confidence": "superseded"
-  },
-  {
     "english": "stumble",
     "garo": "ja·bing·bang·a",
     "pos": null,
@@ -52487,15 +52442,6 @@
   {
     "english": "i want to work",
     "garo": "Anga dakna sikenga",
-    "category": "phrases",
-    "pos": null,
-    "classifier": null,
-    "notes": "SUPERSEDED — 2026-08-26 (Claude A): stale 'sikenga' form. Thangseng's final evidence (2026-08-26, relayed via Tridip): ska = desire/wish/want; skenga = continuous of ska. NV-021 (2026-07-18) had already established 'sikenga' is the continuous of 'sika' (push/insert), not 'want' — this phrase-level entry never got the word-level fix applied. Superseded in favor of the ska form below. See docs/CLAUDE_A_SESSION_MIGRATION_20260826.md.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "i want to study",
-    "garo": "Anga pora·na sikenga",
     "category": "phrases",
     "pos": null,
     "classifier": null,
