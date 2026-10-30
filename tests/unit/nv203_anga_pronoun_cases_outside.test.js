@@ -13,7 +13,7 @@ const cases = [
   ['their', 'uamangni'],
   ['to them', 'uamangchi'],
   ['by them', 'uamangchi'],
-  ['I see them', 'Anga uamangko Nika'],
+  ['I see them', 'Anga uamangko nika'],
   ['I gave it to them', 'Anga uamangchi on·aha'],
   ['give it to them', 'uamangchi on·a'],
   ['their house', 'Uamangni nok'],

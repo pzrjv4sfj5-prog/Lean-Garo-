@@ -278,7 +278,31 @@ async function translateCountedSubjectClause(cleaned) {
 // NV-229: common transitive verbs not in VERB_LEMMAS; the bare command must still resolve cleanly.
 const IMPERATIVE_OBJECT_VERBS = new Set(['read','eat','drink','write','bring','buy','sell','cook','wash','open','close','hold','carry','cut','wear','sing','plant','catch','clean','tell','ask','pour','throw','teach','learn','hear','find','put','bake','boil','fry','sweep','touch','follow']);
 
+// NV-228 (Project Owner ruling 2026-10-29: mid-sentence capitals can be neutralised; native text is lowercase). Dictionary headwords carry a
+// capital by convention (`Re·baa`, `Cha·ja`, `Achak`), which leaked into composed sentences (`Anga Re·baa`). Composed (non-pinned) results keep the
+// capital on the first word and after sentence-final punctuation only. Kept as written: a token that is a capitalized non-initial word of the English
+// input (a name passed through, `Tridip`), all-caps tokens (`TV`) and tokens with an inner capital (`Grimchi·Saljapang`). Pinned results
+// (exact-phrase / correction / phrase-map) are never touched.
+const NEUTRALISE_SKIP_METHODS = /^(exact-phrase|correction|phrase-map|loanword-passthrough|passthrough)/;
+const NEUTRALISE_PROPER = new Set(['garo', 'achik']); // language / people names that stay capitalized
+function neutraliseMidCapitals(result, input) {
+  if (!result || typeof result.garo !== 'string' || NEUTRALISE_SKIP_METHODS.test(String(result.method || ''))) return result;
+  const inputWords = new Set(String(input || '').toLowerCase().split(/\s+/).map(t => t.replace(/[^a-z·]/g, '')).filter(Boolean)); // unresolved English words passed through as-is (`Klingon`)
+  const names = new Set(String(input || '').split(/\s+/).slice(1).filter(t => /^[A-Z]/.test(t)).map(t => t.toLowerCase().replace(/[^a-z·]/g, '')));
+  const toks = result.garo.split(' ');
+  const out = toks.map((t, i) => {
+    if (i === 0 || /[.!?]$/.test(toks[i - 1])) return t;
+    if (!/^[A-Z][a-z·]+(?:[.,!?;:]*)$/.test(t)) return t;
+    const lt = t.toLowerCase().replace(/[^a-z·]/g, '');
+    if (NEUTRALISE_PROPER.has(lt) || inputWords.has(lt) || [...names].some(n => n.length >= 3 && (lt === n || lt.startsWith(n + '·') || lt.startsWith(n)))) return t;
+    return t.charAt(0).toLowerCase() + t.slice(1);
+  }).join(' ');
+  return out === result.garo ? result : { ...result, garo: out };
+}
 export async function translate(input) {
+  return neutraliseMidCapitals(await translateRaw(input), input);
+}
+async function translateRaw(input) {
   // NV-181 (PO, 2026-10-21): 'him/her' routes to the established human object pronouns (same as 'him'); the slash otherwise leaves [UNKNOWN].
   input = String(input).replace(/\b(?:him\s*\/\s*her|her\s*\/\s*him)\b/gi, 'him');
   // NV-193 (PO ruling, 2026-10-24): 'stay' splits by sense. Temporary visit / vacation / hanging

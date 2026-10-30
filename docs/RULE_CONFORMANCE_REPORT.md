@@ -7,7 +7,7 @@ Examples: 112 | runtime matches rule: 79 (71%) | orphan (in no entry layer): 13 
 | Rule | English | Rule form | Runtime | Method | Conf |
 |---|---|---|---|---|---|
 | RULE-008 | if eat | cha·ode | Cha·a | stopword-stripped | 0.88 |
-| RULE-008 | if you eat, you will be strong. | Na·a cha·ode, bilakgen | Na·a Cha·ode, Na·a bilakgen | if-clause-ode | 0.7 |
+| RULE-008 | if you eat, you will be strong. | Na·a cha·ode, bilakgen | Na·a cha·ode, na·a bilakgen | if-clause-ode | 0.7 |
 | RULE-013 | used to work | ka·achim | Dak·a | sov-assembly | 0.75 |
 | RULE-013 | was studying | poraienga chim | Poraienga | stopword-stripped | 0.5 |
 | RULE-017 | does not | cha·ja | does not | passthrough | 0 |

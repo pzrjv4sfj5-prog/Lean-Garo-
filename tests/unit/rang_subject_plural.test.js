@@ -11,7 +11,7 @@ import { translate } from '../../src/translationEngine.js';
 // and are never touched here; bare standalone plurals are never touched.
 
 const GENERATED = [
-  ['cats eat rice', 'Menggorang miko Cha·a'],
+  ['cats eat rice', 'Menggorang miko cha·a'],
   ['dogs sleep', 'Achakrang tusia'],
   ['pigs sleep', 'Wakrang tusia'],
   ['students run', 'Chattrorang kata'],
@@ -30,13 +30,13 @@ for (const [en, garo] of GENERATED) {
 // Must stay exactly as before (no -rang): lexicalized plurals, non-plural
 // -s words, singular nouns, verbs ending in -s, bare plurals, counted nouns.
 const UNCHANGED = [
-  ['children eat rice', 'Bi·sarang miko Cha·a'],   // lexicalized plural
+  ['children eat rice', 'Bi·sarang miko cha·a'],   // lexicalized plural
   ['friends came', 'cham·e re·baaha'],           // lexicalized plural
   ['news today', 'Gital da·alo'],                 // "news" is not plural "new"
-  ['mother eats rice', 'A·ai miko Cha·a'],          // verb "eats" is not a plural noun
+  ['mother eats rice', 'A·ai miko cha·a'],          // verb "eats" is not a plural noun
   ['his dog eats', 'Uni achak cha·a'],            // singular subject
-  ['he eats rice', 'Ua miko Cha·a'],
-  ['two dogs eat rice', 'Achak manggni miko Cha·a'], // counted: Formula B (see counted_subject_formula_b.test.js), never -rang
+  ['he eats rice', 'Ua miko cha·a'],
+  ['two dogs eat rice', 'Achak manggni miko cha·a'], // counted: Formula B (see counted_subject_formula_b.test.js), never -rang
   ['people', 'mande'],                           // bare plural headword unchanged (irregular plurals in a clause are covered by irregular_plural_subject.test.js)
   ['my cats', 'Angni menggo'],                    // bare noun phrase, no predicate: not a sentence
   ['dogs', 'Achak'],                              // bare plural headword: no ruling, unchanged

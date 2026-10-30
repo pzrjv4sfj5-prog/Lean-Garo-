@@ -12,12 +12,12 @@ import { translate } from '../../src/translationEngine.js';
 // "two people eat rice" gave "mi gegni" (subject dropped).
 
 const COUNTED = [
-  ['two dogs eat rice', 'Achak manggni miko Cha·a'],
-  ['one dog eats rice', 'Achak mangsa miko Cha·a'],
-  ['two people eat rice', 'Mande sakgni miko Cha·a'],
+  ['two dogs eat rice', 'Achak manggni miko cha·a'],
+  ['one dog eats rice', 'Achak mangsa miko cha·a'],
+  ['two people eat rice', 'Mande sakgni miko cha·a'],
   ['two books are heavy', 'Ki·tap king·gni jria'],
-  ['three birds sleep', 'Do·o manggittam Tusia'],
-  ['today two dogs eat rice', 'Da·alo achak manggni miko Cha·a'] // RULE-053 2026-10-20: time word takes -o,
+  ['three birds sleep', 'Do·o manggittam tusia'],
+  ['today two dogs eat rice', 'Da·alo achak manggni miko cha·a'] // RULE-053 2026-10-20: time word takes -o,
 ];
 for (const [en, garo] of COUNTED) {
   test(`counted subject (Formula B): "${en}"`, async () => {
@@ -37,7 +37,7 @@ const UNCHANGED = [
   ['two red apples', 'apple ronggni'],
   ['two kg of rice', 'merong kg gni'],
   ['two cups of tea', 'cha ge·gni'],
-  ['i see two dogs', 'Anga achak manggniko Nika'],
+  ['i see two dogs', 'Anga achak manggniko nika'],
   ['dogs eat rice', 'Achakrang miko cha·a'],
 ];
 for (const [en, garo] of UNCHANGED) {

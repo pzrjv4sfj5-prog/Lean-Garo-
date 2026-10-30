@@ -12,7 +12,7 @@ test('NV-193: stay = physical presence -> donga (default); pin: I will stay here
   assert.equal((await translate('I will stay here')).garo, 'Anga iano donggen.');
   assert.equal((await translate('I will stay here.')).garo, 'Anga iano donggen.');
   assert.match((await translate('I stayed at home')).garo, /dongaha$/);
-  assert.equal((await translate('he stayed without doing her work')).garo, 'Ua Dak·ako ka·gija dongaha');
+  assert.equal((await translate('he stayed without doing her work')).garo, 'Ua dak·ako ka·gija dongaha');
 });
 test('NV-193: stay = visit / spend time (explicit cue) -> roa', async () => {
   assert.match((await translate('I stayed on vacation')).garo, /roaha$/);

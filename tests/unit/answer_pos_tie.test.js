@@ -34,5 +34,5 @@ test('bare "answer" still resolves to the verb form at runtime', async () => {
 
 test('"he answered" still composes correctly (regression guard)', async () => {
   const r = await translate('he answered');
-  assert.equal(r.garo, 'Ua Aganchakaha');
+  assert.equal(r.garo, 'Ua aganchakaha');
 });

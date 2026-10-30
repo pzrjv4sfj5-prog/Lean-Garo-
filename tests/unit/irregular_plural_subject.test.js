@@ -11,11 +11,11 @@ import { translate } from '../../src/translationEngine.js';
 // holds a lexicalized plural (children -> Bi·sarang) is kept as is.
 
 const GENERATED = [
-  ['people eat rice', 'Manderang miko Cha·a'],
-  ['men eat rice', 'Me·asarang miko Cha·a'],
-  ['women drink water', 'Me·chikrang chiko Ringa'],
-  ['people are here', 'Manderang Iano'],
-  ['the men are here', 'Me·asarang Iano'],
+  ['people eat rice', 'Manderang miko cha·a'],
+  ['men eat rice', 'Me·asarang miko cha·a'],
+  ['women drink water', 'Me·chikrang chiko ringa'],
+  ['people are here', 'Manderang iano'],
+  ['the men are here', 'Me·asarang iano'],
 ];
 for (const [en, garo] of GENERATED) {
   test(`irregular plural subject: "${en}"`, async () => {
@@ -25,9 +25,9 @@ for (const [en, garo] of GENERATED) {
 }
 
 const UNCHANGED = [
-  ['children drink water', 'Bi·sarang chiko Ringa'], // lexicalized row kept
-  ['two people eat rice', 'Mande sakgni miko Cha·a'],   // counted: Formula B
-  ['person eats rice', 'Mande miko Cha·a'],             // singular
+  ['children drink water', 'Bi·sarang chiko ringa'], // lexicalized row kept
+  ['two people eat rice', 'Mande sakgni miko cha·a'],   // counted: Formula B
+  ['person eats rice', 'Mande miko cha·a'],             // singular
   ['people', 'mande'],                                   // bare plural headword: no ruling
 ];
 for (const [en, garo] of UNCHANGED) {

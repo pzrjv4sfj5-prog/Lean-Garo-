@@ -38,7 +38,7 @@ const REGRESSION_CASES = [
   // jaha-based answer — as of 108918c, no confidently-wrong output is
   // preferred over a visibly-imperfect grammar-assembly fallback, since no
   // confirmed true-past-negation suffix exists (Rule 25 outstanding item).
-  { in: 'i did not eat', expectGaro: 'Anga Cha·ja', expectMethod: ['grammar-assembly'] },
+  { in: 'i did not eat', expectGaro: 'Anga cha·ja', expectMethod: ['grammar-assembly'] },
 
   // jaha/manaha semantic correction (108918c)
   { in: 'i stopped eating', expectGaro: 'Anga cha·jaha', expectMethod: ['correction'] },
@@ -52,7 +52,7 @@ const REGRESSION_CASES = [
   // jaha/manaha assembly-path + gija->ja negation (a38749b)
   { in: 'i finished eating', expectMethod: ['grammar-assembly'] },
   { in: 'she completed her work', expectMethod: ['grammar-assembly'] },
-  { in: "she doesn't eat", expectGaro: 'Ua Cha·ja', expectMethod: ['grammar-assembly'] },
+  { in: "she doesn't eat", expectGaro: 'Ua cha·ja', expectMethod: ['grammar-assembly'] },
   // 2026-08-16 (Claude B): expected value updated from 'Ua Dakja' to
   // 'Ua ka·ja'. 'Dak·a' was the corpus's SUPERSEDED root for "work"
   // (corpus-internal audit, 2026-08-01); 'ka·a' is the VERIFIED/HIGH
@@ -62,11 +62,11 @@ const REGRESSION_CASES = [
   // docs/CLAUDE_B_SESSION_MIGRATION_20260816.md) — the grammar-assembly
   // pipeline was always correctly suffixing whatever root it was given;
   // only the root itself was wrong.
-  { in: "he doesn't work", expectGaro: 'Ua Dak·ja', expectMethod: ['grammar-assembly'] }, // updated 2026-08-17: 'work' root corrected ka·a -> Dak·a, native relay NV-080
+  { in: "he doesn't work", expectGaro: 'Ua dak·ja', expectMethod: ['grammar-assembly'] }, // updated 2026-08-17: 'work' root corrected ka·a -> Dak·a, native relay NV-080
 
   // chim/pastcont/gija-construction fixes (e80a6a6)
-  { in: 'i used to eat', expectGaro: 'Anga Cha·achim', expectMethod: ['grammar-assembly'] },
-  { in: 'i was eating', expectGaro: 'Anga Cha·enga chim', expectMethod: ['grammar-assembly'] },
+  { in: 'i used to eat', expectGaro: 'Anga cha·achim', expectMethod: ['grammar-assembly'] },
+  { in: 'i was eating', expectGaro: 'Anga cha·enga chim', expectMethod: ['grammar-assembly'] },
   { in: 'i was sitting', expectGaro: 'Anga asongenga chim', expectMethod: ['grammar-assembly'] },
   { in: 'she stayed without doing her work', expectGaro: 'Ua an·tangni kamko dakgija dongaha', expectMethod: ['correction'] },
 
@@ -91,11 +91,11 @@ const REGRESSION_CASES = [
   // added to translationEngine.js step 7 this same session) and the
   // sentence correctly falls to the morphology fallback instead of
   // sov-assembly.
-  { in: '0 dogs', expectGaro: '[UNKNOWN] Achak', expectMethod: ['morphology'] },
+  { in: '0 dogs', expectGaro: '[UNKNOWN] achak', expectMethod: ['morphology'] },
 
   // --- Rules 27/28/29 (2026-07-05): no true simple past, aha/manaha overlap, -bo hortative ---
-  { in: 'she did not go', expectGaro: 'Ua Re·angja', expectMethod: ['grammar-assembly'] },
-  { in: 'i did not go', expectGaro: 'Anga Re·angja', expectMethod: ['grammar-assembly'] },
+  { in: 'she did not go', expectGaro: 'Ua re·angja', expectMethod: ['grammar-assembly'] },
+  { in: 'i did not go', expectGaro: 'Anga re·angja', expectMethod: ['grammar-assembly'] },
   // 2026-08-31 (Claude B, go/re·ang- stem-decoupling fix): was 'Re·anga'
   // (stale — that's actually "went"/"gone", per NV-100 VERIFIED/HIGH).
   // phrase_maps.js['go'] mechanically resynced to compiled_dict.json's
@@ -110,15 +110,15 @@ const REGRESSION_CASES = [
   // --- Grammar-modeling audit (2026-07-05): affirmative past tense via
   // real Rule 2 (-aha) suffix logic instead of per-word memorized corrections ---
   { in: 'he studied', expectGaro: 'Ua poraiaha', expectMethod: ['grammar-assembly'] },
-  { in: 'he cooked', expectGaro: 'Ua Song·aha', expectMethod: ['grammar-assembly'] },
+  { in: 'he cooked', expectGaro: 'Ua song·aha', expectMethod: ['grammar-assembly'] },
   { in: 'he walked', expectGaro: 'Ua re·aha', expectMethod: ['grammar-assembly'] },
-  { in: 'he answered', expectGaro: 'Ua Aganchakaha', expectMethod: ['grammar-assembly'] },
+  { in: 'he answered', expectGaro: 'Ua aganchakaha', expectMethod: ['grammar-assembly'] },
 
   // --- Rule 32 (2026-07-05): search=Sandia, replaces am·e·nik·na contamination ---
   { in: 'search', expectGaro: 'Sandia', expectMethod: ['correction'] },
   { in: 'search for him', expectGaro: 'Biko sandibo', expectMethod: ['correction'] },
-  { in: 'he searched', expectGaro: 'Ua Sandiaha', expectMethod: ['grammar-assembly'] },
-  { in: 'he was searching', expectGaro: 'Ua Sandienga chim', expectMethod: ['grammar-assembly'] },
+  { in: 'he searched', expectGaro: 'Ua sandiaha', expectMethod: ['grammar-assembly'] },
+  { in: 'he was searching', expectGaro: 'Ua sandienga chim', expectMethod: ['grammar-assembly'] },
 
   // --- Rule 33 (2026-07-05): down = Ka·ma ---
   { in: 'down', expectGaro: 'Ka·ma', expectMethod: ['correction'] },
@@ -143,7 +143,7 @@ const REGRESSION_CASES = [
   // RC-006: purpose_map.json 'search' fixed from the retired
   // am·e·nik·na contamination to Sandi·na (regular -na on the confirmed
   // Sandia/RULE-032 stem).
-  { in: 'i want to search', expectGaro: 'Anga Sandi·na ska', expectMethod: ['grammar-assembly'] },
+  { in: 'i want to search', expectGaro: 'Anga sandi·na ska', expectMethod: ['grammar-assembly'] },
 
   // Coverage review, 2026-07-25 (Claude B) — genuinely confirmed
   // constructions found untested while auditing rule-catalogue
@@ -198,7 +198,7 @@ const REGRESSION_CASES = [
   // polarity conflict). Documenting current (wrong) behavior as a
   // regression guard so a future fix attempt has a clear before-state,
   // not silently making it worse in the meantime:
-  { in: 'i will wait', expectGaro: 'Anga Damogen', expectMethod: ['grammar-assembly'] },
+  { in: 'i will wait', expectGaro: 'Anga damogen', expectMethod: ['grammar-assembly'] },
 
   // RULE-030 generalization (2026-07-25, Claude B, per Claude A's
   // flag that this was now safe to generalize): findVerbForm('go')
@@ -232,7 +232,7 @@ const REGRESSION_CASES = [
   // only which pipeline step produces it changed, which is the whole
   // point of the fix (see translationEngine.js step 2's comment).
   { in: 'one person', expectGaro: 'mande saksa', expectMethod: ['classifier', 'exact-phrase'] },
-  { in: 'he answered', expectGaro: 'Ua Aganchakaha', expectMethod: ['grammar-assembly'] },
+  { in: 'he answered', expectGaro: 'Ua aganchakaha', expectMethod: ['grammar-assembly'] },
 ];
 
 for (const c of REGRESSION_CASES) {
@@ -410,7 +410,7 @@ test('RC-CANDIDATE-010: NP subject (article+noun+copula) reaches grammar-assembl
   assert.equal(r1.garo, 'Ki·tap tebilo ong·a');
   const r2 = await translate('the market is far');
   assert.equal(r2.method, 'grammar-assembly');
-  assert.equal(r2.garo, 'bajal Chel·a');
+  assert.equal(r2.garo, 'bajal chel·a');
 });
 
 test('RC-CANDIDATE-010 boundary: adjective-modified NP subject safely falls back, does not mislabel', async () => {
@@ -528,17 +528,17 @@ test('RC-CANDIDATE-018(a): NP-subject future reaches grammar-assembly, ·gen suf
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('the dog will eat rice');
   assert.equal(r.method, 'grammar-assembly');
-  assert.equal(r.garo, 'Achak miko Cha·gen');
+  assert.equal(r.garo, 'Achak miko cha·gen');
   // object ("miko") between subject ("Achak") and verb ("Cha·gen") —
   // Project Owner directive root cause 5, SOV order preserved.
   assert.ok(r.garo.indexOf('miko') > r.garo.indexOf('Achak'));
-  assert.ok(r.garo.indexOf('Cha·gen') > r.garo.indexOf('miko'));
+  assert.ok(r.garo.indexOf('cha·gen') > r.garo.indexOf('miko'));
 });
 
 test('RC-CANDIDATE-018(a) regression guard: pronoun-subject future unaffected by the coherence-check widening', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('she will go');
-  assert.equal(r.garo, 'Ua Re·anggen');
+  assert.equal(r.garo, 'Ua re·anggen');
 });
 
 test('RC-CANDIDATE-018(a) regression guard: adjective-modified subjects still correctly fall to sov-assembly (RC-010 documented exclusion, unaffected by this fix)', async () => {
@@ -619,13 +619,13 @@ test('RC-CANDIDATE-025: bare "console" is reachable, not [UNKNOWN] passthrough',
 test('RC-CANDIDATE-025: verb present in sentence assembly for a "to X"-only headword ("bind")', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('they bind the rope');
-  assert.ok(r.garo.includes('Kadima'), `verb must not be silently dropped, got: ${r.garo}`);
+  assert.ok(r.garo.includes('kadima'), `verb must not be silently dropped, got: ${r.garo}`);
 });
 
 test('RC-CANDIDATE-025: verb present in sentence assembly for a "to X"-only headword ("console")', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('you console the child');
-  assert.ok(r.garo.includes('Ka·dimea'), `verb must not be silently dropped, got: ${r.garo}`);
+  assert.ok(r.garo.includes('ka·dimea'), `verb must not be silently dropped, got: ${r.garo}`);
 });
 
 test('RC-CANDIDATE-025 regression guard: bare-infinitive aliasing never overwrites an existing independently-chosen bare-form entry ("hang")', async () => {
@@ -658,7 +658,7 @@ test('RC-CANDIDATE-025 regression guard: bare-infinitive aliasing never overwrit
 test('corrections.json: "angry" resolves to the VERIFIED entry, not the truncated fragment', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('he is angry');
-  assert.ok(r.garo.includes('Ka·onanga'), `must use full VERIFIED word, got: ${r.garo}`);
+  assert.ok(r.garo.includes('ka·onanga'), `must use full VERIFIED word, got: ${r.garo}`);
 });
 
 test('corrections.json: "smile" resolves to its own word, not to laugh', async () => {
@@ -1141,7 +1141,7 @@ test('RUNTIME-AUDIT: stopword-stripped fallback path reaches phrase_maps.js ("so
 test('RUNTIME-AUDIT: findVerbForm/grammar-assembly path reaches phrase_maps.js ("he washes")', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const result = await translate('he washes');
-  assert.equal(result.garo, 'Ua Su·sranga');
+  assert.equal(result.garo, 'Ua su·sranga');
 });
 
 test('RUNTIME-AUDIT: corrections.json still takes precedence over phrase_maps.js through lookupGaro()', async () => {
@@ -1872,7 +1872,7 @@ test('gija-construction silent-drop fix: a fully-resolved object is completely u
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('he stayed without doing her work');
   assert.equal(r.method, 'gija-construction');
-  assert.equal(r.garo, 'Ua Dak·ako ka·gija dongaha');
+  assert.equal(r.garo, 'Ua dak·ako ka·gija dongaha');
 });
 
 test('gija-construction silent-drop fix: a construction with no object at all (legitimate grammatical omission, e.g. "without eating") is completely unaffected', async () => {
@@ -1910,7 +1910,7 @@ test('go/re·ang- decoupling: "going" (present continuous, sov-assembly verb syn
 test('go/re·ang- decoupling: "will go" (affirmative future) still uses the re·ang- stem, not the resynced bare "re·a" root', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('she will go');
-  assert.equal(r.garo, 'Ua Re·anggen');
+  assert.equal(r.garo, 'Ua re·anggen');
 });
 
 test('go/re·ang- decoupling: "went" (past, IRREGULAR_VERBS entry via corrections.json exact-phrase) is unaffected', async () => {
@@ -1922,9 +1922,9 @@ test('go/re·ang- decoupling: "went" (past, IRREGULAR_VERBS entry via correction
 test('go/re·ang- decoupling: "did not go" (negative past, grammar-assembly) still uses the re·ang- stem for negation, not the resynced bare "re·a" root', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r1 = await translate('she did not go');
-  assert.equal(r1.garo, 'Ua Re·angja');
+  assert.equal(r1.garo, 'Ua re·angja');
   const r2 = await translate('i did not go');
-  assert.equal(r2.garo, 'Anga Re·angja');
+  assert.equal(r2.garo, 'Anga re·angja');
 });
 
 test('go/re·ang- decoupling: "will not go" (negative future, RULE-030) is unaffected — still the bare "re·a" root directly, not the re·ang- stem', async () => {
@@ -1938,7 +1938,7 @@ test('go/re·ang- decoupling: "will not go" (negative future, RULE-030) is unaff
 test('go/re·ang- decoupling: getConjugationRoot is a no-op for every verb not in conjugation_roots.json (control case, "did not eat" unaffected)', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('he did not eat');
-  assert.equal(r.garo, 'Ua Cha·ja');
+  assert.equal(r.garo, 'Ua cha·ja');
 });
 
 // ── Negative-future-continuous fix (2026-08-31B) ──────────────────────────
@@ -1953,18 +1953,18 @@ test('go/re·ang- decoupling: getConjugationRoot is a no-op for every verb not i
 test('negative-future-continuous: "will not be going" renders the confirmed re·angjawa form (grammar-assembly), distinct from plain "will not go"', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('he will not be going');
-  assert.equal(r.garo, 'Ua Re·angjawa');
+  assert.equal(r.garo, 'Ua re·angjawa');
   assert.equal(r.method, 'grammar-assembly');
 });
 
 test('negative-future-continuous: subject variations all resolve to the same re·angjawa stem', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const rShe = await translate('she will not be going');
-  assert.equal(rShe.garo, 'Ua Re·angjawa');
+  assert.equal(rShe.garo, 'Ua re·angjawa');
   const rI = await translate('i will not be going');
-  assert.equal(rI.garo, 'Anga Re·angjawa');
+  assert.equal(rI.garo, 'Anga re·angjawa');
   const rThey = await translate('they will not be going');
-  assert.equal(rThey.garo, 'Uamang Re·angjawa');
+  assert.equal(rThey.garo, 'Uamang re·angjawa');
 });
 
 test('negative-future-continuous: plain "will not go" (RULE-030, re·jawa) is unaffected by the re·angjawa fix — the two forms stay distinct', async () => {
@@ -2016,11 +2016,11 @@ test('NV-103 only-identity: general mechanism — topic suffix, bound object+onl
   // mechanism and was swapped for a different, still-unquestioned example.
   const r = await translate('the only game they play is football');
   assert.equal(r.method, 'only-identity-construction');
-  assert.equal(r.garo, 'Uamangde Football Kal·anikosan Kal·aia');
+  assert.equal(r.garo, 'Uamangde Football kal·anikosan kal·aia');
   // topic suffix on subject
   assert.ok(r.garo.startsWith('Uamangde '));
   // bound object+only as ONE unit (not the free-standing "mangmang")
-  assert.ok(r.garo.includes('Kal·anikosan'));
+  assert.ok(r.garo.includes('kal·anikosan'));
   assert.ok(!r.garo.includes('mangmang'));
   // verb carries the -aia declarative ending, not a bare root
   assert.ok(r.garo.endsWith('aia'));
@@ -2043,9 +2043,9 @@ test('NV-112 only-identity: exact-match override for "the only fruit i eat is ma
 test('NV-103 only-identity: generalizes across subject pronouns, not just "i"', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const rYou = await translate('the only book you read is bible');
-  assert.equal(rYou.garo, 'Na·ade Sastro Ki·tapkosan poraiaia');
+  assert.equal(rYou.garo, 'Na·ade sastro ki·tapkosan poraiaia');
   const rThey = await translate('the only game they play is football');
-  assert.equal(rThey.garo, 'Uamangde Football Kal·anikosan Kal·aia');
+  assert.equal(rThey.garo, 'Uamangde Football kal·anikosan kal·aia');
 });
 
 test('NV-103 only-identity: the exact NV-103 cited sentence now routes through the construction (not sov-assembly) — the topic/order/bound-object/verb-ending composition bug is fixed; the object slot for "english" specifically still surfaces a SEPARATE, previously-undocumented data defect (garo_dictionary.json has 7 unrelated rows keyed bare "english") that is out of this fix\'s scope and flagged separately, not silently patched', async () => {
@@ -2054,7 +2054,7 @@ test('NV-103 only-identity: the exact NV-103 cited sentence now routes through t
   assert.equal(r.method, 'only-identity-construction');
   assert.ok(r.garo.startsWith('Angade '));
   assert.ok(r.garo.includes('ba·sakosan'));
-  assert.ok(r.garo.endsWith('Aganaia'));
+  assert.ok(r.garo.endsWith('aganaia'));
   assert.ok(!r.garo.includes('mangmang'));
 });
 
@@ -2077,7 +2077,7 @@ test('NV-112 only-identity: "i am the only student" now resolves via the constru
   const { translate } = await import('../../src/translationEngine.js');
   const r = await translate('i am the only student');
   assert.equal(r.method, 'only-identity-construction');
-  assert.equal(r.garo, 'Angan saksa kamkam Chattro');
+  assert.equal(r.garo, 'Angan saksa kamkam chattro');
   assert.ok(!r.garo.includes('mangmang'));
 });
 
@@ -2166,7 +2166,7 @@ test('Finding 1 regression guard: getConjugationRoot is a no-op for verbs with n
 test('Finding 1 regression guard: subject-bearing "he did not go" is unaffected — was already correct via grammar-assembly (grammarEngine.js:422), which has its own, separate getConjugationRoot call untouched by this fix', async () => {
   const r = await translate('she did not go');
   assert.equal(r.method, 'grammar-assembly');
-  assert.equal(r.garo, 'Ua Re·angja');
+  assert.equal(r.garo, 'Ua re·angja');
 });
 
 // NV-115 (2026-09-03, Claude B). Confirmed loanwords with no Garo
@@ -2353,5 +2353,5 @@ test('NV-165 regression guard: possessive object ("the boy has his dog") is a di
   // (subject bare, object 'ko'-marked) still applies — the new
   // possessor -o / bare-object rule does not fire when grammar.possessive
   // is present, since that combination has no citation on record.
-  assert.equal(r.garo, 'me\u00b7a bi\u00b7sa Uni achakko donga');
+  assert.equal(r.garo, 'me\u00b7a bi\u00b7sa uni achakko donga');
 });

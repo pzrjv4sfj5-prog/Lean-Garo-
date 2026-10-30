@@ -40,11 +40,11 @@ test('translate: sentence-final object with "?" now composes via grammar-assembl
   // let a spaced 'Cha·aha ma?' slip through undetected (fixed 2026-09-21,
   // see sentenceBuilder.js RULE-046 fix note) since endsWith('ma?') is true
   // for both the joined and spaced forms.
-  assert.equal(rice.garo, 'Na·a miko Cha·ahama?');
+  assert.equal(rice.garo, 'Na·a miko cha·ahama?');
 
   const water = await translate('did you eat water?');
   assert.equal(water.method, 'grammar-assembly');
-  assert.equal(water.garo, 'Na·a chiko Cha·ahama?');
+  assert.equal(water.garo, 'Na·a chiko cha·ahama?');
 });
 
 test('regression guard: object-less questions are unaffected by the fix', async () => {
@@ -85,5 +85,5 @@ test('purpose-clause object ("want to eat X") drops the accusative -ko marker', 
 test('regression guard: a plain finite-verb direct object still takes -ko (not affected by the purpose-clause fix)', async () => {
   const ateRice = await translate('did you eat rice?');
   assert.equal(ateRice.method, 'grammar-assembly');
-  assert.equal(ateRice.garo, 'Na·a miko Cha·ahama?');
+  assert.equal(ateRice.garo, 'Na·a miko cha·ahama?');
 });

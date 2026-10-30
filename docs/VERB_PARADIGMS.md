@@ -31,7 +31,7 @@
 | boil | rita | ritenga | ritaha | ritgen | ritja | ritjawa | ritbo | ritnabe | ritna |
 | brag | badaa | badaenga | badaaha | badagen | badaja | badajawa | badabo | badanabe | badana |
 | break | pe·a | pe·enga | pe·aha | pe·gen | pe·ja | pe·jawa | pe·bo | pe·nabe | pe·na |
-| bring | ra·ba·a 📌 | ra·ba·enga | ra·ba·aha | ra·ba·gen | ra·ba·ja | ra·ba·jawa | ra·ba·bo | ra·ba·nabe | ra·ba·na |
+| bring | ra·baa 📌 | ra·baenga | ra·baaha | ra·bagen | ra·baja | ra·bajawa | ra·babo | ra·banabe | ra·bana |
 | brood | bam·a | bam·enga | bam·aha | bam·gen | bam·ja | bam·jawa | bam·bo | bam·nabe | bam·na |
 | build | taria | rik·enga | tariaha | tarigen | tarija | tarijawa | taribo | tarinabe | tarina |
 | burn | so·a | so·enga | so·aha | so·gen | so·ja | so·jawa | so·bo | so·nabe | so·na |

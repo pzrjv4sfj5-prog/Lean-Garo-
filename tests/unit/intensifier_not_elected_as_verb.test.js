@@ -33,7 +33,7 @@ import { translate } from '../../src/translationEngine.js';
 
 test('"it is very cold" elects the real predicate ("cold") as the verb, not "very"', async () => {
   const r = await translate('it is very cold');
-  assert.ok(r.garo.includes('Sin\u00b7a'), `expected the real predicate "cold"=Sin\u00b7a in output, got: ${r.garo}`);
+  assert.ok(r.garo.includes('sin\u00b7a'), `expected the real predicate "cold"=Sin\u00b7a in output, got: ${r.garo}`);
   assert.ok(!r.garo.includes('namen'), `intensifier "very"=namen must not be wrongly elected as verb, got: ${r.garo}`);
   assert.ok(!r.garo.includes('-ko') && !r.garo.includes('\u00b7ko'), `must not carry an object marker, got: ${r.garo}`);
 });
@@ -52,11 +52,11 @@ test('"she is really happy" elects the real predicate ("happy") as the verb, not
 
 test('regression guard: ordinary object sentences are unaffected by the intensifier guard', async () => {
   const r = await translate('i eat rice');
-  assert.equal(r.garo, 'Anga miko Cha\u00b7a');
+  assert.equal(r.garo, 'Anga miko cha\u00b7a');
 });
 
 test('regression guard: "it is very hot" (attested construction) is unaffected by this fix', async () => {
   const r = await translate('it is very hot');
-  assert.equal(r.garo, 'namen Ding\u00b7a');
+  assert.equal(r.garo, 'namen ding\u00b7a');
   assert.equal(r.method, 'very-hot-construction');
 });

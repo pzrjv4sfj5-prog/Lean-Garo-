@@ -680,17 +680,17 @@
    }
   },
   "bring": {
-   "root": "ra·ba·a",
+   "root": "ra·baa",
    "forms": {
-    "present": "ra·ba·a",
-    "continuous": "ra·ba·enga",
-    "past": "ra·ba·aha",
-    "future": "ra·ba·gen",
-    "negative": "ra·ba·ja",
-    "negative_future": "ra·ba·jawa",
-    "command": "ra·ba·bo",
-    "negative_command": "ra·ba·nabe",
-    "infinitive": "ra·ba·na"
+    "present": "ra·baa",
+    "continuous": "ra·baenga",
+    "past": "ra·baaha",
+    "future": "ra·bagen",
+    "negative": "ra·baja",
+    "negative_future": "ra·bajawa",
+    "command": "ra·babo",
+    "negative_command": "ra·banabe",
+    "infinitive": "ra·bana"
    },
    "status": {
     "present": "pinned",

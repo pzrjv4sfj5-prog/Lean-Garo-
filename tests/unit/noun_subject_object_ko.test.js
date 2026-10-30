@@ -11,12 +11,12 @@ import { translate } from '../../src/translationEngine.js';
 // (Formula A); counted subjects are handled elsewhere (Formula B).
 
 const IMPROVED = [
-  ['cats eat rice', 'Menggorang miko Cha·a'],
-  ['cats will eat rice', 'Menggorang miko Cha·gen'],
-  ['cats did not eat rice', 'Menggorang miko Cha·ja'],
-  ['the dog eats rice', 'Achak miko Cha·a'],
-  ['my cats drink water', 'Angni menggorang chiko Ringa'],
-  ['cats see dogs', 'Menggorang achakrangko Nika'],
+  ['cats eat rice', 'Menggorang miko cha·a'],
+  ['cats will eat rice', 'Menggorang miko cha·gen'],
+  ['cats did not eat rice', 'Menggorang miko cha·ja'],
+  ['the dog eats rice', 'Achak miko cha·a'],
+  ['my cats drink water', 'Angni menggorang chiko ringa'],
+  ['cats see dogs', 'Menggorang achakrangko nika'],
 ];
 for (const [en, garo] of IMPROVED) {
   test(`noun subject gets object -ko: "${en}"`, async () => {
@@ -30,9 +30,9 @@ const UNCHANGED = [
   ['cats sleep', 'Menggorang tusia'],             // intransitive: no object, nothing to add
   ['dogs run', 'Achakrang kata'],
   ['dogs eat rice', 'Achakrang miko cha·a'],     // native-confirmed correction row
-  ['two dogs eat rice', 'Achak manggni miko Cha·a'], // counted: Formula B
-  ['he eats rice', 'Ua miko Cha·a'],
-  ['children eat rice', 'Bi·sarang miko Cha·a'],  // lexicalized plural kept, now with -ko
+  ['two dogs eat rice', 'Achak manggni miko cha·a'], // counted: Formula B
+  ['he eats rice', 'Ua miko cha·a'],
+  ['children eat rice', 'Bi·sarang miko cha·a'],  // lexicalized plural kept, now with -ko
   ['dogs', 'Achak'],
   ['two red apples', 'apple ronggni'],
 ];

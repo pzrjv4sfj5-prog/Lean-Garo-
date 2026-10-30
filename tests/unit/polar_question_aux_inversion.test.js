@@ -34,13 +34,13 @@ import { translate } from '../../src/translationEngine.js';
 // and the sentenceBuilder.js fix note. Corrected to the joined form.
 test('"did he eat?" composes with past tense + polar "-ma?" marker', async () => {
   const r = await translate('did he eat?');
-  assert.equal(r.garo, 'Ua Cha·ahama?');
+  assert.equal(r.garo, 'Ua cha·ahama?');
   assert.equal(r.method, 'grammar-assembly');
 });
 
 test('"will he eat?" composes with future tense + polar "-ma?" marker', async () => {
   const r = await translate('will he eat?');
-  assert.equal(r.garo, 'Ua Cha·genma?');
+  assert.equal(r.garo, 'Ua cha·genma?');
 });
 
 test('negated polar questions ("did/will you not eat?") stay negative and still get "-ma?"', async () => {

@@ -47,7 +47,7 @@ test('translate: "her" as a sentence-final accusative object resolves to biko (h
   assert.equal(r.method, 'grammar-assembly');
   assert.match(r.garo, /\bbiko\b/, `expected "biko" in the output, got "${r.garo}"`);
   assert.doesNotMatch(r.garo, /biko·?ko/, 'accusative marker must not be doubled on biko');
-  assert.doesNotMatch(r.garo, /\bUni\b/, 'must not also carry the stray possessive "Uni"');
+  assert.doesNotMatch(r.garo, /\buni\b/i, 'must not also carry the stray possessive "Uni"');
 });
 
 test('translate: "it" as a sentence-final accusative object resolves to uko, not dropped', async () => {
@@ -88,7 +88,7 @@ test('regression guard: "me" (angko) object is unaffected by this fix', async ()
 
 test('regression guard: "her" as a possessive determiner is NOT swept into the accusative-object fix', async () => {
   const book = await translate('her book is red');
-  assert.match(book.garo, /\bUni\b/, `expected possessive "Uni", got "${book.garo}"`);
+  assert.match(book.garo, /\buni\b/i, `expected possessive "Uni", got "${book.garo}"`);
   assert.doesNotMatch(book.garo, /\buko\b/, 'possessive "her book" must not resolve to accusative uko');
 
   const dog = await translate('this is her dog');
@@ -105,5 +105,5 @@ test('regression guard: "her" followed by a noun after a transitive verb stays p
   // so this must stay a possessive-style parse, not trip the
   // sentence-final accusative-object branch.
   const r = await translate('i will marry her book');
-  assert.match(r.garo, /\bUni\b/, `expected possessive "Uni", got "${r.garo}"`);
+  assert.match(r.garo, /\buni\b/i, `expected possessive "Uni", got "${r.garo}"`);
 });

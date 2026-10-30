@@ -22,5 +22,5 @@ test('NV-197: no Garo master row keeps an apostrophe inside a word (English "don
   assert.deepEqual(bad.map(r => r.garo), []);
 });
 test('NV-197: past wh-question rule stays NV-194 only (no general contextual-tense rule)', async () => {
-  assert.equal((await translate('I ate yesterday')).garo, 'Mijalo anga Cha·aha');
+  assert.equal((await translate('I ate yesterday')).garo, 'Mijalo anga cha·aha');
 });

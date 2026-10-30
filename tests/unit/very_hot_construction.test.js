@@ -20,25 +20,25 @@ import { translate } from '../../src/translationEngine.js';
 // 3. "it is very hot" (no time word) hit the same verb-misidentification
 //    bug as #2, keeping "hot" but still with the wrong -ko marker.
 //
-// Confirmed correct: "Da·alo namen Ding·a" (time-word + intensifier +
-// adjective) for the today variant, "namen Ding·a" for the bare variant
+// Confirmed correct: "Da·alo namen ding·a" (time-word + intensifier +
+// adjective) for the today variant, "namen ding·a" for the bare variant
 // — NOT generalized beyond this exact attested sentence pair per Project
 // Owner instruction ("don't assume it generalizes on one example").
 
 test('"it\'s very hot today" (contraction) now composes correctly', async () => {
   const r = await translate("it's very hot today");
-  assert.equal(r.garo, 'Da\u00b7alo namen Ding\u00b7a');
+  assert.equal(r.garo, 'Da\u00b7alo namen ding\u00b7a');
 });
 
 test('"it is very hot today" (full form) no longer drops "hot" or misapplies -ko', async () => {
   const r = await translate('it is very hot today');
-  assert.equal(r.garo, 'Da\u00b7alo namen Ding\u00b7a');
+  assert.equal(r.garo, 'Da\u00b7alo namen ding\u00b7a');
   assert.ok(!r.garo.includes('-ko') && !r.garo.includes('·ko'), `must not carry an object marker, got: ${r.garo}`);
 });
 
 test('"it is very hot" (no time word) no longer misapplies -ko', async () => {
   const r = await translate('it is very hot');
-  assert.equal(r.garo, 'namen Ding\u00b7a');
+  assert.equal(r.garo, 'namen ding\u00b7a');
   assert.ok(!r.garo.includes('-ko') && !r.garo.includes('·ko'), `must not carry an object marker, got: ${r.garo}`);
 });
 

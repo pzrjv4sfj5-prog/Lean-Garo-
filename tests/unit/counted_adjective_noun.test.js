@@ -15,8 +15,8 @@ const CASES = [
   ['three big cats', 'dal·gipa menggo manggittam'],
   ['two big books', 'dal·gipa ki·tap king·gni'],
   ['five big birds', 'dal·gipa do·o mangbonga'],
-  ['two big dogs eat rice', 'Dal·gipa achak manggni miko Cha·a'],
-  ['two big dogs sleep', 'Dal·gipa achak manggni Tusia'],
+  ['two big dogs eat rice', 'Dal·gipa achak manggni miko cha·a'],
+  ['two big dogs sleep', 'Dal·gipa achak manggni tusia'],
 ];
 for (const [en, garo] of CASES) {
   test(`counted adjective+noun: "${en}"`, async () => {
@@ -30,7 +30,7 @@ const UNCHANGED = [
   ['two dogs', 'achak manggni'],
   ['two red apples', 'apple ronggni'],
   ['three sugar canes', 'grit ge·gittam'],
-  ['two dogs eat rice', 'Achak manggni miko Cha·a'],
+  ['two dogs eat rice', 'Achak manggni miko cha·a'],
 ];
 for (const [en, garo] of UNCHANGED) {
   test(`counted adjective guard: "${en}"`, async () => {
