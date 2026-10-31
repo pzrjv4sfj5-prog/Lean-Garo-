@@ -2865,7 +2865,7 @@
   },
   {
     "english": "Doctor",
-    "garo": "Doctor / Sam·on·gipa",
+    "garo": "Doctor / Sam on·gipa",
     "pos": null,
     "category": "health",
     "classifier": null,
@@ -8798,14 +8798,6 @@
     "category": "education",
     "classifier": null,
     "notes": "VERIFIED/HIGH v:po-ri-a"
-  },
-  {
-    "english": "Read",
-    "garo": "po·ri·a",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
   },
   {
     "english": "Really?",
@@ -25104,26 +25096,10 @@
     "notes": "UNVERIFIED/HIGH"
   },
   {
-    "english": "live",
-    "garo": "tang·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
     "english": "liver",
     "garo": "bi·ka",
     "pos": null,
     "category": "health",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "living",
-    "garo": "git·tang·a",
-    "pos": null,
-    "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH"
   },
