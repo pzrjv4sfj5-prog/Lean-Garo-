@@ -12242,66 +12242,6 @@
     "garo": "ang rungen"
   },
   {
-    "english": "you (singular) run (present)",
-    "garo": "na· runa"
-  },
-  {
-    "english": "you (singular) run (past)",
-    "garo": "na· runaha"
-  },
-  {
-    "english": "you (singular) run (future)",
-    "garo": "na· rungen"
-  },
-  {
-    "english": "he/she run (present)",
-    "garo": "u runa"
-  },
-  {
-    "english": "he/she run (past)",
-    "garo": "u runaha"
-  },
-  {
-    "english": "he/she run (future)",
-    "garo": "u rungen"
-  },
-  {
-    "english": "we run (present)",
-    "garo": "i runa"
-  },
-  {
-    "english": "we run (past)",
-    "garo": "i runaha"
-  },
-  {
-    "english": "we run (future)",
-    "garo": "i rungen"
-  },
-  {
-    "english": "you (plural) run (present)",
-    "garo": "si runa"
-  },
-  {
-    "english": "you (plural) run (past)",
-    "garo": "si runaha"
-  },
-  {
-    "english": "you (plural) run (future)",
-    "garo": "si rungen"
-  },
-  {
-    "english": "they run (present)",
-    "garo": "bi runa"
-  },
-  {
-    "english": "they run (past)",
-    "garo": "bi runaha"
-  },
-  {
-    "english": "they run (future)",
-    "garo": "bi rungen"
-  },
-  {
     "english": "I walk (present)",
     "garo": "ang walka"
   },
@@ -12312,66 +12252,6 @@
   {
     "english": "I walk (future)",
     "garo": "ang walkgen"
-  },
-  {
-    "english": "you (singular) walk (present)",
-    "garo": "na· walka"
-  },
-  {
-    "english": "you (singular) walk (past)",
-    "garo": "na· walkaha"
-  },
-  {
-    "english": "you (singular) walk (future)",
-    "garo": "na· walkgen"
-  },
-  {
-    "english": "he/she walk (present)",
-    "garo": "u walka"
-  },
-  {
-    "english": "he/she walk (past)",
-    "garo": "u walkaha"
-  },
-  {
-    "english": "he/she walk (future)",
-    "garo": "u walkgen"
-  },
-  {
-    "english": "we walk (present)",
-    "garo": "i walka"
-  },
-  {
-    "english": "we walk (past)",
-    "garo": "i walkaha"
-  },
-  {
-    "english": "we walk (future)",
-    "garo": "i walkgen"
-  },
-  {
-    "english": "you (plural) walk (present)",
-    "garo": "si walka"
-  },
-  {
-    "english": "you (plural) walk (past)",
-    "garo": "si walkaha"
-  },
-  {
-    "english": "you (plural) walk (future)",
-    "garo": "si walkgen"
-  },
-  {
-    "english": "they walk (present)",
-    "garo": "bi walka"
-  },
-  {
-    "english": "they walk (past)",
-    "garo": "bi walkaha"
-  },
-  {
-    "english": "they walk (future)",
-    "garo": "bi walkgen"
   },
   {
     "english": "I sit (present)",
@@ -12386,66 +12266,6 @@
     "garo": "ang sitgen"
   },
   {
-    "english": "you (singular) sit (present)",
-    "garo": "na· sita"
-  },
-  {
-    "english": "you (singular) sit (past)",
-    "garo": "na· sitaha"
-  },
-  {
-    "english": "you (singular) sit (future)",
-    "garo": "na· sitgen"
-  },
-  {
-    "english": "he/she sit (present)",
-    "garo": "u sita"
-  },
-  {
-    "english": "he/she sit (past)",
-    "garo": "u sitaha"
-  },
-  {
-    "english": "he/she sit (future)",
-    "garo": "u sitgen"
-  },
-  {
-    "english": "we sit (present)",
-    "garo": "i sita"
-  },
-  {
-    "english": "we sit (past)",
-    "garo": "i sitaha"
-  },
-  {
-    "english": "we sit (future)",
-    "garo": "i sitgen"
-  },
-  {
-    "english": "you (plural) sit (present)",
-    "garo": "si sita"
-  },
-  {
-    "english": "you (plural) sit (past)",
-    "garo": "si sitaha"
-  },
-  {
-    "english": "you (plural) sit (future)",
-    "garo": "si sitgen"
-  },
-  {
-    "english": "they sit (present)",
-    "garo": "bi sita"
-  },
-  {
-    "english": "they sit (past)",
-    "garo": "bi sitaha"
-  },
-  {
-    "english": "they sit (future)",
-    "garo": "bi sitgen"
-  },
-  {
     "english": "I stand (present)",
     "garo": "ang standa"
   },
@@ -12456,66 +12276,6 @@
   {
     "english": "I stand (future)",
     "garo": "ang standgen"
-  },
-  {
-    "english": "you (singular) stand (present)",
-    "garo": "na· standa"
-  },
-  {
-    "english": "you (singular) stand (past)",
-    "garo": "na· standaha"
-  },
-  {
-    "english": "you (singular) stand (future)",
-    "garo": "na· standgen"
-  },
-  {
-    "english": "he/she stand (present)",
-    "garo": "u standa"
-  },
-  {
-    "english": "he/she stand (past)",
-    "garo": "u standaha"
-  },
-  {
-    "english": "he/she stand (future)",
-    "garo": "u standgen"
-  },
-  {
-    "english": "we stand (present)",
-    "garo": "i standa"
-  },
-  {
-    "english": "we stand (past)",
-    "garo": "i standaha"
-  },
-  {
-    "english": "we stand (future)",
-    "garo": "i standgen"
-  },
-  {
-    "english": "you (plural) stand (present)",
-    "garo": "si standa"
-  },
-  {
-    "english": "you (plural) stand (past)",
-    "garo": "si standaha"
-  },
-  {
-    "english": "you (plural) stand (future)",
-    "garo": "si standgen"
-  },
-  {
-    "english": "they stand (present)",
-    "garo": "bi standa"
-  },
-  {
-    "english": "they stand (past)",
-    "garo": "bi standaha"
-  },
-  {
-    "english": "they stand (future)",
-    "garo": "bi standgen"
   },
   {
     "english": "I work (present)",
@@ -12530,66 +12290,6 @@
     "garo": "ang workgen"
   },
   {
-    "english": "you (singular) work (present)",
-    "garo": "na· worka"
-  },
-  {
-    "english": "you (singular) work (past)",
-    "garo": "na· workaha"
-  },
-  {
-    "english": "you (singular) work (future)",
-    "garo": "na· workgen"
-  },
-  {
-    "english": "he/she work (present)",
-    "garo": "u worka"
-  },
-  {
-    "english": "he/she work (past)",
-    "garo": "u workaha"
-  },
-  {
-    "english": "he/she work (future)",
-    "garo": "u workgen"
-  },
-  {
-    "english": "we work (present)",
-    "garo": "i worka"
-  },
-  {
-    "english": "we work (past)",
-    "garo": "i workaha"
-  },
-  {
-    "english": "we work (future)",
-    "garo": "i workgen"
-  },
-  {
-    "english": "you (plural) work (present)",
-    "garo": "si worka"
-  },
-  {
-    "english": "you (plural) work (past)",
-    "garo": "si workaha"
-  },
-  {
-    "english": "you (plural) work (future)",
-    "garo": "si workgen"
-  },
-  {
-    "english": "they work (present)",
-    "garo": "bi worka"
-  },
-  {
-    "english": "they work (past)",
-    "garo": "bi workaha"
-  },
-  {
-    "english": "they work (future)",
-    "garo": "bi workgen"
-  },
-  {
     "english": "I play (present)",
     "garo": "ang playa"
   },
@@ -12600,66 +12300,6 @@
   {
     "english": "I play (future)",
     "garo": "ang playgen"
-  },
-  {
-    "english": "you (singular) play (present)",
-    "garo": "na· playa"
-  },
-  {
-    "english": "you (singular) play (past)",
-    "garo": "na· playaha"
-  },
-  {
-    "english": "you (singular) play (future)",
-    "garo": "na· playgen"
-  },
-  {
-    "english": "he/she play (present)",
-    "garo": "u playa"
-  },
-  {
-    "english": "he/she play (past)",
-    "garo": "u playaha"
-  },
-  {
-    "english": "he/she play (future)",
-    "garo": "u playgen"
-  },
-  {
-    "english": "we play (present)",
-    "garo": "i playa"
-  },
-  {
-    "english": "we play (past)",
-    "garo": "i playaha"
-  },
-  {
-    "english": "we play (future)",
-    "garo": "i playgen"
-  },
-  {
-    "english": "you (plural) play (present)",
-    "garo": "si playa"
-  },
-  {
-    "english": "you (plural) play (past)",
-    "garo": "si playaha"
-  },
-  {
-    "english": "you (plural) play (future)",
-    "garo": "si playgen"
-  },
-  {
-    "english": "they play (present)",
-    "garo": "bi playa"
-  },
-  {
-    "english": "they play (past)",
-    "garo": "bi playaha"
-  },
-  {
-    "english": "they play (future)",
-    "garo": "bi playgen"
   },
   {
     "english": "I sing (present)",
@@ -12674,66 +12314,6 @@
     "garo": "ang singgen"
   },
   {
-    "english": "you (singular) sing (present)",
-    "garo": "na· singa"
-  },
-  {
-    "english": "you (singular) sing (past)",
-    "garo": "na· singaha"
-  },
-  {
-    "english": "you (singular) sing (future)",
-    "garo": "na· singgen"
-  },
-  {
-    "english": "he/she sing (present)",
-    "garo": "u singa"
-  },
-  {
-    "english": "he/she sing (past)",
-    "garo": "u singaha"
-  },
-  {
-    "english": "he/she sing (future)",
-    "garo": "u singgen"
-  },
-  {
-    "english": "we sing (present)",
-    "garo": "i singa"
-  },
-  {
-    "english": "we sing (past)",
-    "garo": "i singaha"
-  },
-  {
-    "english": "we sing (future)",
-    "garo": "i singgen"
-  },
-  {
-    "english": "you (plural) sing (present)",
-    "garo": "si singa"
-  },
-  {
-    "english": "you (plural) sing (past)",
-    "garo": "si singaha"
-  },
-  {
-    "english": "you (plural) sing (future)",
-    "garo": "si singgen"
-  },
-  {
-    "english": "they sing (present)",
-    "garo": "bi singa"
-  },
-  {
-    "english": "they sing (past)",
-    "garo": "bi singaha"
-  },
-  {
-    "english": "they sing (future)",
-    "garo": "bi singgen"
-  },
-  {
     "english": "I buy (present)",
     "garo": "ang buya"
   },
@@ -12746,66 +12326,6 @@
     "garo": "ang buygen"
   },
   {
-    "english": "you (singular) buy (present)",
-    "garo": "na· buya"
-  },
-  {
-    "english": "you (singular) buy (past)",
-    "garo": "na· buyaha"
-  },
-  {
-    "english": "you (singular) buy (future)",
-    "garo": "na· buygen"
-  },
-  {
-    "english": "he/she buy (present)",
-    "garo": "u buya"
-  },
-  {
-    "english": "he/she buy (past)",
-    "garo": "u buyaha"
-  },
-  {
-    "english": "he/she buy (future)",
-    "garo": "u buygen"
-  },
-  {
-    "english": "we buy (present)",
-    "garo": "i buya"
-  },
-  {
-    "english": "we buy (past)",
-    "garo": "i buyaha"
-  },
-  {
-    "english": "we buy (future)",
-    "garo": "i buygen"
-  },
-  {
-    "english": "you (plural) buy (present)",
-    "garo": "si buya"
-  },
-  {
-    "english": "you (plural) buy (past)",
-    "garo": "si buyaha"
-  },
-  {
-    "english": "you (plural) buy (future)",
-    "garo": "si buygen"
-  },
-  {
-    "english": "they buy (present)",
-    "garo": "bi buya"
-  },
-  {
-    "english": "they buy (past)",
-    "garo": "bi buyaha"
-  },
-  {
-    "english": "they buy (future)",
-    "garo": "bi buygen"
-  },
-  {
     "english": "I sell (present)",
     "garo": "ang sella"
   },
@@ -12816,66 +12336,6 @@
   {
     "english": "I sell (future)",
     "garo": "ang sellgen"
-  },
-  {
-    "english": "you (singular) sell (present)",
-    "garo": "na· sella"
-  },
-  {
-    "english": "you (singular) sell (past)",
-    "garo": "na· sellaha"
-  },
-  {
-    "english": "you (singular) sell (future)",
-    "garo": "na· sellgen"
-  },
-  {
-    "english": "he/she sell (present)",
-    "garo": "u sella"
-  },
-  {
-    "english": "he/she sell (past)",
-    "garo": "u sellaha"
-  },
-  {
-    "english": "he/she sell (future)",
-    "garo": "u sellgen"
-  },
-  {
-    "english": "we sell (present)",
-    "garo": "i sella"
-  },
-  {
-    "english": "we sell (past)",
-    "garo": "i sellaha"
-  },
-  {
-    "english": "we sell (future)",
-    "garo": "i sellgen"
-  },
-  {
-    "english": "you (plural) sell (present)",
-    "garo": "si sella"
-  },
-  {
-    "english": "you (plural) sell (past)",
-    "garo": "si sellaha"
-  },
-  {
-    "english": "you (plural) sell (future)",
-    "garo": "si sellgen"
-  },
-  {
-    "english": "they sell (present)",
-    "garo": "bi sella"
-  },
-  {
-    "english": "they sell (past)",
-    "garo": "bi sellaha"
-  },
-  {
-    "english": "they sell (future)",
-    "garo": "bi sellgen"
   },
   {
     "english": "my person",
