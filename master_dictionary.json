@@ -5964,12 +5964,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "obedient",
-    "garo": "Knachika·gipa",
-    "category": "general",
-    "confidence": "unverified"
-  },
-  {
     "english": "dog bark",
     "garo": "Sing·a",
     "category": "animals",
@@ -17623,11 +17617,11 @@
   },
   {
     "english": "Promise",
-    "garo": "ku·chak·a",
+    "garo": "Ku·chaka",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080).",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080). | NV-242 (2026-11-01, Project Owner 'close all'): spelling aligned to `Ku·chaka` (same lexeme Thangseng gave for respond / confess, NV-234); `Ka·ra chaka` stays the primary promise (NV-080).",
     "confidence": "verified_high"
   },
   {
