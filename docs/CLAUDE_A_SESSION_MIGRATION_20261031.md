@@ -54,3 +54,9 @@ Final commit hash is in the closing message; see it for hashes, verified after t
 
 ## Exact next step
 New conversation: paste this file, clone with a fresh PAT (scrub it from .git/config), git fetch, verify HEAD, read .ai/SESSION_BOOTSTRAP.md then .ai/WORKSTATE.yaml, run the gate (install js-yaml with --no-save for conformance), then take Owner words: the four suspended batch-1 rows (knowledge, teach, walking, help), then the 71 multi-verified keys in batches of 10 (keep-word given, duplicates deleted). Next free NV: 243.
+
+## Addendum 2026-11-01: NV-243 (batch-1 closure, Owner relaying Thangseng)
+- help = dakchaka (verified row stays; suspended `chak·a` row deleted). `to help | Chaka` (unverified) not ruled, untouched.
+- walking = re·enga (verified row stays; suspended `Re·ang·enga` row deleted).
+- teach = Sikie for every teach form (Owner). Replaced `Skie on·a` (verified, master row + garo_dictionary x2) and suspended `Sikie on·a`; phrase_maps pin updated. `teacher = Skigipa` not ruled, untouched (flag: spelling vs Sikie).
+- STILL OPEN from batch 1: knowledge (Gni / Ma·siani superseded; shipped U·iani ba ma·siani). Next free NV: 244.

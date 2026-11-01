@@ -350,7 +350,7 @@ export const PHRASE_MAPS = {
   'read': 'poraia',
   'write': 'Sea',
   'learn': 'ski·a',
-  'teach': 'Skie on·a',
+  'teach': 'Sikie',
   'man': 'Me·asa',
   'woman': 'Me·chik',
   // FIX (2026-09-08, Claude B, per AGENT_A_B_C_LANGUAGE_ENGINEERING_

@@ -5596,13 +5596,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "teach",
-    "garo": "Sikie on·a",
-    "category": "general",
-    "confidence": "superseded",
-    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile."
-  },
-  {
     "english": "traditional festival",
     "garo": "Wangala",
     "category": "general",
@@ -13890,13 +13883,6 @@
     "garo": "Ki·tap",
     "category": "education",
     "confidence": "unverified"
-  },
-  {
-    "english": "walking",
-    "garo": "Re·ang·enga",
-    "category": "general",
-    "confidence": "superseded",
-    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile. Note: 'Re·ang·enga' is the continuous form of the established re·/re·ang='go' root ('going'), not 'walking' — likely a prior mis-gloss, not a true synonym."
   },
   {
     "english": "sitting",
@@ -30068,15 +30054,6 @@
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
     "confidence": "unverified"
-  },
-  {
-    "english": "help",
-    "garo": "chak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "SUPERSEDED — NV-095 (2026-08-23, Thangseng final reconciliation relay): native gave a different final value for this English key; retained per citation discipline, not deleted. Not authoritative for compile.",
-    "confidence": "superseded"
   },
   {
     "english": "herb",
@@ -69616,9 +69593,9 @@
   },
   {
     "english": "teach",
-    "garo": "Skie on·a",
+    "garo": "Sikie",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-23 (NV-095, Thangseng final reconciliation relay via Project Owner: \"CLAUDE A — FINAL NATIVE DATA RECONCILIATION\")",
+    "notes": "VERIFIED/HIGH — NV-243 (2026-11-01): Project Owner directive relaying Thangseng: teach = Sikie (replaces Skie on·a and suspended Sikie on·a; rows deleted per delete-on-replace rule).",
     "confidence": "verified_high"
   },
   {
