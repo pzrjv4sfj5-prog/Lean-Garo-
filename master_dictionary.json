@@ -16544,20 +16544,20 @@
   },
   {
     "english": "Leaf",
-    "garo": "bi·jak",
+    "garo": "bijak",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080).",
+    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080). | NV-238 (2026-10-31, Thangseng word relayed by Project Owner in chat): leaf = `bol bijak` / `bijak`, no raka; spelling updated.",
     "confidence": "verified_high"
   },
   {
     "english": "Leaf",
-    "garo": "bol·bi·jak",
+    "garo": "bol bijak",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH (alternate) — reopened and corrected by NV-145 (2026-09-06 evening, direct Thangseng relay): this same-session citation confirms 'bol bijak' (tree+leaf compound) as a genuine alternate form for singular 'leaf', existing alongside 'bijak' rather than being a rejected candidate. 'bi·jak'/'bijak' stays primary per this same relay. Supersedes this row's prior NV-080 framing ('not selected'), which is now understood to have been a primary-selection choice, not a rejection of validity.",
+    "notes": "variant/VERIFIED/HIGH (alternate) — reopened and corrected by NV-145 (2026-09-06 evening, direct Thangseng relay): this same-session citation confirms 'bol bijak' (tree+leaf compound) as a genuine alternate form for singular 'leaf', existing alongside 'bijak' rather than being a rejected candidate. 'bi·jak'/'bijak' stays primary per this same relay. Supersedes this row's prior NV-080 framing ('not selected'), which is now understood to have been a primary-selection choice, not a rejection of validity. | NV-238 (2026-10-31, Thangseng word relayed by Project Owner in chat): leaf = `bol bijak` / `bijak`, no raka; spelling updated.",
     "confidence": "verified_high"
   },
   {
