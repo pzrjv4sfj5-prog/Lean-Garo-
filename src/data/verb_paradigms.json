@@ -3137,7 +3137,7 @@
     "continuous": "hai·enga",
     "past": "hai·aha",
     "future": "hai·gen",
-    "negative": "hai·ja",
+    "negative": "uija",
     "negative_future": "hai·jawa",
     "command": "hai·bo",
     "negative_command": "hai·nabe",
@@ -3148,7 +3148,7 @@
     "continuous": "derived",
     "past": "derived",
     "future": "derived",
-    "negative": "derived",
+    "negative": "pinned",
     "negative_future": "derived",
     "command": "derived",
     "negative_command": "derived",
@@ -5340,7 +5340,7 @@
     "future": "dontonggen",
     "negative": "dontongja",
     "negative_future": "dontongjawa",
-    "command": "dontongbo",
+    "command": "sengbo",
     "negative_command": "dontongnabe",
     "infinitive": "dontongna"
    },
@@ -5351,7 +5351,7 @@
     "future": "derived",
     "negative": "derived",
     "negative_future": "derived",
-    "command": "derived",
+    "command": "pinned",
     "negative_command": "derived",
     "infinitive": "derived"
    }

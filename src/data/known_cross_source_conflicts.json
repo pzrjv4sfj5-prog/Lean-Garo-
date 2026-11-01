@@ -58,6 +58,7 @@
   "corrections:happy",
   "corrections:have you eaten",
   "corrections:he has eaten",
+  "corrections:help!",
   "corrections:home",
   "corrections:how",
   "corrections:how are you",
@@ -93,6 +94,7 @@
   "corrections:let's play",
   "corrections:let's sit",
   "corrections:let's work",
+  "corrections:like",
   "corrections:litchi",
   "corrections:live",
   "corrections:living",
@@ -156,7 +158,6 @@
   "corrections:very",
   "corrections:wait",
   "corrections:walking",
-  "corrections:like",
   "corrections:watch",
   "corrections:well",
   "corrections:what is your name",
@@ -221,6 +222,7 @@
   "phrase_maps:outside",
   "phrase_maps:quick",
   "phrase_maps:rat",
+  "phrase_maps:really",
   "phrase_maps:red",
   "phrase_maps:run",
   "phrase_maps:see",
@@ -238,6 +240,7 @@
   "phrase_maps:teach",
   "phrase_maps:thank you very much",
   "phrase_maps:tiger",
+  "phrase_maps:to walk",
   "phrase_maps:two",
   "phrase_maps:wait",
   "phrase_maps:wash",
@@ -251,7 +254,5 @@
   "phrase_maps:write",
   "phrase_maps:yellow",
   "phrase_maps:you",
-  "phrase_maps:you did well",
-  "phrase_maps:to walk",
-  "phrase_maps:really"
+  "phrase_maps:you did well"
 ]
