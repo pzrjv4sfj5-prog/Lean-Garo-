@@ -39,7 +39,7 @@ Checked master, final_entries, garo_dictionary, corrections, phrase_maps, purpos
 - Over-derived? Composed rows are labelled by composition (Poraiahama/Poraijokma/Poraiengama, Anga asongnama?, imperative-object-ko).
 
 ## Open items
-- Spelling alignment: Leaf RESOLVED (NV-238, 2026-10-31, Owner relaying Thangseng): leaf = `bol bijak` / `bijak`, no raka; vegetables `sam·bi·jak` (unverified) still has the old dot, unruled. Promise = ku·chak·a vs Ku·chaka; obedient = Knachika·gipa (from old listen); ripe = min·a vs minaha. Need Owner/Thangseng spelling ruling.
+- Spelling alignment: Leaf RESOLVED (NV-238, 2026-10-31, Owner relaying Thangseng): leaf = `bol bijak` / `bijak`, no raka; curry = `bi·jak` WITH raka (NV-239, the raka marks the difference); vegetables `sam·bi·jak` (unverified) still has the old dot, unruled. Promise = ku·chak·a vs Ku·chaka; obedient = Knachika·gipa (from old listen); ripe = min·a vs minaha. Need Owner/Thangseng spelling ruling.
 - Batch 1 verification, 4 of 10 still suspended: knowledge, teach, walking, help; ~1100 older suspended rows (29 from NV-095).
 - 71 keys with several verified words (docs/CONFLICT_RESOLUTION_NV233.md), 720 keys with no verified word, 26 human-noted unverified rows, cross-table bought / heard / standing / sitting.
 - Continuous form of Kinachaka; bare `dried` primary (tipjok vs ran·aha); `cha·manjok` not restored; purpose form of dance; vocabulary gaps draw / wake / become / freeze; `ka·a soa`, hit, break, D's OCR flags unchanged.
