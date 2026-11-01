@@ -1,4 +1,4 @@
-// NV-228 follow-up (Claude B, 2026-10-31). Pinned corrections are exempt from neutraliseMidCapitals,
+// NV-228 follow-up (Claude B, 2026-11-01). Pinned corrections are exempt from neutraliseMidCapitals,
 // so the `i will cook` / `she will cook` pins carried a mid-sentence capital (`Song·gen`). Pins lowercased (Owner ruling: capitals neutralised).
 import test from 'node:test';
 import assert from 'node:assert/strict';
