@@ -23,7 +23,7 @@ Session start bdedfb2. Pushed (each verified HEAD == origin/main): 511f399/a7750
 2. `listen` continuous / third person is assembled as `Anga Kinachaka` (no native form): need Thangseng's continuous form of Kinachaka.
 3. `i stopped going` = `Anga Re·angjaha` is Rule 17 (-jaha discontinuation), not a bug; homograph with native did-not-go for `go` only.
 4. `read` family uses poraia via paradigm; confirm paradigm regeneration keeps `poraibo` / `porainabe`.
-5. NV numbers I used: 226, 227, 229-237 (B took 225, 228). Check the counter before taking one. Next free: 241.
+5. NV numbers I used: 226, 227, 229-237 (B took 225, 228). Check the counter before taking one. Next free: 242. NV-241 (2026-11-01): re·jengjeng re·jokjok = literal coming-and-going, a taunt (Thangseng).
 6. Verified live at close: study poraia, read poraia, to study poraina, i want to study Anga poraina ska, read the book Ki·tapko poraibo, listen Knabo, to listen Kinachaka, alive tanga, where do you live Na·a bano donga?, food is nice Cha·ani toa.
 
 ## Rule-generalization check (Governance §5)

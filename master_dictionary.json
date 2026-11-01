@@ -77438,5 +77438,32 @@
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH — NV-240 (2026-10-31, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). variant with n.",
     "confidence": "verified_high"
+  },
+  {
+    "english": "coming and going (taunting)",
+    "garo": "re·jengjeng re·jokjok",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-241 (2026-11-01, Thangseng phrase relayed by Project Owner in chat, raw message not on file; period normalised to raka). Literal way of saying 'coming and going'; used when taunting someone (idiomatic taunt, not the neutral sense). ",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "come and go (taunting)",
+    "garo": "re·jengjeng re·jokjok",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-241 (2026-11-01, Thangseng phrase relayed by Project Owner in chat, raw message not on file; period normalised to raka). Literal way of saying 'coming and going'; used when taunting someone (idiomatic taunt, not the neutral sense). ",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "taunt (coming and going)",
+    "garo": "re·jengjeng re·jokjok",
+    "category": "phrases",
+    "pos": null,
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-241 (2026-11-01, Thangseng phrase relayed by Project Owner in chat, raw message not on file; period normalised to raka). Literal way of saying 'coming and going'; used when taunting someone (idiomatic taunt, not the neutral sense). ",
+    "confidence": "verified_high"
   }
 ]
