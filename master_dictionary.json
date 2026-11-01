@@ -523,13 +523,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "deer",
-    "garo": "Matchok",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'deer' has VERIFIED/HIGH form(s) ['mat·chok']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
     "english": "pig",
     "garo": "Wak",
     "category": "animals",
@@ -561,13 +554,6 @@
     "garo": "Chipu",
     "category": "animals",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'snake' has VERIFIED/HIGH form(s) ['chip·pu']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "rat",
-    "garo": "Mese",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'rat' has VERIFIED/HIGH form(s) ['me·se']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
     "confidence": "superseded"
   },
   {
@@ -11324,12 +11310,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "the deer",
-    "garo": "Matchok",
-    "category": "general",
-    "confidence": "unverified"
-  },
-  {
     "english": "the pig",
     "garo": "Wak",
     "category": "animals",
@@ -11357,12 +11337,6 @@
     "english": "the snake",
     "garo": "Chipu",
     "category": "animals",
-    "confidence": "unverified"
-  },
-  {
-    "english": "the rat",
-    "garo": "Mese",
-    "category": "general",
     "confidence": "unverified"
   },
   {
@@ -15195,15 +15169,6 @@
     "garo": "ting·a",
     "pos": null,
     "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Deer",
-    "garo": "mat·chok",
-    "pos": null,
-    "category": "animals",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH",
     "confidence": "verified_high"
@@ -44214,21 +44179,12 @@
     "confidence": "unverified"
   },
   {
-    "english": "vegetables",
-    "garo": "sam·bi·jak",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "vegetable",
-    "garo": "mesu",
+    "garo": "me·su",
     "pos": null,
     "category": "food",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-16, chat): 'vegetable'=mesu. Fills the dictionary-key mismatch flagged in docs/CLAUDE_B_SESSION_MIGRATION_20260912.md and docs/CLAUDE_B_HANDOFF_20260911_number_classifier_runtime.md (the singular 'vegetable' had no dictionary entry at all -- only the plural 'vegetables'='sam·bi·jak' existed, so the generic singularizer produced a key that fell through to a weak fuzzy match). Distinct headword from 'vegetables', not a raka/case variant of it -- both are retained independently, matching the project's existing singular-vs-collective pattern elsewhere in the corpus.",
+    "notes": "VERIFIED/HIGH — Project Owner directive (2026-09-16, chat): 'vegetable'=mesu. Fills the dictionary-key mismatch flagged in docs/CLAUDE_B_SESSION_MIGRATION_20260912.md and docs/CLAUDE_B_HANDOFF_20260911_number_classifier_runtime.md (the singular 'vegetable' had no dictionary entry at all -- only the plural 'vegetables'='sam·bi·jak' existed, so the generic singularizer produced a key that fell through to a weak fuzzy match). Distinct headword from 'vegetables', not a raka/case variant of it -- both are retained independently, matching the project's existing singular-vs-collective pattern elsewhere in the corpus. | NV-240 (2026-10-31, Thangseng spelling relayed by Project Owner in chat): `me·su` with raka.",
     "confidence": "verified_high"
   },
   {
@@ -77382,6 +77338,105 @@
     "pos": "v.",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): to respond to a call.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "deer",
+    "garo": "mese",
+    "category": "words",
+    "pos": "n.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-240 (2026-10-31, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). `mese(n)`: final n optional.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "deer",
+    "garo": "mesen",
+    "category": "words",
+    "pos": "n.",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-240 (2026-10-31, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). `mese(n)`: variant with n.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "the deer",
+    "garo": "mese",
+    "category": "words",
+    "pos": "n.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-240 (2026-10-31, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). ",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "medicinal leaf",
+    "garo": "sam·bi·jak",
+    "category": "words",
+    "pos": "n.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-240 (2026-10-31, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). Not `vegetables` (that is `me·su`).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "vegetables",
+    "garo": "me·su",
+    "category": "words",
+    "pos": "n.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-240 (2026-10-31, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). Thangseng gave `vegetable` = `me·su`; plural headword shares the form.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "bad day",
+    "garo": "sal namja",
+    "category": "words",
+    "pos": "n.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-240 (2026-10-31, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). Also bad weather.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "bad weather",
+    "garo": "sal namja",
+    "category": "words",
+    "pos": "n.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-240 (2026-10-31, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). Also bad day.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "good day",
+    "garo": "sal namma",
+    "category": "words",
+    "pos": "n.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-240 (2026-10-31, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). `sal namma(n)`: final n optional. Also good weather.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "good day",
+    "garo": "sal namman",
+    "category": "words",
+    "pos": "n.",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-240 (2026-10-31, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). variant with n.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "good weather",
+    "garo": "sal namma",
+    "category": "words",
+    "pos": "n.",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-240 (2026-10-31, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). `sal namma(n)`: final n optional. Also good day.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "good weather",
+    "garo": "sal namman",
+    "category": "words",
+    "pos": "n.",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-240 (2026-10-31, Thangseng words relayed by Project Owner in chat, raw message not on file; raka-normalised). variant with n.",
     "confidence": "verified_high"
   }
 ]

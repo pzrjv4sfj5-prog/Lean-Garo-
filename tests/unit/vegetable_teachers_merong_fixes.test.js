@@ -33,13 +33,13 @@ import { translate } from '../../src/translationEngine.js';
 
 test('translate: "vegetable" now resolves to its own verified headword, not a fuzzy match', async () => {
   const veg = await translate('vegetable');
-  assert.equal(veg.garo, 'mesu');
+  assert.equal(veg.garo, 'me·su');
   assert.notEqual(veg.method, 'fuzzy');
 });
 
 test('regression guard: "vegetables" (plural) is unaffected by the vegetable fix', async () => {
   const vegs = await translate('vegetables');
-  assert.equal(vegs.garo, 'sam·bi·jak');
+  assert.equal(vegs.garo, 'me·su');
 });
 
 test('translate: "two teachers" now matches the verified "two teacher" classifier form', async () => {

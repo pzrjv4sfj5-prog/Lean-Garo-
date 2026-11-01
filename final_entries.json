@@ -2640,22 +2640,6 @@
     "notes": "variant/VERIFIED/HIGH"
   },
   {
-    "english": "Deer",
-    "garo": "Matchok",
-    "pos": null,
-    "category": "animals",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:mat-chok"
-  },
-  {
-    "english": "Deer",
-    "garo": "mat·chok",
-    "pos": null,
-    "category": "animals",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
     "english": "Deficiency",
     "garo": "Chu·onggijani",
     "pos": null,
@@ -8774,14 +8758,6 @@
     "category": "phrases",
     "classifier": null,
     "notes": "VERIFIED/HIGH"
-  },
-  {
-    "english": "Rat",
-    "garo": "Mese",
-    "pos": null,
-    "category": "animals",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:me-se"
   },
   {
     "english": "Rat",
@@ -35540,14 +35516,6 @@
     "garo": "sak",
     "pos": null,
     "category": "food",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "vegetables",
-    "garo": "sam·bi·jak",
-    "pos": null,
-    "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH"
   },

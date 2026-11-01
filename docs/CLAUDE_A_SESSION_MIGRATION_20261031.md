@@ -15,6 +15,7 @@ Session start bdedfb2. Pushed (each verified HEAD == origin/main): 511f399/a7750
 - STANDING RULE (Owner, 2026-10-30): when a new correct word is given, DELETE the replaced row (no suspending). Old superseded rows stay until Thangseng verifies them (~1100; do not purge).
 - Verification batches: nipple Sok kute, playing kal·enga, cooked Song·aha, cooking Song·enga; NV-231 keep-list (curry bijak, cut Den·a, daily Salanti, dance Chroka, dangerous namen kenbegnigipa, darkness Andalani, dead sigimin / Manggisi, deceive Tol·napa, doctor Sam on·gipa, down Ka·ma, dried tipjok / ran·aha, eaten cha·jok, few On·titi, goat Do·bok); duplicates deleted.
 - NV-232: cha·jok and cha·manaha both retained, both simple past (Owner). NV-233: 138 unverified dup rows deleted where one verified word exists. NV-234: Kinachaka = to listen / heed advice; listen (imperative) Knabo / Knatimbo; Ku·chaka = respond (to a call) / confess. NV-237: 162 legacy OCR `<pronoun> <verb> (<tense>)` rows deleted (na· runa etc.).
+- NV-238 to NV-240 (after the first close commit, Owner relaying Thangseng): leaf = bijak / bol bijak (no raka), curry = bi·jak (raka marks the difference), deer = mese / mesen (Matchok and rat=Mese rows deleted; rat = me·se kept, phrase_maps rat pin fixed), vegetable(s) = me·su, medicinal leaf = sam·bi·jak, bad day/weather = sal namja, good day/weather = sal namma / sal namman. Next free NV 241.
 - Close fixes: final_entries read po·ri·a, live tang·a, living git·tang·a deleted; Doctor / Sam on·gipa in two legacy files.
 
 ## Runtime Handoff (Claude B)
@@ -22,7 +23,7 @@ Session start bdedfb2. Pushed (each verified HEAD == origin/main): 511f399/a7750
 2. `listen` continuous / third person is assembled as `Anga Kinachaka` (no native form): need Thangseng's continuous form of Kinachaka.
 3. `i stopped going` = `Anga Re·angjaha` is Rule 17 (-jaha discontinuation), not a bug; homograph with native did-not-go for `go` only.
 4. `read` family uses poraia via paradigm; confirm paradigm regeneration keeps `poraibo` / `porainabe`.
-5. NV numbers I used: 226, 227, 229-237 (B took 225, 228). Check the counter before taking one. Next free: 238.
+5. NV numbers I used: 226, 227, 229-237 (B took 225, 228). Check the counter before taking one. Next free: 241.
 6. Verified live at close: study poraia, read poraia, to study poraina, i want to study Anga poraina ska, read the book Ki·tapko poraibo, listen Knabo, to listen Kinachaka, alive tanga, where do you live Na·a bano donga?, food is nice Cha·ani toa.
 
 ## Rule-generalization check (Governance §5)
@@ -39,7 +40,7 @@ Checked master, final_entries, garo_dictionary, corrections, phrase_maps, purpos
 - Over-derived? Composed rows are labelled by composition (Poraiahama/Poraijokma/Poraiengama, Anga asongnama?, imperative-object-ko).
 
 ## Open items
-- Spelling alignment: Leaf RESOLVED (NV-238, 2026-10-31, Owner relaying Thangseng): leaf = `bol bijak` / `bijak`, no raka; curry = `bi·jak` WITH raka (NV-239, the raka marks the difference); vegetables `sam·bi·jak` (unverified) still has the old dot, unruled. Promise = ku·chak·a vs Ku·chaka; obedient = Knachika·gipa (from old listen); ripe = min·a vs minaha. Need Owner/Thangseng spelling ruling.
+- Spelling alignment: Leaf RESOLVED (NV-238, 2026-10-31, Owner relaying Thangseng): leaf = `bol bijak` / `bijak`, no raka; curry = `bi·jak` WITH raka (NV-239, the raka marks the difference); vegetables RESOLVED (NV-240): vegetable(s) = `me·su`, `sam·bi·jak` = medicinal leaf. Promise = ku·chak·a vs Ku·chaka; obedient = Knachika·gipa (from old listen); ripe = min·a vs minaha. Need Owner/Thangseng spelling ruling.
 - Batch 1 verification, 4 of 10 still suspended: knowledge, teach, walking, help; ~1100 older suspended rows (29 from NV-095).
 - 71 keys with several verified words (docs/CONFLICT_RESOLUTION_NV233.md), 720 keys with no verified word, 26 human-noted unverified rows, cross-table bought / heard / standing / sitting.
 - Continuous form of Kinachaka; bare `dried` primary (tipjok vs ran·aha); `cha·manjok` not restored; purpose form of dance; vocabulary gaps draw / wake / become / freeze; `ka·a soa`, hit, break, D's OCR flags unchanged.

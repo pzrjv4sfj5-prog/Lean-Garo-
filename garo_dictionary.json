@@ -336,10 +336,6 @@
     "garo": "Matcha"
   },
   {
-    "english": "deer",
-    "garo": "Matchok"
-  },
-  {
     "english": "pig",
     "garo": "Wak"
   },
@@ -358,10 +354,6 @@
   {
     "english": "snake",
     "garo": "Chipu"
-  },
-  {
-    "english": "rat",
-    "garo": "Mese"
   },
   {
     "english": "buffalo",
@@ -4928,10 +4920,6 @@
     "garo": "Matcha"
   },
   {
-    "english": "Deer",
-    "garo": "Matchok"
-  },
-  {
     "english": "Pig",
     "garo": "Wak"
   },
@@ -4950,10 +4938,6 @@
   {
     "english": "Snake",
     "garo": "Chipu"
-  },
-  {
-    "english": "Rat",
-    "garo": "Mese"
   },
   {
     "english": "Buffalo",
@@ -14540,10 +14524,6 @@
     "garo": "Matcha"
   },
   {
-    "english": "the deer",
-    "garo": "Matchok"
-  },
-  {
     "english": "the pig",
     "garo": "Wak"
   },
@@ -14562,10 +14542,6 @@
   {
     "english": "the snake",
     "garo": "Chipu"
-  },
-  {
-    "english": "the rat",
-    "garo": "Mese"
   },
   {
     "english": "the buffalo",
