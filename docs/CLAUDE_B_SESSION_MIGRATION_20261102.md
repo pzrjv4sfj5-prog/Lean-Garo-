@@ -38,3 +38,11 @@ Revoke the PAT, issue a new one; fetch, rebase, rerun the gate, push; take Owner
 
 ## Addendum (8pm Thangseng answers)
 Wake up! = Mikrakbo, He is waking up. = Ua mikrakbaengaha, He woke up. = Ua mikrakaha, Come in! = Ning·chi re·babo (confirmed), Get up! = Chakatbo (confirmed): pinned, tests added, gate unit 1156/1156, sweep 15743/0. Claude A: replace master `wake up` = Chakatboha with Mikrakbo and drop baseline `corrections:wake up`. Ask Thangseng next: I woke up. (past), He wakes up. (present), He will wake up. (future), He did not wake up. (past negative), and whether the continuous suffix is verb-specific (katangenga vs mikrakengaha).
+
+## Addendum 2 (NV-253, Claude B; A's NV-243..252 taken, next free 254)
+- Engine, wh-question peel-and-replace (src/translationEngine.js, `translate` + `peelWhQuestion`): runs ONLY where the first-match cascade would end on the `sov-assembly` fallback, so every earlier rule keeps priority. Peels why/where/when/how (adverbial wh-words), translates the remaining clause (`<subj> did|do|does|will [not] ...`) through the full pipeline, puts the Garo wh-word back, and adds `?` when the English had it. Positive past wh-questions get the NV-194 bare -a. what/who are NOT peeled (argument wh-words: the clause is missing a noun phrase). Positive `will` questions not ruled, not peeled. DERIVED (wh-first, time word after the wh-word); needs Thangseng on `mijalo` placement. Tentative test pin: `Why did you not eat those vegetables yesterday?` = `Maina mijalo na·a ua me·surangko cha·ja?`.
+- Trace: `translate(input, {trace:true})` adds `trace {input, path, route, method, confidence, derived, overrides}`; path names the real cascade step (or the peel steps), not invented layers. Default output unchanged.
+- Fixed side bug: `When did you not eat those vegetables?` used to drop `Basako` entirely.
+- Data: native wake-up forms carried to I/you/we/they/it (person unmarked). Future/present/negative wake-up held for Thangseng.
+- Still open: `What did you not eat?` (`Maia? na·a cha·ja`, argument wh), `Why are you not eating ...?` (continuous wh), positive future wh.
+- Gate: unit 1163/1163, sweep 15743/0, conformance 79/112 (0 unbaselined).

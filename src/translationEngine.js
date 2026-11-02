@@ -299,12 +299,49 @@ function neutraliseMidCapitals(result, input) {
   }).join(' ');
   return out === result.garo ? result : { ...result, garo: out };
 }
-export async function translate(input) {
-  // NV-235 (Claude A, 2026-10-30): null/undefined/objects were stringified ("undefined" fuzzy-matched to `kas`). Only strings and numbers are translatable; anything else is empty input.
+export async function translate(input, opts = {}) {
+  // NV-235 (Claude A, 2026-10-30): null/undefined/objects were stringified ("undefined" fuzzy-matched to `kas`). Only strings and numbers are translatable; anything else
   if (input === null || input === undefined || (typeof input !== 'string' && typeof input !== 'number')) {
     return { garo: '', method: 'empty', confidence: 0 };
   }
-  return neutraliseMidCapitals(await translateRaw(input), input);
+  let result = neutraliseMidCapitals(await translateRaw(input), input);
+  const path = [`cascade:${result.method}`];
+  // NV-253 (Claude B, 2026-11-02): wh-question "peel and replace". The first-match cascade lands on the ordering-naive `sov-assembly` fallback for wh-questions
+  // (grammar-assembly cannot parse them), which dropped demonstratives, -rang, -ko, -o and sometimes the wh-word itself. Only when the cascade would end on that
+  // fallback do we peel the wh-word, send the declarative through the full pipeline and put the wh-word back, so every earlier rule keeps priority.
+  if (result.method === 'sov-assembly') {
+    const peeled = await peelWhQuestion(String(input));
+    if (peeled) { result = neutraliseMidCapitals(peeled.result, input); path.length = 0; path.push(...peeled.path); }
+  }
+  if (opts && opts.trace) {
+    const notes = [];
+    if (/\b(?:those|these)\b/i.test(String(input)) && /\b(?:ua|ia)\b/i.test(result.garo)) notes.push('demonstrative retained (NV-219)');
+    if (/mijalo|da\u00b7alo/i.test(result.garo)) notes.push('time adverb takes -o (event sentence)');
+    return { ...result, trace: { input: String(input), path, route: path.join(' -> '), method: result.method, confidence: result.confidence, derived: !!result.derived, overrides: notes } };
+  }
+  return result;
+}
+// Wh-words that are ADVERBIAL (they add a slot to a complete clause), so the clause can be peeled and translated as a declarative.
+// what/who are ARGUMENT wh-words (they replace a noun phrase that is then missing from the clause), so they are NOT peeled.
+const PEELABLE_WH = new Set(['why', 'where', 'when', 'how']);
+async function peelWhQuestion(input) {
+  const m = input.trim().match(/^(why|where|when|how)\s+(did|do|does|will)\s+((?:(?:the|a|an|my|your|his|her|our|their)\s+)?[a-z]+)\s+(not\s+)?(.+?)\s*(\?)?\s*$/i);
+  if (!m) return null;
+  const wh = m[1].toLowerCase(); const aux = m[2].toLowerCase(); const neg = !!m[4];
+  if (!PEELABLE_WH.has(wh)) return null;
+  if (aux === 'will' && !neg) return null; // the positive future wh-question form is not ruled: no guess
+  const whGaro = lookupGaro(wh);
+  if (!whGaro || typeof whGaro !== 'string' || /[\[\]?,;()/]|UNKNOWN/.test(whGaro) || /\s/.test(whGaro.trim())) return null;
+  const decl = `${m[3]} ${aux}${neg ? ' not' : ''} ${m[5]}.`;
+  const inner = await translate(decl, { trace: true });
+  if (!inner || inner.method !== 'grammar-assembly' || typeof inner.garo !== 'string' || inner.garo.includes('[UNKNOWN]')) return null;
+  let body = inner.garo.replace(/[.?!]+$/, '');
+  const path = [`[wh-peel: ${wh} -> ${whGaro}]`, `[grammar-assembly: "${decl}"]`];
+  // NV-194 Contextual Past Wh-Question rule: a positive past wh-question takes the bare -a, not the declarative -aha/-ha.
+  if (aux === 'did' && !neg && /ha$/i.test(body)) { body = body.replace(/ha$/i, ''); path.push('[contextual: past wh-question bare -a (NV-194)]'); }
+  const wg = whGaro.trim().charAt(0).toUpperCase() + whGaro.trim().slice(1);
+  path.push('[reassemble: wh-word + clause]');
+  return { path, result: { garo: `${wg} ${body.charAt(0).toLowerCase()}${body.slice(1)}${m[6] ? '?' : ''}`, method: 'wh-peel-assembly', confidence: 0.7, derived: true } };
 }
 async function translateRaw(input) {
   // NV-181 (PO, 2026-10-21): 'him/her' routes to the established human object pronouns (same as 'him'); the slash otherwise leaves [UNKNOWN].

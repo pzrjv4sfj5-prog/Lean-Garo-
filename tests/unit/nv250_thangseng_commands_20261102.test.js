@@ -68,3 +68,38 @@ test('NV-250: final baseline u·ija: every know negative and the pinned `i do no
   for (const s of ['I do not know', "I don't know", 'I dont know', 'I do not understand']) assert.equal(await g(s), 'Anga u·ija', s);
   assert.equal(await g("I don't understand"), 'Anga man·ja');
 });
+// ---- NV-253 (Claude B): other subjects of the two native wake-up forms; negated why-question composition ----
+test('NV-253: wake-up native forms carry over to every subject (Garo verbs carry no person marking)', async () => {
+  assert.equal(await g('I am waking up.'), 'Anga mikrakbaengaha');
+  assert.equal(await g('You woke up.'), 'Na·a mikrakaha');
+  assert.equal(await g('They woke up.'), 'Uamang mikrakaha');
+});
+test('NV-253 TENTATIVE PIN (pending Thangseng on time-word placement): negated why-question keeps ua / -rang / -ko / mijalo and no longer drops to sov-assembly', async () => {
+  const r = await translate('Why did you not eat those vegetables yesterday?');
+  assert.equal(r.garo, 'Maina mijalo na·a ua me·surangko cha·ja?');
+  assert.notEqual(r.method, 'sov-assembly');
+  assert.equal(r.method, 'wh-peel-assembly');
+});
+test('NV-253: peel-and-replace covers why/where/when/how (the old fallback even dropped `when`)', async () => {
+  assert.equal(await g('When did you not eat those vegetables?'), 'Basako na·a ua me·surangko cha·ja?');
+  assert.equal(await g('Where did you not go?'), 'Bano na·a re·angja?');
+  assert.equal(await g('How did you not eat those vegetables?'), 'Maidake na·a ua me·surangko cha·ja?');
+  assert.equal(await g('Why will you not eat those vegetables?'), 'Maina na·a ua me·surangko cha·jawa?');
+});
+test('NV-253: positive past wh-question gets the declarative morphology plus the NV-194 bare -a (derived)', async () => {
+  assert.equal(await g('Why did you eat those vegetables yesterday?'), 'Maina mijalo na·a ua me·surangko cha·a?');
+  assert.equal(await g('Why do you eat those vegetables?'), 'Maina na·a ua me·surangko cha·a?');
+});
+test('NV-253: earlier cascade steps keep priority; argument wh-words (what/who) are not peeled', async () => {
+  assert.equal((await translate('Why did you eat?')).method, 'exact-phrase');
+  assert.notEqual((await translate('What did you not eat?')).method, 'wh-peel-assembly');
+});
+test('NV-253: translate(input, {trace:true}) reports the routing path, method, confidence and overrides; default output has no trace', async () => {
+  const r = await translate('Why did you not eat those vegetables yesterday?', { trace: true });
+  assert.equal(r.trace.method, 'wh-peel-assembly');
+  assert.equal(r.trace.confidence, 0.7);
+  assert.match(r.trace.route, /\[wh-peel: why -> Maina\] -> \[grammar-assembly: "you did not eat those vegetables yesterday\."\] -> \[reassemble/);
+  assert.ok(r.trace.overrides.includes('demonstrative retained (NV-219)'));
+  assert.equal((await translate('Drink!', { trace: true })).trace.route, 'cascade:' + (await translate('Drink!')).method);
+  assert.equal((await translate('Drink!')).trace, undefined);
+});
