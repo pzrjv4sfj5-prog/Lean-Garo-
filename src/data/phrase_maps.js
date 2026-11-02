@@ -216,6 +216,7 @@ export const PHRASE_MAPS = {
   'down': 'Ka·ma',
   'left': 'Jak·asi',
   'right': 'Jak·ra',
+  'that is right': 'kra·a',
   'inside': 'Ning·o',
   'outside': 'A·pal',
   'far': 'Chel·a',

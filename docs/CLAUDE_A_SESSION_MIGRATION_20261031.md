@@ -71,3 +71,6 @@ New conversation: paste this file, clone with a fresh PAT (scrub it from .git/co
 
 ## Addendum 2026-11-01d: NV-245
 - i am fine = Anga namenga (Owner, primary; engine already shipped it via corrections). Added non-variant verified row so compiled_dict agrees; `Anga namengava.` kept as verified variant. Next free NV: 246.
+
+## Addendum 2026-11-01e: NV-247 (renumbered from 246: Claude B took NV-246)
+- `that is right` pinned to kra·a (correct sense; Owner). teacher = Skigipa confirmed as-is (verified row untouched). Owner also wrote "teach is Skia(n)" in the same message: ambiguous vs NV-243 teach = Sikie, NOT applied, awaiting clarification. Next free NV: 248.
