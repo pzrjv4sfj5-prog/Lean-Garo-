@@ -34,3 +34,11 @@ Held: (1) Run fast (which form). (2) Is bare habitual object a rule beyond rice/
 - `Come in!` ships the dictionary row `Ning·chi re·babo` (unverified); `Wake up!` ships `Chakatboha` (weak/OCR row, its `-boha` ending does not fit the -bo command). Both leak-free but NOT confirmed.
 - `I do not understand` spelling updated to `Anga u·ija` (dotted, same token as the know negative); the master/phrase_map row `i don't understand` = `Anga man·ja` is a different Garo word and was left alone: Owner, which is right?
 - HELD, not invented: `He is waking up.` (present continuous), `He woke up.` (past): no verified stem for `wake up`; still shows `[UNKNOWN]ko kosak`. Thangseng list: Wake up! (imperative) / He is waking up. (present continuous) / He woke up. (past) / Come in! (imperative).
+
+## Fourth round (Thangseng, 8:00-8:02 pm): answers to the labeled list
+- Get up! = Chakatbo (imperative): confirms the derived form. Come in! = Ning·chi re·babo / napbabo (imperative): confirms the row; napbabo acceptable variant, not pinned.
+- Wake up! = Mikrakbo (imperative); replaces the weak OCR row `Chakatboha` (pinned `wake up`, `wake up!`).
+- He is waking up. (present continuous) = Ua mikrakbaengaha; she notes `Ua mikrakengaha` would do and that `ba` adds "beginning to wake up". Pinned her primary; plain variant not pinned. He/she pinned, exact sentences only.
+- He woke up. (past) = Ua mikrakaha. Pinned for he/she.
+- Master dictionary row `wake up` = Chakatboha (Claude A) now contradicts the native answer; baselined as `corrections:wake up`; Claude A to replace with Mikrakbo and drop the baseline row.
+- Observation, NOT generalised: katanga takes `-enga` (katangenga) but mikrak takes `-baengaha` / `-engaha`; the continuous suffix may depend on the verb. Other subjects/tenses of wake up (I woke up, he wakes up, will wake up, negatives) still leak `[UNKNOWN]ko kosak`; need the citation form of the verb and a tense rule from Thangseng: ask for `I woke up.`, `He wakes up.` (present), `He will wake up.` (future), `He did not wake up.` (past negative).

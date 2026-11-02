@@ -54,9 +54,14 @@ test('NV-250: particle verb run away = katanga: past katangaha (derived), comman
 test('NV-250: Sit down! = Asongbo (one word, native NV-091); Sit down. unchanged', async () => {
   for (const s of ['Sit down!', 'sit down!', 'Sit down.']) assert.equal(await g(s), 'Asongbo', s);
 });
-test('NV-250: Come in! / Wake up! ship the dictionary rows (unverified / weak OCR) with no [UNKNOWN] leak', async () => {
+test('NV-250: Thangseng 2026-11-02 8pm: Get up! = Chakatbo, Come in! = Ning·chi re·babo (variant napbabo), Wake up! = Mikrakbo (imperatives)', async () => {
+  assert.equal(await g('Get up!'), 'Chakatbo');
   assert.equal(await g('Come in!'), 'Ning·chi re·babo');
-  assert.equal(await g('Wake up!'), 'Chakatboha');
+  for (const s of ['Wake up!', 'Wake up.', 'wake up']) assert.equal(await g(s), 'Mikrakbo', s);
+});
+test('NV-250: He is waking up = Ua mikrakbaengaha (present continuous, inceptive `ba`); He woke up = Ua mikrakaha (past); exact pins, other subjects/tenses of wake up held', async () => {
+  for (const s of ['He is waking up.', 'She is waking up.']) assert.equal(await g(s), 'Ua mikrakbaengaha', s);
+  for (const s of ['He woke up.', 'She woke up.']) assert.equal(await g(s), 'Ua mikrakaha', s);
 });
 test('NV-250: I do not understand keeps the dotted native spelling u·ija', async () => assert.equal(await g('I do not understand'), 'Anga u·ija'));
 test('NV-250: final baseline u·ija: every know negative and the pinned `i do not understand` use the dotted spelling; `i don\'t understand` stays the VERIFIED master row man·ja', async () => {

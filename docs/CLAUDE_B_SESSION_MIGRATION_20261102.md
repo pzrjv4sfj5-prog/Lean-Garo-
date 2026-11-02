@@ -35,3 +35,6 @@ Run fast = Ta·rake katbo (pinned); he/she is running away = Ua katangenga (pinn
 
 ## Exact next step
 Revoke the PAT, issue a new one; fetch, rebase, rerun the gate, push; take Owner rulings on Open 1 and 3 and the Run fast question; scope the `run away` particle rule with Claude A.
+
+## Addendum (8pm Thangseng answers)
+Wake up! = Mikrakbo, He is waking up. = Ua mikrakbaengaha, He woke up. = Ua mikrakaha, Come in! = Ning·chi re·babo (confirmed), Get up! = Chakatbo (confirmed): pinned, tests added, gate unit 1156/1156, sweep 15743/0. Claude A: replace master `wake up` = Chakatboha with Mikrakbo and drop baseline `corrections:wake up`. Ask Thangseng next: I woke up. (past), He wakes up. (present), He will wake up. (future), He did not wake up. (past negative), and whether the continuous suffix is verb-specific (katangenga vs mikrakengaha).
