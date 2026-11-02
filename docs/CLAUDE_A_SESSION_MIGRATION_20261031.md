@@ -54,39 +54,3 @@ Final commit hash is in the closing message; see it for hashes, verified after t
 
 ## Exact next step
 New conversation: paste this file, clone with a fresh PAT (scrub it from .git/config), git fetch, verify HEAD, read .ai/SESSION_BOOTSTRAP.md then .ai/WORKSTATE.yaml, run the gate (install js-yaml with --no-save for conformance), then take Owner words: the four suspended batch-1 rows (knowledge, teach, walking, help), then the 71 multi-verified keys in batches of 10 (keep-word given, duplicates deleted). Next free NV: 243.
-
-## Addendum 2026-11-01: NV-243 (batch-1 closure, Owner relaying Thangseng)
-- help = dakchaka (verified row stays; suspended `chak·a` row deleted). `to help | Chaka` (unverified) not ruled, untouched.
-- walking = re·enga (verified row stays; suspended `Re·ang·enga` row deleted).
-- teach = Sikie for every teach form (Owner). Replaced `Skie on·a` (verified, master row + garo_dictionary x2) and suspended `Sikie on·a`; phrase_maps pin updated. `teacher = Skigipa` not ruled, untouched (flag: spelling vs Sikie).
-- STILL OPEN from batch 1: knowledge (Gni / Ma·siani superseded; shipped U·iani ba ma·siani). Next free NV: 244.
-
-## Addendum 2026-11-01b: bug sweep
-- FIXED: phrase_maps `really?` pinned superseded `chek·chek`; now `Bebema?` (native-confirmed NV-080). Baselined `phrase_maps:really` in known_cross_source_conflicts.json: Check F's joinKey strips `?`, so `really?` and `really` collide in compiled_dict (the Check F key collision is a check limitation, not a data conflict).
-- FLAGGED, not changed (need Owner ruling): `right` pin `Jak·ra` is superseded vs verified variant `kra·a` (direction vs correct unclear); `i am fine` ships `Anga namenga` while verified variant `Anga namengava.` (NV-203) exists; `to walk` compiled `Re·rama` vs shipped `Re·mama`; `teacher = Skigipa` vs teach = Sikie; `knowledge` still open.
-- Dictionary-gloss keys with slashes/parentheticals (`him / her / it (accusative object)`, `it exists / it's there`, `to hold (as this room holds 50 persons)`) produce [UNKNOWN] output through the engine; they are glossary keys, not user sentences.
-
-## Addendum 2026-11-01c: NV-244
-- right = Jak·ra (direction, Owner). kra·a = 'correct' sense. phrase_maps pin `right: Jak·ra` now matches a verified row. Next free NV: 245. Unruled: `that is right` currently resolves to Jak·ra via stopword-stripping (wrong sense; kra·a likely).
-
-## Addendum 2026-11-01d: NV-245
-- i am fine = Anga namenga (Owner, primary; engine already shipped it via corrections). Added non-variant verified row so compiled_dict agrees; `Anga namengava.` kept as verified variant. Next free NV: 246.
-
-## Addendum 2026-11-01e: NV-247 (renumbered from 246: Claude B took NV-246)
-- `that is right` pinned to kra·a (correct sense; Owner). teacher = Skigipa confirmed as-is (verified row untouched). Owner also wrote "teach is Skia(n)" in the same message: ambiguous vs NV-243 teach = Sikie, NOT applied, awaiting clarification. Next free NV: 248.
-
-## Addendum 2026-11-01f: NV-248 (Thangseng batch, relayed by Owner)
-- Vocabulary: me·su = vegetables (already NV-240, confirmed; no sam·bi·jak vegetables row exists); cabbage = banda kobi (new primary, Kobi kept as native variant); promise = Ku·rachaka (reverses NV-242 Ku·chaka for promise); Ku·chaka = confess/admit/respond (admit added); obedient = knachakgipa / katta ra·gipa; run away = katanga (deleted katsit·tap·a and unverified kata); letter = chitti (deleted chi·ti); kingsa = a/one classifier-article (glossary row).
-- Pins (8) + 2 variants: eat rice = Mi cha·bo, drink water = Chi ringbo, he is running away = Ua katangenga, i knew it = Anga uko hai·aha (variant u·iaha), i brought it = Anga uko ra·baaha, i will bring it = Anga uko ra·bagen, are those your dogs? = Ua nang·ni achakrangma? (variant Ua achakrang nang·nima?), is this my house? = Ia angni nokma?. The block said "16 pins": it contains 8 vocabulary entries + 8 sentence pins; no further sentences were present. Terminal periods dropped to match shipped style.
-- Baselined 3 primary+variant verified keys (obedient, i knew it, are those your dogs?) in known_dictionary_conflicts.json.
-- Handoff: docs/HANDOFF_CLAUDE_B_20261101_imperative_bare_noun.md (bare-noun default; `!` forms still ship -ko). Next free NV: 249.
-
-## Addendum 2026-11-01g: NV-249 (Thangseng block, relayed by Owner)
-- chata (no raka) = umbrella (n.) AND to fit (v.), homonym tagged by pos (rows `umbrella`, `an umbrella` n.; `to fit`, `fit` v.). Shipped umbrella is now chata; sat·ti kept as verified variant. Unverified `fit` rows (tang·rong·rang·a, dang·a, ...) left in place, outranked. chat·a (raka) = thick/dull is a different word.
-- chatchi (no raka) = kin / relative / clan (rows kin, relative, clan, n.). Deleted unverified `kinsman | chat·chi` (dotted spelling replaced); kinsman now ships ang·bak (unverified). Deleted unverified `relative` = Bakdil (replaced by chatchi); its pending_lexicon link PL-0000238 set to rejected.
-- Pin: `what kin are you?` = `Na·a mai chatchi?`. Tests: tests/unit/nv249_chata_chatchi.test.js. Next free NV: 250.
-
-## Addendum 2026-11-01h: NV-250 (Owner rulings)
-- teach = Skia (Owner: native-verified). NV-243 `Sikie` rows and all legacy `Sikie on·a` / `Skie on·a` rows deleted (master, garo_dictionary, final_entries); phrase_maps pin = Skia; `to teach` added. teacher = Skigipa unchanged. NV-243's teach ruling is superseded by this entry.
-- Standing: given words override old words, duplicates deleted. Applied to NV-248/249 keys: umbrella (deleted sat·ti, Satta; chata confirmed), fit (deleted chak·a, dang·a, jak·chak·a, tang·rong·rang·a), cabbage (deleted Kobi, ba·da ko·pi, bi·jak ko·pi; banda kobi sole), promise (deleted Ka·ra chaka, ku·mik·chet·a, ku·wat·a, old Ku·chaka). Applied to cabbage/promise by the standing rule, not an explicit per-item answer: restore from git history (e00fee2) if Owner disagrees.
-- Not changed, noted: `learn = Sikia` (garo_dictionary, unverified), `educated = skia man·gipa`, purpose_map `teach = skia on·na` and `learn = skia·na` (may need aligning with Skia). Next free NV: 251.

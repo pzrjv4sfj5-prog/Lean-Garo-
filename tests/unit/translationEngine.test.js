@@ -795,9 +795,9 @@ test('RC-CANDIDATE-027 -> SUPERSEDED-audit update (2026-08-07): "buy" resolves t
   assert.equal(lookup('buy').garo, 'bre·a');
 });
 
-test('RC-CANDIDATE-027 -> SUPERSEDED-audit update (2026-08-07): "door" resolves to VERIFIED do·oga, not the now-superseded Do·ga', async () => {
+test('NV-252 (2026-11-01, Owner directive): "door" resolves to VERIFIED do·ga (overrides the earlier do·oga)', async () => {
   const { lookup } = await import('../../src/lookupEngine.js');
-  assert.equal(lookup('door').garo, 'do·oga');
+  assert.equal(lookup('door').garo, 'do·ga');
 });
 
 test('RC-CANDIDATE-027: same-case duplicates ("watch") are unaffected, old behavior preserved', async () => {

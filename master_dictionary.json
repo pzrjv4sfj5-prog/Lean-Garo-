@@ -1803,10 +1803,11 @@
   },
   {
     "english": "door",
-    "garo": "Do·ga",
+    "garo": "do·ga",
     "category": "home",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'door' has VERIFIED/HIGH form(s) ['do·oga']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — NV-252 (2026-11-01, Project Owner directive in chat: door = do·ga; given word overrides old do·oga). Promotes the 2026-08-01 superseded row; replaces do·oga (deleted).",
+    "confidence": "verified_high",
+    "pos": "n."
   },
   {
     "english": "window",
@@ -15210,15 +15211,6 @@
     "notes": "variant/AMBIGUOUS/MEDIUM"
   },
   {
-    "english": "Door",
-    "garo": "do·oga",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
     "english": "Dream",
     "garo": "ja·din·a",
     "pos": null,
@@ -26526,11 +26518,11 @@
   },
   {
     "english": "doorway",
-    "garo": "do·oga·chol",
+    "garo": "do·ga·chol",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
+    "notes": "UNVERIFIED/HIGH NV-252: stem aligned to door = do·ga (still unverified; OCR final_entries form do·ga·chol).",
     "confidence": "unverified"
   },
   {
@@ -77552,7 +77544,7 @@
     "pos": "v.",
     "category": "words",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-250 (2026-11-01, Project Owner ruling in chat: teach = Skia, native-verified; Sikie deleted for all; chata overrides sat·ti/Satta and old fit words; given words override old, dups deleted). Replaces NV-243 Sikie and legacy Skie on·a / Sikie on·a (all deleted).",
+    "notes": "VERIFIED/HIGH — NV-251 (2026-11-01, Project Owner ruling in chat: teach = Skia, native-verified; Sikie deleted for all; chata overrides sat·ti/Satta and old fit words; given words override old, dups deleted). Replaces NV-243 Sikie and legacy Skie on·a / Sikie on·a (all deleted).",
     "confidence": "verified_high"
   },
   {
@@ -77561,7 +77553,7 @@
     "pos": "v.",
     "category": "words",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-250 (2026-11-01, Project Owner ruling in chat: teach = Skia, native-verified; Sikie deleted for all; chata overrides sat·ti/Satta and old fit words; given words override old, dups deleted).",
+    "notes": "VERIFIED/HIGH — NV-251 (2026-11-01, Project Owner ruling in chat: teach = Skia, native-verified; Sikie deleted for all; chata overrides sat·ti/Satta and old fit words; given words override old, dups deleted).",
     "confidence": "verified_high"
   }
 ]

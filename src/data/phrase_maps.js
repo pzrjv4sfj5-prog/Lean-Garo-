@@ -174,7 +174,7 @@ export const PHRASE_MAPS = {
   'book': 'Ki·tap', // RECONFIRMED 2026-08-08: direct native correction reverses the 2026-08-07 fix (which itself reversed 2026-08-01's audit call). 'Ki·tap' confirmed final, 'boi' now SUPERSEDED. See NV-069.
   'table': 'te·bil', // corrected 2026-08-07: 'Mez' flagged SUPERSEDED (2026-08-01 audit); single VERIFIED/HIGH replacement 'te·bil', unambiguous
   'buy': 'bre·a', // corrected 2026-08-07: 'Brea' flagged SUPERSEDED (2026-08-01 audit); single VERIFIED/HIGH replacement 'bre·a', unambiguous
-  'door': 'do·oga', // corrected 2026-08-07: 'Do·ga' flagged SUPERSEDED (2026-08-01 audit); single VERIFIED/HIGH replacement 'do·oga', unambiguous
+  'door': 'do·ga', // NV-252 (2026-11-01): Owner directive door = do·ga overrides do·oga
   'god': 'i·sol', // corrected 2026-08-06: 'Isol' was flagged SUPERSEDED; 2 VERIFIED/HIGH candidates exist (dok·gip·a / i·sol), picked i·sol as closest orthographic match to the legacy spelling -- provisional, see docs/CLAUDE_B_HANDOFF_20260806_supersede_precedence_bug.md
   'church': 'giil·ja·nok',
   'love': 'ka·saa',

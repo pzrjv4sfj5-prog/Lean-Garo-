@@ -1357,7 +1357,7 @@ content triage. See docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md §4.
 - `done`: candidates — `bon·a` (weak/OCR), `mat·chot·a` (weak/OCR), `ses` (weak/OCR) — shipped: `ses`
 - `door chain`: candidates — `jiin·jiil` (weak/OCR) — shipped: `jiin·jiil`
 - `door frame`: candidates — `chok·at` (weak/OCR) — shipped: `chok·at`
-- `doorway`: candidates — `do·oga·chol` (weak/OCR) — shipped: `do·oga·chol`
+- `doorway`: candidates — `do·ga·chol` (weak/OCR) — shipped: `do·ga·chol`
 - `double`: candidates — `Gni·bita` (weak/OCR) — shipped: `Gni·bita`
 - `dove`: candidates — `do·ogu·gu` (weak/OCR), `do·oku·ru` (weak/OCR) — shipped: `do·oku·ru`
 - `down.`: candidates — `A·bri ja·pa` (weak/OCR) — shipped: `A·bri ja·pa`
