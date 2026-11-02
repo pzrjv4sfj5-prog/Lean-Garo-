@@ -148,7 +148,11 @@ export function matchMultiWordVerbLemma(w1, w2) {
   if (w1 === 'be') return null;
   // Variants cover crumbled->crumble (-d), walked->walk (-ed), crumbling->
   // crumble (-ing+e), walking->walk (-ing), crumbles->crumble (-s), -es.
-  for (const c of [w1, w1.replace(/ing$/, ''), w1.replace(/ing$/, 'e'), w1.replace(/ed$/, ''), w1.replace(/d$/, ''), w1.replace(/es$/, ''), w1.replace(/s$/, '')]) {
+  // NV-250 (Claude B, 2026-11-02): doubled-consonant -ing/-ed (running->run, sitting->sit) and irregular pasts
+  // (ran->run, sat->sit, woke->wake). The lemma must still be an attested 2-word dictionary verb, so a stray match is impossible.
+  const IRR_PAST = { ran: 'run', sat: 'sit', woke: 'wake', stood: 'stand', fell: 'fall', came: 'come', went: 'go', got: 'get', took: 'take', gave: 'give', ate: 'eat', drank: 'drink', slept: 'sleep', threw: 'throw' };
+  for (const c of [w1, IRR_PAST[w1], w1.replace(/(.)\1ing$/, '$1'), w1.replace(/(.)\1ed$/, '$1'), w1.replace(/ing$/, ''), w1.replace(/ing$/, 'e'), w1.replace(/ed$/, ''), w1.replace(/d$/, ''), w1.replace(/es$/, ''), w1.replace(/s$/, '')]) {
+    if (!c) continue;
     const lemma = c + ' ' + w2;
     if (MULTI_WORD_VERB_LEMMAS.has(lemma)) return { lemma, garo: MULTI_WORD_VERB_LEMMAS.get(lemma) };
   }

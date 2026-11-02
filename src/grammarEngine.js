@@ -21,6 +21,7 @@ import { NUMBER_WORDS, countNoun, parseCountingPhrase, singularize } from './gar
 import { lookupGaro, VERB_LEMMAS, matchMultiWordVerbLemma } from './lookupEngine.js';
 import { lookupPhrase } from './data/phrase_maps.js';
 import { applyNegation, applyTense, findVerbForm, getConjugationRoot, applyTopicSuffix, composeBoundOnlyObject, applyDeclarativeEndingAia } from './morphologyEngine.js';
+const IRR_PAST_FORMS = new Set(['ran', 'sat', 'woke', 'stood', 'fell', 'came', 'went', 'got', 'took', 'gave', 'ate', 'drank', 'slept', 'threw']); // NV-250: mirrors lookupEngine IRR_PAST
 import { STOP_WORDS, AUXILIARY_SKIP, INTENSIFIER_WORDS } from './normalizationEngine.js';
 
 // NV-227 (Claude B, 2026-10-29, mechanical audit): words that END in -ed but are not regular pasts. `I feed.` / `I exceed.` were read as
@@ -457,6 +458,7 @@ export function analyzeGrammar(input) {
       if (w === 'bed') continue;
       let isIrregular = !!IRREGULAR_VERBS[w] || !!IRREGULAR_VERBS[w.replace(/ing$|ed$|es$|s$/, '')];
       let garoVerb;
+      let mwAspect = null;
       // AI-003 (2026-09-28, Claude B): dictionary-attested 2-word particle
       // verb ("crumble down") checked before single-token resolution;
       // consumes the next word so the object loop doesn't re-use it.
@@ -466,6 +468,14 @@ export function analyzeGrammar(input) {
         garoVerb = mwVerb.garo;
         isIrregular = false;
         multiWordConsumedIdx = i + 1;
+        // NV-250 (Claude B, 2026-11-02): the surface form of the English verb carries the aspect for a particle verb.
+        // -ing (be + V-ing) = present continuous: strip final a, add -enga (katanga -> katangenga, Thangseng native for
+        // `He is running away`; same rule as kata -> katenga). Irregular/-ed past = stem + -ha (katanga -> katangaha), DERIVED.
+        // Negatives, future and others keep the existing paths below.
+        if (!isNegative && detectedTense === 'present') {
+          if (/ing$/.test(w) && !/^(be|being)$/.test(w)) mwAspect = 'continuous';
+          else if (IRR_PAST_FORMS.has(w) || /ed$/.test(w)) mwAspect = 'past';
+        }
       } else if (SPECIAL_TENSES.includes(detectedTense)) {
         // Pre-inflected IRREGULAR_VERBS forms (e.g. "eating"->"cha·enga")
         // can't be safely re-suffixed with jaha/manaha/chim/engachim — go
@@ -518,7 +528,8 @@ export function analyzeGrammar(input) {
           // to the generic root and produced "Re·angjawa" - confirmed
           // wrong, found while generalizing corrections.json's narrow
           // "i will not go"/"will not go" patch per Claude A's flag.
-          const negFutureRoot = (w === 'go') ? 're·a' : garoVerb;
+          // NV-250: `know` negatives use the native stem u·ia (Anga u·ija; knew = u·iaha) in every person/tense; DERIVED beyond the bare `Anga u·ija`.
+          const negFutureRoot = (w === 'go') ? 're·a' : (/^knows?$/.test(w) ? 'u·ia' : garoVerb);
           garoWithTense = applyTense(negFutureRoot, 'negative_future');
           verb = { english: words[i], garo: garoVerb, tense: 'negative_future', garoWithTense, isNegative, index: i };
           break;
@@ -550,8 +561,10 @@ export function analyzeGrammar(input) {
           // conjugation-stem lookup before suffixing -ja. Negative-future
           // 'go' is unaffected — it returns via the RULE-030 branch above
           // and never reaches this line.
-          garoWithTense = applyNegation(getConjugationRoot(w, garoWithTense));
+          garoWithTense = applyNegation(/^knows?$/.test(w) ? 'u·ia' : getConjugationRoot(w, garoWithTense)); // NV-250: know -> u·ia stem
         }
+        if (mwAspect === 'continuous') garoWithTense = garoVerb.replace(/a$/, '') + 'enga';
+        else if (mwAspect === 'past') garoWithTense = applyTense(garoVerb, 'past');
         verb = { english: words[i], garo: garoVerb, tense: detectedTense, garoWithTense, isNegative, index: i, consumedIndex: multiWordConsumedIdx };
         break;
       }

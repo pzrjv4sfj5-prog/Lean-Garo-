@@ -394,7 +394,7 @@ export const PHRASE_MAPS = {
   'of course': 'Oe, bebe',
   'i understand': 'Anga uia',
   "i don't understand": 'Anga man·ja',
-  "i don't know": 'Anga uija',
+  "i don't know": 'Anga u·ija',
   "that's good": 'Ua nama',
   "that's bad": 'Ua namja',
   'very good': 'Namen nama',

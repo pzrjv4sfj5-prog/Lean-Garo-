@@ -2113,7 +2113,7 @@ test('NV-103 item 5: existing apostrophe-preserving paths (corrections, phrase-m
   const { translate } = await import('../../src/translationEngine.js');
   const rPhraseMap = await translate("i don't know");
   assert.equal(rPhraseMap.method, 'phrase-map');
-  assert.equal(rPhraseMap.garo, 'Anga uija');
+  assert.equal(rPhraseMap.garo, 'Anga u·ija');
   const rCorrection = await translate("let's go");
   assert.equal(rCorrection.method, 'correction');
   assert.equal(rCorrection.garo, 'Hai re·naha');

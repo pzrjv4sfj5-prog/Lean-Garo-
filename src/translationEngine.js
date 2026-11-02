@@ -53,7 +53,7 @@ import { lookupPhrase } from './data/phrase_maps.js';
 import { getVerbParadigm } from './verbParadigm.js';
 import { countNoun, countNounWithClassifier, parseCountingPhrase, getClassifier, isUnverifiedCompoundGuess, NUMBER_WORDS, singularize } from './garo_classifier.js';
 import { toGaroNumber as toGaroNumberBare } from './number_engine.js';
-import { corrections, normalizeEntry, EN_INDEX, lookupGaro, VERB_LEMMAS } from './lookupEngine.js';
+import { corrections, normalizeEntry, EN_INDEX, lookupGaro, VERB_LEMMAS, MULTI_WORD_VERB_LEMMAS } from './lookupEngine.js';
 import { applyNegation } from './morphologyEngine.js';
 import { STOP_WORDS, fuzzyMatch, normalizeInput } from './normalizationEngine.js';
 // analyzeGrammar, tryWithoutGijaConstruction extracted to
@@ -528,9 +528,29 @@ async function translateRaw(input) {
         // same RULE-029 / R-b step as the bare command: citation -a becomes -bo
         const v = bare.garo.replace(/!$/, '').toLowerCase().replace(/a$/i, 'bo').replace(/bobo$/, 'bo');
         const n = nG.charAt(0).toLowerCase() + nG.slice(1);
+        // NV-250 (Claude B, 2026-11-02): Thangseng native, habitual objects drop -ko (`Mi cha·bo`, `Chi ringbo`);
+        // ONLY rice and water are ruled, extend only with Owner/Thangseng evidence. Thangseng also wrote the polite
+        // form without a period (`Ka·sapae re·babo`, `Ka·sapae ki·taprangko poraibo`), so no `Ka·sapae.` full stop.
+        const ko = (wN === 'rice' || wN === 'water') ? '' : 'ko';
         return mo[1]
-          ? { garo: `Ka·sapae. ${n}ko ${v}`, method: 'imperative-object-ko', confidence: 0.8 }
-          : { garo: `${nG.charAt(0).toUpperCase() + nG.slice(1)}ko ${v}`, method: 'imperative-object-ko', confidence: 0.8 };
+          ? { garo: `Ka·sapae ${n}${ko} ${v}`, method: 'imperative-object-ko', confidence: 0.8 }
+          : { garo: `${nG.charAt(0).toUpperCase() + nG.slice(1)}${ko} ${v}`, method: 'imperative-object-ko', confidence: 0.8 };
+      }
+    }
+  }
+  // NV-250 (Claude B, 2026-11-02): subjectless particle-verb command (`Run away!`, `Sit down!`). Category = 2-word attested verb
+  // lemma (run away = katanga, Thangseng native for the citation form); form = RULE-029 command, final -a -> -bo (katanga -> katangbo).
+  // DERIVED by the RULE-029 analogy, flagged for native check; only fires when the dictionary has a single-token -a citation form.
+  {
+    const pm = String(input).trim().match(/^([A-Za-z]+)\s+(away|up|down|out|off|back|in|on|over|along)\s*!$/i);
+    if (pm) {
+      const cit = MULTI_WORD_VERB_LEMMAS.get(`${pm[1].toLowerCase()} ${pm[2].toLowerCase()}`);
+      if (cit && typeof cit === 'string' && /^[A-Za-z·]+bo$/i.test(cit)) {
+        return { garo: cit.charAt(0).toUpperCase() + cit.slice(1) + '!', method: 'particle-verb-command', confidence: 0.8 }; // dictionary already holds the command form (sit down = Asongbo)
+      }
+      if (cit && typeof cit === 'string' && !/[\s,;()/]|\[UNKNOWN\]/.test(cit) && /a$/i.test(cit) && !/(bo|enga|aha|gen|ja)$/i.test(cit)) {
+        const bo = cit.replace(/a$/i, 'bo');
+        return { garo: bo.charAt(0).toUpperCase() + bo.slice(1) + '!', method: 'particle-verb-command', confidence: 0.7, derived: true };
       }
     }
   }

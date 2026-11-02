@@ -23,7 +23,7 @@
   "people": "mande",
   "person": "mande",
   "i do not understand": "Anga uija",
-  "i do not know": "Anga uija",
+  "i do not know": "Anga u·ija",
   "i do not want": "Anga sikja",
   "i do not have": "Anga dongja",
   "this is not good": "Ia nama·gija",
@@ -942,5 +942,13 @@
   "do not come": "re·banabe",
   "dont come": "re·banabe",
   "to them": "uamangchi",
-  "for them": "uamangna"
+  "for them": "uamangna",
+  "write a letter": "Chitti sebo",
+  "please read the book": "Ka·sapae ki·taprangko poraibo",
+  "run fast": "Ta·rake katbo",
+  "run fast!": "Ta·rake katbo",
+  "he is running away": "Ua katangenga",
+  "she is running away": "Ua katangenga",
+  "he/she is running away": "Ua katangenga",
+  "he or she is running away": "Ua katangenga"
 }
