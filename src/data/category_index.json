@@ -463,7 +463,7 @@
   "nail (metal)": "general",
   "rope": "general",
   "basket (backpack)": "general",
-  "umbrella": "general",
+  "umbrella": "words",
   "ladder": "general",
   "bridge": "travel",
   "boat": "travel",
@@ -3921,5 +3921,12 @@
   "are those your dogs?": "phrases",
   "is this my house?": "phrases",
   "eat rice": "phrases",
-  "drink water": "phrases"
+  "drink water": "phrases",
+  "an umbrella": "words",
+  "to fit": "words",
+  "fit": "words",
+  "kin": "words",
+  "relative": "words",
+  "clan": "words",
+  "what kin are you?": "phrases"
 }

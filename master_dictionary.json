@@ -31514,15 +31514,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "kinsman",
-    "garo": "chat·chi",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "kiss",
     "garo": "ku·chot·a",
     "pos": null,
@@ -50367,13 +50358,6 @@
     "garo": "Bakchoka",
     "category": null,
     "pos": "v.",
-    "confidence": "unverified"
-  },
-  {
-    "english": "Relative",
-    "garo": "Bakdil",
-    "category": null,
-    "pos": "n.",
     "confidence": "unverified"
   },
   {
@@ -77597,6 +77581,78 @@
     "category": "phrases",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Imperative; habitual object drops accusative -ko (Thangseng). Overrides engine default Chiko ringbo.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "umbrella",
+    "garo": "chata",
+    "pos": "n.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-249 (2026-11-01, Thangseng native-validation block relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Homonym: `chata` (no raka) is both umbrella (n.) and to fit (v.); distinct from `chat·a` = thick/dull (raka). sat·ti stays as a verified variant.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "an umbrella",
+    "garo": "chata",
+    "pos": "n.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-249 (2026-11-01, Thangseng native-validation block relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to fit",
+    "garo": "chata",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-249 (2026-11-01, Thangseng native-validation block relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Homonym: `chata` (no raka) is both umbrella (n.) and to fit (v.); distinct from `chat·a` = thick/dull (raka).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fit",
+    "garo": "chata",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-249 (2026-11-01, Thangseng native-validation block relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Homonym: `chata` (no raka) is both umbrella (n.) and to fit (v.); distinct from `chat·a` = thick/dull (raka).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "kin",
+    "garo": "chatchi",
+    "pos": "n.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-249 (2026-11-01, Thangseng native-validation block relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Kin / relative / clan; no raka. Replaces unverified kinsman row `chat·chi` (dotted spelling).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "relative",
+    "garo": "chatchi",
+    "pos": "n.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-249 (2026-11-01, Thangseng native-validation block relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Kin / relative / clan.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "clan",
+    "garo": "chatchi",
+    "pos": "n.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-249 (2026-11-01, Thangseng native-validation block relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Kin / relative / clan.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "what kin are you?",
+    "garo": "Na·a mai chatchi?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-249 (2026-11-01, Thangseng native-validation block relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Present, question.",
     "confidence": "verified_high"
   }
 ]

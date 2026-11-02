@@ -80,3 +80,8 @@ New conversation: paste this file, clone with a fresh PAT (scrub it from .git/co
 - Pins (8) + 2 variants: eat rice = Mi cha·bo, drink water = Chi ringbo, he is running away = Ua katangenga, i knew it = Anga uko hai·aha (variant u·iaha), i brought it = Anga uko ra·baaha, i will bring it = Anga uko ra·bagen, are those your dogs? = Ua nang·ni achakrangma? (variant Ua achakrang nang·nima?), is this my house? = Ia angni nokma?. The block said "16 pins": it contains 8 vocabulary entries + 8 sentence pins; no further sentences were present. Terminal periods dropped to match shipped style.
 - Baselined 3 primary+variant verified keys (obedient, i knew it, are those your dogs?) in known_dictionary_conflicts.json.
 - Handoff: docs/HANDOFF_CLAUDE_B_20261101_imperative_bare_noun.md (bare-noun default; `!` forms still ship -ko). Next free NV: 249.
+
+## Addendum 2026-11-01g: NV-249 (Thangseng block, relayed by Owner)
+- chata (no raka) = umbrella (n.) AND to fit (v.), homonym tagged by pos (rows `umbrella`, `an umbrella` n.; `to fit`, `fit` v.). Shipped umbrella is now chata; sat·ti kept as verified variant. Unverified `fit` rows (tang·rong·rang·a, dang·a, ...) left in place, outranked. chat·a (raka) = thick/dull is a different word.
+- chatchi (no raka) = kin / relative / clan (rows kin, relative, clan, n.). Deleted unverified `kinsman | chat·chi` (dotted spelling replaced); kinsman now ships ang·bak (unverified). Deleted unverified `relative` = Bakdil (replaced by chatchi); its pending_lexicon link PL-0000238 set to rejected.
+- Pin: `what kin are you?` = `Na·a mai chatchi?`. Tests: tests/unit/nv249_chata_chatchi.test.js. Next free NV: 250.

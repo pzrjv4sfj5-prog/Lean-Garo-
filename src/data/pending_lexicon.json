@@ -6232,16 +6232,15 @@
       "import_date": "2026-07-19T11:55:45.850Z",
       "ocr_version": "gemini-2026-07-16"
     },
-    "review_status": "approved",
-    "review_notes": "Reviewed by Claude A, 2026-07-19 (batch: pages 5/16/17/19). High-confidence, unflagged, no conflict.",
+    "review_status": "rejected",
+    "review_notes": "Reviewed by Claude A, 2026-07-19 (batch: pages 5/16/17/19). High-confidence, unflagged, no conflict. REJECTED 2026-11-01 (Claude A, NV-249): native word for relative is chatchi (Thangseng block relayed by Project Owner); master row deleted per delete-on-replace.",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-19",
     "conflict": {
       "type": null,
       "details": null
     },
-    "promotion_status": "promoted",
-    "promoted_date": "2026-07-19T16:45:47.730Z"
+    "promotion_status": "rejected"
   },
   {
     "id": "PL-0000239",
