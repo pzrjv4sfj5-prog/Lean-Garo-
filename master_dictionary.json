@@ -2370,8 +2370,8 @@
     "english": "right",
     "garo": "Jak·ra",
     "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'right' has VERIFIED/HIGH form(s) ['kra·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
+    "notes": "VERIFIED/HIGH — NV-244 (2026-11-01): Project Owner directive (chat): right = Jak·ra, DIRECTION sense (right vs left). Un-supersedes the 2026-08-01 audit row; distinct from the 'correct' sense (kra·a). Prior note: SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'right' has VERIFIED/HIGH form(s) ['kra·a']. Not authorita",
+    "confidence": "verified_high"
   },
   {
     "english": "front",
@@ -17830,7 +17830,7 @@
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
+    "notes": "variant/VERIFIED/HIGH NV-244 (2026-11-01): Owner: this is the 'correct/right' sense, not direction (direction = Jak·ra).",
     "confidence": "verified_high"
   },
   {

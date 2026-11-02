@@ -65,3 +65,6 @@ New conversation: paste this file, clone with a fresh PAT (scrub it from .git/co
 - FIXED: phrase_maps `really?` pinned superseded `chek·chek`; now `Bebema?` (native-confirmed NV-080). Baselined `phrase_maps:really` in known_cross_source_conflicts.json: Check F's joinKey strips `?`, so `really?` and `really` collide in compiled_dict (the Check F key collision is a check limitation, not a data conflict).
 - FLAGGED, not changed (need Owner ruling): `right` pin `Jak·ra` is superseded vs verified variant `kra·a` (direction vs correct unclear); `i am fine` ships `Anga namenga` while verified variant `Anga namengava.` (NV-203) exists; `to walk` compiled `Re·rama` vs shipped `Re·mama`; `teacher = Skigipa` vs teach = Sikie; `knowledge` still open.
 - Dictionary-gloss keys with slashes/parentheticals (`him / her / it (accusative object)`, `it exists / it's there`, `to hold (as this room holds 50 persons)`) produce [UNKNOWN] output through the engine; they are glossary keys, not user sentences.
+
+## Addendum 2026-11-01c: NV-244
+- right = Jak·ra (direction, Owner). kra·a = 'correct' sense. phrase_maps pin `right: Jak·ra` now matches a verified row. Next free NV: 245. Unruled: `that is right` currently resolves to Jak·ra via stopword-stripping (wrong sense; kra·a likely).
