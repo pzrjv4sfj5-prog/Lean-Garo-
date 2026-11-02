@@ -7,7 +7,7 @@ export const PHRASE_MAPS = {
   'hello': 'Salam / Namengama',
   'hi': 'Salam',
   'how are you': 'Na·a namengama?',
-  'i am fine': 'Anga namenga.',
+  'i am fine': 'Anga namenga',
   'good morning': 'Pringnam.',
   'good afternoon': 'Salnam.',
   'good evening': 'Attamnam.',
