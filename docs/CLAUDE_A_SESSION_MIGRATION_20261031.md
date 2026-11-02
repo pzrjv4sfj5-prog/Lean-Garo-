@@ -68,3 +68,6 @@ New conversation: paste this file, clone with a fresh PAT (scrub it from .git/co
 
 ## Addendum 2026-11-01c: NV-244
 - right = Jak·ra (direction, Owner). kra·a = 'correct' sense. phrase_maps pin `right: Jak·ra` now matches a verified row. Next free NV: 245. Unruled: `that is right` currently resolves to Jak·ra via stopword-stripping (wrong sense; kra·a likely).
+
+## Addendum 2026-11-01d: NV-245
+- i am fine = Anga namenga (Owner, primary; engine already shipped it via corrections). Added non-variant verified row so compiled_dict agrees; `Anga namengava.` kept as verified variant. Next free NV: 246.

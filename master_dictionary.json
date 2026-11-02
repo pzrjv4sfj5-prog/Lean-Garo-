@@ -16228,6 +16228,15 @@
     "confidence": "verified_high"
   },
   {
+    "english": "I am fine",
+    "garo": "Anga namenga",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-245 (2026-11-01): Project Owner directive (chat): i am fine = Anga namenga (primary). Anga namengava. (NV-203) stays as a verified variant.",
+    "confidence": "verified_high"
+  },
+  {
     "english": "In a broad daylight, are you sleeping?",
     "garo": "Salmatraktrak·o na·a tuengama?",
     "pos": null,
