@@ -388,7 +388,7 @@ export const PHRASE_MAPS = {
   'let us practice garo together': 'Hai sakprak Agana skiebo.',
   'the future of garo is in our hands': 'Aganani mikkangchi an·chingni jak·o dong·a.',
   // Conversational responses
-  'really?': 'chek·chek',
+  'really?': 'Bebema?',
   'really': 'chek·chek',
   'of course': 'Oe, bebe',
   'i understand': 'Anga uia',

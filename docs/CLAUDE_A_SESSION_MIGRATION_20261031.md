@@ -60,3 +60,8 @@ New conversation: paste this file, clone with a fresh PAT (scrub it from .git/co
 - walking = re·enga (verified row stays; suspended `Re·ang·enga` row deleted).
 - teach = Sikie for every teach form (Owner). Replaced `Skie on·a` (verified, master row + garo_dictionary x2) and suspended `Sikie on·a`; phrase_maps pin updated. `teacher = Skigipa` not ruled, untouched (flag: spelling vs Sikie).
 - STILL OPEN from batch 1: knowledge (Gni / Ma·siani superseded; shipped U·iani ba ma·siani). Next free NV: 244.
+
+## Addendum 2026-11-01b: bug sweep
+- FIXED: phrase_maps `really?` pinned superseded `chek·chek`; now `Bebema?` (native-confirmed NV-080). Baselined `phrase_maps:really` in known_cross_source_conflicts.json: Check F's joinKey strips `?`, so `really?` and `really` collide in compiled_dict (the Check F key collision is a check limitation, not a data conflict).
+- FLAGGED, not changed (need Owner ruling): `right` pin `Jak·ra` is superseded vs verified variant `kra·a` (direction vs correct unclear); `i am fine` ships `Anga namenga` while verified variant `Anga namengava.` (NV-203) exists; `to walk` compiled `Re·rama` vs shipped `Re·mama`; `teacher = Skigipa` vs teach = Sikie; `knowledge` still open.
+- Dictionary-gloss keys with slashes/parentheticals (`him / her / it (accusative object)`, `it exists / it's there`, `to hold (as this room holds 50 persons)`) produce [UNKNOWN] output through the engine; they are glossary keys, not user sentences.
