@@ -19,3 +19,13 @@ test('NV-249 exact pin: what kin are you?', async () => {
 test('NV-249 chat·a (raka) stays a different word', async () => {
   assert.equal((await translate('dull')).garo, 'chat·a');
 });
+
+// NV-250 (Claude A, 2026-11-01): Owner ruling: teach = Skia (native-verified), Sikie deleted everywhere;
+// given words override old ones (umbrella sat·ti, fit legacy words, cabbage Kobi removed).
+test('NV-250 teach = Skia; Sikie gone', async () => {
+  for (const en of ['teach', 'to teach']) assert.equal((await translate(en)).garo, 'Skia', en);
+  assert.equal((await translate('teacher')).garo, 'Skigipa');
+});
+test('NV-250 cabbage = banda kobi only', async () => {
+  assert.equal((await translate('cabbage')).garo, 'banda kobi');
+});

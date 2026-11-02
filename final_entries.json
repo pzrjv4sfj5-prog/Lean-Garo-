@@ -1432,22 +1432,6 @@
     "notes": "VERIFIED/HIGH"
   },
   {
-    "english": "Cabbage",
-    "garo": "Kobi",
-    "pos": null,
-    "category": "food",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:ba-da ko-pi / bi-jak ko-pi"
-  },
-  {
-    "english": "Cabbage",
-    "garo": "bi·jak ko·pi",
-    "pos": null,
-    "category": "food",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
     "english": "Can you give me water?",
     "garo": "Angna chi on·a mangengma?",
     "pos": null,
@@ -11064,14 +11048,6 @@
     "notes": "VERIFIED/HIGH"
   },
   {
-    "english": "Teach",
-    "garo": "Sikie on·a",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/MEDIUM"
-  },
-  {
     "english": "Teacher",
     "garo": "Skigipa",
     "pos": null,
@@ -12350,22 +12326,6 @@
     "category": "numbers",
     "classifier": null,
     "notes": "VERIFIED/HIGH"
-  },
-  {
-    "english": "Umbrella",
-    "garo": "Satta",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:sat-ti"
-  },
-  {
-    "english": "Umbrella",
-    "garo": "sat·ti",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
   },
   {
     "english": "Uncle",
@@ -21185,23 +21145,7 @@
   },
   {
     "english": "fit",
-    "garo": "chak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:dang˙-a / jak-chak-a / tang˙-rong-rang-a"
-  },
-  {
-    "english": "fit",
     "garo": "dang˙·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "fit",
-    "garo": "jak·chak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,

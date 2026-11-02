@@ -327,13 +327,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "cabbage",
-    "garo": "Kobi",
-    "category": "general",
-    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080). NV-248: Thangseng batch gives `banda kobi` as the cabbage word; Kobi kept as a valid shorter variant (both native).",
-    "confidence": "verified_high"
-  },
-  {
     "english": "cauliflower",
     "garo": "Pul kobi",
     "category": "general",
@@ -3078,13 +3071,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "umbrella",
-    "garo": "Satta",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'umbrella' has VERIFIED/HIGH form(s) ['sat·ti']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
     "english": "ladder",
     "garo": "Jang·ke",
     "category": "general",
@@ -5546,13 +5532,6 @@
     "garo": "Ka·rach·ong·ja",
     "category": "general",
     "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'disagree' has VERIFIED/HIGH form(s) ['gong·ge·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "promise",
-    "garo": "Ka·ra chaka",
-    "category": "general",
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'promise' is 'ku·chak·a'. Retained per citation discipline, not deleted.",
     "confidence": "superseded"
   },
   {
@@ -14593,24 +14572,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Cabbage",
-    "garo": "ba·da ko·pi",
-    "pos": null,
-    "category": "food",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'cabbage' is 'Kobi'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "Cabbage",
-    "garo": "bi·jak ko·pi",
-    "pos": null,
-    "category": "food",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'cabbage' is 'Kobi'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
     "english": "Carrot",
     "garo": "ga·jur",
     "pos": null,
@@ -17611,24 +17572,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "Promise",
-    "garo": "ku·mik·chet·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'promise' is 'ku·chak·a'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
-    "english": "Promise",
-    "garo": "ku·wat·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'promise' is 'ku·chak·a'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
     "english": "Pull",
     "garo": "sal·a",
     "pos": null,
@@ -19249,15 +19192,6 @@
     "category": "numbers",
     "classifier": null,
     "notes": "VERIFIED/HIGH RAKA CORRECTED 2026-09-13 (Project Owner directive, chat): mang classifier does not take a raka dot before the attached number suffix -- corrected 'mang·' -> 'mang' at the classifier-number boundary. Scoped strictly to the noun+mang+suffix classifier composition; unrelated words that happen to contain the substring 'mang·' (e.g. mang·rak·a='healthy/strong', mang·kal·a='annoy') and the bare classifier headword ('animals'='mang·') are untouched. | Raka dot restored 2026-09-29 (Claude A, direct Project Owner statement in chat: mang has rakka; see docs/GRAMMAR_RULE_AUDIT_AND_ROADMAP_20260928.md). | OWNER DEDUP 2026-10-26 (Project Owner directive, chat; Claude D): kept as the surviving form; duplicate row 'achak manggni' (superseded) deleted, full record preserved in data/claude_d/deleted_20261026_owner_dedup.json | NV-217 (2026-10-26): mang takes NO raka dot as a classifier (Project Owner directive via Claude D audit mang_classifier_dot_audit_20261026); boundary mang· -> mang only, internal dots untouched.",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Umbrella",
-    "garo": "sat·ti",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
     "confidence": "verified_high"
   },
   {
@@ -28240,42 +28174,6 @@
   {
     "english": "fist",
     "garo": "jak·tom·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "fit",
-    "garo": "chak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:dang·-a / jak-chak-a / tang·-rong-rang-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "fit",
-    "garo": "dang·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "fit",
-    "garo": "jak·chak·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "fit",
-    "garo": "tang·rong·rang·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -69549,13 +69447,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "teach",
-    "garo": "Sikie",
-    "category": "general",
-    "notes": "VERIFIED/HIGH — NV-243 (2026-11-01): Project Owner directive relaying Thangseng: teach = Sikie (replaces Skie on·a and suspended Sikie on·a; rows deleted per delete-on-replace rule).",
-    "confidence": "verified_high"
-  },
-  {
     "english": "tell",
     "garo": "agana",
     "category": "general",
@@ -77653,6 +77544,24 @@
     "category": "phrases",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-249 (2026-11-01, Thangseng native-validation block relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Present, question.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "teach",
+    "garo": "Skia",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-250 (2026-11-01, Project Owner ruling in chat: teach = Skia, native-verified; Sikie deleted for all; chata overrides sat·ti/Satta and old fit words; given words override old, dups deleted). Replaces NV-243 Sikie and legacy Skie on·a / Sikie on·a (all deleted).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to teach",
+    "garo": "Skia",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-250 (2026-11-01, Project Owner ruling in chat: teach = Skia, native-verified; Sikie deleted for all; chata overrides sat·ti/Satta and old fit words; given words override old, dups deleted).",
     "confidence": "verified_high"
   }
 ]
