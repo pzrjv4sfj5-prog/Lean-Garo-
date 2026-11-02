@@ -7,7 +7,7 @@ import { translate } from '../../src/translationEngine.js';
 test('VERB the NOUN command -> NOUNko VERB-bo', async () => {
   assert.equal((await translate('read the book')).garo, 'Ki·tapko poraibo');
   assert.equal((await translate('read books')).garo, 'Ki·taprangko poraibo');
-  assert.equal((await translate('eat rice')).garo, 'Miko cha·bo');
+  assert.equal((await translate('eat rice')).garo, 'Mi cha·bo'); // NV-248: Thangseng, habitual object drops -ko (exact pin)
   assert.equal((await translate('please read the book')).garo, 'Ka·sapae. ki·tapko poraibo');
 });
 

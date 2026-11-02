@@ -14,7 +14,7 @@ test('NV-227: no legacy `ang on·a` / `na· on·a` template output', async () =>
 });
 
 // 2. Irregular English pasts no longer leave [UNKNOWN] (DERIVED via `did <lemma>`, flagged).
-for (const [en, garo] of [['I knew it.', 'anga uko hai·aha'], ['I made a house.', 'anga nokko tariaha']]) test(`NV-227 irregular past: ${en}`, async () => {
+for (const [en, garo] of [['I made a house.', 'anga nokko tariaha']]  /* `I knew it.` is a native exact pin since NV-248 (see nv248_thangseng_batch.test.js) */) test(`NV-227 irregular past: ${en}`, async () => {
   const r = await translate(en); assert.equal(r.garo.toLowerCase(), garo); assert.equal(r.derived, true); assert.ok(r.confidence <= 0.6);
 });
 test('NV-227: irregular past with a covered entry is untouched', async () => assert.equal(await lc('I saw it.'), 'anga uko nikaha'));

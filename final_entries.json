@@ -1441,14 +1441,6 @@
   },
   {
     "english": "Cabbage",
-    "garo": "ba·da ko·pi",
-    "pos": null,
-    "category": "food",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Cabbage",
     "garo": "bi·jak ko·pi",
     "pos": null,
     "category": "food",
@@ -8454,14 +8446,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "VERIFIED/HIGH"
-  },
-  {
-    "english": "Promise",
-    "garo": "Ka·ra chaka",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:ku˙-chak-a / ku˙-mik-chet-a / ku˙-wat-a"
   },
   {
     "english": "Promise",
@@ -24736,14 +24720,6 @@
     "notes": "UNVERIFIED/HIGH"
   },
   {
-    "english": "letter",
-    "garo": "chi·ti",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
-  },
-  {
     "english": "leukoderma",
     "garo": "ja˙·ka·bok",
     "pos": null,
@@ -30158,22 +30134,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH"
-  },
-  {
-    "english": "run away",
-    "garo": "kata",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:kat-sit-tap-a"
-  },
-  {
-    "english": "run away",
-    "garo": "katsit·tap·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
   },
   {
     "english": "run, nose",

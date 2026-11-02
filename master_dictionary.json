@@ -330,7 +330,7 @@
     "english": "cabbage",
     "garo": "Kobi",
     "category": "general",
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080).",
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080). NV-248: Thangseng batch gives `banda kobi` as the cabbage word; Kobi kept as a valid shorter variant (both native).",
     "confidence": "verified_high"
   },
   {
@@ -17612,15 +17612,6 @@
   },
   {
     "english": "Promise",
-    "garo": "Ku·chaka",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080). | NV-242 (2026-11-01, Project Owner 'close all'): spelling aligned to `Ku·chaka` (same lexeme Thangseng gave for respond / confess, NV-234); `Ka·ra chaka` stays the primary promise (NV-080).",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Promise",
     "garo": "ku·mik·chet·a",
     "pos": null,
     "category": "uncategorized",
@@ -32135,15 +32126,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "letter",
-    "garo": "chi·ti",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
     "english": "leukoderma",
     "garo": "ja·ka·bok",
     "pos": null,
@@ -38162,24 +38144,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "run away",
-    "garo": "kata",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:kat-sit-tap-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "run away",
-    "garo": "katsit·tap·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
     "confidence": "unverified"
   },
   {
@@ -77444,6 +77408,195 @@
     "pos": null,
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-241 (2026-11-01, Thangseng phrase relayed by Project Owner in chat, raw message not on file; period normalised to raka). Literal way of saying 'coming and going'; used when taunting someone (idiomatic taunt, not the neutral sense). ",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "cabbage",
+    "garo": "banda kobi",
+    "pos": "n.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Cabbage. Overrides legacy bi·jak ko·pi.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "promise",
+    "garo": "Ku·rachaka",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) To promise. Replaces NV-242 Ku·chaka for promise; Ku·chaka now = confess/admit/respond.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to promise",
+    "garo": "Ku·rachaka",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "admit",
+    "garo": "Ku·chaka",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) To admit; same word as confess/respond (NV-182, NV-234).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to admit",
+    "garo": "Ku·chaka",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "obedient",
+    "garo": "knachakgipa",
+    "pos": "adj.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "obedient",
+    "garo": "katta ra·gipa",
+    "pos": "adj.",
+    "category": "words",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Alternate for obedient.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "run away",
+    "garo": "katanga",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) To run away. Overrides legacy katsit·tap·a (and unverified kata).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to run away",
+    "garo": "katanga",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "letter",
+    "garo": "chitti",
+    "pos": "n.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Letter (mail). Replaces unverified chi·ti.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "a / one (article, classifier; used with letters etc.)",
+    "garo": "kingsa",
+    "pos": "classifier",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) kingsa = a / one, used with items like letters.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "he is running away",
+    "garo": "Ua katangenga",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Present continuous.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i knew it",
+    "garo": "Anga uko hai·aha",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Simple past.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i knew it",
+    "garo": "Anga uko u·iaha",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Acceptable variant. Simple past.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i brought it",
+    "garo": "Anga uko ra·baaha",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Simple past.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "i will bring it",
+    "garo": "Anga uko ra·bagen",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Future.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "are those your dogs?",
+    "garo": "Ua nang·ni achakrangma?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Present, question.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "are those your dogs?",
+    "garo": "Ua achakrang nang·nima?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Acceptable variant. Present, question.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "is this my house?",
+    "garo": "Ia angni nokma?",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Present, question.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "eat rice",
+    "garo": "Mi cha·bo",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Imperative; habitual object drops accusative -ko (Thangseng). Overrides engine default Miko cha·bo.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "drink water",
+    "garo": "Chi ringbo",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-248 (2026-11-01, Thangseng native-validation batch relayed by Project Owner in chat; block drafted by an intermediary, raw Thangseng message not on file; periods read as raka ·) Imperative; habitual object drops accusative -ko (Thangseng). Overrides engine default Chiko ringbo.",
     "confidence": "verified_high"
   }
 ]

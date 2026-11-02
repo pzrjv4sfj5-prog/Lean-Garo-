@@ -19,7 +19,8 @@ for (const [en, garo] of [
 ]) test(`NV-225: ${en}`, async () => assert.equal(await lc(en), garo));
 test('NV-225: -ma flags native vs derived', async () => {
   assert.equal((await translate('Is that your dog?')).derived, false);
-  assert.equal((await translate('Are those your dogs?')).derived, true);
+  assert.equal((await translate('Are those your cats?')).derived, true);
+  assert.ok(!(await translate('Are those your dogs?')).derived); // native exact pin since NV-248
 });
 // Project Owner ruling 2026-10-29: the extra raka dot in `re·ba·` forms is wrong. Every tense of `come` is written without it
 // (paradigm: re·baa / re·baaha / re·bagen / re·baja / re·babo / re·baenga / re·bana).

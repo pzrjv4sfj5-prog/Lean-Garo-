@@ -74,3 +74,9 @@ New conversation: paste this file, clone with a fresh PAT (scrub it from .git/co
 
 ## Addendum 2026-11-01e: NV-247 (renumbered from 246: Claude B took NV-246)
 - `that is right` pinned to kra·a (correct sense; Owner). teacher = Skigipa confirmed as-is (verified row untouched). Owner also wrote "teach is Skia(n)" in the same message: ambiguous vs NV-243 teach = Sikie, NOT applied, awaiting clarification. Next free NV: 248.
+
+## Addendum 2026-11-01f: NV-248 (Thangseng batch, relayed by Owner)
+- Vocabulary: me·su = vegetables (already NV-240, confirmed; no sam·bi·jak vegetables row exists); cabbage = banda kobi (new primary, Kobi kept as native variant); promise = Ku·rachaka (reverses NV-242 Ku·chaka for promise); Ku·chaka = confess/admit/respond (admit added); obedient = knachakgipa / katta ra·gipa; run away = katanga (deleted katsit·tap·a and unverified kata); letter = chitti (deleted chi·ti); kingsa = a/one classifier-article (glossary row).
+- Pins (8) + 2 variants: eat rice = Mi cha·bo, drink water = Chi ringbo, he is running away = Ua katangenga, i knew it = Anga uko hai·aha (variant u·iaha), i brought it = Anga uko ra·baaha, i will bring it = Anga uko ra·bagen, are those your dogs? = Ua nang·ni achakrangma? (variant Ua achakrang nang·nima?), is this my house? = Ia angni nokma?. The block said "16 pins": it contains 8 vocabulary entries + 8 sentence pins; no further sentences were present. Terminal periods dropped to match shipped style.
+- Baselined 3 primary+variant verified keys (obedient, i knew it, are those your dogs?) in known_dictionary_conflicts.json.
+- Handoff: docs/HANDOFF_CLAUDE_B_20261101_imperative_bare_noun.md (bare-noun default; `!` forms still ship -ko). Next free NV: 249.
