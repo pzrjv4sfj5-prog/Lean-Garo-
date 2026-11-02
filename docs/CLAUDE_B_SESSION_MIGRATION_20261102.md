@@ -24,7 +24,7 @@ Native (Thangseng 2026-11-02): all rows in the relay doc. Derived: rice/water ba
 Run fast = Ta·rake katbo (pinned); he/she is running away = Ua katangenga (pinned + particle-verb aspect rule); know negative spelling `u·ija` everywhere, derived u·ia stem for all know negatives; `Run away!` = Katangbo! (derived). See the relay doc, last section.
 
 ## Open / handoffs
-1. (closed) Run fast. (closed) `[UNKNOWN]ko` leak for run away. Closed later: `Sit down!` = Asongbo, `Come in!`/`Wake up!` ship dictionary rows (unverified/weak). Still open: `He is waking up.` / `He woke up.` (no verified wake-up stem; ask Thangseng with tense labels), `i do not understand` = u·ija vs `i don't understand` = man·ja.
+1. (closed) Run fast. (closed) `[UNKNOWN]ko` leak for run away. Closed later: `Sit down!` = Asongbo, `Come in!`/`Wake up!` ship dictionary rows (unverified/weak). Still open: `He is waking up.` / `He woke up.` (no verified wake-up stem; ask Thangseng with tense labels), (resolved by Owner: final baseline spelling is `u·ija`, applied to every know negative and the `i do not understand` pin; the VERIFIED master row `i don't understand` = `Anga man·ja` is kept, so the two understand rows still differ: Owner/Claude A to decide if `i do not understand` should follow man·ja.)
 3. Is bare habitual object a general rule (bread, milk, tea)? Owner/Thangseng; keep rice/water only.
 4. Claude A: master `i don't know` row still `Anga uija.` (now `u·ija`; B's phrase_maps row wins at runtime), `i do not understand` spelling, master `help!` row and `stop!` = Sengbo row; drop corrections:help! baseline row.
 5. Thangseng sent/answered this round; still unconfirmed from older lists: `like!` = namnikbo, `walk!` = re·mambo.

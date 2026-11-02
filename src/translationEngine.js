@@ -700,7 +700,7 @@ async function translateCore(input) {
   // were therefore never reachable — silently falling through to weaker
   // methods (stopword-stripped/grammar-assembly/sov-assembly). Worst case:
   // "i don't know" shipped as "Anga uia." (= "I know", polarity reversed)
-  // instead of the confirmed "Anga uija" (= "I don't know"). Mirrors the
+  // instead of the confirmed "Anga u·ija" (= "I don't know"). Mirrors the
   // corrections lookup pattern above: try apostrophe-preserved forms first.
   const phraseMap = lookupPhrase(lowerWithApos) || lookupPhrase(cleaned) || lookupPhrase(lower);
   if (phraseMap) return { garo: phraseMap, method: 'phrase-map', confidence: capLookupConfidence(lowerWithApos, 0.99) };

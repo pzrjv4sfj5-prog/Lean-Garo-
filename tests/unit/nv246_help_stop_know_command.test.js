@@ -18,7 +18,7 @@ test('NV-246: stop paradigm command is sengbo, other stop forms unchanged', () =
 });
 // NV-246 (cont.): `know` negative = u·ija (NV-250: Thangseng spelling with the dot; was uija) (engine pin wins; the paradigm's derived `hai·ja` is replaced).
 test('NV-246: I do not know -> Anga uija', async () => assert.equal(await g('I do not know'), 'Anga u·ija'));
-test('NV-246: know paradigm negative is uija; other know forms unchanged', () => {
+test('NV-246: know paradigm negative is u·ija; other know forms unchanged', () => {
   const v = JSON.parse(readFileSync(new URL('../../src/data/verb_paradigms.json', import.meta.url), 'utf8')).verbs.know;
   assert.equal(v.forms.negative, 'u·ija'); assert.equal(v.forms.present, 'hai·a'); assert.equal(v.forms.command, 'hai·bo');
 });

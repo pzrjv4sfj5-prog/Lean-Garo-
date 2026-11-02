@@ -59,3 +59,7 @@ test('NV-250: Come in! / Wake up! ship the dictionary rows (unverified / weak OC
   assert.equal(await g('Wake up!'), 'Chakatboha');
 });
 test('NV-250: I do not understand keeps the dotted native spelling u·ija', async () => assert.equal(await g('I do not understand'), 'Anga u·ija'));
+test('NV-250: final baseline u·ija: every know negative and the pinned `i do not understand` use the dotted spelling; `i don\'t understand` stays the VERIFIED master row man·ja', async () => {
+  for (const s of ['I do not know', "I don't know", 'I dont know', 'I do not understand']) assert.equal(await g(s), 'Anga u·ija', s);
+  assert.equal(await g("I don't understand"), 'Anga man·ja');
+});
