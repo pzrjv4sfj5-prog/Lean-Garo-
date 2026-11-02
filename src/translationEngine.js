@@ -538,19 +538,24 @@ async function translateRaw(input) {
       }
     }
   }
-  // NV-250 (Claude B, 2026-11-02): subjectless particle-verb command (`Run away!`, `Sit down!`). Category = 2-word attested verb
-  // lemma (run away = katanga, Thangseng native for the citation form); form = RULE-029 command, final -a -> -bo (katanga -> katangbo).
-  // DERIVED by the RULE-029 analogy, flagged for native check; only fires when the dictionary has a single-token -a citation form.
+  // NV-250 (Claude B, 2026-11-02): subjectless particle-verb command (`Run away!`, `Sit down!`, `Come in!`, `Wake up!`). Category = 2-word verb
+  // the dictionary attests (`to run away` lemma or an exact `sit down` row); form = ONE word/phrase, no `!` (Thangseng writes `Ringbo`, `Sing·bo`).
+  //  * citation form in -a (run away = katanga): RULE-029 command, -a -> -bo (Katangbo), DERIVED, flagged;
+  //  * row already a command (sit down = Asongbo, native-confirmed NV-091; come in = Ning·chi re·babo; wake up = Chakatboha, weak/OCR row,
+  //    shipped as is, listed for Thangseng): returned whole, trailing full stop removed.
   {
     const pm = String(input).trim().match(/^([A-Za-z]+)\s+(away|up|down|out|off|back|in|on|over|along)\s*!$/i);
     if (pm) {
-      const cit = MULTI_WORD_VERB_LEMMAS.get(`${pm[1].toLowerCase()} ${pm[2].toLowerCase()}`);
-      if (cit && typeof cit === 'string' && /^[A-Za-z·]+bo$/i.test(cit)) {
-        return { garo: cit.charAt(0).toUpperCase() + cit.slice(1) + '!', method: 'particle-verb-command', confidence: 0.8 }; // dictionary already holds the command form (sit down = Asongbo)
-      }
-      if (cit && typeof cit === 'string' && !/[\s,;()/]|\[UNKNOWN\]/.test(cit) && /a$/i.test(cit) && !/(bo|enga|aha|gen|ja)$/i.test(cit)) {
-        const bo = cit.replace(/a$/i, 'bo');
-        return { garo: bo.charAt(0).toUpperCase() + bo.slice(1) + '!', method: 'particle-verb-command', confidence: 0.7, derived: true };
+      const key = `${pm[1].toLowerCase()} ${pm[2].toLowerCase()}`;
+      const clean = (s) => (typeof s === 'string' ? s.trim().replace(/\.$/, '') : '');
+      const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+      const rowCit = clean(lookupGaro(key));
+      const cit = /bo(ha)?$/i.test(rowCit) ? rowCit : clean(MULTI_WORD_VERB_LEMMAS.get(key) || rowCit); // an exact command row wins over the `to X Y` lemma
+      if (cit && !/\[UNKNOWN\]|[,;()/]/.test(cit)) {
+        if (/bo(ha)?$/i.test(cit)) return { garo: cap(cit), method: 'particle-verb-command', confidence: 0.8 };
+        if (!/\s/.test(cit) && /a$/i.test(cit) && !/(enga|aha|gen|ja)$/i.test(cit)) {
+          return { garo: cap(cit.replace(/a$/i, 'bo')), method: 'particle-verb-command', confidence: 0.7, derived: true };
+        }
       }
     }
   }

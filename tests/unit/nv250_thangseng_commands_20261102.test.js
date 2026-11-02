@@ -48,6 +48,14 @@ test('NV-250: he/she is running away = Ua katangenga; other subjects take the sa
 });
 test('NV-250: particle verb run away = katanga: past katangaha (derived), command Katangbo! (derived), no [UNKNOWN] leak', async () => {
   assert.equal(await g('He ran away.'), 'Ua katangaha');
-  assert.equal(await g('Run away!'), 'Katangbo!');
+  assert.equal(await g('Run away!'), 'Katangbo');
   for (const s of ['He ran away.', 'She is running away.', 'I am running away.', 'Run away!']) assert.ok(!(await g(s)).includes('[UNKNOWN]'), s);
 });
+test('NV-250: Sit down! = Asongbo (one word, native NV-091); Sit down. unchanged', async () => {
+  for (const s of ['Sit down!', 'sit down!', 'Sit down.']) assert.equal(await g(s), 'Asongbo', s);
+});
+test('NV-250: Come in! / Wake up! ship the dictionary rows (unverified / weak OCR) with no [UNKNOWN] leak', async () => {
+  assert.equal(await g('Come in!'), 'Ning·chi re·babo');
+  assert.equal(await g('Wake up!'), 'Chakatboha');
+});
+test('NV-250: I do not understand keeps the dotted native spelling u·ija', async () => assert.equal(await g('I do not understand'), 'Anga u·ija'));
