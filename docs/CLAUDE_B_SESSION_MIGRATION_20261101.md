@@ -1,21 +1,21 @@
 # Claude B session migration, 2026-11-01 (close-out)
 
 Author role: Claude B (engine lane: src/*.js, tests, scripts, governance). Reports only work Claude B performed this session (Rule 5). Claude A's NV-226 to NV-242 are not claimed here.
-NV numbers: this session took NV-243 (Claude A's counter said next free = 243) and a follow-up to B's NV-228. B's earlier "NV-229" label for the same work was renamed to NV-243 before commit because Claude A already holds NV-229. Cite by commit hash.
+NV numbers: this session took NV-246 and a follow-up to B's NV-228. The same work was labelled NV-229, then NV-246, and renamed twice because Claude A took those numbers (229; 243 to 245) while this session ran. Next free: 247. Cite by commit hash.
 
 ## Project identity
 Lean-Garo- (English -> Garo/A·chik translator). Read first: this file, then `.ai/WORKSTATE.yaml` `claude_b.next_action_20261101`, then `docs/CLAUDE_A_SESSION_MIGRATION_20261031.md`. Previous B close: `docs/CLAUDE_B_SESSION_MIGRATION_20261029.md` (its Open items 1 and 3 are closed here).
 
 ## First item for the next session (Rule 10 resume)
-`git fetch`, `git log --oneline <close commit>..origin/main`. Claude A may have pushed since. Resync, do not assume nothing changed. This session started at 0c8f74a, rebased onto origin 768429c (8 Claude A commits, clean rebase, no conflicts).
+`git fetch`, `git log --oneline <close commit>..origin/main`. Claude A may have pushed since. Resync, do not assume nothing changed. This session started at 0c8f74a, rebased twice, finally onto origin 703eebf (13 Claude A commits in total; one baseline-file conflict in known_cross_source_conflicts.json, resolved by taking upstream and appending `corrections:help!`).
 
 ## State at close
-Claude B commits this session (oldest first, after rebase on 768429c): 12ddc49 (NV-228 follow-up, cook pins), dd9ceaa (NV-243, help/stop/know), plus the close commit carrying this file and the NV-243 rename. NOT PUSHED: no token available (the PAT pasted in chat is to be revoked). The next session pushes after `git fetch` + rebase.
+Claude B commits this session: NV-228 follow-up (cook pins), NV-246 (help/stop/know) and the close commit carrying this file; hashes changed with each rebase, find them with `git log --author="Claude B" --since=2026-11-01`. Push status is recorded in `.ai/WORKSTATE.yaml` `claude_b.next_action_20261101` and in the final line of this section.
 Gate on the rebased tree: `npm run build` exit 0; unit 1126/1126; 0 NEW conflicts / placeholders / mismatches / collisions; rule conformance 79/112 (0 not in baseline); `runtime-error-sweep.mjs` 15,707 calls / 0 errors; `audit-mechanical.mjs` 1,329 probes: invariance 0, irregular-past UNKNOWN 0, hygiene 0, mid-sentence capitals 0 (was 1), paradigm mismatches 0 (was 3).
 
 ## Done (personally performed)
 - Closed B 20261029 Open item 1: pins `i will cook` = `Anga song·gen`, `she will cook` = `Ua song·gen` lowercased (pinned results are exempt from neutralisation; `she will cook` had the same defect). Test: tests/unit/nv228b_cook_pin_lowercase.test.js.
-- Closed B 20261029 Open item 3, three Owner rulings (NV-243, tests/unit/nv243_help_stop_know_command.test.js):
+- Closed B 20261029 Open item 3, three Owner rulings (NV-246, tests/unit/nv246_help_stop_know_command.test.js):
   - `help!` = `Dakchakbo!`: new pin in corrections.json; the engine previously shipped `Madengma!` (weak/OCR per docs/PICKPRIMARY_NO_VERIFIED_CANDIDATE.md). Baseline row `corrections:help!` added to known_cross_source_conflicts.json because master still says `Madengma!`.
   - `stop!` = `Sengbo!`: engine was already right; the paradigm command `dontongbo` replaced by `sengbo` (status pinned). `dontonga`, `dontongnabe` unchanged.
   - negative of `know` = `uija`: paradigm negative `hai·ja` replaced by `uija` (status pinned, matches the `i do not know` pin). `hai·jawa`, `hai·bo`, `hai·nabe` unchanged.
@@ -36,7 +36,7 @@ Executed and output inspected: full build gate, runtime-error-sweep, audit-mecha
 
 ## Open / handoffs
 1. Generic `know` negatives still ship `hai·ja`: `I do not know him` = `Anga biko hai·ja`, `he does not know` = `Ua hai·ja`, `I will not know` = `Anga hai·jawa`. Owner ruling needed: is `uija` the negative everywhere, or only the bare `Anga uija`? Do not invent Garo.
-2. Claude A: master_dictionary.json `help!` `Madengma!` -> `Dakchakbo!`; add a `stop!` = `Sengbo` row recording the ruling; then delete `corrections:help!` from known_cross_source_conflicts.json. Claude A's suspended batch-1 row `help (chak·a vs dakchaka)` is related: the command is now ruled `dakchakbo`.
+2. Claude A: master_dictionary.json `help!` `Madengma!` -> `Dakchakbo!` (still `Madengma!` at close); add a `stop!` = `Sengbo` row recording the ruling; then delete `corrections:help!` from known_cross_source_conflicts.json. Claude A's own NV-243 (2026-11-01) already ruled the verb `help` = `dakchaka`, consistent with the command `dakchakbo`.
 3. Carried from B 20261029 and unchanged: Claude A promotions (`like = namnika`, `those/these`, `red house`, vocabulary gaps); `like!` = `namnikbo` and `walk!` = `re·mambo` unconfirmed.
 4. Not run: browser/UI check, strict no-drop and invariance probes, stress_237.
 
@@ -48,7 +48,7 @@ Not yet sent. Drink! (command) = Ringbo; Ask! (command) = Sing·bo; Dance! (comm
 2. Never invent Garo: derived output is flagged derived and listed for native check; apply only what is ruled.
 3. PAT hygiene: the PAT was pasted into chat again this session. Used one-shot in the clone URL only; `.git/config` remote reset to the plain URL (verified). Revoke it; never store it in the repo config.
 4. Rebase onto origin before pushing; for generated files take upstream and rebuild (dist/index.html is regenerated by the build and is not committed by B unless the close commit does so); for master_dictionary.json conflicts take upstream and re-apply scripted edits.
-5. Owner rulings carried: no extra raka dot in come/go/bring; mid-sentence capitals neutralised (pins included); delete replaced rows, do not suspend; NV numbers: check the counter (next free 244 after NV-243).
+5. Owner rulings carried: no extra raka dot in come/go/bring; mid-sentence capitals neutralised (pins included); delete replaced rows, do not suspend; NV numbers: check the counter (next free 244 after NV-246).
 
 ## Governance-model check
 `docs/CLAUDE_B_ENGINEERING_GOVERNANCE.md` not edited. No new gate step this session. Still pending from 20261029: Claude A / Owner to confirm whether `scripts/audit-mechanical.mjs` belongs in that document.
