@@ -473,7 +473,7 @@ export function analyzeGrammar(input) {
         // `He is running away`; same rule as kata -> katenga). Irregular/-ed past = stem + -ha (katanga -> katangaha), DERIVED.
         // Negatives, future and others keep the existing paths below.
         if (!isNegative && detectedTense === 'present') {
-          if (/ing$/.test(w) && !/^(be|being)$/.test(w)) mwAspect = 'continuous';
+          if (/ing$/.test(w) && !/^(be|being)$/.test(w) && words.slice(0, i).some((x) => /^(am|is|are|was|were|be|been|i'm|you're|we're|they're|he's|she's|it's)$/i.test(String(x).replace(/[^A-Za-z']/g, '')))) mwAspect = 'continuous';
           else if (IRR_PAST_FORMS.has(w) || /ed$/.test(w)) mwAspect = 'past';
         }
       } else if (SPECIAL_TENSES.includes(detectedTense)) {
@@ -562,6 +562,14 @@ export function analyzeGrammar(input) {
           // 'go' is unaffected — it returns via the RULE-030 branch above
           // and never reaches this line.
           garoWithTense = applyNegation(/^knows?$/.test(w) ? 'u·ia' : getConjugationRoot(w, garoWithTense)); // NV-250: know -> u·ia stem
+        }
+        // NV-255 (Claude B, 2026-11-02): NEGATIVE CONTINUOUS = stem + -ja + -enga (negation BEFORE the progressive), never -enga + -ja.
+        // Native: Thangseng `Anga re·angjaenga` (Owner NV-222), `Anga miko cha·jaenga`; Burling S1 gold `cha·ja-ing-a`; reference PDF `cha.-ja-eng-a`.
+        // The English signal is be + not + V-ing (the verb word ends in -ing); positive continuous and every other negative are untouched.
+        const hasBeAux = words.slice(0, i).some((x) => /^(am|is|are|was|were|be|been|i'm|you're|we're|they're|he's|she's|it's)$/i.test(String(x).replace(/[^A-Za-z']/g, '')));
+        if (isNegative && hasBeAux && /ing$/.test(w) && !/^(be|being)$/.test(w) && detectedTense === 'present' && !mwAspect) { // be-aux required: `bring`/`sing` end in -ing but are not gerunds
+          const posForm = String(garoVerb).replace(/enga$/, '').replace(/a$/, '');
+          if (posForm && !/\s/.test(posForm)) garoWithTense = posForm + 'jaenga';
         }
         if (mwAspect === 'continuous') garoWithTense = garoVerb.replace(/a$/, '') + 'enga';
         else if (mwAspect === 'past') garoWithTense = applyTense(garoVerb, 'past');

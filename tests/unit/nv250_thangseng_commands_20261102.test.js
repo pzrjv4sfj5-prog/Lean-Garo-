@@ -103,3 +103,28 @@ test('NV-253: translate(input, {trace:true}) reports the routing path, method, c
   assert.equal((await translate('Drink!', { trace: true })).trace.route, 'cascade:' + (await translate('Drink!')).method);
   assert.equal((await translate('Drink!')).trace, undefined);
 });
+// ---- NV-255 (Claude B): negative continuous order, be-aux wh peel, negative imperative (PDF `top_priority (first checking)` bug list) ----
+test('NV-255: negative continuous = stem + ja + enga (negation BEFORE the progressive): native re·angjaenga / cha·jaenga, Burling cha·ja-ing-a', async () => {
+  assert.equal(await g('I am not going.'), 'Anga re·angjaenga');
+  assert.equal(await g('I am not eating.'), 'Anga cha·jaenga');
+  assert.equal(await g('I am not eating rice.'), 'Anga miko cha·jaenga');
+  assert.equal(await g('You are not eating those vegetables.'), 'Na·a ua me·surangko cha·jaenga');
+  assert.equal(await g('She is not running away.'), 'Ua katangjaenga'); // derived by the same order
+  assert.equal(await g('I am eating.'), 'Anga cha·enga'); // positive unchanged
+});
+test('NV-255: Why/Where are/is not V-ing? peels to the declarative with the corrected order', async () => {
+  assert.equal(await g('Why are you not eating those vegetables?'), 'Maina na·a ua me·surangko cha·jaenga?');
+  assert.equal(await g('Why are you eating those vegetables?'), 'Maina na·a ua me·surangko cha·enga?');
+  assert.equal(await g('Where are you not going?'), 'Bachi na·a re·angjaenga?'); // where + going = bachi (BUG-REPORT-WHERE-GOING), kept from the cascade's own choice
+});
+test('NV-255: negative imperative keeps the negation (-bo -> -nabe); exact pin priority kept', async () => {
+  assert.equal(await g('Do not eat rice!'), 'Mi cha·nabe');
+  assert.equal(await g("Don't go!"), 'Re·angnabe');
+  assert.equal(await g('Do not eat'), 'cha·nabe');
+  assert.equal(await g('do not sing'), 'ring·ja'); // bare statement form untouched (NV-208)
+  assert.equal(await g('Eat rice!'), 'Mi cha·bo');
+});
+test('NV-255: verbs that merely end in -ing (bring, sing) are not read as gerunds', async () => {
+  assert.equal((await g('I do not bring it.')).toLowerCase(), 'anga uko ra·baja');
+  assert.equal(await g('Why am I not singing?').then((s) => /jaenga/.test(s)), true);
+});

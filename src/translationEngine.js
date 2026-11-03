@@ -310,8 +310,22 @@ export async function translate(input, opts = {}) {
   // (grammar-assembly cannot parse them), which dropped demonstratives, -rang, -ko, -o and sometimes the wh-word itself. Only when the cascade would end on that
   // fallback do we peel the wh-word, send the declarative through the full pipeline and put the wh-word back, so every earlier rule keeps priority.
   if (result.method === 'sov-assembly') {
-    const peeled = await peelWhQuestion(String(input));
+    const peeled = await peelWhQuestion(String(input), result.garo);
     if (peeled) { result = neutraliseMidCapitals(peeled.result, input); path.length = 0; path.push(...peeled.path); }
+  }
+  // NV-255 (Claude B, 2026-11-02): sentence-initial negative imperative (`Do not eat!`, `Don't eat rice!`). The cascade fell through to a fallback that
+  // dropped the negation (`Do not eat!` = `Cha·ja`, `Don't eat!` = `Cha·bo!`). Form = the positive command with -bo -> -nabe (negative command -nabe,
+  // PDF `Cha.na-be`, existing pin `Do not eat` = `cha·nabe`). Only where the cascade ended on a fallback, so exact pins keep priority.
+  if (['sov-assembly', 'stopword-stripped', 'fuzzy', 'morphology'].includes(result.method)) {
+    const ni = String(input).trim().match(/^(?:do\s+not|don'?t)\s+(.+?)\s*!$/i); // explicit `!` only: bare `do not sing` stays the declarative (NV-208)
+    if (ni && !/^(?:you|i|we|they|he|she|it|know|understand)\b/i.test(ni[1])) {
+      const pos = await translate(`${ni[1]}!`);
+      const posG = String(pos && pos.garo).replace(/!+$/, '');
+      if (pos && /bo$/i.test(posG) && !posG.includes('[UNKNOWN]')) {
+        result = { garo: posG.replace(/bo$/i, 'nabe'), method: 'negative-command-assembly', confidence: 0.75, derived: true };
+        path.length = 0; path.push('[negative-imperative: peel "do not"]', `[positive command: "${ni[1]}!"]`, '[bo -> nabe]');
+      }
+    }
   }
   if (opts && opts.trace) {
     const notes = [];
@@ -324,13 +338,17 @@ export async function translate(input, opts = {}) {
 // Wh-words that are ADVERBIAL (they add a slot to a complete clause), so the clause can be peeled and translated as a declarative.
 // what/who are ARGUMENT wh-words (they replace a noun phrase that is then missing from the clause), so they are NOT peeled.
 const PEELABLE_WH = new Set(['why', 'where', 'when', 'how']);
-async function peelWhQuestion(input) {
-  const m = input.trim().match(/^(why|where|when|how)\s+(did|do|does|will)\s+((?:(?:the|a|an|my|your|his|her|our|their)\s+)?[a-z]+)\s+(not\s+)?(.+?)\s*(\?)?\s*$/i);
+async function peelWhQuestion(input, fallbackGaro = '') {
+  const m = input.trim().match(/^(why|where|when|how)\s+(did|do|does|will|are|is|am)\s+((?:(?:the|a|an|my|your|his|her|our|their)\s+)?[a-z]+)\s+(not\s+)?(.+?)\s*(\?)?\s*$/i);
   if (!m) return null;
   const wh = m[1].toLowerCase(); const aux = m[2].toLowerCase(); const neg = !!m[4];
   if (!PEELABLE_WH.has(wh)) return null;
   if (aux === 'will' && !neg) return null; // the positive future wh-question form is not ruled: no guess
-  const whGaro = lookupGaro(wh);
+  if (/^(?:are|is|am)$/.test(aux) && !/^[a-z]+ing\b/i.test(m[5])) return null; // copular/locative questions (`where is the big house?`) are not continuous clauses
+  // The fallback already chooses the wh-word with its own context rules (BUG-REPORT-WHERE-GOING: where + going = bachi, not bano); keep that choice when it is a known wh-word.
+  const KNOWN_WH = new Set(['maina', 'bano', 'bachi', 'basako', 'maidake', 'maia', 'mai', 'sawa', 'badia']);
+  const fbFirst = String(fallbackGaro).trim().split(/\s+/)[0] || '';
+  const whGaro = KNOWN_WH.has(fbFirst.toLowerCase().replace(/[?.!]/g, '')) ? fbFirst.replace(/[?.!]/g, '') : lookupGaro(wh);
   if (!whGaro || typeof whGaro !== 'string' || /[\[\]?,;()/]|UNKNOWN/.test(whGaro) || /\s/.test(whGaro.trim())) return null;
   const decl = `${m[3]} ${aux}${neg ? ' not' : ''} ${m[5]}.`;
   const inner = await translate(decl, { trace: true });

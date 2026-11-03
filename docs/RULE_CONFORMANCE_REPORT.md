@@ -26,7 +26,7 @@ Examples: 112 | runtime matches rule: 79 (71%) | orphan (in no entry layer): 13 
 | RULE-038 | four fruits | mewa rongbri | bite rongbri | exact-phrase | 0.98 |
 | RULE-044 | where? | Bao | Bano | sov-assembly | 0.75 |
 | RULE-046 | Did you go to market? | Na·a Bajal Re·angama? | Na·a bajalchi re·angama? | correction | 1 |
-| RULE-048 | Why are you laughing? | Maina na·a ka·dinga? | Maina na·a ka·dingenga | sov-assembly | 0.75 |
+| RULE-048 | Why are you laughing? | Maina na·a ka·dinga? | Maina na·a ka·dingenga? | wh-peel-assembly | 0.7 |
 | RULE-048 | Why did you come? | Na·a maina re·baa? | Na·a maini gimin re·baa | correction | 1 |
 | RULE-050 | I can eat. | Anga cha·na ama. | Anga cha·na man·a | exact-phrase | 0.98 |
 | RULE-050 | I can go. | Anga re·angna man·a. | Anga re·angna ama | exact-phrase | 0.98 |
