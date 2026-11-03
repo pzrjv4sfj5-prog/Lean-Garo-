@@ -52,7 +52,7 @@ Anga always; apostrophes and periods inside Garo words are raka typos (forms wri
 Verified after the final push, values in the closing message: HEAD == origin/main, git status clean, WORKSTATE.yaml updated (handoff_20261101_nv243_252, next_action_claude_a_20261101), SESSION_BOOTSTRAP.md pointer updated, this doc complete, no local-only commits, no uncommitted files, native-validation blockers listed under Open items.
 
 ## Exact next step
-New conversation: paste this file, clone with a fresh PAT (scrub it from .git/config), git fetch, verify HEAD, read .ai/SESSION_BOOTSTRAP.md then .ai/WORKSTATE.yaml, run the gate, then take Owner words: knowledge, the Skia family forms, door phrases, then the 71 multi-verified keys in batches of 10. Next free NV: 253.
+New conversation: paste this file, clone with a fresh PAT (scrub it from .git/config), git fetch, verify HEAD, read .ai/SESSION_BOOTSTRAP.md then .ai/WORKSTATE.yaml, run the gate, then take Owner words: knowledge, the Skia family forms, door phrases, then the 71 multi-verified keys in batches of 10. Next free NV: 255.
 
 ---
 
@@ -95,4 +95,11 @@ New conversation: paste this file, clone with a fresh PAT (scrub it from .git/co
 - Not changed, noted: `learn = Sikia` (garo_dictionary, unverified), `educated = skia man·gipa`, purpose_map `teach = skia on·na` and `learn = skia·na` (may need aligning with Skia). Next free NV: 252.
 
 ## Addendum 2026-11-01i: NV-252 (Owner directive)
-- door = do·ga (written `do.ga`, raka read as `·`). Deleted verified `Door | do·oga`; promoted the superseded `door | Do·ga` row to verified_high (note rewritten, since prepare-data treats a note starting with "superseded" as authoritative); doorway `do·oga·chol` -> `do·ga·chol` (unverified); phrase_maps `door` pin and `translationEngine.test.js` door test updated. `Open/Close the door` rows (Duar pekatbo / Duar petbo) untouched. Next free NV: 253.
+- door = do·ga (written `do.ga`, raka read as `·`). Deleted verified `Door | do·oga`; promoted the superseded `door | Do·ga` row to verified_high (note rewritten, since prepare-data treats a note starting with "superseded" as authoritative); doorway `do·oga·chol` -> `do·ga·chol` (unverified); phrase_maps `door` pin and `translationEngine.test.js` door test updated. `Open/Close the door` rows (Duar pekatbo / Duar petbo) untouched. Next free NV: 255.
+
+## Addendum 2026-11-01j: NV-254 (Owner synonym rulings on the Claude B grammar-reference PDF)
+- Source: PDF `top_priority (first checking)` (Claude B's compile from Burling, Phillips, web; Thangseng's only marks are removal/not-checked notes). Compared 53 example sentences with the engine: 24 matched; differences are mostly earlier rulings. No PDF sentence was pinned (provenance mixed, Owner did not say which are native-validated).
+- Owner directive: Bia = Ua, Namengaba = namenga, bajalchi = antichi are synonyms. Primaries unchanged (Ua, Anga namenga, bajalchi). Added verified variant rows: `she | Bia`, `I am fine | Anga namengaba`, `to the market | antichi` (placed before the primary row: same-case duplicate keys fall back to last-write-wins in pickPrimary); `he | Bia` note updated. No `it | Bia` row (not ruled).
+- Reverses the NV-223 note "never store antichi as market" only for the destination form `to the market`. `anti` stays `week` (NV-087, native); no `anti = market` row; base noun of antichi not given, open.
+- Baselined `she` and `to the market` (primary + verified variant) in known_dictionary_conflicts.json.
+- Engine bugs found by the comparison, for Claude B (still present at bdaf50f): `don't eat!` -> `Cha·bo!` (negation lost, `do not eat` works), `i have gone` -> `Anga donga`, bare plurals `dogs`/`people` -> `Achak`/`mande` (NV-169 `-rang`), `at the house` -> `Nok` (locative -o dropped), `i am not eating` -> `Anga cha·ja` (progressive lost). Tests: tests/unit/nv254_synonyms.test.js. Next free NV: 255.

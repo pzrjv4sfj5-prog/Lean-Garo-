@@ -61680,6 +61680,15 @@
   },
   {
     "english": "to the market",
+    "garo": "antichi",
+    "pos": "n.",
+    "category": "words",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-254 (2026-11-01, Project Owner directive in chat, ruling on the Claude B grammar-reference PDF `top_priority (first checking)`: Bia = Ua, Namengaba = namenga, bajalchi = antichi are synonyms; not a Thangseng quote) Synonym of bajalchi (primary). Owner directive; base noun `anti` stays `week` (NV-087), no `anti = market` row stored.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to the market",
     "garo": "bajalchi",
     "category": "travel",
     "notes": "VERIFIED/HIGH - NV-051 (Thangseng, 2026-08-02, RULE-044). '-chi' = movement-to locative. Usage note — NV-052 (Project Owner, 2026-08-02): canonically appears within a present-continuous 'going to X' sentence, e.g. VERIFIED 'I am going to the market.' -> 'Anga bajalchi re·angenga.'",
@@ -73801,7 +73810,7 @@
     "garo": "Bia",
     "category": "general",
     "confidence": "verified_high",
-    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-09-19 (Project Owner relay, direct: \"Bia and Ua are synonyms, confirmed hence no confusion, we can use either\"). Confirmed synonym of the existing VERIFIED 'he / she'->'Ua' (2026-08-09) -- both usable, not merged into one row."
+    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-09-19 (Project Owner relay, direct: \"Bia and Ua are synonyms, confirmed hence no confusion, we can use either\"). Confirmed synonym of the existing VERIFIED 'he / she'->'Ua' (2026-08-09) -- both usable, not merged into one row. NV-254 (2026-11-01): Owner directive: Bia and Ua are synonyms."
   },
   {
     "english": "bark",
@@ -77554,6 +77563,24 @@
     "category": "words",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-251 (2026-11-01, Project Owner ruling in chat: teach = Skia, native-verified; Sikie deleted for all; chata overrides sat·ti/Satta and old fit words; given words override old, dups deleted).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "she",
+    "garo": "Bia",
+    "pos": "pr.",
+    "category": "words",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-254 (2026-11-01, Project Owner directive in chat, ruling on the Claude B grammar-reference PDF `top_priority (first checking)`: Bia = Ua, Namengaba = namenga, bajalchi = antichi are synonyms; not a Thangseng quote) Synonym of Ua (no gendered pronoun); Ua stays primary.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "I am fine",
+    "garo": "Anga namengaba",
+    "pos": null,
+    "category": "phrases",
+    "classifier": null,
+    "notes": "variant/VERIFIED/HIGH — NV-254 (2026-11-01, Project Owner directive in chat, ruling on the Claude B grammar-reference PDF `top_priority (first checking)`: Bia = Ua, Namengaba = namenga, bajalchi = antichi are synonyms; not a Thangseng quote) Synonym of Anga namenga (primary); namengaba = the same word in the affirmative response.",
     "confidence": "verified_high"
   }
 ]
