@@ -47,10 +47,16 @@ Wake up! = Mikrakbo, He is waking up. = Ua mikrakbaengaha, He woke up. = Ua mikr
 - Still open: `What did you not eat?` (`Maia? na·a cha·ja`, argument wh), `Why are you not eating ...?` (continuous wh), positive future wh.
 - Gate: unit 1163/1163, sweep 15743/0, conformance 79/112 (0 unbaselined).
 
-## Addendum 3 (NV-255, Claude B; next free NV 256): PDF `top_priority (first checking)` engine bugs (from Claude A's NV-254 list)
+## Addendum 3 (NV-255, Claude B): PDF `top_priority (first checking)` engine bugs (from Claude A's NV-254 list)
 - Synonym ruling (Owner, applied by Claude A as NV-254): Bia = Ua, Namengaba = namenga, bajalchi = antichi are synonyms. Primaries unchanged (Ua, Anga namenga, bajalchi); the variants are verified rows, nothing is replaced. USAGE of each variant is not documented anywhere in the repo or the PDF: ask Thangseng when a speaker picks bia vs ua, namengaba vs namenga, antichi vs bajalchi (register? dialect? context?). The engine never generates the variants today.
 - Fixed: negative continuous order = stem + ja + enga (`Anga cha·jaenga`, `Anga re·angjaenga`, `Ua katangjaenga` derived), never enga + ja. Evidence: Thangseng/Owner NV-222, native correction `cha·jaenga`, Burling gold `cha·ja-ing-a`, PDF `cha.-ja-eng-a`. A be-auxiliary is required before the -ing verb (bring/sing are not gerunds). The pin `i am not eating` was wrong (`cha·ja`, progressive lost) and is now `Anga cha·jaenga`.
 - Fixed: wh + are/is/am + V-ing now peels (`Why are you not eating those vegetables?` = `Maina na·a ua me·surangko cha·jaenga?`); the wh-word keeps the cascade's own choice (where + going = bachi).
 - Fixed: `Do not eat rice!` / `Don't go!` keep the negation (positive command -bo -> -nabe, derived; explicit `!` only, bare `do not sing` stays the NV-208 statement).
 - NOT fixed, still open from A's list (PDF provenance mixed, no native cover): `i have gone` = `Anga donga`, bare plurals `dogs` = `Achak` (NV-169 -rang), `at the house` = `Nok` (locative -o dropped). The PDF marks the perfect mapping as removed/not checked, so the perfect needs Thangseng before any rule.
 - PDF vs engine, ruling needed (NOT changed): PDF past negative `Cha.-ja-ha` (= did not eat) vs the engine `cha·ja` (Rule 27) and the Thangseng note that `cha·jaha` = stopped eating; Owner NV-222 ruled `Ua re·angjaha` = He did not go.
+
+## Addendum 4 (NV-256, Claude B; next free NV 257): present perfect = completive -manaha
+- Rule: affirmative `have/has + past participle` (irregular map + regular -ed) is built from the verb's own present continuous (`I am going.` = `Anga re·angenga`) with the final -enga swapped for -manaha: `I have gone.` = `Anga re·angmanaha` (was `Anga donga`, `have` read as the verb), `She has come.` = `Ua re·bamanaha`, `I have eaten rice.` = `Anga mi cha·manaha`. Evidence: Thangseng Rules 25/26/28 (`cha·manaha` = has eaten / has done eating; -aha and -manaha overlap), reference PDF `Anga re.ang-man.aha`. DERIVED for verbs without a native perfect; `-aha` (`Anga re·angaha`) is an acceptable equivalent, not generated.
+- Priority: exact pins keep winning (`I have eaten.` = `Anga cha·jok`, Burling/Wikipedia `-jok`); `have to`, `have a dog`, `have been` are not read as perfects.
+- Not ruled, untouched: negative perfect (`I have not gone.` = `Anga dongja`, PDF `-ja-jok`), `already`/`just`; for Thangseng: `I have gone.` (present perfect), `He has come.` (present perfect), `I have not gone.` (present perfect negative), -manaha vs -aha preference.
+- Gate: unit 1172/1172, sweep 15743/0, conformance 79/112 (0 unbaselined).

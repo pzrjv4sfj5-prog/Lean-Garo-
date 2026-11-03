@@ -128,3 +128,23 @@ test('NV-255: verbs that merely end in -ing (bring, sing) are not read as gerund
   assert.equal((await g('I do not bring it.')).toLowerCase(), 'anga uko ra·baja');
   assert.equal(await g('Why am I not singing?').then((s) => /jaenga/.test(s)), true);
 });
+// ---- NV-256 (Claude B): present perfect = completive -manaha (Thangseng Rules 25/26/28, PDF `re.ang-man.aha`) ----
+test('NV-256: have/has + participle = stem + manaha (go = re·ang-, come = re·ba-); DERIVED, native for the manaha meaning', async () => {
+  assert.equal(await g('I have gone.'), 'Anga re·angmanaha');
+  assert.equal(await g('He has gone.'), 'Ua re·angmanaha');
+  assert.equal(await g('She has come.'), 'Ua re·bamanaha');
+  assert.equal(await g('I have eaten rice.'), 'Anga mi cha·manaha'); // = native cha·manaha (has eaten)
+  assert.equal(await g('They have run away.'), 'Uamang katangmanaha');
+});
+test('NV-256: exact -jok pins keep priority; have-as-verb, have to, been are NOT read as perfects', async () => {
+  assert.equal(await g('I have eaten.'), 'Anga cha·jok');
+  assert.equal(await g('He has eaten.'), 'Ua cha·jok');
+  assert.ok(!/manaha/.test(await g('I have to go.')));
+  assert.ok(!/manaha/.test(await g('I have a dog.')));
+  assert.ok(!/manaha/.test(await g('I have been.')));
+});
+test('NV-256: trace names the perfect rule', async () => {
+  const r = await translate('I have gone.', { trace: true });
+  assert.equal(r.trace.method, 'perfect-completive-assembly');
+  assert.match(r.trace.route, /\[perfect: have\/has \+ participle\].*\[-enga -> -manaha/);
+});

@@ -313,6 +313,10 @@ export async function translate(input, opts = {}) {
     const peeled = await peelWhQuestion(String(input), result.garo);
     if (peeled) { result = neutraliseMidCapitals(peeled.result, input); path.length = 0; path.push(...peeled.path); }
   }
+  if (['grammar-assembly', 'grammar-assembly-partial', 'sov-assembly', 'stopword-stripped', 'morphology', 'fuzzy'].includes(result.method)) {
+    const pf = await perfectToCompletive(input);
+    if (pf) { const { path: pfPath, ...res } = pf; result = res; path.length = 0; path.push(...pfPath); }
+  }
   // NV-255 (Claude B, 2026-11-02): sentence-initial negative imperative (`Do not eat!`, `Don't eat rice!`). The cascade fell through to a fallback that
   // dropped the negation (`Do not eat!` = `Cha·ja`, `Don't eat!` = `Cha·bo!`). Form = the positive command with -bo -> -nabe (negative command -nabe,
   // PDF `Cha.na-be`, existing pin `Do not eat` = `cha·nabe`). Only where the cascade ended on a fallback, so exact pins keep priority.
@@ -334,6 +338,41 @@ export async function translate(input, opts = {}) {
     return { ...result, trace: { input: String(input), path, route: path.join(' -> '), method: result.method, confidence: result.confidence, derived: !!result.derived, overrides: notes } };
   }
   return result;
+}
+// NV-256 (Claude B, 2026-11-02): PRESENT PERFECT `have/has + past participle` = COMPLETIVE `-manaha` (stem + manaha).
+// Native: Thangseng Rules 25/26/28 (`cha·manaha` = has eaten / has done eating; `-aha` and `-manaha` overlap in spoken Garo); reference PDF
+// `Anga re.ang-man.aha` = I have gone. The cascade read `have` as the verb `donga` and dropped the participle (`I have gone.` = `Anga donga`).
+// Built by translating the SAME verb as a present continuous (`I am going.` = `Anga re·angenga`) and swapping the final -enga for -manaha, so
+// the stem comes from the existing verb pipeline (cha· + manaha, re·ang + manaha). Affirmative only: the negative perfect is not ruled
+// (PDF `-ja-jok`, no native cover). DERIVED for verbs without a native perfect; exact pins (e.g. `I have eaten.` = `Anga cha·jok`) keep priority.
+const IRREGULAR_PP = { gone: 'go', eaten: 'eat', done: 'do', seen: 'see', come: 'come', given: 'give', taken: 'take', brought: 'bring', written: 'write', run: 'run', known: 'know', drunk: 'drink', slept: 'sleep', sat: 'sit', stood: 'stand', fallen: 'fall', woken: 'wake', thrown: 'throw', left: 'leave', met: 'meet', found: 'find', bought: 'buy', made: 'make', said: 'say', told: 'tell', heard: 'hear', felt: 'feel', kept: 'keep', held: 'hold' };
+function gerundOf(base) {
+  if (base === 'go') return 'going';
+  if (base === 'be') return 'being';
+  if (/ie$/.test(base)) return base.slice(0, -2) + 'ying';
+  if (/[^e]e$/.test(base)) return base.slice(0, -1) + 'ing';
+  if (/^[^aeiou]*[aeiou][^aeiouwxy]$/.test(base) && base.length <= 4) return base + base.slice(-1) + 'ing'; // run -> running, sit -> sitting, stop -> stopping
+  return base + 'ing';
+}
+async function perfectToCompletive(input) {
+  const m = String(input).trim().match(/^((?:the|a|an|my|your|his|her|our|their)\s+[a-z]+|i|you|we|they|he|she|it)\s+(have|has)\s+([a-z]+)(?:\s+(.+?))?\s*[.!]?$/i);
+  if (!m) return null;
+  const pp = m[3].toLowerCase();
+  if (/^(to|been|got|had|no|not|never|already|just|a|an|the)$/.test(pp)) return null; // have to / been / got / negative: not this rule
+  let base = IRREGULAR_PP[pp];
+  if (!base && /ed$/.test(pp)) {
+    const stem = pp.slice(0, -2);
+    base = [stem, stem + 'e', stem.replace(/(.)\1$/, '$1')].find((c) => VERB_LEMMAS.has ? VERB_LEMMAS.has(c) : !!VERB_LEMMAS[c]);
+  }
+  if (!base) return null;
+  const subj = m[1];
+  const be = /^i$/i.test(subj) ? 'am' : /^(you|we|they)$/i.test(subj) ? 'are' : 'is';
+  const decl = `${subj} ${be} ${gerundOf(base)}${m[4] ? ' ' + m[4] : ''}.`;
+  const inner = await translate(decl, { trace: true });
+  if (!inner || !['grammar-assembly', 'correction', 'exact-phrase', 'phrase-map'].includes(inner.method) || typeof inner.garo !== 'string' || inner.garo.includes('[UNKNOWN]')) return null;
+  const body = inner.garo.replace(/[.?!]+$/, '');
+  if (!/enga$/.test(body) || /jaenga$|engja$/.test(body)) return null;
+  return { garo: body.replace(/enga$/, 'manaha'), method: 'perfect-completive-assembly', confidence: 0.7, derived: true, path: ['[perfect: have/has + participle]', `[grammar-assembly continuous: "${decl}"]`, '[-enga -> -manaha (completive, Rules 25/26/28)]'] };
 }
 // Wh-words that are ADVERBIAL (they add a slot to a complete clause), so the clause can be peeled and translated as a declarative.
 // what/who are ARGUMENT wh-words (they replace a noun phrase that is then missing from the clause), so they are NOT peeled.
