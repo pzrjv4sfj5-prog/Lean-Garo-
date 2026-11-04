@@ -2077,7 +2077,6 @@
   "books": "education",
   "sitting": "general",
   "are you busy?": "phrases",
-  "bridge": "words",
   "bye, i'm going": "phrases",
   "a cook (person who cooks)": "food",
   "do you have a boyfriend?": "phrases",
@@ -3927,6 +3926,7 @@
   "teach": "words",
   "to teach": "words",
   "to learn": "words",
+  "bridge": "words",
   "fly": "words",
   "listen": "words",
   "son": "words"
