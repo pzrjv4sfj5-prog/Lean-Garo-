@@ -4,7 +4,7 @@
 Lean-Garo (github.com/pzrjv4sfj5-prog/Lean-Garo-): Garo dictionary and English-to-Garo engine. I am Claude A (linguistic authority; data only this session, no engine code touched). Owner: T. Native validator: Thangseng (relayed, blocks drafted by an intermediary, raw messages not on file). Resumed from CLAUDE_A_SESSION_MIGRATION_20261031.md at 768429c.
 
 ## Current state
-Pushed this session (each verified HEAD == origin/main after the push; later: dce9e5d close, 8d1e1aa NV-254): ddada5d NV-243, b847354 really? pin, a6b038f NV-244, f496965/703eebf NV-245, 3d1a274 NV-247 (rebased over Claude B), e00fee2 NV-248, 65a65ea NV-249, be49519 NV-251, plus the close commit (hash in the closing message). Gate at last full run: dictionary tests pass, repository-intelligence 0 new violations, unit green, runtime sweep 0 errors, audit-mechanical 0.
+Pushed this session, each verified HEAD == origin/main after the push (data only, no engine code): ddada5d NV-243, b847354 really? pin, a6b038f NV-244, f496965/703eebf NV-245, 3d1a274 NV-247, e00fee2 NV-248, 65a65ea NV-249, be49519 NV-251, dce9e5d NV-252 close, 8d1e1aa NV-254, c89dc82 / 2d659d6 syncs, f5477f4 NV-258, e9b7249 NV-259, 54cf39e + aa39b41 NV-262, plus the final close commit (hash in the closing message). Gate at the last full run: dictionary tests pass, repository-intelligence 0 new violations, unit 1179/1179, runtime sweep 15746 calls / 0 errors, audit-mechanical 0, rule conformance 0 unbaselined.
 
 ## Done this session (A's own work only)
 - NV-243 (batch-1 closure): help = dakchaka, walking = re·enga; suspended rows deleted. teach part SUPERSEDED by NV-251.
@@ -14,36 +14,43 @@ Pushed this session (each verified HEAD == origin/main after the push; later: dc
 - NV-249 (Thangseng block): chata (no raka) homonym = umbrella (n.) / to fit (v.); chatchi = kin / relative / clan; pin what kin are you? = Na·a mai chatchi?.
 - NV-251 (Owner, renumbered from 250): teach = Skia (native-verified); every Sikie row deleted; given words override old, dups deleted for umbrella (sat·ti, Satta), fit, cabbage (Kobi), promise.
 - NV-252 (Owner): door = do·ga (overrides do·oga); old verified do·oga row deleted, do·ga promoted, doorway stem aligned (still unverified), phrase_maps pin + one test updated.
+- NV-254 (Owner synonyms on the Claude B grammar-reference PDF): Bia = Ua, Namengaba = namenga kept as variants (bajalchi = antichi later reversed by NV-262). 53 PDF sentences compared with the engine; none pinned (provenance mixed).
+- NV-258 (Owner; renumbered from 256): door = do·ga FINAL, Duar deleted: `Open the door` = do·ga pekatbo, `Close the door` = do·ga petbo.
+- NV-259 (Owner): learn = Skia (same word as teach); ski·a and every Sikia row deleted; purpose_map teach = skia·na.
+- NV-262 (Owner closure pass, multi-verified list): alone saksan, dance Chroka, bridge dolong, demand Dabia, fly Tampi, leg Ja·a, listen Kinachaka (Knabo/Knatimbo re-keyed to `listen!`), old woman Buchuma, outside A·pal, slow Ka·sna, son de·pan·te (primary changed from De·bi·pa), to the market bajalchi (antichi deleted), right Jak·ra (kra·a re-keyed `right (correct)`); able, stop!, he/she kept both-correct; all duplicates deleted in master, garo_dictionary, final_entries.
 - Detail log of each step: Addenda below.
 
 ## Runtime Handoff (Claude B)
 1. Bare-noun imperative (`Eat rice!`, `drink water!`, `please eat rice`): Claude B's NV-250 commit (19f4e19) already fixed it; I re-verified `Mi cha·bo` / `Chi ringbo` on the `!` forms after pulling. docs/HANDOFF_CLAUDE_B_20261101_imperative_bare_noun.md is now historical.
 2. repository-intelligence Check F joinKey strips `?`, so keys differing only by `?` collide (`really?` vs `really`); baselined, please consider keying on the raw string.
 3. compiled_dict `to walk` tie-break picks Re·rama while the shipped primary is Re·mama (engine output correct).
-4. NV numbers: A used 243-245, 247-249, 251, 252; B used 246 and 250. Check the counter before taking one. Next free: 253.
+4. NV numbers: A used 243-245, 247-249, 251, 252, 254, 258, 259, 262; B used 246, 250, 253, 255, 256, 257, 260, 261. Check the counter before taking one. Next free: 263.
+6. Engine bugs still open for Claude B (re-verified at 4a7ac32+): bare plurals `dogs` / `people` ship `Achak` / `mande` (NV-169 -rang productive), `at the house` ships `Nok` (locative -o dropped), `Close the door!` ships `Do·gako chip·bo` (the ! path runs before the exact pin, verb differs from `petbo`), `i am learning` ships `Anga bida`. Fixed by B this session: negation imperative/continuous, `i have gone`, bare-noun imperatives.
 5. Verified live at close: teach Skia, to teach Skia, door do·ga, umbrella chata, to fit chata, kin / relative / clan chatchi, what kin are you? Na·a mai chatchi?, cabbage banda kobi, promise Ku·rachaka, run away katanga, letter chitti, right Jak·ra, that is right kra·a, i am fine Anga namenga.
 
 ## Rule-generalization check (Governance §5)
 New rule: none written (vocabulary and pin rulings only). Standing rule applied again: given words override old words, delete the replaced rows and duplicates. Vocabulary-heavy session: flag if the next Claude A session also closes vocabulary with no grammar rule.
 
 ## Duplicate representation check: PASS
-Checked master, garo_dictionary, final_entries, corrections, phrase_maps, pending_lexicon, tests for Sikie, Skie on·a, sat·ti, Satta, Kobi, chi·ti, katsit·tap·a, Bakdil, kinsman chat·chi, do·oga. Pending-lexicon links to deleted rows were set to rejected (PL-0000238). Remaining hits: the NV-081-era `Door` text in docs and old tests that only describe history.
+Checked master, garo_dictionary, final_entries, corrections, phrase_maps, purpose_map, pending_lexicon, tests for Sikia, ski·a, Jal·ang, De·bi·pa, Depante, bu·ri, antichi, Knabo, ak·sa, mesaa, Dabiani, Duar, Sikie, Skie on·a, sat·ti, Satta, Kobi, chi·ti, katsit·tap·a, Bakdil, kinsman chat·chi, do·oga. Pending-lexicon links to deleted rows were set to rejected (PL-0000238). Remaining hits: the NV-081-era `Door` text in docs and old tests that only describe history.
 
 ## Rework-prevention checklist (Governance §12)
 - Already resolved before? NV-243 teach (Sikie) was reversed by NV-251 (Skia); NV-242 promise spelling reversed by NV-248; NV-080/2026-08 do·oga reversed by NV-252. All three are newer native/Owner evidence, logged.
 - Other representation with old value? Checked, see above.
 - Runtime vs linguistic? Data only; one Claude B handoff already picked up.
 - Generalizes? Delete-on-replace applied, no new rule.
-- Over-derived? doorway = do·ga·chol is a stem alignment, still unverified.
+- Over-derived? doorway = do·ga·chol is a stem alignment, still unverified; the two `do·ga pekatbo/petbo` rows and purpose_map `teach = skia·na` are by-composition swaps under Owner directives, labelled as such.
+- Reversals logged: NV-254 antichi synonym reversed by NV-262; son primary De·bi·pa -> de·pan·te (NV-262, newer Owner ruling); right kra·a re-keyed not deleted so `that is right` still works.
 
 ## Open items
 STILL OPEN, each needs a native word or Owner ruling, none blocks the build:
+- leaf: Owner wrote `bijal`; shipped word is `bijak` (native NV-238/240). Typo for bijak or a new word? Nothing changed.
+- answer (`Aganchaka` / `Aganchakani`) and hope (`ka·donga` / `ka·dongani`): same shape as demand, which the Owner closed as the base form (`Dabia`); ask whether the same applies, then delete the `-ni` form.
 - knowledge (Gni / Ma·siani superseded; engine ships U·iani ba ma·siani).
-- (CLOSED by NV-259) Skia family: learn = Skia = teach. Still unruled: `i am learning` = `Anga bida` (learning = Bida).
-- door: `Open the door` / `Close the door` pins use the loan word Duar (verified rows); do·ga forms not ruled. doorway = do·ga·chol unverified.
-- `to help | Chaka` unverified, unruled. kinsman now ships ang·bak (unverified).
+- ~66 multi-verified keys remain (list: recompute with the python snippet in the NV-262 session: verified_high rows, distinct normalized garo per english key); most are tagged variant pairs, not conflicts. Candidates needing a primary ruling: i can eat/go/work (ama vs man·a), throw, push, fever, greedy, monkey, last, tree, pot, orange.
+- `to help | Chaka` unverified, unruled; kinsman now ships ang·bak (unverified); `i am learning` = `Anga bida` (learning = Bida) unruled.
 - Glossary keys with slashes/parentheticals return [UNKNOWN] (not user sentences).
-- Backlog: 71 keys with several verified words (batches of 10), 464 verified + suspended, 720 no verified word, ~1100 old superseded rows (verify, do not purge).
+- Backlog: 464 verified + suspended, 720 no verified word, ~1100 old superseded rows (verify, do not purge).
 
 ## Standing rules (unchanged; do not re-litigate)
 Anga always; apostrophes and periods inside Garo words are raka typos (forms written without one keep no raka); native text stands where Owner says so; provenance labels (Thangseng quote vs Owner directive vs by-composition); apply only what is ruled; given words override old, delete the replaced row and duplicates, never mass-purge old suspended rows; gate with hard stops before any commit (a chained command once pushed past a failing check); PAT: one-shot header only, never in .git/config or any file, rotate it; fetch and compare before push, rebase over Claude B and renumber NV on collision.
@@ -52,7 +59,7 @@ Anga always; apostrophes and periods inside Garo words are raka typos (forms wri
 Verified after the final push, values in the closing message: HEAD == origin/main, git status clean, WORKSTATE.yaml updated (handoff_20261101_nv243_252, next_action_claude_a_20261101), SESSION_BOOTSTRAP.md pointer updated, this doc complete, no local-only commits, no uncommitted files, native-validation blockers listed under Open items.
 
 ## Exact next step
-New conversation: paste this file, clone with a fresh PAT (scrub it from .git/config), git fetch, verify HEAD, read .ai/SESSION_BOOTSTRAP.md then .ai/WORKSTATE.yaml, run the gate, then take Owner words: knowledge, the Skia family forms, door phrases, then the 71 multi-verified keys in batches of 10. Next free NV: 263.
+New conversation: paste this file, clone with a fresh PAT (scrub it from .git/config), git fetch, verify HEAD, read .ai/SESSION_BOOTSTRAP.md then .ai/WORKSTATE.yaml, run the gate (dictionary tests, repository-intelligence, unit tests, runtime sweep, audit-mechanical, check:rules:enforce) with hard stops, then take Owner words: leaf (bijal vs bijak), answer/hope, knowledge, then the remaining multi-verified keys in batches of 10. Next free NV: 263.
 
 ---
 
