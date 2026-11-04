@@ -5569,13 +5569,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "learn",
-    "garo": "Sikia",
-    "category": "education",
-    "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'learn' is 'ski·a'. Retained per citation discipline, not deleted.",
-    "confidence": "superseded"
-  },
-  {
     "english": "traditional festival",
     "garo": "Wangala",
     "category": "general",
@@ -16475,15 +16468,6 @@
     "classifier": null,
     "notes": "SUPERSEDED — native relay NV-080 (2026-08-17): not selected; native-confirmed form for 'learn' is 'ski·a'. Retained per citation discipline, not deleted.",
     "confidence": "superseded"
-  },
-  {
-    "english": "Learn",
-    "garo": "ski·a",
-    "pos": null,
-    "category": "education",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH — native-confirmed 2026-08-17 (Thangseng relay, pickPrimary consolidated batch, NV-080).",
-    "confidence": "verified_high"
   },
   {
     "english": "Left",
@@ -77581,6 +77565,24 @@
     "category": "phrases",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH — NV-254 (2026-11-01, Project Owner directive in chat, ruling on the Claude B grammar-reference PDF `top_priority (first checking)`: Bia = Ua, Namengaba = namenga, bajalchi = antichi are synonyms; not a Thangseng quote) Synonym of Anga namenga (primary); namengaba = the same word in the affirmative response.",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "learn",
+    "garo": "Skia",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-259 (2026-11-01, Project Owner ruling in chat: skia is also learn; Skia = teach and learn; old ski·a / Sikia deleted). Same word as teach (NV-251).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "to learn",
+    "garo": "Skia",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-259 (2026-11-01, Project Owner ruling in chat: skia is also learn; Skia = teach and learn; old ski·a / Sikia deleted). Same word as teach (NV-251).",
     "confidence": "verified_high"
   }
 ]

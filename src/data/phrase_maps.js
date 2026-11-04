@@ -350,7 +350,7 @@ export const PHRASE_MAPS = {
   'answer': 'Aganchaka',
   'read': 'poraia',
   'write': 'Sea',
-  'learn': 'ski·a',
+  'learn': 'Skia',
   'teach': 'Skia',
   'man': 'Me·asa',
   'woman': 'Me·chik',

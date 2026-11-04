@@ -847,7 +847,6 @@
   "read": "education",
   "write": "education",
   "count": "general",
-  "learn": "education",
   "traditional festival": "general",
   "traditional dance": "general",
   "traditional drum": "general",
@@ -2092,6 +2091,7 @@
   "have you eaten rice?": "phrases",
   "in a broad daylight, are you sleeping?": "phrases",
   "kid (goat child)": "phrases",
+  "learn": "words",
   "my child": "family",
   "one dog": "numbers",
   "one person": "numbers",
@@ -3929,5 +3929,6 @@
   "clan": "words",
   "what kin are you?": "phrases",
   "teach": "words",
-  "to teach": "words"
+  "to teach": "words",
+  "to learn": "words"
 }

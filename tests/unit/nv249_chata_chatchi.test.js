@@ -34,3 +34,10 @@ test('NV-251 cabbage = banda kobi only', async () => {
 test('NV-252 door = do·ga', async () => {
   assert.equal((await translate('door')).garo, 'do·ga');
 });
+
+// NV-259 (Claude A, 2026-11-01): Owner: skia is also learn (Skia = teach and learn).
+test('NV-259 learn = Skia, same word as teach', async () => {
+  for (const en of ['learn', 'to learn', 'teach']) assert.equal((await translate(en)).garo, 'Skia', en);
+  assert.equal((await translate('i want to teach')).garo, 'Anga skia·na ska');
+  assert.equal((await translate('i want to learn')).garo, 'Anga skia·na ska');
+});
