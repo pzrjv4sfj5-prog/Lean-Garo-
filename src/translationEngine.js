@@ -317,6 +317,16 @@ export async function translate(input, opts = {}) {
     const pf = await perfectToCompletive(input);
     if (pf) { const { path: pfPath, ...res } = pf; result = res; path.length = 0; path.push(...pfPath); }
   }
+  if (['grammar-assembly', 'grammar-assembly-partial', 'sov-assembly', 'stopword-stripped', 'morphology', 'fuzzy'].includes(result.method)) {
+    // existing paths already handle bare `i finished eating` / pinned `i stopped eating`; step in for the `have/has stopped ...` misreads (`have` read as `dong`) and any fallback
+    const needAspect = /\b(?:have|has|had)\b/i.test(String(input)) || result.method !== 'grammar-assembly' || /dong|\[UNKNOWN\]/.test(result.garo);
+    const av = needAspect ? await aspectVerbToSuffix(input) : null;
+    if (av) { const { path: avPath, ...res } = av; result = res; path.length = 0; path.push(...avPath); }
+  }
+  if (result.method === 'sov-assembly') {
+    const tp = await peelLeadingTimeWord(input);
+    if (tp) { const { path: tpPath, ...res } = tp; result = res; path.length = 0; path.push(...tpPath); }
+  }
   // NV-255 (Claude B, 2026-11-02): sentence-initial negative imperative (`Do not eat!`, `Don't eat rice!`). The cascade fell through to a fallback that
   // dropped the negation (`Do not eat!` = `Cha·ja`, `Don't eat!` = `Cha·bo!`). Form = the positive command with -bo -> -nabe (negative command -nabe,
   // PDF `Cha.na-be`, existing pin `Do not eat` = `cha·nabe`). Only where the cascade ended on a fallback, so exact pins keep priority.
@@ -374,6 +384,34 @@ async function perfectToCompletive(input) {
   if (!/enga$/.test(body) || /jaenga$|engja$/.test(body)) return null;
   return { garo: body.replace(/enga$/, 'manaha'), method: 'perfect-completive-assembly', confidence: 0.7, derived: true, path: ['[perfect: have/has + participle]', `[grammar-assembly continuous: "${decl}"]`, '[-enga -> -manaha (completive, Rules 25/26/28)]'] };
 }
+// NV-261 (Claude B, 2026-11-03): CESSATIVE and COMPLETIVE aspect verbs. Native, verified: RULE-025 `cha·jaha` = has stopped eating (NOT did not eat),
+// RULE-026 `cha·manaha` = has finished eating. English `stop/quit/cease V-ing` -> stem + jaha; `finish V-ing` -> stem + manaha. Built from the verb's own present
+// continuous (`I am eating.` = `Anga cha·enga`), swapping the final -enga, exactly like the perfect (NV-256). Before: `I have stopped eating.` = `Anga dongjaha`.
+async function aspectVerbToSuffix(input) {
+  const m = String(input).trim().match(/^((?:the|a|an|my|your|his|her|our|their)\s+[a-z]+|i|you|we|they|he|she|it)\s+(?:have\s+|has\s+|had\s+)?(stopped|quit|ceased|finished)\s+([a-z]+ing)(?:\s+(.+?))?\s*[.!]?$/i);
+  if (!m) return null;
+  const subj = m[1];
+  const be = /^i$/i.test(subj) ? 'am' : /^(you|we|they)$/i.test(subj) ? 'are' : 'is';
+  const decl = `${subj} ${be} ${m[3]}${m[4] ? ' ' + m[4] : ''}.`;
+  const inner = await translate(decl, { trace: true });
+  if (!inner || !['grammar-assembly', 'correction', 'exact-phrase', 'phrase-map'].includes(inner.method) || typeof inner.garo !== 'string' || inner.garo.includes('[UNKNOWN]')) return null;
+  const body = inner.garo.replace(/[.?!]+$/, '');
+  if (!/enga$/.test(body) || /jaenga$|engja$/.test(body)) return null;
+  const suf = /^finished$/i.test(m[2]) ? 'manaha' : 'jaha';
+  return { garo: body.replace(/enga$/, suf), method: 'aspect-verb-assembly', confidence: 0.75, derived: true, path: [`[aspect verb: ${m[2].toLowerCase()} + V-ing]`, `[grammar-assembly continuous: "${decl}"]`, `[-enga -> -${suf} (${suf === 'jaha' ? 'cessative, RULE-025' : 'completive, RULE-026'})]`] };
+}
+// NV-261: a LEADING time word (`Yesterday I ate rice.`) is peeled, the rest goes through the full pipeline, and the time word comes back with the event-sentence locative -o
+// (Project Owner rule / native `mijalo`, NV-104, RULE-053: `mijalo`, `da·alo`, `knalo`, `da·o`). Before: the fallback printed the bare base form `Mijal anga mi cha·aha`.
+const TIME_O = { yesterday: 'Mijalo', today: 'Da·alo', tomorrow: 'Knalo', now: 'Da·o' };
+async function peelLeadingTimeWord(input) {
+  const m = String(input).trim().match(/^(yesterday|today|tomorrow|now),?\s+(.+?)\s*([.?!])?$/i);
+  if (!m) return null;
+  const inner = await translate(`${m[2]}${m[3] || ''}`);
+  if (!inner || !['grammar-assembly', 'correction', 'exact-phrase', 'phrase-map', 'perfect-completive-assembly', 'aspect-verb-assembly'].includes(inner.method) || typeof inner.garo !== 'string' || inner.garo.includes('[UNKNOWN]')) return null;
+  const body = inner.garo.replace(/^\s+/, '');
+  const tw = TIME_O[m[1].toLowerCase()];
+  return { garo: `${tw} ${body.charAt(0).toLowerCase()}${body.slice(1)}`, method: 'time-peel-assembly', confidence: 0.75, derived: true, path: [`[time-peel: ${m[1].toLowerCase()} -> ${tw}]`, `[${inner.method}: "${m[2]}"]`, '[reassemble: time word + clause]'] };
+}
 // Wh-words that are ADVERBIAL (they add a slot to a complete clause), so the clause can be peeled and translated as a declarative.
 // what/who are ARGUMENT wh-words (they replace a noun phrase that is then missing from the clause), so they are NOT peeled.
 const PEELABLE_WH = new Set(['why', 'where', 'when', 'how']);
@@ -396,7 +434,8 @@ async function peelWhQuestion(input, fallbackGaro = '') {
   const path = [`[wh-peel: ${wh} -> ${whGaro}]`, `[grammar-assembly: "${decl}"]`];
   // NV-194 Contextual Past Wh-Question rule: a positive past wh-question takes the bare -a, not the declarative -aha/-ha.
   if (aux === 'did' && !neg && /ha$/i.test(body)) { body = body.replace(/ha$/i, ''); path.push('[contextual: past wh-question bare -a (NV-194)]'); }
-  // NV-257 (Claude B, 2026-11-03): the wh-word stays IN SITU after the subject, before the object/verb, never clause-initial. Native: Thangseng
+  // NV-257 (Claude B, 2026-11-03): DEFAULT = the wh-word stays IN SITU after the subject, before the object/verb (the dominant native order). Clause-initial is ALSO native
+  // (RULE-048 `Maina na·a ka·dinga?`), so wh position is free; we generate the dominant one. Native in-situ: Thangseng
   // `Na·a maina cha·a?`, `Na·a maiko cha·jaha?`, `Na·a maina cha·jaenga?`, `Mijalo na·a maina angko gela?`, `Na·a mijalo maiko daka?`. A time word with -o that the declarative
   // fronted stays in front (as in `Mijalo na·a maina angko gela?`); WHERE the time word sits for wh-questions is open (two native shapes), see the docs.
   const capW = (s) => s.charAt(0).toUpperCase() + s.slice(1);

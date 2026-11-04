@@ -66,3 +66,10 @@ Wake up! = Mikrakbo, He is waking up. = Ua mikrakbaengaha, He woke up. = Ua mikr
 - OPEN, for Thangseng: where does the time word sit in a wh-question? Two native shapes exist: `Mijalo na·a maina angko gela?` (time first, why) and `Na·a mijalo maiko daka?` (time after subject, what). Ask: `Why did you not eat those vegetables yesterday?` (past, wh + negative) in all three shapes: `Mijalo na·a maina ua me·surangko cha·ja(ha)?` / `Na·a mijalo maina ua me·surangko cha·ja(ha)?` / `Na·a maina ua me·surangko mijalo cha·ja(ha)?`; and whether the past negative is `-ja` or `-jaha` (his `What did you not eat?` used cha·jaha; earlier native `re·angja` = did not go; NV-197 says it may depend on the verb).
 - Existing tests updated: BUG-REPORT-WHERE-GOING (now `Ua bachi re·angenga?`), NV-253/255 wh tests.
 - Gate: unit 1174/1174, conformance 79/112 (0 unbaselined), no new violations.
+
+## Addendum 6 (NV-261, Claude B, 2026-11-03; next free NV 262)
+- Correction to Addendum 5: wh position is FREE in native Garo (RULE-048 `Maina na·a ka·dinga?` is wh-first); in-situ is the dominant order and our default, not an absolute rule.
+- Engine: `have/has stopped V-ing` = stem + jaha (RULE-025), `finished V-ing` = stem + manaha (RULE-026) (was `Anga dongjaha`); a leading time word is peeled and keeps its locative -o (`Yesterday I ate rice.` = `Mijalo anga mi cha·aha`, was bare `Mijal`).
+- Full tense/structure synthesis, engine gaps and the 10 Thangseng questions: docs/CLAUDE_B_GARO_TENSE_AND_STRUCTURE_UNDERSTANDING_20261103.md.
+- FLAG: Thangseng's `Na·a maiko cha·jaha?` for `What did you not eat?` pins -jaha as "did not", which RULE-025 says it is not (cessative). Pinned as his answer; meaning to be confirmed (question 2 in the synthesis doc).
+- Gate: unit 1176/1176, sweep 15743/0, conformance 79/112 (0 unbaselined).

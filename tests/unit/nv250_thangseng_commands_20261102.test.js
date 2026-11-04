@@ -153,8 +153,21 @@ test('NV-257: Thangseng native: What did you not eat? = Na·a maiko cha·jaha? ;
   assert.equal(await g('What did you not eat?'), 'Na·a maiko cha·jaha?');
   assert.equal(await g('Why are you not eating?'), 'Na·a maina cha·jaenga?');
 });
-test('NV-257: wh-word is in situ after the subject (never clause-initial), matching the older native pins', async () => {
+test('NV-257: wh-word DEFAULT is in situ after the subject (dominant native order; clause-initial `Maina na·a ka·dinga?` is also native)', async () => {
   assert.equal(await g('Why did you eat?'), 'Na·a maina cha·a?');
   assert.equal(await g('Why did you avoid me yesterday?'), 'Mijalo na·a maina angko gela?');
   for (const s of ['Why did you not eat those vegetables?', 'When did you not eat those vegetables?', 'Why did he not come?']) assert.ok(!/^(maina|basako|bano|maidake|bachi) /i.test(await g(s)), s);
+});
+// ---- NV-261 (Claude B, 2026-11-03): cessative / completive aspect verbs, leading time word ----
+test('NV-261: stop/quit V-ing = stem + jaha (RULE-025), finish V-ing = stem + manaha (RULE-026); built from the verb continuous', async () => {
+  assert.equal(await g('I have stopped eating.'), 'Anga cha·jaha');
+  assert.equal(await g('She quit going.'), 'Ua re·angjaha');
+  assert.equal(await g('I finished eating.'), 'Anga cha·manaha');
+  assert.ok(!/dong/.test(await g('I have stopped eating.')));
+});
+test('NV-261: a leading time word is peeled and returns with the event-sentence locative -o (mijalo, da·alo, knalo, da·o)', async () => {
+  assert.equal(await g('Yesterday I ate rice.'), 'Mijalo anga mi cha·aha');
+  assert.equal(await g('Today I will go.'), 'Da·alo anga re·anggen');
+  assert.equal(await g('Tomorrow he will eat rice.'), 'Knalo ua miko cha·gen');
+  assert.equal(await g('Yesterday'), 'Mijal'); // the bare time word keeps its base form
 });
