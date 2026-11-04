@@ -17,7 +17,7 @@ test('bare read! takes -bo (poraia = read, NV-226)', async () => {
 });
 
 test('exact rows, corrections and statements are untouched', async () => {
-  assert.equal((await translate('close the door')).garo, 'do·ga petbo'); // NV-256: Owner, do·ga final, Duar deleted
+  assert.equal((await translate('close the door')).garo, 'do·ga petbo'); // NV-258: Owner, do·ga final, Duar deleted
   assert.equal((await translate('read the newspaper')).garo, 'Janera mingbo');
   assert.equal((await translate('I read the book')).garo, 'Anga ki·tapko poraia');
   assert.equal((await translate('tea cup')).garo, 'Cha piala');
