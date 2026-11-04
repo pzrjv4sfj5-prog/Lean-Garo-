@@ -76,19 +76,19 @@ test('NV-253: wake-up native forms carry over to every subject (Garo verbs carry
 });
 test('NV-253 TENTATIVE PIN (pending Thangseng on time-word placement): negated why-question keeps ua / -rang / -ko / mijalo and no longer drops to sov-assembly', async () => {
   const r = await translate('Why did you not eat those vegetables yesterday?');
-  assert.equal(r.garo, 'Maina mijalo na·a ua me·surangko cha·ja?');
+  assert.equal(r.garo, 'Mijalo na·a maina ua me·surangko cha·ja?');
   assert.notEqual(r.method, 'sov-assembly');
   assert.equal(r.method, 'wh-peel-assembly');
 });
 test('NV-253: peel-and-replace covers why/where/when/how (the old fallback even dropped `when`)', async () => {
-  assert.equal(await g('When did you not eat those vegetables?'), 'Basako na·a ua me·surangko cha·ja?');
-  assert.equal(await g('Where did you not go?'), 'Bano na·a re·angja?');
-  assert.equal(await g('How did you not eat those vegetables?'), 'Maidake na·a ua me·surangko cha·ja?');
-  assert.equal(await g('Why will you not eat those vegetables?'), 'Maina na·a ua me·surangko cha·jawa?');
+  assert.equal(await g('When did you not eat those vegetables?'), 'Na·a basako ua me·surangko cha·ja?');
+  assert.equal(await g('Where did you not go?'), 'Na·a bano re·angja?');
+  assert.equal(await g('How did you not eat those vegetables?'), 'Na·a maidake ua me·surangko cha·ja?');
+  assert.equal(await g('Why will you not eat those vegetables?'), 'Na·a maina ua me·surangko cha·jawa?');
 });
 test('NV-253: positive past wh-question gets the declarative morphology plus the NV-194 bare -a (derived)', async () => {
-  assert.equal(await g('Why did you eat those vegetables yesterday?'), 'Maina mijalo na·a ua me·surangko cha·a?');
-  assert.equal(await g('Why do you eat those vegetables?'), 'Maina na·a ua me·surangko cha·a?');
+  assert.equal(await g('Why did you eat those vegetables yesterday?'), 'Mijalo na·a maina ua me·surangko cha·a?');
+  assert.equal(await g('Why do you eat those vegetables?'), 'Na·a maina ua me·surangko cha·a?');
 });
 test('NV-253: earlier cascade steps keep priority; argument wh-words (what/who) are not peeled', async () => {
   assert.equal((await translate('Why did you eat?')).method, 'exact-phrase');
@@ -113,9 +113,9 @@ test('NV-255: negative continuous = stem + ja + enga (negation BEFORE the progre
   assert.equal(await g('I am eating.'), 'Anga cha·enga'); // positive unchanged
 });
 test('NV-255: Why/Where are/is not V-ing? peels to the declarative with the corrected order', async () => {
-  assert.equal(await g('Why are you not eating those vegetables?'), 'Maina na·a ua me·surangko cha·jaenga?');
-  assert.equal(await g('Why are you eating those vegetables?'), 'Maina na·a ua me·surangko cha·enga?');
-  assert.equal(await g('Where are you not going?'), 'Bachi na·a re·angjaenga?'); // where + going = bachi (BUG-REPORT-WHERE-GOING), kept from the cascade's own choice
+  assert.equal(await g('Why are you not eating those vegetables?'), 'Na·a maina ua me·surangko cha·jaenga?');
+  assert.equal(await g('Why are you eating those vegetables?'), 'Na·a maina ua me·surangko cha·enga?');
+  assert.equal(await g('Where are you not going?'), 'Na·a bachi re·angjaenga?'); // where + going = bachi (BUG-REPORT-WHERE-GOING), kept from the cascade's own choice
 });
 test('NV-255: negative imperative keeps the negation (-bo -> -nabe); exact pin priority kept', async () => {
   assert.equal(await g('Do not eat rice!'), 'Mi cha·nabe');
@@ -147,4 +147,14 @@ test('NV-256: trace names the perfect rule', async () => {
   const r = await translate('I have gone.', { trace: true });
   assert.equal(r.trace.method, 'perfect-completive-assembly');
   assert.match(r.trace.route, /\[perfect: have\/has \+ participle\].*\[-enga -> -manaha/);
+});
+// ---- NV-257 (Claude B, 2026-11-03): Thangseng answers + in-situ wh order ----
+test('NV-257: Thangseng native: What did you not eat? = Na·a maiko cha·jaha? ; Why are you not eating? = Na·a maina cha·jaenga?', async () => {
+  assert.equal(await g('What did you not eat?'), 'Na·a maiko cha·jaha?');
+  assert.equal(await g('Why are you not eating?'), 'Na·a maina cha·jaenga?');
+});
+test('NV-257: wh-word is in situ after the subject (never clause-initial), matching the older native pins', async () => {
+  assert.equal(await g('Why did you eat?'), 'Na·a maina cha·a?');
+  assert.equal(await g('Why did you avoid me yesterday?'), 'Mijalo na·a maina angko gela?');
+  for (const s of ['Why did you not eat those vegetables?', 'When did you not eat those vegetables?', 'Why did he not come?']) assert.ok(!/^(maina|basako|bano|maidake|bachi) /i.test(await g(s)), s);
 });

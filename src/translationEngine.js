@@ -396,9 +396,22 @@ async function peelWhQuestion(input, fallbackGaro = '') {
   const path = [`[wh-peel: ${wh} -> ${whGaro}]`, `[grammar-assembly: "${decl}"]`];
   // NV-194 Contextual Past Wh-Question rule: a positive past wh-question takes the bare -a, not the declarative -aha/-ha.
   if (aux === 'did' && !neg && /ha$/i.test(body)) { body = body.replace(/ha$/i, ''); path.push('[contextual: past wh-question bare -a (NV-194)]'); }
-  const wg = whGaro.trim().charAt(0).toUpperCase() + whGaro.trim().slice(1);
-  path.push('[reassemble: wh-word + clause]');
-  return { path, result: { garo: `${wg} ${body.charAt(0).toLowerCase()}${body.slice(1)}${m[6] ? '?' : ''}`, method: 'wh-peel-assembly', confidence: 0.7, derived: true } };
+  // NV-257 (Claude B, 2026-11-03): the wh-word stays IN SITU after the subject, before the object/verb, never clause-initial. Native: Thangseng
+  // `Na·a maina cha·a?`, `Na·a maiko cha·jaha?`, `Na·a maina cha·jaenga?`, `Mijalo na·a maina angko gela?`, `Na·a mijalo maiko daka?`. A time word with -o that the declarative
+  // fronted stays in front (as in `Mijalo na·a maina angko gela?`); WHERE the time word sits for wh-questions is open (two native shapes), see the docs.
+  const capW = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+  const wl = whGaro.trim().replace(/[?.!]/g, '').toLowerCase();
+  let lead = '';
+  const tm = body.match(/^(\S+)\s+/);
+  if (tm && /^(mijalo|da·alo|daalo|da\.alo|knalo|da·o)$/i.test(tm[1])) { lead = tm[1]; body = body.slice(tm[0].length); }
+  const sgRes = await translate(m[3]);
+  const sg = String(sgRes && sgRes.garo).replace(/[.?!]+$/, '');
+  if (!sg || !body.toLowerCase().startsWith(sg.toLowerCase())) return null;
+  const tail = body.slice(sg.length).trim();
+  const subjTok = sg.toLowerCase();
+  const composed = lead ? `${capW(lead.toLowerCase())} ${subjTok} ${wl}${tail ? ' ' + tail : ''}` : `${capW(subjTok)} ${wl}${tail ? ' ' + tail : ''}`;
+  path.push('[reassemble: subject + wh-word in situ + rest]');
+  return { path, result: { garo: `${composed}${m[6] ? '?' : ''}`, method: 'wh-peel-assembly', confidence: 0.7, derived: true } };
 }
 async function translateRaw(input) {
   // NV-181 (PO, 2026-10-21): 'him/her' routes to the established human object pronouns (same as 'him'); the slash otherwise leaves [UNKNOWN].

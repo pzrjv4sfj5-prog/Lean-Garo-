@@ -1018,15 +1018,17 @@ test('BUG-REPORT-WHERE-GOING: "where are you going?" uses the VERIFIED movement-
 test('BUG-REPORT-WHERE-GOING: "where is he going?" selects "bachi", not "bano"', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const result = await translate('Where is he going?');
-  assert.ok(result.garo.includes('Bachi'), `expected the movement-locative "Bachi", got: ${result.garo}`);
-  assert.ok(!result.garo.includes('Bano'), `must not regress to the stationary-locative "Bano": ${result.garo}`);
+  // NV-257 (Claude B, 2026-11-03): the wh-word is in situ after the subject (native pin `Where are you going?` = `Na·a bachi re·angenga?`), not clause-initial.
+  assert.equal(result.garo, 'Ua bachi re·angenga?');
+  assert.ok(!/bano/i.test(result.garo), `must not regress to the stationary-locative Bano: ${result.garo}`);
 });
 
 test('BUG-REPORT-WHERE-GOING: "where are they going?" selects "bachi", not "bano"', async () => {
   const { translate } = await import('../../src/translationEngine.js');
   const result = await translate('Where are they going?');
-  assert.ok(result.garo.includes('Bachi'), `expected the movement-locative "Bachi", got: ${result.garo}`);
-  assert.ok(!result.garo.includes('Bano'), `must not regress to the stationary-locative "Bano": ${result.garo}`);
+  // NV-257 (Claude B, 2026-11-03): the wh-word is in situ after the subject (native pin `Where are you going?` = `Na·a bachi re·angenga?`), not clause-initial.
+  assert.equal(result.garo, 'Uamang bachi re·angenga?');
+  assert.ok(!/bano/i.test(result.garo), `must not regress to the stationary-locative Bano: ${result.garo}`);
 });
 
 // Regression guard: unrelated stationary "where" questions (no movement
