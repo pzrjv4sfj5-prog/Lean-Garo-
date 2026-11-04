@@ -15,6 +15,7 @@ test('NV-254 primaries unchanged', async () => {
 
 test('NV-254 synonyms recorded as variants', () => {
   assert.ok(JSON.stringify(alt['she']).includes('Bia'));
-  assert.ok(JSON.stringify(alt['to the market']).includes('antichi'));
+  // NV-262: Owner closed `to the market` = bajalchi only; antichi variant deleted.
+  assert.ok(!JSON.stringify(alt['to the market'] || []).includes('antichi'));
   assert.ok(JSON.stringify(alt['i am fine']).toLowerCase().includes('namengaba'));
 });

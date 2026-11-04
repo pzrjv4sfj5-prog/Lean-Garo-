@@ -34177,8 +34177,8 @@
       "import_date": "2026-07-22T05:25:20.943Z",
       "ocr_version": "gemini-flat-legacy-v1"
     },
-    "review_status": "approved",
-    "review_notes": null,
+    "review_status": "rejected",
+    "review_notes": " REJECTED 2026-11-01 (Claude A, NV-262): superseded Right=Kakket row deleted in the closure pass (right = Jak·ra).",
     "reviewed_by": "Claude A",
     "reviewed_date": "2026-07-22T05:26:57.949337+00:00",
     "conflict": {
@@ -34188,8 +34188,7 @@
         "kra·a"
       ]
     },
-    "promotion_status": "promoted",
-    "promoted_date": "2026-07-22T05:27:04.859Z"
+    "promotion_status": "rejected"
   },
   {
     "id": "PL-0001296",

@@ -783,13 +783,6 @@
     "notes": "SUPERSEDED — 2026-08-30D audit (Claude A): this unverified 'go'=Re·anga row is now contradicted by NV-100 (2026-08-30, direct Thangseng relay), which confirms Re·anga = 'went' (distinct past-tense sense, own VERIFIED/HIGH row) and 'go' = re·a (VERIFIED/HIGH, native-confirmed 2026-08-28). Retained for citation history only, no runtime impact (was never pickPrimary-eligible against the existing VERIFIED 'go'=re·a row)."
   },
   {
-    "english": "son",
-    "garo": "Depante",
-    "category": "family",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'son' has VERIFIED/HIGH form(s) ['De·bi·pa', 'de·pan·te']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
     "english": "daughter",
     "garo": "Demechik",
     "category": "family",
@@ -2241,13 +2234,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "slow",
-    "garo": "Ka·sina",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'slow' has VERIFIED/HIGH form(s) ['Ka·sna', 'ka·sin·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
     "english": "rich",
     "garo": "Nokma / Man·e·cha·gipa",
     "category": "general",
@@ -3079,13 +3065,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "bridge",
-    "garo": "Jal·ang",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'bridge' has VERIFIED/HIGH form(s) ['Jal·ang / dolong', 'dol·ong', 'kul']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
     "english": "boat",
     "garo": "Ring",
     "category": "travel",
@@ -3756,13 +3735,6 @@
     "garo": "Ganggu",
     "category": "general",
     "confidence": "unverified"
-  },
-  {
-    "english": "fly",
-    "garo": "Bila",
-    "category": "general",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'fly' has VERIFIED/HIGH form(s) ['Tampi', 'bil·a', 'tam·pi', 'til·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
   },
   {
     "english": "spider",
@@ -14485,24 +14457,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Bridge",
-    "garo": "dol·ong",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Bridge",
-    "garo": "kul",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
     "english": "Broom",
     "garo": "sal·a",
     "pos": null,
@@ -15634,42 +15588,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "Fly",
-    "garo": "Tampi",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:bil-a / tam-pi / til·-a",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Fly",
-    "garo": "bil·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Fly",
-    "garo": "tam·pi",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Fly",
-    "garo": "til·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
     "english": "housefly",
     "garo": "Tampi",
     "pos": "n.",
@@ -16479,33 +16397,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Leg",
-    "garo": "ja·chok",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Leg",
-    "garo": "ja·git·teng",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Leg",
-    "garo": "ja·teng",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
     "english": "Lesson",
     "garo": "po·ra",
     "pos": null,
@@ -16973,15 +16864,6 @@
     "confidence": "superseded"
   },
   {
-    "english": "Old Woman",
-    "garo": "bu·ri",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
     "english": "one dog",
     "garo": "achak mangsa",
     "pos": null,
@@ -17108,24 +16990,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "variant/AMBIGUOUS/HIGH"
-  },
-  {
-    "english": "Outside",
-    "garo": "bai·re",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH | NV-178 (2026-10-20): `baire` is an Assamese/Bengali loanword meaning the same as `a·pal`/`a·palo`; interchangeable, `a·pal` is the native word. Source: NV-178 (2026-10-20): Project Owner-relayed answer attributed to Thangseng; raw message not on file.",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Outside",
-    "garo": "ha·gat·e",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
   },
   {
     "english": "Owl",
@@ -17744,12 +17608,12 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Right",
+    "english": "right (correct)",
     "garo": "kra·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH NV-244 (2026-11-01): Owner: this is the 'correct/right' sense, not direction (direction = Jak·ra).",
+    "notes": "variant/VERIFIED/HIGH NV-244 (2026-11-01): Owner: this is the 'correct/right' sense, not direction (direction = Jak·ra). NV-262: re-keyed from `Right` so key `right` has one word (Jak·ra, direction); kra·a = correct sense (NV-244/247).",
     "confidence": "verified_high"
   },
   {
@@ -18200,15 +18064,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "Slow",
-    "garo": "ka·sin·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
     "english": "Small",
     "garo": "chong·top·a",
     "pos": null,
@@ -18375,24 +18230,6 @@
     "garo": "ma·je·ma·je",
     "pos": null,
     "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Son",
-    "garo": "De·bi·pa",
-    "pos": null,
-    "category": "family",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:Depante / de-pan-te",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "Son",
-    "garo": "de·pan·te",
-    "pos": null,
-    "category": "family",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH",
     "confidence": "verified_high"
@@ -20064,15 +19901,6 @@
     "classifier": null,
     "notes": "variant/UNVERIFIED/HIGH",
     "confidence": "unverified"
-  },
-  {
-    "english": "alone",
-    "garo": "ak·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH — NV-151 (2026-09-07, direct Thangseng relay via Project Owner): confirmed synonymous with 'saksan' (used in the 'leave me alone' sentence, NV-146) -- both mean 'alone', interchangeable. Closes the NV-146 open tension. Not addressed here: whether 'saksan' also separately covers 'loneliness' (see unverified 'loneliness'=Saksan row) -- still open.",
-    "confidence": "verified_high"
   },
   {
     "english": "altar",
@@ -25675,24 +25503,6 @@
   {
     "english": "deliver baby",
     "garo": "jak·o ra·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH",
-    "confidence": "unverified"
-  },
-  {
-    "english": "demand",
-    "garo": "bok·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ham·-chrak-a",
-    "confidence": "unverified"
-  },
-  {
-    "english": "demand",
-    "garo": "ham·chrak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -45257,15 +45067,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "leg",
-    "garo": "ja·",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ja·-chok / ja·-git-teng / ja·-teng",
-    "confidence": "unverified"
-  },
-  {
     "english": "light weight",
     "garo": "cheng·a",
     "pos": null,
@@ -57640,14 +57441,6 @@
     "confidence": "unverified"
   },
   {
-    "english": "Right",
-    "garo": "Kakket",
-    "category": null,
-    "pos": "adj.",
-    "notes": "SUPERSEDED — corpus-internal audit 2026-08-01 (Claude A): legacy unannotated import, same english key 'right' has VERIFIED/HIGH form(s) ['kra·a']. Not authoritative for compile; retained per citation discipline, not deleted. Compile pipeline does not yet apply confidence precedence — see handoff to Claude B.",
-    "confidence": "superseded"
-  },
-  {
     "english": "true",
     "garo": "Kakket",
     "category": null,
@@ -59655,14 +59448,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "demand",
-    "garo": "Dabiani",
-    "pos": "n.",
-    "category": "general",
-    "notes": "VERIFIED/HIGH, Thangseng 2026-07-23 direct: \"Dabiani as a noun, and dabia as a verb\"",
-    "confidence": "verified_high"
-  },
-  {
     "english": "very",
     "garo": "indakpile",
     "category": "general",
@@ -61660,15 +61445,6 @@
     "garo": "minenga",
     "category": "food",
     "notes": "VERIFIED/HIGH - NV-050 (Thangseng, 2026-08-02, RULE-045). \"Tegatchu minenga.\" = \"The mango is ripening\" or \"is ripe\" (continuous form usable in simple-present sense). Also confirmed with demonstrative subject: \"Ua te·gatchu minenga.\" = \"That mango is ripe.\"",
-    "confidence": "verified_high"
-  },
-  {
-    "english": "to the market",
-    "garo": "antichi",
-    "pos": "n.",
-    "category": "words",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH — NV-254 (2026-11-01, Project Owner directive in chat, ruling on the Claude B grammar-reference PDF `top_priority (first checking)`: Bia = Ua, Namengaba = namenga, bajalchi = antichi are synonyms; not a Thangseng quote) Synonym of bajalchi (primary). Owner directive; base noun `anti` stays `week` (NV-087), no `anti = market` row stored.",
     "confidence": "verified_high"
   },
   {
@@ -69627,13 +69403,6 @@
     "confidence": "verified_high"
   },
   {
-    "english": "dance (alt)",
-    "garo": "mesaa",
-    "category": "general",
-    "notes": "variant/VERIFIED/HIGH — native-confirmed 2026-08-28 (NV-097, Thangseng relay via Tridip, uploaded transcript batch). PDF batch: \"dance (alt) = mesaa; * 'chroka' is more commonly used\" — confirms existing VERIFIED/HIGH 'Chroka' (NV-093) remains the preferred/primary form; 'mesaa' logged as a native-confirmed secondary alt, not a replacement.",
-    "confidence": "verified_high"
-  },
-  {
     "english": "knowledge (alt, fuller compound)",
     "garo": "u·i·ma·siani",
     "category": "general",
@@ -77109,21 +76878,21 @@
     "confidence": "verified_high"
   },
   {
-    "english": "listen",
+    "english": "listen!",
     "garo": "Knabo",
     "category": "verbs",
     "pos": "v.",
     "classifier": null,
-    "notes": "VERIFIED/HIGH — NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): imperative; verb forms differ from `Kinachaka` (to listen).",
+    "notes": "VERIFIED/HIGH — NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): imperative; verb forms differ from `Kinachaka` (to listen). NV-262: re-keyed from `listen` to the imperative `listen!`; `listen` = Kinachaka (Owner).",
     "confidence": "verified_high"
   },
   {
-    "english": "listen",
+    "english": "listen!",
     "garo": "Knatimbo",
     "category": "verbs",
     "pos": "v.",
     "classifier": null,
-    "notes": "variant/VERIFIED/HIGH — NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): imperative alt; verb forms differ from `Kinachaka` (to listen).",
+    "notes": "variant/VERIFIED/HIGH — NV-234 (2026-10-30, Thangseng words relayed by Project Owner in chat; raw message not on file): imperative alt; verb forms differ from `Kinachaka` (to listen). NV-262: re-keyed from `listen` to the imperative `listen!`; `listen` = Kinachaka (Owner).",
     "confidence": "verified_high"
   },
   {
@@ -77583,6 +77352,42 @@
     "category": "words",
     "classifier": null,
     "notes": "VERIFIED/HIGH — NV-259 (2026-11-01, Project Owner ruling in chat: skia is also learn; Skia = teach and learn; old ski·a / Sikia deleted). Same word as teach (NV-251).",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "bridge",
+    "garo": "dolong",
+    "pos": "n.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-262 (2026-11-01, Project Owner closure ruling in chat: confusion closed, duplicates deleted; both-correct pairs kept)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "fly",
+    "garo": "Tampi",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-262 (2026-11-01, Project Owner closure ruling in chat: confusion closed, duplicates deleted; both-correct pairs kept)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "listen",
+    "garo": "Kinachaka",
+    "pos": "v.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-262 (2026-11-01, Project Owner closure ruling in chat: confusion closed, duplicates deleted; both-correct pairs kept)",
+    "confidence": "verified_high"
+  },
+  {
+    "english": "son",
+    "garo": "de·pan·te",
+    "pos": "n.",
+    "category": "words",
+    "classifier": null,
+    "notes": "VERIFIED/HIGH — NV-262 (2026-11-01, Project Owner closure ruling in chat: confusion closed, duplicates deleted; both-correct pairs kept)",
     "confidence": "verified_high"
   }
 ]

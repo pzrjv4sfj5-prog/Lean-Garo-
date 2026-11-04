@@ -1280,30 +1280,6 @@
     "notes": "VERIFIED/HIGH v:Jal·ang / dol-ong / kul"
   },
   {
-    "english": "Bridge",
-    "garo": "Jal·ang",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Bridge",
-    "garo": "dol·ong",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Bridge",
-    "garo": "kul",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
     "english": "Bright",
     "garo": "Ching·a",
     "pos": null,
@@ -3848,38 +3824,6 @@
     "notes": "UNVERIFIED/MEDIUM"
   },
   {
-    "english": "Fly",
-    "garo": "Tampi",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:bil-a / tam-pi / til˙-a"
-  },
-  {
-    "english": "Fly",
-    "garo": "bil·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Fly",
-    "garo": "tam·pi",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Fly",
-    "garo": "til˙·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
     "english": "Fog / Mist",
     "garo": "Ong·chel",
     "pos": null,
@@ -6160,30 +6104,6 @@
     "notes": "VERIFIED/HIGH v:ja˙-chok / ja˙-git-teng / ja˙-teng"
   },
   {
-    "english": "Leg",
-    "garo": "ja˙·chok",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Leg",
-    "garo": "ja˙·git·teng",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Leg",
-    "garo": "ja˙·teng",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
     "english": "Lemon",
     "garo": "Kakji",
     "pos": null,
@@ -7408,14 +7328,6 @@
     "notes": "VERIFIED/HIGH v:bu-ri"
   },
   {
-    "english": "Old Woman",
-    "garo": "bu·ri",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
     "english": "Once upon a time",
     "garo": "Changsa·o",
     "pos": null,
@@ -7630,22 +7542,6 @@
     "category": "travel",
     "classifier": null,
     "notes": "VERIFIED/HIGH v:bai-re / ha˙-gat-e"
-  },
-  {
-    "english": "Outside",
-    "garo": "bai·re",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Outside",
-    "garo": "ha˙·gat·e",
-    "pos": null,
-    "category": "travel",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
   },
   {
     "english": "Owl",
@@ -8872,14 +8768,6 @@
     "notes": "VERIFIED/HIGH v:kra-a"
   },
   {
-    "english": "Right",
-    "garo": "kra·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
     "english": "Ring",
     "garo": "Jakstem",
     "pos": null,
@@ -9856,22 +9744,6 @@
     "notes": "VERIFIED/HIGH v:Ka·sina / ka˙-sin-a"
   },
   {
-    "english": "Slow",
-    "garo": "Ka·sina",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Slow",
-    "garo": "ka˙·sin·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
     "english": "Small",
     "garo": "Chon·a",
     "pos": null,
@@ -10132,30 +10004,6 @@
     "garo": "ma·je·ma·je",
     "pos": null,
     "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Son",
-    "garo": "De·bi·pa",
-    "pos": null,
-    "category": "family",
-    "classifier": null,
-    "notes": "VERIFIED/HIGH v:Depante / de-pan-te"
-  },
-  {
-    "english": "Son",
-    "garo": "Depante",
-    "pos": null,
-    "category": "family",
-    "classifier": null,
-    "notes": "variant/VERIFIED/HIGH"
-  },
-  {
-    "english": "Son",
-    "garo": "de·pan·te",
-    "pos": null,
-    "category": "family",
     "classifier": null,
     "notes": "variant/VERIFIED/HIGH"
   },
@@ -13758,14 +13606,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "alone",
-    "garo": "ak·sa",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH"
   },
   {
     "english": "altar",
@@ -18576,38 +18416,6 @@
     "notes": "variant/UNVERIFIED/HIGH"
   },
   {
-    "english": "dance",
-    "garo": "grik·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:han˙-seng-a / kiir-ton / ro-a"
-  },
-  {
-    "english": "dance",
-    "garo": "han˙·seng·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "dance",
-    "garo": "kiir·ton",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "dance",
-    "garo": "ro·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
     "english": "dandruff",
     "garo": "ki˙·ka·rok",
     "pos": null,
@@ -18834,22 +18642,6 @@
   {
     "english": "deliver baby",
     "garo": "jak·o ra˙·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "variant/UNVERIFIED/HIGH"
-  },
-  {
-    "english": "demand",
-    "garo": "bok·a",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ham˙-chrak-a"
-  },
-  {
-    "english": "demand",
-    "garo": "ham˙·chrak·a",
     "pos": null,
     "category": "uncategorized",
     "classifier": null,
@@ -36526,14 +36318,6 @@
     "category": "uncategorized",
     "classifier": null,
     "notes": "UNVERIFIED/HIGH v:in-chak-a / ku˙-chak-a"
-  },
-  {
-    "english": "leg",
-    "garo": "ja˙·",
-    "pos": null,
-    "category": "uncategorized",
-    "classifier": null,
-    "notes": "UNVERIFIED/HIGH v:ja˙-chok / ja˙-git-teng / ja˙-teng"
   },
   {
     "english": "light weight",
